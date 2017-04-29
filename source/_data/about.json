@@ -1,0 +1,37 @@
+{
+    "avatar": "https://meishadevs.github.io/images/logo.jpg",
+    "name": "meishadevs",
+	"tag": "Web前端",
+    "desc": "只有矢志不渝的拓荒者,才能最先捕捉到 春天的第一缕气息",
+    "skills": {
+		"HTML": 5,
+		"CSS": 4,
+        "JavaScript": 5,
+		"CSS3": 4,
+		"HTML5": 4,
+		"jQuery": 5,
+		"Node.js": 3,
+		"Less": 3,
+		"Gulp": 3,
+		"Cocos2d-js": 4
+    },
+    "projects": [{
+		"name": "博雅互动首页项目",
+		"image": "https://meishadevs.github.io/images/boyaa.png",
+		"tags": ["2016年", "网页"],
+		"description": "以循序渐进的方式实现博雅互动首页效果，通过这个项目可以将很好的练习HTML、CSS、JavaScript、jQuery、Less和Gulp的使用",
+		"link_text": "GitHub地址",
+		"link": "https://github.com/meishadevs/boyaa"
+	}, {
+		"name": "西游黄金矿工",
+		"image": "https://meishadevs.github.io/images/goldminer.png",
+		"description": "个人使用Cocos2d-js制作的一款html5版的黄金矿工类游戏，游戏实现了场景选择、挖矿等功能",
+		"tags": ["2016", "html5游戏"],
+		"link_text": "Github地址",
+		"link": "https://github.com/meishadevs/GoldMinerHtml5"
+	}],
+	"reward": [
+	    "https://meishadevs.github.io/images/weixin.png",
+		"https://meishadevs.github.io/images/zhifubao.png"
+	]
+}

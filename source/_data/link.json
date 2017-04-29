@@ -1,0 +1,20 @@
+{
+    "social": {
+        "weibo": "http://weibo.com/u/3170066893?is_all=1",
+        "github": "https://github.com/meishadevs",
+		"rss": "/atom.xml"
+    },
+    "extern": {
+	    "林寿山的技术博客": "http://raytaylorlin.com/",
+		"张鑫旭的个人主页": "http://www.zhangxinxu.com/",
+		"阮一峰的网络日志": "http://www.ruanyifeng.com/blog/",
+		"知乎": "https://www.zhihu.com/",
+		"CSDN": "http://www.csdn.net/",
+		"网易云课堂": "https://open.163.com/",
+		"慕课网": "http://www.imooc.com/",
+		"菜鸟教程": "http://www.runoob.com/",
+		"W3C": "http://www.w3school.com.cn/",
+		"前端美": "https://www.qianduanmei.com/",
+		"MDN": "https://developer.mozilla.org/zh-CN/"
+    }
+}
