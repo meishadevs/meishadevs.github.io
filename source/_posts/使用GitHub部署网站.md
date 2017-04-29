@@ -1,6 +1,6 @@
 ---
 title: 使用GitHub部署网站
-date: 2017-03-07
+date: 2017-03-08
 categories:
 	- 部署
 tags:
@@ -85,6 +85,55 @@ tags:
 **网站的网址：**[https://meishaxiaozi.github.io/boyaa/](https://meishaxiaozi.github.io/boyaa/)  
 **网址的格式：**https:// + GitHub的用户名 + .github.io/ + 仓库的名称
 ![](http://img.blog.csdn.net/20161226235606553)
+
+## GitHub部署网站简化版
+上面介绍的步骤比较复杂，熟悉Git命令的话可以使用几条简单的Git命令实现部署
+
+**第一步：**在Git Bash中执行下面的命令，创建一个boyaa文件夹
+
+	mkdir boyaa
+
+**第二步：**将需要部署到GitHub上的文件添加到boyaa文件夹中
+![这里写图片描述](http://img.blog.csdn.net/20170429110653556)
+
+**第三步：**进入boyaa文件夹中
+
+	cd boyaa 
+
+**第四步：**初始化一个本地Git仓库
+
+	git init
+
+**第五步：**将需要提交的文件添加到缓存区
+
+	git add .
+
+**第六步：**将文件提交到本地仓库
+
+	git commit -m "update some data"
+
+**第七步：**创建一个gh-pages分支
+
+	git branch gh-pages
+
+**第八步：**切换到gh-pages分支，gh-pages分支是一个比较特殊的分支，网页文件提交到gh-pages分支上，可以通过HTTP协议访问gh-pages分支上的网页文件
+
+	git checkout gh-pages
+
+**第九步：**为本地仓库关联一个远程仓库，其中远程仓库为上一种方法中的第三步创建的boyaa仓库
+
+	git remote add origin https://github.com/meishadevs/boyaa.git
+
+**第十步：**将网页文件提交到远程仓库中的gh-pages分支上
+
+	git push origin gh-pages
+
+**第十一步：**访问网页  
+此时可以通过[https://meishadevs.github.io/boyaa](https://meishadevs.github.io/boyaa)访问部署好的网页
+
+**说明：**部署到gh-pages分支上的网页的URL格式为  
+
+	https:// + username.github.io/ + GitHub上的仓库名
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/使用GitHub部署网站](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8GitHub%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/)】
