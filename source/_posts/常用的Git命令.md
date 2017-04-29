@@ -1,0 +1,59 @@
+---
+title: 常用的Git命令
+categories:
+  - Git
+tags:
+  - Git 
+date: 2017-04-29 10:18:01
+---
+
+整理的一些常用的Git命令
+<!--more-->
+
+#### 获得提交代码时的用户名
+	git config --global user.name
+
+#### 获得提交代码的邮箱
+	git config --global user.email
+
+#### 将提交代码的用户名设置为username
+	git config --global user.name username
+
+#### 将提交代码的邮箱设置为email
+	git config --global user.email email
+
+#### 查看分支
+	git branch
+
+#### 切换到master分支
+	git checkout master 
+
+#### 初始化一个本地Git仓库
+	git init
+
+####  查看本地仓库的状态
+	git status
+
+#### 添加本地暂存文件
+	git add .
+
+#### 将本地暂存文件提交的本地仓库
+	git commit -m "update some data"
+
+#### 为本地仓库添加一个远程仓库
+
+	# 添加一个远端地址并起了一个别名叫origin
+	git remote add origin https://github.com/username/reponame.git
+
+
+#### 查看所有的远程仓库
+	git remote -v
+
+#### 将本地仓库中的数据推送到远程仓库的master分支上
+	git push -u origin master
+
+#### 拉取远程仓库上的master分支上的数据到本地仓库
+	git pull origin master
+
+> meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
+转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/常用的Git命令/](http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Git%E5%91%BD%E4%BB%A4/)】
