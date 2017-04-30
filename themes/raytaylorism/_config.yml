@@ -66,7 +66,7 @@ duoshuo_shortname:
 google_analytics:
 
 # 腾讯分析sId，若为空则不启用
-tencent_analytics:
+tencent_analytics: 61543111
 
 # 高亮的主题，若为空则使用默认主题
 google_code_prettify: tranquil-heart
