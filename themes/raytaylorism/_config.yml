@@ -62,6 +62,9 @@ disqus_shortname:
 # 多说shortname，若为空则不启用
 duoshuo_shortname:
 
+# 网易云跟帖productKey，从通用代码中获取，若为空则不启用
+yungentie_product_key: 11abbc977a9946f4924d67dcddd3ef53
+
 # Google分析track id，若为空则不启用
 google_analytics:
 
