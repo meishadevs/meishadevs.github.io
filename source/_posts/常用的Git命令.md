@@ -55,5 +55,11 @@ date: 2017-04-29 10:18:01
 #### 拉取远程仓库上的master分支上的数据到本地仓库
 	git pull origin master
 
+#### 回退到某次提交，其中`bbc272`表示提交的哈希值的前六位
+	git reset --hard bbc272
+
+#### 删除远程分支，其中branchName表示分支名称
+	git push origin --delete <branchName>
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/常用的Git命令/](http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Git%E5%91%BD%E4%BB%A4/)】

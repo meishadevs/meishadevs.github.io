@@ -35,7 +35,7 @@ Less是一款比较流行的预处理CSS，支持变量、混合、函数、嵌�
 **2.执行安装Less的命令**  
 在命令行窗口中执行 `npm install -g less` 命令，可以安装Less，这个过程比较慢，需要翻墙  
 
-# 使用Less
+### **使用Less**
 **创建Less文件**  
 在一个文件夹下新建一个style.less文件，例如我在E:\game\HtmlProject\less下创建了一个style.less文件
 ![这里写图片描述](http://img.blog.csdn.net/20170326102025941)
@@ -71,6 +71,7 @@ Less是一款比较流行的预处理CSS，支持变量、混合、函数、嵌�
 **压缩后的CSS代码**
 压缩后的CSS代码中删掉了注释和空格，换行等无意义的数据 
 `body{background-color:#e92322}`
+
 
 # Less中的一些其他用法
 

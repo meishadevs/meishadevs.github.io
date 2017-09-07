@@ -1,37 +1,57 @@
 {
-    "avatar": "https://meishadevs.github.io/images/logo.jpg",
-    "name": "meishadevs",
-	"tag": "Web前端",
-    "desc": "只有矢志不渝的拓荒者,才能最先捕捉到 春天的第一缕气息",
+    "avatar": "http://oq3pg8pg4.bkt.clouddn.com/touxiang.jpg", 
+    "name": "meishadevs", 
+    "tag": "Web前端", 
+    "desc": "Love coding love life !", 
     "skills": {
-		"HTML": 5,
-		"CSS": 4,
-        "JavaScript": 5,
-		"CSS3": 4,
-		"HTML5": 4,
-		"jQuery": 5,
-		"Node.js": 3,
-		"Less": 3,
-		"Gulp": 3,
-		"Cocos2d-js": 4
-    },
-    "projects": [{
-		"name": "博雅互动首页项目",
-		"image": "https://meishadevs.github.io/images/boyaa.png",
-		"tags": ["2016年", "网页"],
-		"description": "以循序渐进的方式实现博雅互动首页效果，通过这个项目可以将很好的练习HTML、CSS、JavaScript、jQuery、Less和Gulp的使用",
-		"link_text": "GitHub地址",
-		"link": "https://github.com/meishadevs/boyaa"
-	}, {
-		"name": "西游黄金矿工",
-		"image": "https://meishadevs.github.io/images/goldminer.png",
-		"description": "个人使用Cocos2d-js制作的一款html5版的黄金矿工类游戏，游戏实现了场景选择、挖矿等功能",
-		"tags": ["2016", "html5游戏"],
-		"link_text": "Github地址",
-		"link": "https://github.com/meishadevs/GoldMinerHtml5"
-	}],
-	"reward": [
-	    "https://meishadevs.github.io/images/weixin.png",
-		"https://meishadevs.github.io/images/zhifubao.png"
-	]
+        "HTML": 5, 
+        "CSS": 4, 
+        "JavaScript": 5, 
+        "CSS3": 4, 
+        "HTML5": 4, 
+        "jQuery": 5, 
+        "Node.js": 3, 
+        "Less": 3, 
+        "Gulp": 3, 
+        "Cocos2d-js": 4
+    }, 
+    "projects": [
+        {
+            "name": "博雅互动首页项目", 
+            "image": "http://oq3pg8pg4.bkt.clouddn.com/boyaa.png", 
+            "tags": [
+                "2016年", 
+                "网页"
+            ], 
+            "description": "以循序渐进的方式实现博雅互动首页效果，通过这个项目可以将很好的练习HTML、CSS、JavaScript、jQuery、Less和Gulp的使用", 
+            "link_text": "GitHub地址", 
+            "link": "https://github.com/meishadevs/boyaa"
+        }, 
+        {
+            "name": "西游黄金矿工", 
+            "image": "http://oq3pg8pg4.bkt.clouddn.com/goldminer.png", 
+            "description": "个人使用Cocos2d-js制作的一款html5版的黄金矿工类游戏，游戏实现了场景选择、挖矿等功能", 
+            "tags": [
+                "2016", 
+                "html5游戏"
+            ], 
+            "link_text": "Github地址", 
+            "link": "https://github.com/meishadevs/GoldMinerHtml5"
+        },
+		{
+            "name": "慕课电商", 
+            "image": "http://oq3pg8pg4.bkt.clouddn.com/dswz.png", 
+            "description": "慕课电商是一个简易版的电商网站，整个网站由网站首页、商品分类页、注册页、登录页、商品信息展示页、商品筛选页、购物车及结算页组成。整个网站包含了关键字搜索、图片轮播、分类菜单切换、商品筛选、商品简介、商品咨询、省市区三级联动、放大镜、注册、登录等功能", 
+            "tags": [
+                "2017", 
+                "网站"
+            ], 
+            "link_text": "Github地址", 
+            "link": "https://github.com/meishadevs/ImoocDSWZ"
+        }
+    ], 
+    "reward": [
+        "http://oq3pg8pg4.bkt.clouddn.com/weixin.png", 
+        "http://oq3pg8pg4.bkt.clouddn.com/zhifubao.png"
+    ]
 }

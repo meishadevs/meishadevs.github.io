@@ -1,11 +1,12 @@
 [{
-    "image": "https://meishadevs.github.io/images/sea.jpg",
+    "image": "http://oq3pg8pg4.bkt.clouddn.com/sea.jpg",
     "align": "center",
     "title": "面朝大海 春暖花开",
     "subtitle": "从明天起，做一个幸福的人，喂马，劈柴，周游世界。从明天起，关心粮食和蔬菜。我希望有一所房子，面朝大海，春暖花开。",
 	"link": "/"
-}, {
-    "image": "https://meishadevs.github.io/images/crane.jpg",
+}, 
+{
+    "image": "http://oq3pg8pg4.bkt.clouddn.com/surfing.jpg",
     "align": "center",
     "title": "勇气是控制恐惧心理，而不是心里毫无恐惧",
     "subtitle": "",
