@@ -22,8 +22,23 @@ date: 2017-04-29 10:18:01
 #### 将提交代码的邮箱设置为email
 	git config --global user.email email
 
-#### 查看分支
+#### 查看本地分支
 	git branch
+
+#### 查看远程分支
+	git branch -r
+
+#### 删除本地分支，其中develop表示分支名称
+	git branch -d develop 
+
+#### 强制删除本地分支，其中develop表示分支名称
+	git branch -D develop
+
+#### 删除远程分支方法1，其中develop表示远程分支名称
+	git push origin :develop
+
+#### 删除远程分支方法2，其中develop表示远程分支名称
+	git push origin --delete develop
 
 #### 切换到master分支
 	git checkout master 
@@ -58,14 +73,8 @@ date: 2017-04-29 10:18:01
 #### 回退到某次提交，其中`bbc272`表示提交的哈希值的前六位
 	git reset --hard bbc272
 
-#### 删除远程分支，其中branchName表示分支名称
-	git push origin --delete <branchName>
-
 #### 查看提交记录
 	git log
-
-#### 删除分支
-	git branch -d 
 
 #### 合并分支，例如将a分支上的代码合并到master分支上，首先切换到master分支，然后执行下面的命令
 	git merge a
