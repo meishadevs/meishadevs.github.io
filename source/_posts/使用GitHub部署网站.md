@@ -59,8 +59,7 @@ tags:
 **第十三步：**在下面的操作中需要电脑中安装了git，并且熟悉几个简单的git命令，关于git的安装以及git命令的使用可以参考[从0开始学习 GITHUB 系列之「GIT 速成」](http://stormzhang.com/github/2016/05/30/learn-github-from-zero3/)这篇博客将git介绍的非常通俗易懂，安装好git后，先在电脑中创建一个文件夹用于保存从Github中克隆下来的仓库，我建的文件夹叫做GitProject，在E:\game路径下，打开命令行进入GitProject文件夹下
 ![](http://img.blog.csdn.net/20161226231237026)
 
-**第十四步：**在命令行中执行`git clone https://github.com/meishaxiaozi/boyaa.git`命令，
-其中`git clone`表示要克隆一个项目，后面的`https://github.com/meishaxiaozi/boyaa.git`表示项目地址，该地址是由**第十二步**操作获得的，当在最后一行出现了100%表示，远程仓库已经成功的克隆到了本地
+**第十四步：**执行`git clone https://github.com/meishaxiaozi/boyaa.git`命令，其中`git clone`表示要克隆一个项目，后面的`https://github.com/meishaxiaozi/boyaa.git`表示项目地址，该地址是由**第十二步**操作获得的，当在最后一行出现了100%表示，远程仓库已经成功的克隆到了本地
 ![](http://img.blog.csdn.net/20161226231723810)
 
 **第十五步：**打开GitProject文件夹，可以看到在文件夹中多了一个boyaa文件，该文件正是刚刚在GitHub中创建的仓库
