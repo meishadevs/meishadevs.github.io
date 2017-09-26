@@ -26,18 +26,17 @@ line-height: 35px\9;
 
 - 清除浮动  
 ```
-.clearfix:before, 
-.clearfix:after {
-    content: "";
-    display: table;
-}
-
-.clearfix:after {
+ .clearfix:after {
+    content: '';
+    height: 0;
     clear: both;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
 }
 
 .clearfix {
-    *zoom: 1; /*IE/7/6*/
+    *zoom: 1;
 }
 ```
 
