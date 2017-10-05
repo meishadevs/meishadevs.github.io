@@ -66,38 +66,34 @@ date: 2017-08-31 10:23:03
 	<img src="bg1.png" draggable="false">
 	<img src="bg2.png" draggable="false">
 
-**13. Webstorm代码格式化的快捷键**
-	
-	windows 下 webstorm 格式化代码的快键键 Ctrl+Alt+l
-
-**14. 在IOS上实现模糊效果的代码**
+**13. 在IOS上实现模糊效果的代码**
 
 	-webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 
-**15. 设置弹性盒的初始长度**
+**14. 设置弹性盒的初始长度**
 
 	flex-basis
 
-**16.** `<meta name="screen-orientation" content="portrait">`  
+**15.** `<meta name="screen-orientation" content="portrait">`  
 **解释：**网页在UC浏览器上强制使用竖屏显示
 
-**17.** `<meta name="apple-mobile-web-app-capable" content="yes">`  
+**16.** `<meta name="apple-mobile-web-app-capable" content="yes">`  
 **解释：**是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏
 
-**18.** `<meta name="full-screen" content="yes">`  
+**17.** `<meta name="full-screen" content="yes">`  
 **解释：**在UC浏览器中强制使用全屏展示网页
 
-**19.** `<meta name="x5-fullscreen" content="true">`
+**18.** `<meta name="x5-fullscreen" content="true">`
 **解释：**在QQ浏览器中强制使用全屏显示网页
 
-**20.** `spellcheck="false"`  
+**19.** `spellcheck="false"`  
 **解释：**给类似于textarea、input标签添加`spellcheck="false"s属性后当向标签中输入的单词拼写错误，不会产生红色的波浪线
 
-**21.** `-webkit-appearance: none`  
+**20.** `-webkit-appearance: none`  
 **解释：**清除浏览器的默认样式  
 
-**22.** `<input type="search">`  
+**21.** `<input type="search">`  
 ***解释：**使用`<input type="search">`制作搜索框，当在手机上点击搜索框时会弹出一个软键盘，软键盘上的enter按钮会以搜索按钮的形式显示 
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
