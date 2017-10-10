@@ -68,5 +68,17 @@ date: 2017-08-31 10:23:03
 **17.** `<meta http-equiv="X-UA-Compatible" content="ie=edge">`  
 **解释：**如果网页在IE浏览器上运行，使用最新的edge浏览器渲染网页
 
+**18.** `<meta http-equiv="Cache-Control" content="no-cache">`  
+**解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-cache表示不能缓存请求的消息或者响应的消息
+
+**19.** `<meta http-equiv="cache-control" content="no-store">`  
+**解释：** **Cache-Control表示指定请求和响应遵循的缓存机制，其中no-store用于防止重要的信息被无意的发布
+
+**20.** `<meta http-equiv="Pragma" content="no-cache">`  
+**解释：**Pragme用于定义页面缓存，其中no-cache表示不缓存页面[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
+
+**21.** `<link rel="dns-prefetch" href="">`  
+**解释：**预解析技术，当你浏览网页时，浏览器会在加载网页时对网页中的域名进行解析缓存，这样在你单击当前网页中的连接时就无需进行DNS的解析，减少用户等待时间，提高用户体验，[点击此处查看详细介绍](http://www.sojson.com/blog/218.html)
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/移动Web学习笔记/](http://meishadevs.com/blog/移动Web学习笔记/)】
