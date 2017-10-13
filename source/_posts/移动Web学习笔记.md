@@ -78,7 +78,7 @@ date: 2017-08-31 10:23:03
 **解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-cache表示不能缓存请求的消息或者响应的消息
 
 **22.** `<meta http-equiv="cache-control" content="no-store">`  
-**解释：** **Cache-Control表示指定请求和响应遵循的缓存机制，其中no-store用于防止重要的信息被无意的发布
+**解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-store用于防止重要的信息被无意的发布
 
 **23.** `<meta http-equiv="Pragma" content="no-cache">`  
 **解释：**Pragme用于定义页面缓存，其中no-cache表示不缓存页面[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
