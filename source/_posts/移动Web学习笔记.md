@@ -23,7 +23,7 @@ date: 2017-08-31 10:23:03
 **解释：**语种代码，这个代码表示网页中使用的是英语  
 
 **5. rel="apple-touch-icon"**  
-**解释：**用于设置iPhone, iPad上的网页图标，当将使用了rel="apple-touch-icon"属性的网站添加到iPhone或者iPad上的收藏夹里的时候，收藏夹上会显示这个图标，当没有设置rel="apple-touch-icon"属性的时候，收藏夹上显示整张网页的截图
+**解释：**用于设置iPhone, iPad上的网页图标，当你将使用了rel="apple-touch-icon"属性的网页添加到iPhone或者iPad上的浏览器的收藏夹里的时候，收藏夹上会显示这个图标，当没有设置rel="apple-touch-icon"属性的时候，收藏夹上显示整张网页的截图
 
 **6. 在IOS上实现模糊效果的代码**
 
@@ -40,6 +40,9 @@ date: 2017-08-31 10:23:03
 
 **9. -webkit-overflow-scrolling: touch**  
 **解释：**-webkit-overflow-scrolling属性用于控制元素在移动设备上是否使用滚动回弹效果，其中touch表示使用具有回弹效果的滚动, 当手指从触摸屏上移开，内容会继续保持一段时间的滚动效果。继续滚动的速度和持续的时间和滚动手势的强烈程度成正比
+
+**10. pointer-events: none**  
+**解释：**当鼠标点击设置了pointer-events: none属性的标签时，标签不起作用，会出现类似于标签的禁用效果[点击此处查看详细解释](http://www.zhangxinxu.com/wordpress/2011/12/css3-pointer-events-none-javascript/)
 
 **10.** `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">`  
 **解释：** 所有运行在移动端浏览器中的网页都必须添加这个标签，其中name='viewport'表示视口、width=device-width表示网页的宽度等于浏览器窗口的宽度、initial-scale=1.0表示网页的初始化缩放比例其中1.0表示不缩放、maximum-scale=1.0表示网页的最大缩放比例、minimum-scale=1.0表示网页的最小缩放比例、user-scalable=no表示不允许用户自己缩放
@@ -59,7 +62,7 @@ date: 2017-08-31 10:23:03
 **15.** `<meta name="full-screen" content="yes">`  
 **解释：**在UC浏览器中强制使用全屏展示网页
 
-**16.** `<meta name="x5-fullscreen" content="true">`
+**16.** `<meta name="x5-fullscreen" content="true">`  
 **解释：**在QQ浏览器中强制使用全屏显示网页
 
 **17.** `spellcheck="false"`  
