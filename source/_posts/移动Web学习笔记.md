@@ -17,7 +17,7 @@ date: 2017-08-31 10:23:03
 **解释：**这个属性只用于iOS (iPhone和iPad)。当你点击一个链接或者通过Javascript定义的可点击元素的时候，它就会出现一个半透明的灰色背景，设置 **-webkit-tap-highlight-color: transparent**时就不会产生这个背景
 
 **3. lang="zh-cmn-Hans"**  
-**解释：**语种名称代码，这个代码表示网页中使用的是简体普通话，详细介绍可以参考[http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html](http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html)
+**解释：**语种名称代码，这个代码表示网页中使用的是简体普通话[点击此处查看详细解释](http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html)
 
 **4. lang="en"**  
 **解释：**语种代码，这个代码表示网页中使用的是英语  
