@@ -30,7 +30,7 @@ date: 2017-08-31 10:23:03
 	-webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 
-**7. 禁止单击鼠标左键并移动鼠标时拖拽图片方法二**
+**7. 禁止单击鼠标左键并移动鼠标时拖拽图片**
 	
 	<img src="bg1.png" draggable="false">
 	<img src="bg2.png" draggable="false">
@@ -48,7 +48,7 @@ date: 2017-08-31 10:23:03
 **解释：** 所有运行在移动端浏览器中的网页都必须添加这个标签，其中name='viewport'表示视口、width=device-width表示网页的宽度等于浏览器窗口的宽度、initial-scale=1.0表示网页的初始化缩放比例其中1.0表示不缩放、maximum-scale=1.0表示网页的最大缩放比例、minimum-scale=1.0表示网页的最小缩放比例、user-scalable=no表示不允许用户自己缩放
 
 **12.** `<meta name="format-detection" content="telephone=no">`  
-**解释：**表示HTML代码中的电话号码不应显示为超文本链接
+**解释：**表示HTML代码中的电话号码不显示为超文本链接
 
 **13.** `<meta name="google-site-verification" content="">`  
 **解释：**将自己网站添加进google网站管理，有利于google的收录
@@ -78,10 +78,10 @@ date: 2017-08-31 10:23:03
 **解释：**如果网页在IE浏览器上运行，使用最新的edge浏览器渲染网页
 
 **22.** `<meta http-equiv="Cache-Control" content="no-cache">`  
-**解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-cache表示不能缓存请求的消息或者响应的消息
+**解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-cache表示不缓存请求的消息或者响应的消息[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
 **23.** `<meta http-equiv="cache-control" content="no-store">`  
-**解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-store用于防止重要的信息被无意的发布
+**解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-store用于防止重要的信息被无意的发布[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
 **24.** `<meta http-equiv="Pragma" content="no-cache">`  
 **解释：**Pragme用于定义页面缓存，其中no-cache表示不缓存页面[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
