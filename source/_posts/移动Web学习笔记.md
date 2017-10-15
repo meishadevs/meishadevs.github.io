@@ -7,11 +7,10 @@ tags:
 date: 2017-08-31 10:23:03
 ---
 
-整理的一些移动Web相关的知识点
-<!--more-->
-
 **1. -webkit-text-size-adjust: 100%**  
 **解释：**在 Chrome 浏览器中只能设置大于或等于 12px 的字体大小，当设置了小于 12px 的字体大小时，浏览器按照 12px 的字体大小渲染字体，而设置了 **-webkit-text-size-adjust** 属性后浏览器可以渲染 12px 以下的字体大小
+
+<!--more-->
 
 **2. -webkit-tap-highlight-color: transparent**  
 **解释：**这个属性只用于iOS (iPhone和iPad)。当你点击一个链接或者通过Javascript定义的可点击元素的时候，它就会出现一个半透明的灰色背景，设置 **-webkit-tap-highlight-color: transparent**时就不会产生这个背景
