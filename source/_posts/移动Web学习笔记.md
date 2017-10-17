@@ -43,50 +43,59 @@ date: 2017-08-31 10:23:03
 **10. pointer-events: none**  
 **解释：**当鼠标点击设置了pointer-events: none属性的标签时，标签不起作用，会出现类似于标签的禁用效果[点击此处查看详细解释](http://www.zhangxinxu.com/wordpress/2011/12/css3-pointer-events-none-javascript/)
 
-**11.** `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">`  
+**11. -webkit-box-sizing:border-box**  
+**解释：**当你指定了一个块级元素时，并且为其定义了边框，设置了其宽度为100％。在移动设备开发过程中我们通常会对文本框定义为宽度100％，将其定义为块级元素以实现全屏自适应的样式，但此时你会发现，该元素的边框(左右)各1个像素会溢了文档，导致出现横向滚动条，为解决这一问题，我们可以为其添加一个特殊的样式`-webkit-box-sizing:border-box;`用来指定该盒子的大小包括边框的宽度
+
+**12.** `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">`  
 **解释：** 所有运行在移动端浏览器中的网页都必须添加这个标签，其中name='viewport'表示视口、width=device-width表示网页的宽度等于浏览器窗口的宽度、initial-scale=1.0表示网页的初始化缩放比例其中1.0表示不缩放、maximum-scale=1.0表示网页的最大缩放比例、minimum-scale=1.0表示网页的最小缩放比例、user-scalable=no表示不允许用户自己缩放
 
-**12.** `<meta name="format-detection" content="telephone=no">`  
-**解释：**表示HTML代码中的电话号码不显示为超文本链接
+**13.** `<meta name="format-detection" content="telephone=no">`  
+**解释：**告诉设备不要将页面中的数字识别为电话号码
 
-**13.** `<meta name="google-site-verification" content="">`  
+**14.** `<meta name="google-site-verification" content="">`  
 **解释：**将自己网站添加进google网站管理，有利于google的收录
 
-**14.** `<meta name="screen-orientation" content="portrait">`  
+**15.** `<meta name="screen-orientation" content="portrait">`  
 **解释：**网页在UC浏览器上强制使用竖屏显示
 
-**15.** `<meta name="apple-mobile-web-app-capable" content="yes">`  
-**解释：**是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏
+**16.** `<meta name="apple-mobile-web-app-capable" content="yes">`  
+**解释：**启用webapp的全屏模式，删除iPad或者iPhone上默认的工具栏和菜单栏
 
-**16.** `<meta name="full-screen" content="yes">`  
+**17.** `<meta name="full-screen" content="yes">`  
 **解释：**在UC浏览器中强制使用全屏展示网页
 
-**17.** `<meta name="x5-fullscreen" content="true">`  
+**18.** `<meta name="x5-fullscreen" content="true">`  
 **解释：**在QQ浏览器中强制使用全屏显示网页
 
-**18.** `spellcheck="false"`  
+**19.** `spellcheck="false"`  
 **解释：**给类似于textarea、input标签添加`spellcheck="false"s属性后当向标签中输入的单词拼写错误，不会产生红色的波浪线
 
-**19.** `-webkit-appearance: none`  
+**20.** `-webkit-appearance: none`  
 **解释：**清除浏览器的默认样式  
 
-**20.** `<input type="search">`  
+**21.** `<input type="search">`  
 ***解释：**使用`<input type="search">`制作搜索框，当在手机上点击搜索框时会弹出一个软键盘，软键盘上的enter按钮会以搜索按钮的形式显示 
 
-**21.** `<meta http-equiv="X-UA-Compatible" content="ie=edge">`  
+**22.** `<meta http-equiv="X-UA-Compatible" content="ie=edge">`  
 **解释：**如果网页在IE浏览器上运行，使用最新的edge浏览器渲染网页
 
-**22.** `<meta http-equiv="Cache-Control" content="no-cache">`  
+**23.** `<meta http-equiv="Cache-Control" content="no-cache">`  
 **解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-cache表示不缓存请求的消息或者响应的消息[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
-**23.** `<meta http-equiv="cache-control" content="no-store">`  
+**24.** `<meta http-equiv="cache-control" content="no-store">`  
 **解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-store用于防止重要的信息被无意的发布[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
-**24.** `<meta http-equiv="Pragma" content="no-cache">`  
+**25.** `<meta http-equiv="Pragma" content="no-cache">`  
 **解释：**Pragme用于定义页面缓存，其中no-cache表示不缓存页面[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
-**25.** `<link rel="dns-prefetch" href="">`  
+**26.** `<link rel="dns-prefetch" href="">`  
 **解释：**预解析技术，当你浏览网页时，浏览器会在加载网页时对网页中的域名进行解析缓存，这样在你单击当前网页中的连接时就无需进行DNS的解析，减少用户等待时间，提高用户体验，[点击此处查看详细介绍](http://www.sojson.com/blog/218.html)
+
+**27.** `<meta content="black" name="apple-mobile-web-app-status-bar-style">`  
+**解释：**iphone的私有标签，它用于给iphone上的safari浏览器顶端的状态栏设置样式
+
+**28.** `<meta content="email=no" name="format-detection" />`  
+**解释：**告诉设备不要识别页面上的邮箱地址
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/移动Web学习笔记/](http://meishadevs.com/blog/移动Web学习笔记/)】
