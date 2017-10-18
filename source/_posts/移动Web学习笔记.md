@@ -24,7 +24,7 @@ date: 2017-08-31 10:23:03
 **5. rel="apple-touch-icon"**  
 **解释：**用于设置iPhone, iPad上的网页图标，当你将使用了rel="apple-touch-icon"属性的网页添加到iPhone或者iPad上的浏览器的收藏夹里的时候，收藏夹上会显示这个图标，当没有设置rel="apple-touch-icon"属性的时候，收藏夹上显示整张网页的截图
 
-**6. 在IOS上实现模糊效果的代码**
+**6. 在iOS上实现模糊效果的代码**
 
 	-webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
