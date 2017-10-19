@@ -46,6 +46,9 @@ date: 2017-08-31 10:23:03
 **11. -webkit-box-sizing:border-box**  
 **解释：**当你指定了一个块级元素时，并且为其定义了边框，设置了其宽度为100％。在移动设备开发过程中我们通常会对文本框定义为宽度100％，将其定义为块级元素以实现全屏自适应的样式，但此时你会发现，该元素的边框(左右)各1个像素会溢了文档，导致出现横向滚动条，为解决这一问题，我们可以为其添加一个特殊的样式`-webkit-box-sizing:border-box;`用来指定该盒子的大小包括边框的宽度
 
+**12. rem**  
+**解释：**rem是CSS3新引进的一个度量单位，其数值表示根节点(html标签)的字体大小的倍数，在当前的所有主流浏览器中根节点(html标签)的字体大小都为16px，即 html标签的font-size:16px，1rem = 16px,为了让后面方便计算，通常将1rem的值设为10px，通过将html标签的font-size值设为62.5%可以将html标签的font-size值设置为10px，因为 16px X 62.5% = 10px，此时以后凡是html标签下的标签都可以使用rem，例如在html标签下有个p标签，要将p标签的高度设为50px可以写成`p {height: 5rem;}`[点击此处查看详细介绍](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
+
 **12.** `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">`  
 **解释：** 所有运行在移动端浏览器中的网页都必须添加这个标签，其中name='viewport'表示视口、width=device-width表示网页的宽度等于浏览器窗口的宽度、initial-scale=1.0表示网页的初始化缩放比例其中1.0表示不缩放、maximum-scale=1.0表示网页的最大缩放比例、minimum-scale=1.0表示网页的最小缩放比例、user-scalable=no表示不允许用户自己缩放
 
