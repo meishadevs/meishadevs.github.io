@@ -46,7 +46,7 @@ date: 2017-10-21 17:40:54
 在输入框中输入Url地址[http://192.168.0.102:3000](http://192.168.0.102:3000)，并且单击Open按钮，此时会将Url地址发送到手机上的Chrom浏览器中，如果此时手机上启动了Chrome浏览器，Chrom浏览器会显示该Url地址的内容，如果没有启动Chrome浏览器，在启动Chrome浏览器时会自动显示该Url地址的内容
 ![](http://oq3pg8pg4.bkt.clouddn.com/pic1.PNG)
 
-#### 第六步：在手机上查看移动端页面
+##### 第六步：在手机上查看移动端页面
 打开手机上的Chrome浏览器，可以看到这个移动端页面  
 ![](http://oq3pg8pg4.bkt.clouddn.com/phone.png)
 
