@@ -74,7 +74,7 @@ date: 2017-08-31 10:23:03
 **解释：**给类似于textarea、input标签添加`spellcheck="false"s属性后当向标签中输入的单词拼写错误，不会产生红色的波浪线
 
 **21.** `-webkit-appearance: none`  
-**解释：**清除浏览器的默认样式  
+**解释：**`-webkit-appearance`用于改变按钮和其他控件的外观，使其类似于原生控件，其属性值`none`用于去除系统默认appearance的样式，常用于IOS下移除原生样式
 
 **22.** `<input type="search">`  
 ***解释：**使用`<input type="search">`制作搜索框，当在手机上点击搜索框时会弹出一个软键盘，软键盘上的enter按钮会以搜索按钮的形式显示 
