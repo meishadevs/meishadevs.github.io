@@ -19,7 +19,7 @@ date: 2017-08-31 10:23:03
 **解释：**语种名称代码，这个代码表示网页中使用的是简体普通话[点击此处查看详细解释](http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html)
 
 **4. lang="en"**  
-**解释：**语种代码，这个代码表示网页中使用的是英语  
+**解释：**语种代码，这个代码表示网页中使用的是英语[点击此处查看详细解释](http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html)  
 
 **5. rel="apple-touch-icon"**  
 **解释：**用于设置iPhone, iPad上的网页图标，当你将使用了rel="apple-touch-icon"属性的网页添加到iPhone或者iPad上的浏览器的收藏夹里的时候，收藏夹上会显示这个图标，当没有设置rel="apple-touch-icon"属性的时候，收藏夹上显示整张网页的截图
