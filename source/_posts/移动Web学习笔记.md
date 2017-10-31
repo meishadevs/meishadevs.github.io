@@ -49,55 +49,58 @@ date: 2017-08-31 10:23:03
 **12. rem**  
 **解释：**rem是CSS3新引进的一个度量单位，其数值表示根节点(html标签)的字体大小的倍数，在当前的所有主流浏览器中根节点(html标签)的字体大小都为16px，即 html标签的font-size:16px，1rem = 16px,为了让后面方便计算，通常将1rem的值设为10px，通过将html标签的font-size值设为62.5%可以将html标签的font-size值设置为10px，因为 16px X 62.5% = 10px，此时以后凡是html标签下的标签都可以使用rem，例如在html标签下有个p标签，要将p标签的高度设为50px可以写成`p {height: 5rem;}`[点击此处查看详细介绍](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
 
-**13.** `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">`  
+**13. apple-touch-fullscreen**  
+**解释：**添加到主屏幕上后全屏显示  
+
+**14.** `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">`  
 **解释：** 所有运行在移动端浏览器中的网页都必须添加这个标签，其中name='viewport'表示视口、width=device-width表示网页的宽度等于浏览器窗口的宽度、initial-scale=1.0表示网页的初始化缩放比例其中1.0表示不缩放、maximum-scale=1.0表示网页的最大缩放比例、minimum-scale=1.0表示网页的最小缩放比例、user-scalable=no表示不允许用户自己缩放
 
-**14.** `<meta name="format-detection" content="telephone=no">`  
+**15.** `<meta name="format-detection" content="telephone=no">`  
 **解释：**告诉设备不要将页面中的数字识别为电话号码
 
-**15.** `<meta name="google-site-verification" content="">`  
+**16.** `<meta name="google-site-verification" content="">`  
 **解释：**将自己网站添加进google网站管理，有利于google的收录
 
-**16.** `<meta name="screen-orientation" content="portrait">`  
+**17.** `<meta name="screen-orientation" content="portrait">`  
 **解释：**网页在UC浏览器上强制使用竖屏显示
 
-**17.** `<meta name="apple-mobile-web-app-capable" content="yes">`  
+**18.** `<meta name="apple-mobile-web-app-capable" content="yes">`  
 **解释：**启用webapp的全屏模式，删除iPad或者iPhone上默认的工具栏和菜单栏
 
-**18.** `<meta name="full-screen" content="yes">`  
+**19.** `<meta name="full-screen" content="yes">`  
 **解释：**在UC浏览器中强制使用全屏展示网页
 
-**19.** `<meta name="x5-fullscreen" content="true">`  
+**20.** `<meta name="x5-fullscreen" content="true">`  
 **解释：**在QQ浏览器中强制使用全屏显示网页
 
-**20.** `spellcheck="false"`  
+**21.** `spellcheck="false"`  
 **解释：**给类似于textarea、input标签添加`spellcheck="false"s属性后当向标签中输入的单词拼写错误，不会产生红色的波浪线
 
-**21.** `-webkit-appearance: none`  
+**22.** `-webkit-appearance: none`  
 **解释：**`-webkit-appearance`用于改变按钮和其他控件的外观，使其类似于原生控件，其属性值`none`用于去除系统默认appearance的样式，常用于IOS下移除原生样式
 
-**22.** `<input type="search">`  
+**23.** `<input type="search">`  
 ***解释：**使用`<input type="search">`制作搜索框，当在手机上点击搜索框时会弹出一个软键盘，软键盘上的enter按钮会以搜索按钮的形式显示 
 
-**23.** `<meta http-equiv="X-UA-Compatible" content="ie=edge">`  
+**24.** `<meta http-equiv="X-UA-Compatible" content="ie=edge">`  
 **解释：**如果网页在IE浏览器上运行，使用最新的edge浏览器渲染网页
 
-**24.** `<meta http-equiv="Cache-Control" content="no-cache">`  
+**25.** `<meta http-equiv="Cache-Control" content="no-cache">`  
 **解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-cache表示不缓存请求的消息或者响应的消息[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
-**25.** `<meta http-equiv="cache-control" content="no-store">`  
+**26.** `<meta http-equiv="cache-control" content="no-store">`  
 **解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-store用于防止重要的信息被无意的发布[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
-**26.** `<meta http-equiv="Pragma" content="no-cache">`  
+**27.** `<meta http-equiv="Pragma" content="no-cache">`  
 **解释：**Pragme用于定义页面缓存，其中no-cache表示不缓存页面[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
-**27.** `<link rel="dns-prefetch" href="">`  
+**28.** `<link rel="dns-prefetch" href="">`  
 **解释：**预解析技术，当你浏览网页时，浏览器会在加载网页时对网页中的域名进行解析缓存，这样在你单击当前网页中的连接时就无需进行DNS的解析，减少用户等待时间，提高用户体验，[点击此处查看详细介绍](http://www.sojson.com/blog/218.html)
 
-**28.** `<meta content="black" name="apple-mobile-web-app-status-bar-style">`  
+**29.** `<meta content="black" name="apple-mobile-web-app-status-bar-style">`  
 **解释：**iphone的私有标签，它用于给iphone上的safari浏览器顶端的状态栏设置样式
 
-**29.** `<meta content="email=no" name="format-detection" />`  
+**30.** `<meta content="email=no" name="format-detection" />`  
 **解释：**告诉设备不要识别页面上的邮箱地址
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
