@@ -22,7 +22,7 @@ date: 2017-08-31 10:23:03
 **解释：**语种代码，这个代码表示网页中使用的是英语[点击此处查看详细解释](http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html)  
 
 **5. rel="apple-touch-icon"**  
-**解释：**用于设置iPhone, iPad上的网页图标，当你将使用了rel="apple-touch-icon"属性的网页添加到iPhone或者iPad上的浏览器的收藏夹里的时候，收藏夹上会显示这个图标，当没有设置rel="apple-touch-icon"属性的时候，收藏夹上显示整张网页的截图
+**解释：**在iPhone, iPad上的safari浏览器中有个将网站添加到主屏幕上的按钮，当网站设置了**rel="apple-touch-icon**属性，当网站添加到屏幕上，屏幕上会显示网站的图标[点击此处查看详细解释](http://blog.sina.com.cn/s/blog_5a073f0f01014jfc.html)
 
 **6. 在iOS上实现模糊效果的代码**
 
@@ -97,11 +97,14 @@ date: 2017-08-31 10:23:03
 **28.** `<link rel="dns-prefetch" href="">`  
 **解释：**预解析技术，当你浏览网页时，浏览器会在加载网页时对网页中的域名进行解析缓存，这样在你单击当前网页中的连接时就无需进行DNS的解析，减少用户等待时间，提高用户体验，[点击此处查看详细介绍](http://www.sojson.com/blog/218.html)
 
-**29.** `<meta content="black" name="apple-mobile-web-app-status-bar-style">`  
+**29.** `<meta name="apple-mobile-web-app-status-bar-style" content="black">`  
 **解释：**iphone的私有标签，它用于给iphone上的safari浏览器顶端的状态栏设置样式
 
 **30.** `<meta content="email=no" name="format-detection" />`  
 **解释：**告诉设备不要识别页面上的邮箱地址
+
+**31.** `<meta name="imagemode" content="force"/>`  
+**解释：**强制显示标签
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/移动Web学习笔记/](http://meishadevs.com/blog/移动Web学习笔记/)】
