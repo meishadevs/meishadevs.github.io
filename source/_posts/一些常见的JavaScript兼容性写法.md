@@ -12,11 +12,11 @@ tags:
 自己平时总结的一些常用的javaScript兼容性写法
 <!--more-->
 
-**1.获得事件**
+**1. 获得事件**
 
 	var event = event || window.event;
 
-**2.阻止事件冒泡**
+**2. 阻止事件冒泡**
 
 	var event = event || window.event;
 
@@ -28,11 +28,11 @@ tags:
 	}
 
 
-**3.获得点击的某个对象的id**
+**3. 获得点击的某个对象的id**
 
 	var targetId = event.target ? event.target.id : event.srcElement.id;
 
-**4.阻止事件的默认行为**
+**4. 阻止事件的默认行为**
 	
 	//除IE浏览器以外的其他浏览器
 	if(event.preventDefault) {
@@ -45,19 +45,23 @@ tags:
 	   event.returnValue = false;
 	}
 
-**5.获得浏览器的宽度**
+**5. 获得浏览器的宽度**
 
 	document.documentElement.clientWidth || document.body.clientWidth;
 
-**6.获得浏览器的高度**
+**6. 获得浏览器的高度**
 
 	document.documentElement.clientHeight || document.body.clientHeight；
 
-**7.获得竖直方向上的滑块到浏览器顶部的距离**
+**7. 获得水平方向上滚动条到浏览器最左端的距离**  
+
+	document.documentElement.scrollLeft || document.body.scrollLeft
+
+**8. 获得竖直方向上的滚动条到浏览器顶部的距离**
 	
 	document.documentElement.scrollTop || document.body.scrollTop;
 
-**8. 禁止单击鼠标左键并移动鼠标时拖拽图片方法**
+**9. 禁止单击鼠标左键并移动鼠标时拖拽图片方法**
 
 	function imgdragstart() {
         return false;
