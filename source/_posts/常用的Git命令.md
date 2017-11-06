@@ -10,7 +10,7 @@ date: 2017-04-29 10:18:01
 自己平时总结的一些常用的Git命令
 <!--more-->
 
-#### 获得提交代码时的用户名
+#### 获得提交代码的用户名
 	git config --global user.name
 
 #### 获得提交代码的邮箱
@@ -28,17 +28,17 @@ date: 2017-04-29 10:18:01
 #### 查看远程分支
 	git branch -r
 
-#### 删除本地分支，其中develop表示分支名称
-	git branch -d develop 
+#### 删除本地分支，其中branchName表示本地分支名称
+	git branch -d branchName 
 
-#### 强制删除本地分支，其中develop表示分支名称
-	git branch -D develop
+#### 强制删除本地分支，其中branchName表示本地分支名称
+	git branch -D branchName
 
-#### 删除远程分支方法1，其中develop表示远程分支名称
-	git push origin :develop
+#### 删除远程分支方法1，其中branchName表示远程分支名称
+	git push origin :branchName
 
-#### 删除远程分支方法2，其中develop表示远程分支名称
-	git push origin --delete develop
+#### 删除远程分支方法2，其中branchName表示远程分支名称
+	git push origin --delete branchName
 
 #### 切换到master分支
 	git checkout master 
@@ -52,7 +52,7 @@ date: 2017-04-29 10:18:01
 #### 将当前目录下的所有文件添加到暂存区
 	git add .
 
-#### 将本地暂存文件提交的本地仓库
+#### 将暂存区的文件提交到本地仓库
 	git commit -m "update some data"
 
 #### 为本地仓库添加一个远程仓库
@@ -61,13 +61,13 @@ date: 2017-04-29 10:18:01
 	git remote add origin https://github.com/username/reponame.git
 
 
-#### 查看所有的远程仓库
+#### 查看所有远程仓库
 	git remote -v
 
-#### 将本地仓库中master分支上的数据推送到远程仓库的master分支上，如果远程仓库中没有master分支，会在远程创库中自动创建一个master分支
+#### 将本地仓库中master分支上的数据推送到远程仓库的master分支上，如果远程仓库中没有master分支，会在远程仓库上自动创建一个master分支
 	git push -u origin master
 
-#### 拉取远程仓库上的master分支上的数据到本地仓库
+#### 拉取远程仓库中的master分支上的数据到本地仓库
 	git pull origin master
 
 #### 回退到某次提交，其中`bbc272`表示提交的哈希值的前六位
@@ -82,7 +82,7 @@ date: 2017-04-29 10:18:01
 #### 查看代码改动，例如执行下面的Git命令可以查看a.md中代码做了哪些改动
 	git diff a.md
 
-#### 强行推送当前分支到远程仓库，即使有冲突，其中branchName表示分支名称
+#### 强行推送当前分支到远程仓库，其中branchName表示分支名称
 	git push origin branchName --force
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
