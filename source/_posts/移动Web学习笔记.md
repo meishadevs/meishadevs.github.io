@@ -49,7 +49,7 @@ date: 2017-08-31 10:23:03
 **12. rem**  
 **解释：**rem是CSS3新引进的一个度量单位，其数值表示根节点(html标签)的字体大小的倍数，在当前的所有主流浏览器中根节点(html标签)的字体大小都为16px，即 html标签的font-size:16px，1rem = 16px,为了让后面方便计算，通常将1rem的值设为10px，通过将html标签的font-size值设为62.5%可以将html标签的font-size值设置为10px，因为 16px X 62.5% = 10px，此时以后凡是html标签下的标签都可以使用rem，例如在html标签下有个p标签，要将p标签的高度设为50px可以写成`p {height: 5rem;}`[点击此处查看详细介绍](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
 
-**13. apple-touch-fullscreen**  
+**13.** `<meta name="apple-touch-fullscreen" content="yes">`  
 **解释：**添加到主屏幕上后全屏显示  
 
 **14.** `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">`  
@@ -107,7 +107,7 @@ date: 2017-08-31 10:23:03
 **解释：**强制显示标签
 
 **32.** `<meta name="theme-color" content="#BF3030">`  
-**解释：**使用浏览器访问网页时，改变浏览器上的状态栏的颜色
+**解释：**使用浏览器访问网页时，改变浏览器上状态栏的背景颜色
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/移动Web学习笔记/](http://meishadevs.com/blog/移动Web学习笔记/)】

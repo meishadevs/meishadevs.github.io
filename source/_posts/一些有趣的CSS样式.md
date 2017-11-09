@@ -43,7 +43,13 @@ tags:
     -ms-user-select: none;
     user-select: none;
 
-**5. 使用绝对定位将子元素元素的宽度设为父元素宽度的100%，将子元素的高度设为父元素高度的100%**
+**5. 使用flex布局**
+
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+
+**6. 使用绝对定位将子元素元素的宽度设为父元素宽度的100%，将子元素的高度设为父元素高度的100%**
 	
 	 position: absolute;
      left: 0;
@@ -51,7 +57,7 @@ tags:
      top: 0;
 	 bottom: 0;
 
-**6. 使用绝对定位加CSS3中的transform将子元素设置到父元素的正中间**
+**7. 使用绝对定位加CSS3中的transform将子元素设置到父元素的正中间**
 	
 	-webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -62,11 +68,26 @@ tags:
     left: 50%;
     top: 50%;
 
-**7. 隐藏溢出标签中的文本并且在标签最后增加一个省略号**
+**8. 隐藏溢出标签中的文本并且在标签最后增加一个省略号**
 
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+
+**9. 让子元素相对于父元素在水平方向和竖直方向上都居中**
+
+	.parent {
+        position: relative;
+    }
+
+    .child {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/一些常见的CSS兼容性写法](http://meishadevs.com/blog/%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84CSS%E5%85%BC%E5%AE%B9%E6%80%A7%E5%86%99%E6%B3%95/)】
