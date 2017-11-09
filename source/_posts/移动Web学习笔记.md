@@ -106,5 +106,8 @@ date: 2017-08-31 10:23:03
 **31.** `<meta name="imagemode" content="force"/>`  
 **解释：**强制显示标签
 
+**32.** `<meta name="theme-color" content="#BF3030">`  
+**解释：**使用浏览器访问网页时，改变浏览器上的状态栏的颜色
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/移动Web学习笔记/](http://meishadevs.com/blog/移动Web学习笔记/)】
