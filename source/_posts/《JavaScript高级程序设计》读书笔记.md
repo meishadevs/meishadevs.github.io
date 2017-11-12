@@ -94,7 +94,7 @@ JavaScript中使用**instanceof**关键字判断变量的引用数据类型
 JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、**Boolean**、**Number**和**String**。
 
 ##### JavaScript中的引用类型
-常见的引用类型：**Object**、**Array**、**Function**
+常见的引用类型：**Object**、**Array**、**Function**、**RegExp**
 
 ##### 构造函数
 **构造函数的定义：**构造函数是一种特殊的方法，主要用在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中
@@ -337,6 +337,15 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
     person1.showName();
     person1.showAge();
     person1.showJob();
+
+##### js中获得父节点下子节点的方法  
+**childNodes：** 获得的子节点中会包括文本节点  
+**children:** 获得的子节点中不包含文本节点
+
+##### let、var、const 三者的区别  
+**var：** 使用var声明的变量，其作用域为该语句所在的函数内，且存在变量提升现象  
+**let：** 使用let声明的变量，其作用域为该语句所在的代码块内，不存在变量提升  
+**const：** 使用const声明的是常量，在后面出现的代码中不能再修改该常量的值
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/](http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/)】

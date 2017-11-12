@@ -86,5 +86,34 @@ tags:
         location.reload(true);
     }
 
+**11.获得浏览器到显示屏的距离**
+
+	//获得浏览器左端到显示屏左端的距离
+    var leftPos = (typeof window.screenLeft == 'number') ?
+        window.screenLeft : window.screenX;
+
+    //获得浏览器上端到显示屏上端的距离
+    var topPos = (typeof window.screenTop == 'number') ?
+        window.screenTop : window.screenY;
+
+**12.获得浏览器窗口大小**
+
+	//获得浏览器窗口的宽度
+	var pageWidth = window.innerWidth;
+
+	//获得浏览器窗口的高度
+    var pageHeight = window.innerHeight;
+
+    if (typeof pageWidth != 'number') {
+        if (document.compatMode == 'CSS1Compat') {
+            pageWidth = document.documentElement.clientWidth;
+            pageHeight = document.documentElement.clientHeight;
+        } else {
+            pageWidth = document.body.clientWidth;
+            pageHeight = document.body.clientHeight;
+        }
+    }
+
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/一些常见的JavaScript兼容性写法](http://meishadevs.com/blog/%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84JavaScript%E5%85%BC%E5%AE%B9%E6%80%A7%E5%86%99%E6%B3%95/)】
