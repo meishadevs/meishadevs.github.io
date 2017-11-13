@@ -338,8 +338,8 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
     person1.showAge();
     person1.showJob();
 
-##### js中获得父节点下子节点的方法  
-**childNodes：** 获得的子节点中会包括文本节点  
+##### js中获得父节点下所有子节点的方法  
+**childNodes：** 获得的子节点中包含文本节点  
 **children:** 获得的子节点中不包含文本节点
 
 ##### let、var、const 三者的区别  

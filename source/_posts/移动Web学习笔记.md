@@ -19,7 +19,7 @@ date: 2017-08-31 10:23:03
 **解释：**语种名称代码，这个代码表示网页中使用的是简体普通话[点击此处查看详细解释](http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html)
 
 **4. lang="en"**  
-**解释：**语种代码，这个代码表示网页中使用的是英语[点击此处查看详细解释](http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html)  
+**解释：**语种名称代码，这个代码表示网页中使用的是英语[点击此处查看详细解释](http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html)  
 
 **5. rel="apple-touch-icon"**  
 **解释：**在iPhone, iPad上的safari浏览器中有个将网站添加到主屏幕上的按钮，当网站设置了**rel="apple-touch-icon**属性，当网站添加到屏幕上，屏幕上会显示网站的图标[点击此处查看详细解释](http://blog.sina.com.cn/s/blog_5a073f0f01014jfc.html)
@@ -53,22 +53,22 @@ date: 2017-08-31 10:23:03
 **解释：**添加到主屏幕上后全屏显示  
 
 **14.** `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">`  
-**解释：** 所有运行在移动端浏览器中的网页都必须添加这个标签，其中name='viewport'表示视口、width=device-width表示网页的宽度等于浏览器窗口的宽度、initial-scale=1.0表示网页的初始化缩放比例其中1.0表示不缩放、maximum-scale=1.0表示网页的最大缩放比例、minimum-scale=1.0表示网页的最小缩放比例、user-scalable=no表示不允许用户自己缩放
+**解释：** 所有运行在移动端浏览器中的网页都必须添加这个标签，其中name='viewport'表示视口、width=device-width表示网页的宽度等于浏览器窗口的宽度、initial-scale=1.0表示网页的初始化缩放比例其中1.0表示不缩放、maximum-scale=1.0表示网页的最大缩放比例、minimum-scale=1.0表示网页的最小缩放比例、user-scalable=no表示不允许用户自己缩放网页
 
 **15.** `<meta name="format-detection" content="telephone=no">`  
-**解释：**告诉设备不要将页面中的数字识别为电话号码
+**解释：**告诉浏览器不要将页面中的数字识别为电话号码
 
 **16.** `<meta name="google-site-verification" content="">`  
-**解释：**将自己网站添加进google网站管理，有利于google的收录
+**解释：**将网站添加进google网站管理，有利于google的收录
 
 **17.** `<meta name="screen-orientation" content="portrait">`  
-**解释：**网页在UC浏览器上强制使用竖屏显示
+**解释：**网页在浏览器上强制使用竖屏显示
 
 **18.** `<meta name="apple-mobile-web-app-capable" content="yes">`  
 **解释：**启用webapp的全屏模式，删除iPad或者iPhone上默认的工具栏和菜单栏
 
 **19.** `<meta name="full-screen" content="yes">`  
-**解释：**在UC浏览器中强制使用全屏展示网页
+**解释：**在UC浏览器中强制使用全屏显示网页
 
 **20.** `<meta name="x5-fullscreen" content="true">`  
 **解释：**在QQ浏览器中强制使用全屏显示网页
@@ -101,7 +101,7 @@ date: 2017-08-31 10:23:03
 **解释：**iphone的私有标签，它用于给iphone上的safari浏览器顶端的状态栏设置样式
 
 **30.** `<meta content="email=no" name="format-detection" />`  
-**解释：**告诉设备不要识别页面上的邮箱地址
+**解释：**告诉浏览器不要识别页面上的邮箱地址
 
 **31.** `<meta name="imagemode" content="force"/>`  
 **解释：**强制显示标签
