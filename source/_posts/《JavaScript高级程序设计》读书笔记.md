@@ -347,5 +347,17 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 **let：** 使用let声明的变量，其作用域为该语句所在的代码块内，不存在变量提升  
 **const：** 使用const声明的是常量，在后面出现的代码中不能再修改该常量的值
 
+##### 属性的描述符
+**Configurable：**表示能否通过delete删除属性，从而重新定义属性，能否修改属性的特性，或者能否把属性修改为访问器属性，它的默认值是true  
+**Enumerable：**表示能否通过 for-in 循环返回属性，它的默认值是true  
+**Writable：**表示能否修改属性的值，它的默认值是true  
+**Value：**属性的值
+
+##### 访问器属性的特性
+**Configurable：**表示能否通过delete删除属性，从而重新定义属性，能否修改属性的特性，或者能否把属性修改为访问器属性，它的默认值是true  
+**Enumerable：**表示能否通过 for-in 循环返回属性，它的默认值是true  
+**Get：**在读取属性时调用的函数，默认值为undefined  
+**Set：**在写入属性时调用的函数，默认值为undefined
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/](http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/)】
