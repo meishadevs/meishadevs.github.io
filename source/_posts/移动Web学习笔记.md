@@ -46,6 +46,15 @@ date: 2017-08-31 10:23:03
 **11. -webkit-box-sizing:border-box**  
 **解释：**当你指定了一个块级元素时，并且为其定义了边框，设置了其宽度为100％。在移动设备开发过程中我们通常会对文本框定义为宽度100％，将其定义为块级元素以实现全屏自适应的样式，但此时你会发现，该元素的边框(左右)各1个像素会溢了文档，导致出现横向滚动条，为解决这一问题，我们可以为其添加一个特殊的样式`-webkit-box-sizing:border-box;`用来指定该盒子的大小包括边框的宽度
 
+**12. em**  
+**解释：** em为相对长度单位。相对于当前对象内文本的字体尺寸  
+当em作为font-size的单位时，表示相对于父元素的font-size的倍数  
+例如：父元素的font-size的值为 16px  
+如果子元素的font-size: 2em，则子元素的字体大小为 16px X 2em = 32px  
+当em作为其他属性单位时，代表自身字体大小的倍数  
+例如：一个元素的font-size: 16px  
+如果该元素的line-height: 2em，则该元素的行高为 16px X 2em = 32px  
+
 **12. rem**  
 **解释：**rem是CSS3新引进的一个度量单位，其数值表示根节点(html标签)的字体大小的倍数，在当前的所有主流浏览器中根节点(html标签)的字体大小都为16px，即 html标签的font-size:16px，1rem = 16px,为了让后面方便计算，通常将1rem的值设为10px，通过将html标签的font-size值设为62.5%可以将html标签的font-size值设置为10px，因为 16px X 62.5% = 10px，此时以后凡是html标签下的标签都可以使用rem，例如在html标签下有个p标签，要将p标签的高度设为50px可以写成`p {height: 5rem;}`[点击此处查看详细介绍](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
 
