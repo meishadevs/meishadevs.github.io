@@ -1,14 +1,18 @@
 ---
-title: 常见的WebStrom使用技巧
+title: 常见的WebStrom使用技巧和Chrome使用技巧
 date: 2017-03-03
 categories:
 	- WebStrom
+	- Chrome
 tags:
     - WebStrom
+    - Chrome
 ---
 
-自己平时总结的一些使用WebStrom的小方法与小技巧。
+自己平时总结的一些使用WebStrom的使用技巧和Chrome浏览器使用技巧
 <!--more-->
+
+## WebStrom使用技巧
 
 - **标签名 + Tab键**可以快速输入一个标签 例如：div + Tab键可以快速输入：`<div></div>`
 
@@ -17,9 +21,6 @@ tags:
 
 
 - 左手按住**Alt键**，右手按住**鼠标左键往下拉**可以选中下拉线上的内容
-
-
-- 在浏览器中打开调试窗口的快捷键**F12** 或者 **Ctrl + Shift + I** 或者 **Ctrl + Shift + J**
 
 
 - 在WebStrom中输入`div*10`并且按下**Tab键**可以一次性输入10个div
@@ -59,6 +60,12 @@ tags:
 
 
 - **修改代码模板：**单击File --> Settings --> Editor --> File and Code Templates
+
+## Chrome浏览器使用技巧
+- 在浏览器中打开调试窗口的快捷键**F12** 或者 **Ctrl + Shift + I** 或者 **Ctrl + Shift + J**
+
+
+- 在Chrome浏览器下的console窗口中实现代码换行的快捷键 **Shift + Enter**
 
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
