@@ -59,7 +59,7 @@ date: 2017-08-31 10:23:03
 **解释：**rem是CSS3新引进的一个度量单位，其数值表示根节点(html标签)的字体大小的倍数，在当前的所有主流浏览器中根节点(html标签)的字体大小都为16px，即 html标签的font-size:16px，1rem = 16px,为了让后面方便计算，通常将1rem的值设为10px，通过将html标签的font-size值设为62.5%可以将html标签的font-size值设置为10px，因为 16px X 62.5% = 10px，此时以后凡是html标签下的标签都可以使用rem，例如在html标签下有个p标签，要将p标签的高度设为50px可以写成`p {height: 5rem;}`[点击此处查看详细介绍](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
 
 **14. -webkit-font-smoothing: antialiased**  
-**解释：**`-webkit-font-smoothing`属性用于定义字体的平滑属性。有关字体平滑的介绍可参考[字体渲染一文](http://ued.ctrip.com/blog/font-rendering.html)目前该属性已从W3C标准中移除，慎用！  
+**解释：**`-webkit-font-smoothing`属性用于定义字体的平滑属性。有关字体平滑的介绍可参考[字体渲染](http://ued.ctrip.com/blog/font-rendering.html)一文，目前该属性已从W3C标准中移除，慎用！  
 其属性值`antialiased`表示使用灰阶平滑
 
 **15.** `<meta name="apple-touch-fullscreen" content="yes">`  
