@@ -114,6 +114,27 @@ tags:
         }
     }
 
+**13.获得竖直方向上的滚动条到浏览器顶部的距离**
+
+	getScrollTop: function () {
+
+        var scrollPos;
+
+        if (window.pageYOffset) {
+
+          scrollPos = window.pageYOffset;
+
+        } else if (document.compatMode && document.compatMode !== 'BackCompat') {
+
+          scrollPos = document.documentElement.scrollTop;
+
+        } else if (document.body) {
+
+          scrollPos = document.body.scrollTop;
+        }
+
+        return scrollPos;
+      }
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/一些常见的JavaScript兼容性写法](http://meishadevs.com/blog/%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84JavaScript%E5%85%BC%E5%AE%B9%E6%80%A7%E5%86%99%E6%B3%95/)】
