@@ -155,5 +155,13 @@ tags:
 	type(/abcd/); // "regex"
 	type(new Date()); // "date"
 
+**16.获得任意范围内数字的随机数**
+
+	function getRandomInt(min, max) {
+	  return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+	
+	getRandomInt(1, 6) // 5
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/一些常见的JavaScript兼容性写法](http://meishadevs.com/blog/%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84JavaScript%E5%85%BC%E5%AE%B9%E6%80%A7%E5%86%99%E6%B3%95/)】
