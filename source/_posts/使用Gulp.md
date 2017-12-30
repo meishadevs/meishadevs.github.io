@@ -219,5 +219,10 @@ Gulp主文件用于注册任务
 打开less文件夹下的style.less文件，并且修改style.less文件，当保存后会自动将style.less文件编译成css文件，并且会自动创建一个css目录，在css目录下自动创建一个style.css文件用于存储生成的CSS代码
 ![这里写图片描述](http://img.blog.csdn.net/20170417204103113)
 
+## 参考链接
+- [gulp.js 中文网](https://www.gulpjs.com.cn/)
+- [一点 | gulp教程](http://www.ydcss.com/archives/tag/gulp)
+- [Browsersync中文网](http://www.browsersync.cn/)
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/使用Gulp](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Gulp/)】
