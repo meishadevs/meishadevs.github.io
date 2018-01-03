@@ -85,7 +85,7 @@ date: 2017-04-29 10:18:01
 #### 强行推送当前分支到远程仓库，其中branchName表示分支名称
 	git push origin branchName --force
 
-#### 修改远程仓库的Url地址
+#### 修改远程仓库的url地址
 
 	git remote set-url origin [url]
 
