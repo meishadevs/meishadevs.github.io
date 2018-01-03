@@ -87,7 +87,7 @@ date: 2017-04-29 10:18:01
 
 #### 修改远程仓库的url地址
 
-	git remote set-url origin [url]
+	git remote set-url origin url
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/常用的Git命令/](http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Git%E5%91%BD%E4%BB%A4/)】
