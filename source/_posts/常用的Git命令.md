@@ -56,8 +56,6 @@ date: 2017-04-29 10:18:01
 	git commit -m "update some data"
 
 #### 为本地仓库添加一个远程仓库
-
-	# 添加一个远端地址并起了一个别名叫origin
 	git remote add origin https://github.com/username/reponame.git
 
 
@@ -65,7 +63,7 @@ date: 2017-04-29 10:18:01
 	git remote -v
 
 #### 将本地仓库中master分支上的数据推送到远程仓库的master分支上，如果远程仓库中没有master分支，会在远程仓库上自动创建一个master分支
-	git push -u origin master
+	git push origin master
 
 #### 拉取远程仓库中的master分支上的数据到本地仓库
 	git pull origin master
@@ -85,7 +83,7 @@ date: 2017-04-29 10:18:01
 #### 强行推送当前分支到远程仓库，其中branchName表示分支名称
 	git push origin branchName --force
 
-#### 修改远程仓库的url地址
+#### 修改远程仓库的url地址，其中url表示远程创库的地址
 
 	git remote set-url origin url
 

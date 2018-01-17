@@ -28,20 +28,18 @@ Less是一款比较流行的预处理CSS，支持变量、混合、函数、嵌�
 ### **需要用到的软件**  
 **[Node.js](http://nodejs.cn/)**
 
-### **安装Less**
-**1.特别说明**  
-安装Less之前需要先安装Node.js，安装Node.js的方法可以参考我之前的博客[使用NVM安装Node.js](http://meishaxiaozi.online/blog/%E4%BD%BF%E7%94%A8NVM%E5%AE%89%E8%A3%85Nodejs/)
+### 安装Less
 
-**2.执行安装Less的命令**  
-在命令行窗口中执行 `npm install -g less` 命令，可以安装Less，这个过程比较慢，需要翻墙  
+	npm install -g less
 
-### **使用Less**
+### 使用Less
+
 **创建Less文件**  
 在一个文件夹下新建一个style.less文件，例如我在E:\game\HtmlProject\less下创建了一个style.less文件
 ![这里写图片描述](http://img.blog.csdn.net/20170326102025941)
 
-**向在文件中写入Less代码**
-向style.less文件中写入下面的Less代码
+**向文件中添加Less代码**
+向style.less文件中添加下面的Less代码
 
 	//定义一个变量，用于存放一个颜色
 	@mainColor: #e92322;

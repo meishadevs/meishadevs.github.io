@@ -10,11 +10,11 @@ tags:
 ---
 
 # 为什么要使用Gulp
-在前端开发中通常需要做，预处理语言的编译、js文件的压缩、css文件的压缩、图片的压缩等一系列工作，而使用Gulp可以自动化的完成这些工作，从而提高网站的开发效率，在我的博客[使用Less](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Less/)中介绍了将Less文件编译成CSS文件的方法，仔细观察可以看到如果按照博客中介绍的方法，在编译多个Less文件或者编译不同文件夹下的Less文件时需要多次执行Less文件编译命令，而使用Gulp可以一次性完成这些操作。
+在前端开发中通常需要做，预处理语言的编译、js文件的压缩、css文件的压缩、图片的压缩等一系列工作，而使用Gulp可以自动化的完成这些工作，从而提高网站的开发效率，在我的博客[使用Less](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Less/)中介绍了将Less文件编译成CSS文件的方法，仔细观察可以看到如果按照博客中介绍的方法，在编译多个Less文件或者编译不同文件夹下的Less文件时需要执行多次Less文件编译命令，而使用Gulp可以一次性完成这些操作
 <!-- more -->
 
 # Gulp是什么
-Gulp是一个可以自动化完成我们开发过程中大量的重复工作的工具，使用Gulp可以自动化的完成如，预处理语言的编译、js文件的压缩、css文件的压缩、html文件的压缩、图片体积优化等工作。
+Gulp是一个可以自动化完成我们开发过程中大量的重复工作的工具，使用Gulp可以自动化的完成如，预处理语言的编译、js文件的压缩、css文件的压缩、html文件的压缩、图片体积优化等工作
 
 # Gulp的特性
 - **易于使用** 通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理
@@ -31,16 +31,19 @@ Gulp是一个可以自动化完成我们开发过程中大量的重复工作的�
 
 # Gulp的安装与使用
 
-### **安装Gulp**
+### Gulp的简单应用
 **1. 全局安装Gulp**  
 
 	npm install --global gulp
 
-**2. 创建一个code文件夹，并且进入到code文件夹下**  
+**2. 创建一个code文件夹，并进入到code文件夹下**  
 下面的命令是在Git bash中运行的，运行这几条命令，需要安装Git，没有安装Git的可以在电脑上自己手动创建一个code文件夹，并且进入code文件夹下  
 
-	mkdir code (创建code文件夹)
-	cd code (进入code文件夹下)
+	# 创建code文件夹
+	mkdir code
+
+	# 进入code文件下
+	cd code 
 
 **3.执行下面的命令创建package.json文件**  
 
@@ -92,9 +95,14 @@ Gulp主文件用于注册任务
 **1.创建一个src文件夹，并且在src文件夹下创建一个index.html文件**  
 在Git Bash中执行下面的命令创建一个src文件夹，并在src文件夹下创建一个index.htmll文件，没有安装Git的可以手动创建
 
-	mkdir src (创建src文件夹)
-	cd src (进入到src文件夹中)
-	touch index.html (创建index.html文件)
+	# 创建src文件夹
+	mkdir src 
+
+	# 进入到src文件夹下
+	cd src
+
+	# 创建index.html文件
+	touch index.html
 
 **2.向index.html中添加HTML代码**
 
@@ -162,7 +170,7 @@ Gulp主文件用于注册任务
 **6.此时只要修改src文件夹的index.html文件,修改完成后只要一保存，HTML代码就能同时同步到dist文件夹下的index.html中**
 ![这里写图片描述](http://img.blog.csdn.net/20170416113431492)
 
-### 使用Gulp实现自动将Less编译成CSS
+### 使用Gulp自动将Less编译成CSS
 下面的操作都是在项目中安装了Gulp的情况下进行的，没有安装Gulp可以看前面的**Gulp的安装与使用**中的内容
 
 **1.安装gulp-less插件**
@@ -171,10 +179,15 @@ Gulp主文件用于注册任务
 
 **2.创建Less文件**  
 在Git Bash中执行下面的命令创建一个less文件夹，并且在less文件夹下创建一个style.less文件，在没有安装Git Bash的情况下可以手动创建
-	
-	mkdir less (创建less文件夹)
-	cd less (进入less文件夹)
-	touch style.less (创建style.less文件)
+
+	# 创建less文件夹
+	mkdir less 
+
+	# 进入less文件夹中
+	cd less
+
+	# 创建style.less文件
+	touch style.less
 
 **3.向style.less中添加一段简单的Less代码**
 	
