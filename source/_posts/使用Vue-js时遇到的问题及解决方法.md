@@ -8,22 +8,23 @@ tags:
 date: 2017-12-01 16:14:29
 ---
 
-**1.在执行 npm run dev 命令的时候出现8080端口被占用**  
+#### 在执行 npm run dev 命令的时候出现8080端口被占用
 在任务管理器中手动结束所有Node.exe进程
 <!-- more -->
 
-**2.使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性**  
-在组件上添加一个key属性
+#### 使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性
+当使用v-for指令遍历组件时，需要在组件上添加一个key属性
 
 	<router-link to="/select" v-for="content in item.classContent" :key="content.id">{{ content }}</router-link>
 
-**3.[Vue warn]: Do not use built-in or reserved HTML elements as component id: head**  
+#### 使用Head标签命名组件报错
 不能使用标签名作为组件名
 
-**4.执行npm run build命令构建Vue.js项目后，在浏览器中打开生成的HTML文件，网站资源文件的路径错误**  
+#### 执行npm run build命令构建Vue.js项目后，在浏览器中打开生成的HTML文件，网站资源文件的路径错误
 进入项目目录下的`config/index.js`文件中的`build`对象下的`assetsPublicPath`属性，将`assetsPublicPath`属性的值由 `assetsPublicPath: '/'`，改成 `assetsPublicPath: './'`
 
-**5.执行npm run build命令构建Vue项目后，生成的CSS文件中background url()图片路径错误**  
+#### 执行npm run build命令构建Vue项目后，生成的CSS文件中background url()图片路径错误
+
 需要单独为 css 配置 publicPath   
 ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为css单独配置 publicPath 
 
@@ -52,8 +53,63 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 
 最后附上 [extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin/blob/master/README.md) 的文档。
 
-**6. vue.esm.js?f077:574 [Vue warn]: Avoid mutating a prop directly since the value will be overwritten whenever the parent component re-renders. Instead, use a data or computed property based on the prop's value. Prop being mutated: "selectIndex"**  
-不能修改`  props: ['selectIndex']`中的`selectIndex`
+#### 修改props属性中的值报错
+
+不能在组件中直接修改props属性中的值，可以通过引入一个中间变量修改prps中的值
+
+	 export default {
+	
+	    //获取从父组件中传递过来的数据
+	    props: ["curPage"],
+	
+	    data() {
+	      return {
+	
+	        //引入一个中间变量
+	        temp: 0
+	      };
+	    },
+	
+	    //初始化
+	    mounted() {
+	      this.$nextTick(() => {
+	
+	        //将从父组件中传递过来的数据赋值给中间变量
+	        this.temp = this.curPage;
+	
+	        //修改中间变量的值
+	        this.temp = 123;
+	      });
+	    }
+	  };
+
+#### 关于Vue中的 render: h => h(App) 具体是什么含义？
+大概的翻译下：
+`render: h => h(App)` 是下面内容的缩写：
+
+	render: function (createElement) {
+	    return createElement(App);
+	}
+
+进一步缩写为(ES6 语法)：
+
+	render (createElement) {
+	    return createElement(App);
+	}
+
+再进一步缩写为：
+
+	render (h){
+	    return h(App);
+	}
+
+按照 ES6 箭头函数的写法，就得到了：
+
+	render: h => h(App);
+
+#### 参考链接
+- [https://github.com/vuejs/vue-loader/issues/481#](https://github.com/vuejs/vue-loader/issues/481#)  
+- [https://segmentfault.com/q/1010000007130348](https://segmentfault.com/q/1010000007130348)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[使用Vue.js时遇到的问题及解决方法](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Vue-js%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/)】
