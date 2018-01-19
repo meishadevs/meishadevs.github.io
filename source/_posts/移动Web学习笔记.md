@@ -74,52 +74,55 @@ date: 2017-08-31 10:23:03
 **18.** `<meta name="google-site-verification" content="">`  
 **解释：**将网站添加进google网站管理，有利于google的收录
 
-**19.** `<meta name="screen-orientation" content="portrait">`  
-**解释：**网页在浏览器上强制使用竖屏显示
+**19.** `<meta name="screen-orientation"   content="portrait">`  
+**解释：**浏览器使用竖屏显示网页
 
-**20.** `<meta name="apple-mobile-web-app-capable" content="yes">`  
+**20.** `<meta name="screen-orient" content="landscape">`  
+**解释：**浏览器使用横屏显示网页
+
+**21.** `<meta name="apple-mobile-web-app-capable" content="yes">`  
 **解释：**启用webapp的全屏模式，删除iPad或者iPhone上默认的工具栏和菜单栏
 
-**21.** `<meta name="full-screen" content="yes">`  
+**22.** `<meta name="full-screen" content="yes">`  
 **解释：**在UC浏览器中强制使用全屏显示网页
 
-**22.** `<meta name="x5-fullscreen" content="true">`  
+**23.** `<meta name="x5-fullscreen" content="true">`  
 **解释：**在QQ浏览器中强制使用全屏显示网页
 
-**23.** `spellcheck="false"`  
+**24.** `spellcheck="false"`  
 **解释：**给类似于textarea、input标签添加`spellcheck="false"s属性后当向标签中输入的单词拼写错误，不会产生红色的波浪线
 
-**24.** `-webkit-appearance: none`  
+**25.** `-webkit-appearance: none`  
 **解释：**`-webkit-appearance`用于改变按钮和其他控件的外观，使其类似于原生控件，其属性值`none`用于去除系统默认appearance的样式，常用于IOS下移除原生样式
 
-**25.** `<input type="search">`  
+**26.** `<input type="search">`  
 ***解释：**使用`<input type="search">`制作搜索框，当在手机上点击搜索框时会弹出一个软键盘，软键盘上的enter按钮会以搜索按钮的形式显示 
 
-**26.** `<meta http-equiv="X-UA-Compatible" content="ie=edge">`  
+**27.** `<meta http-equiv="X-UA-Compatible" content="ie=edge">`  
 **解释：**如果网页在IE浏览器上运行，使用最新的edge浏览器渲染网页
 
-**27.** `<meta http-equiv="Cache-Control" content="no-cache">`  
+**28.** `<meta http-equiv="Cache-Control" content="no-cache">`  
 **解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-cache表示不缓存请求的消息或者响应的消息[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
-**28.** `<meta http-equiv="cache-control" content="no-store">`  
+**29.** `<meta http-equiv="cache-control" content="no-store">`  
 **解释：**Cache-Control表示指定请求和响应遵循的缓存机制，其中no-store用于防止重要的信息被无意的发布[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
-**29.** `<meta http-equiv="Pragma" content="no-cache">`  
+**30.** `<meta http-equiv="Pragma" content="no-cache">`  
 **解释：**Pragme用于定义页面缓存，其中no-cache表示不缓存页面[点击此处查看详细介绍](http://blog.csdn.net/m0_38073829/article/details/75453050)
 
-**30.** `<link rel="dns-prefetch" href="">`  
+**31.** `<link rel="dns-prefetch" href="">`  
 **解释：**预解析技术，当你浏览网页时，浏览器会在加载网页时对网页中的域名进行解析缓存，这样在你单击当前网页中的连接时就无需进行DNS的解析，减少用户等待时间，提高用户体验，[点击此处查看详细介绍](http://www.sojson.com/blog/218.html)
 
-**31.** `<meta name="apple-mobile-web-app-status-bar-style" content="black">`  
+**32.** `<meta name="apple-mobile-web-app-status-bar-style" content="black">`  
 **解释：**iphone的私有标签，它用于给iphone上的safari浏览器顶端的状态栏设置样式
 
-**32.** `<meta content="email=no" name="format-detection" />`  
+**33.** `<meta content="email=no" name="format-detection" />`  
 **解释：**告诉浏览器不要识别页面上的邮箱地址
 
-**33.** `<meta name="imagemode" content="force"/>`  
+**34.** `<meta name="imagemode" content="force"/>`  
 **解释：**强制显示标签
 
-**34.** `<meta name="theme-color" content="#BF3030">`  
+**35.** `<meta name="theme-color" content="#BF3030">`  
 **解释：**使用浏览器访问网页时，改变浏览器上状态栏的背景颜色
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
