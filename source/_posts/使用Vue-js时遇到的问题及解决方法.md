@@ -107,9 +107,22 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 
 	render: h => h(App);
 
+#### 使用ES6中的属性简写
+
+	new Vue({
+	  router
+	});
+
+是下面代码的简写形式
+
+	new Vue({
+	  router: router
+	});
+
 #### 参考链接
-- [https://github.com/vuejs/vue-loader/issues/481#](https://github.com/vuejs/vue-loader/issues/481#)  
-- [https://segmentfault.com/q/1010000007130348](https://segmentfault.com/q/1010000007130348)
+- [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
+- [关于Vue中的 render: h => h(App) 具体是什么含义？](https://segmentfault.com/q/1010000007130348)
+- [ECMAScript 6入门](http://es6.ruanyifeng.com/)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[使用Vue.js时遇到的问题及解决方法](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Vue-js%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/)】

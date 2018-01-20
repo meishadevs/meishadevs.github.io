@@ -62,6 +62,15 @@ date: 2017-08-31 10:23:03
 **解释：**`-webkit-font-smoothing`属性用于定义字体的平滑属性。有关字体平滑的介绍可参考[字体渲染](http://ued.ctrip.com/blog/font-rendering.html)一文，目前该属性已从W3C标准中移除，慎用！  
 其属性值`antialiased`表示使用灰阶平滑
 
+**15. 自定义滚动条的样式**  
+**::-webkit-scrollbar** 滚动条整体部分  
+**::-webkit-scrollbar-thumb**  滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）  
+**::-webkit-scrollbar-track** 滚动条的轨道（里面装有Thumb）  
+**::-webkit-scrollbar-button** 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。  
+**::-webkit-scrollbar-track-piece** 内层轨道，滚动条中间部分（除去）  
+**::-webkit-scrollbar-corner** 边角，即两个滚动条的交汇处  
+**::-webkit-resizer** 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+
 **15.** `<meta name="apple-touch-fullscreen" content="yes">`  
 **解释：**添加到主屏幕上后全屏显示  
 
@@ -124,6 +133,9 @@ date: 2017-08-31 10:23:03
 
 **35.** `<meta name="theme-color" content="#BF3030">`  
 **解释：**使用浏览器访问网页时，改变浏览器上状态栏的背景颜色
+
+## 参考链接
+- [CSS3自定义滚动条样式 -webkit-scrollbar](https://www.xuanfengge.com/css3-webkit-scrollbar.html)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/移动Web学习笔记/](http://meishadevs.com/blog/移动Web学习笔记/)】
