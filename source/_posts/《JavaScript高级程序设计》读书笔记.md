@@ -359,5 +359,9 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 **Get：**在读取属性时调用的函数，默认值为undefined  
 **Set：**在写入属性时调用的函数，默认值为undefined
 
+##### target 与 currentTarget
+**target：**返回触发事件的那个节点，即事件最初发生的节点  
+**currentTarget：**返回事件当前所在的节点，即正在执行的监听函数所绑定的那个节点
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/](http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/)】
