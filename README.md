@@ -9,6 +9,6 @@ Web前端开发者，爱技术，爱开源，爱分享
 - Weibo：[码农boy](http://weibo.com/u/3170066893?is_all=1)
 - 知乎：[meishadevs](https://www.zhihu.com/people/meishaxiaozi/activities)
 - CSDN：[meishadevs](http://blog.csdn.net/u010105970)
-- 邮箱：[meishadevs@163.com](meishadevs@163.com)
+- 邮箱：[meishadevs@gmail.com](meishadevs@gmail.com)
 - QQ：[1042121058](1042121058)
 
