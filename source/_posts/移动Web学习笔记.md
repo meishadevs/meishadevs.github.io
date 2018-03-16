@@ -134,6 +134,15 @@ date: 2017-08-31 10:23:03
 **35.** `<meta name="theme-color" content="#BF3030">`  
 **解释：**使用浏览器访问网页时，改变浏览器上状态栏的背景颜色
 
+**36.** `<meta name="HandheldFriendly" content="true"> `  
+**解释：**使得手持设备能正常的渲染移动端页面，使得不识别 viewport 的浏览器能正常渲染移动端页面，比如：黑莓  
+
+**37.** `<meta name="MobileOptimized" content="320"> `  
+**解释：**使得微软的老式浏览器能渲染移动端能正常的渲染移动端页面  
+
+**38.** `<meta http-equiv="cleartype" content="on">`  
+**解释：**不使用clearType字体
+
 ## 参考链接
 - [CSS3自定义滚动条样式 -webkit-scrollbar](https://www.xuanfengge.com/css3-webkit-scrollbar.html)
 
