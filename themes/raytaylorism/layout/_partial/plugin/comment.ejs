@@ -4,52 +4,20 @@ var pageUrl = page.permalink;
 var pageTitle = page.title;
 %>
 
-<% if (theme.disqus_shortname && page.comments){ %>
-    <section id="comment">
-        <div id="disqus_thread"></div>
-        <script>
-            var disqus_config = function() {
-                this.page.url = '<%= pageUrl %>';
-                this.page.identifier = '<%= pageId %>';
-            };
-            (function() {
-                var d = document,
-                    s = d.createElement('script');
-                s.src = '//<%= theme.disqus_shortname %>.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', + new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
-        </noscript>
-    </section>
-<% } else if (theme.duoshuo_shortname && page.comments){ %>
-    <section id="comment">
-        <div class="card">
-            <div class="card-content">
-                <!-- Duoshuo Comment BEGIN -->
-                <div class="ds-thread" data-thread-key="<%= pageId %>" data-title="<%= pageTitle %>" data-url="<%= pageUrl %>"></div>
-                <script type="text/javascript">
-                    console.log(document.querySelector('.ds-thread'));
-                    var duoshuoQuery = {
-                        short_name: '<%= theme.duoshuo_shortname %>'
-                    };
-                    (function() {
-                        var ds = document.createElement('script');
-                        ds.type = 'text/javascript';
-                        ds.async = true;
-                        ds.src = (document.location.protocol == 'https:'
-                            ? 'https:'
-                            : 'http:') + '//static.duoshuo.com/embed.js';
-                        ds.charset = 'UTF-8';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-                    })();
-                </script>
-                <!-- Duoshuo Comment END -->
-            </div>
-        </div>
-    </section>
-<% } else if (theme.yungentie_product_key && page.comments){ %>
-	
-<% } %>
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: '<%= page.date %>', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
