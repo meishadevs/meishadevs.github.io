@@ -43,13 +43,7 @@ tags:
     -ms-user-select: none;
     user-select: none;
 
-##### 5. 使用flex布局
-
-	display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-
-##### 6. 使用绝对定位将子元素元素的宽度设为父元素宽度的100%，将子元素的高度设为父元素高度的100%
+##### 5. 使用绝对定位将子元素元素的宽度设为父元素宽度的100%，将子元素的高度设为父元素高度的100%
 
 	.parent {
 		position: relative
@@ -63,7 +57,7 @@ tags:
 		 bottom: 0;
 	}
 
-##### 7. 使用绝对定位加CSS3中的transform将子元素设置到父元素的正中间
+##### 6. 使用绝对定位加CSS3中的transform将子元素设置到父元素的正中间
 
 	.parent {
         position: relative;
@@ -78,6 +72,14 @@ tags:
 	    position: absolute;
 	    left: 50%;
 	    top: 50%;
+	}
+
+##### 7. 使用flex将子元素设置到父元素的正中间
+
+	.parent {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
 	}
 
 ##### 8. 隐藏溢出标签中的文本并且在标签最后增加一个省略号
@@ -133,7 +135,7 @@ tags:
         }
     }
 
-##### 11.使用 flex 布局的兼容性写法
+##### 11. 使用 flex 布局的兼容性写法
 
 	.flex {
 	    display: -webkit-box;
@@ -141,7 +143,7 @@ tags:
 	    display: flex;
 	}
 
-##### 12.使用 flex 布局实现元素均等分配
+##### 12. 使用 flex 布局实现元素均等分配
 
 	.flex-1 {
 		-webkit-flex: 1;
