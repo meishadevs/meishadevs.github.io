@@ -27,14 +27,14 @@ date: 2017-10-21 17:40:54
 	npm install -g browser-sync 
 
 ##### 第二步：进入移动端页面中的index.html所在的文件路径下
-![](http://img.blog.csdn.net/20171021182843152))
+![](http://oq3pg8pg4.bkt.clouddn.com/20171021182843152.png)
 
 ##### 第三步：运行Browsersync
 	
 	browser-sync start --server
 
 此时会自动使用默认的浏览器打开网页，并且在命令行窗口中会显示四个Url地址，其中上面两个表示当前网页的Url地址下面两个Url地址用于打开Browsersync管理页，在Browsersync管理页中可以控制网页  
-![](http://img.blog.csdn.net/20171021184022959)
+![](http://oq3pg8pg4.bkt.clouddn.com/20171021184022959.png)
 	
 此时在手机浏览器上运行[http://192.168.0.102:3000](http://192.168.0.102:3000)就可以在手机上看到这个网页，前提必须使手机和电脑连接在同一wifi下  
 

@@ -36,7 +36,7 @@ Less是一款比较流行的预处理CSS，支持变量、混合、函数、嵌�
 
 **创建Less文件**  
 在一个文件夹下新建一个style.less文件，例如我在E:\game\HtmlProject\less下创建了一个style.less文件
-![这里写图片描述](http://img.blog.csdn.net/20170326102025941)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170326102025941.png)
 
 **向文件中添加Less代码**
 向style.less文件中添加下面的Less代码
@@ -53,15 +53,15 @@ Less是一款比较流行的预处理CSS，支持变量、混合、函数、嵌�
 
 **将Less文件编译成CSS文件**
 打开命令行，并且进入到style.less所在的目录下执行`lessc style.less`命令将Less文件编译成CSS文件，生成的CSS文件会显示在命令行中
-![这里写图片描述](http://img.blog.csdn.net/20170326103159306)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170326103159306.png)
 
 **将编译生成的CSS文件保存在本地**
 在命令行中执行`lessc style.less > style.css`命令后，会先在style.less文件的同级目录下创建一个style.css文件，并且将编译生成的CSS代码保存在style.css文件中
-![这里写图片描述](http://img.blog.csdn.net/20170326103704105)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170326103704105.png)
 
 **查看style.css中的代码**
 打开style.css文件后，可以看到style.css中的CSS代码和在命令行中的代码一样
-![这里写图片描述](http://img.blog.csdn.net/20170326104523338)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170326104523338.png)
 
 **压缩CSS**
 在开发中，为了减少网络请求资源的大小，通常需要压缩CSS文件，Less中提供了一个压缩CSS的插件，先执行`npm install -g less-plugin-clean-css`命令安装插件，然后执行`lessc style.less --clean-css="--s1 --advanced --compatibility=ie8" > style.min.css`命令，执行该命令后首先会将Less代码编译成CSS代码，然后会压缩CSS代码，最后会创建一个style.min.css文件，并且将压缩后的CSS代码保存到style.min.css文件中
@@ -109,7 +109,7 @@ Less是一款比较流行的预处理CSS，支持变量、混合、函数、嵌�
 	}
 
 编译生成的CSS代码如下
-![这里写图片描述](http://img.blog.csdn.net/20170326111954541)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170326111954541.png)
 
 **Less中使用函数**
 在下面的代码中body，header，footer标签都要设置border-radius属性，为了减少代码量可以创建一个setRadius函数，让这三个标签都通过调用setRadius函数设置border-radius属性大大的减少了代码量，提高了开发效率
@@ -142,7 +142,7 @@ Less是一款比较流行的预处理CSS，支持变量、混合、函数、嵌�
 	}
 
 执行结果
-![这里写图片描述](http://img.blog.csdn.net/20170326114125041)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170326114125041.png)
 
 **合并less文件**
 在开发中使用less文件的合并功能是一个非常高效且很适合团队开发的方式，比如在一个团队中有三个成员，A成员负责开发页面的header部分，A成员可以建立一个header.less文件，B成员负责开发页面中的banner部分，B成员可以创建一个banner.less文件，C成员负责开发页面中的footer部分，C成员可以建议一个footer.less文件，开发完成后可以将header.less、banner.less、footer.less合并在一个CSS文件中
@@ -176,7 +176,7 @@ footer.less中的代码
 	@import url('footer.less');
 
 编译index.less文件，编译结果如下，可以看到三个less文件中的代码都编译成了CSS文件，并且放在一起
-![这里写图片描述](http://img.blog.csdn.net/20170326120411756)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170326120411756.png)
 
 # 在网页中直接使用Less
 
@@ -185,7 +185,7 @@ footer.less中的代码
 ## 配置在网页中直接运行Less的环境
 **下载less.js-2.5.1文件**
 通过[https://pan.baidu.com/s/1pLM3j6r](https://pan.baidu.com/s/1pLM3j6r)下载less.js-2.5.1.zip文件
-![这里写图片描述](http://img.blog.csdn.net/20170327105805389)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170327105805389.png)
 
 **创建项目**
 创建一个项目。并且将less.js-2.5.1.zip解压到项目目录下
@@ -231,11 +231,11 @@ footer.less中的代码
 
 **运行项目**
 使用HTTP请求的方式在浏览器中运行index.html文件，WebStrom中点击运行按钮后会自动以HTTP请求的方式在浏览器中运行index.html文件，此时查看console控制台，当console控制台中展示下面的信息，表示项目运行成功
-![这里写图片描述](http://img.blog.csdn.net/20170327110802691)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170327110802691.png)
 
 **查看元素信息**
 在Elements模块下可以看到为body元素设置了CSS样式，表示Less文件在网页中运行成功
-![这里写图片描述](http://img.blog.csdn.net/20170327111130924)
+![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170327111130924.png)
 
 ## 特别说明
 这种方法只能用于开发测试中，开发完成后需要将Less编译成CSS
