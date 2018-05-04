@@ -6,7 +6,7 @@ Web前端开发者，爱技术，爱开源，爱分享
 
 ## 联系我
 - Github：[meishadevs](https://github.com/meishadevs)
-- Weibo：[码农boy](http://weibo.com/u/3170066893?is_all=1)
+- Weibo：[meishadevs](http://weibo.com/u/3170066893?is_all=1)
 - 知乎：[meishadevs](https://www.zhihu.com/people/meishaxiaozi/activities)
 - CSDN：[meishadevs](http://blog.csdn.net/u010105970)
 - 邮箱：[meishadevs@gmail.com](meishadevs@gmail.com)
