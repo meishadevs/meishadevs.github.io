@@ -50,6 +50,13 @@ date: 2018-05-07 20:50:54
     values('何煜中', 19, '男', 90, 73, 82);
     insert into StuInfo(Name, Age, Sex, Chinese, Math, English)
     values('王磊', 21, '男', 87, 86, 92);
+	
+#### 向表中插入数据的简便写法
+
+    insert into StuInfo values('刘得意', 19, '男', 60, 98, 75);
+    insert into StuInfo values('王锐	', 20, '男', 63, 90, 96);
+    insert into StuInfo values('何煜中', 19, '男', 90, 73, 82);
+    insert into StuInfo values('王磊', 21, '男', 87, 86, 92);
 
 #### 删除websites表中name字段值为百度, country字段值为CN的数据
     delete from websites where name='百度' and country='CN';
