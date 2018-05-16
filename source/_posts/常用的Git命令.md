@@ -22,6 +22,9 @@ date: 2017-04-29 10:18:01
 #### 将提交代码的邮箱设置为email
 	git config --global user.email email
 
+####  下载一个项目和它的整个代码历史到本地  
+	git clone url
+
 #### 查看本地分支
 	git branch
 
