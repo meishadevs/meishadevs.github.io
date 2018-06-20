@@ -364,4 +364,4 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 **currentTarget：**返回事件当前所在的节点，即正在执行的监听函数所绑定的那个节点
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/](http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/)】
+转载请注明： 【文章转载自meishadevs：[《JavaScript高级程序设计》读书笔记](http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/)】

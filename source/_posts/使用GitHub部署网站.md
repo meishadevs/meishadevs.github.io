@@ -135,4 +135,4 @@ tags:
 	https:// + username.github.io/ + GitHub上的仓库名
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/使用GitHub部署网站](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8GitHub%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/)】
+转载请注明： 【文章转载自meishadevs：[使用GitHub部署网站](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8GitHub%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/)】

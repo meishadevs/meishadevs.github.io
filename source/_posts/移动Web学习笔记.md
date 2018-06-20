@@ -147,4 +147,4 @@ date: 2017-08-31 10:23:03
 - [CSS3自定义滚动条样式 -webkit-scrollbar](https://www.xuanfengge.com/css3-webkit-scrollbar.html)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/移动Web学习笔记/](http://meishadevs.com/blog/移动Web学习笔记/)】
+转载请注明： 【文章转载自meishadevs：[移动Web学习笔记](http://meishadevs.com/blog/移动Web学习笔记/)】

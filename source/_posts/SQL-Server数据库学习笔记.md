@@ -221,4 +221,4 @@ date: 2018-05-07 20:50:54
 - [sql server 添加表注释、字段注释](https://blog.csdn.net/stupidbird003/article/details/64562683)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[SQL-Server数据库学习笔记](http://meishadevs.com/blog/SQL-Server%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/)】
+转载请注明： 【文章转载自meishadevs：[SQL Server数据库学习笔记](http://meishadevs.com/blog/SQL-Server%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/)】

@@ -78,4 +78,4 @@ Ctrl + T
 选中需要切下来的图片——单击鼠标右键——选择插入矩形切片——在优化面板中设置图片的格式和背景颜色——选中切片——单击鼠标右键——选择导出所选切片——设置图片的名称和存储路径——单击保存可以将图片存储在本地
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/Fireworks切图](http://meishadevs.com/blog/Fireworks%E5%88%87%E5%9B%BE/)】
+转载请注明： 【文章转载自meishadevs：[Fireworks切图](http://meishadevs.com/blog/Fireworks%E5%88%87%E5%9B%BE/)】
