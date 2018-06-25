@@ -11,15 +11,19 @@ date: 2017-04-29 10:18:01
 <!--more-->
 
 #### 获得提交代码的用户名
+	# --global为可选参数，当在命令中使用--glabal表示所有项目提交代码时都用该用户名，诺不加--global表示只用提交当前项目的代码用该用户名
 	git config --global user.name
 
 #### 获得提交代码的邮箱
+	# --global为可选参数，当在命令中使用--glabal表示所有项目提交代码时都用该邮箱，诺不加--global表示只用提交当前项目的代码用该邮箱
 	git config --global user.email
 
 #### 将提交代码的用户名设置为username
+	# --global为可选参数，当在命令中使用--glabal表示所有项目提交代码时都用该用户名，诺不加--global表示只用提交当前项目的代码用该用户名
 	git config --global user.name username
 
 #### 将提交代码的邮箱设置为email
+	# --global为可选参数，当在命令中使用--glabal表示所有项目提交代码时都用该邮箱，诺不加--global表示只用提交当前项目的代码用该邮箱
 	git config --global user.email email
 
 ####  下载一个项目和它的整个代码历史到本地  
