@@ -59,6 +59,9 @@ tags:
 - `meta:vp` + **Tab键**可以快速输入viewport  
 
 
+- 全局搜索的快捷键**Ctrl + Shift + N**
+
+
 - **修改代码模板：**单击File --> Settings --> Editor --> File and Code Templates
 
 ## Chrome浏览器使用技巧
