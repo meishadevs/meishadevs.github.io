@@ -67,6 +67,10 @@ tags:
 
 - **idea中导入jar包的方法：**将光标移动到需要导入 jar 包的类上，并按 Alt + Enter
 
+
+- **根据行号查找代码的快捷键：Ctrl + G**
+
+
 ## Chrome浏览器使用技巧
 - 在浏览器中打开调试窗口的快捷键**F12** 或者 **Ctrl + Shift + I** 或者 **Ctrl + Shift + J**
 
