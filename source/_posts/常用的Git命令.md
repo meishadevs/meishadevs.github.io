@@ -102,6 +102,10 @@ date: 2017-04-29 10:18:01
 
 	git checkout -b develop origin/develop
 
+#### 回退到上一次提交
+
+	git reset --hard HEAD^
+
 #### 解码 base64 编码
 
 	echo base64码 | base64 -d
