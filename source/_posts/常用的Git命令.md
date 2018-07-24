@@ -106,6 +106,27 @@ date: 2017-04-29 10:18:01
 
 	git reset --hard HEAD^
 
+#### 撤销没被 git add 到暂存区的文件的修改
+
+	git checkout fileName
+
+#### 撤销被 git add 到暂存区并且没使用 git commit 提交的文件的修改
+
+	# 先将文件从暂存区移除(但是文件会保留在工作区)
+	git reset HEAD fileName
+	
+	# 撤销工作区中文件的修改
+	git checkout fileName 
+
+#### 撤销已提交的的文件更改
+
+	# 先回退到工作区
+	git reset HEAD^
+
+	# 再撤销工作区中对文件的修改
+	git checkout fileName
+
+
 #### 解码 base64 编码
 
 	echo base64码 | base64 -d
