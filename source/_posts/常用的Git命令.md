@@ -126,6 +126,9 @@ date: 2017-04-29 10:18:01
 	# 再撤销工作区中对文件的修改
 	git checkout fileName
 
+#### 撤销所有没使用 git add 添加到暂存区的更改 
+
+	git checkout .
 
 #### 解码 base64 编码
 
