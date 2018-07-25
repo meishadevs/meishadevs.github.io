@@ -130,6 +130,10 @@ date: 2017-04-29 10:18:01
 
 	git checkout .
 
+#### 查看git操作记录
+
+	git reflog
+
 #### 解码 base64 编码
 
 	echo base64码 | base64 -d
