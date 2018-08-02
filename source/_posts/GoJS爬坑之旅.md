@@ -74,5 +74,10 @@ date: 2018-07-05 21:00:39
 
 ## 使用GoJS实现一个拖拽效果
 
+下图是我使用GoJS实现的一个简单的拖拽效果，整个拖拽界面由两部分组成，左侧菜单和右侧画布，左侧菜单中包含容器、计算、存储、容灾、CDM节点，用户根据需要将节点拖入对应容器中，例如：计算节点只能拖入计算容器中，存储节点只能拖入存储容器中等，当将节点拖入与节点不匹配的容器中时，节点不能添加到容器中，当将节点添加到对应的容器中后会给节点编号，例如第一个计算节点命名为计算1，第二个计算节点命名为计算2，当删除节点时会对容器中已有的节点重新编号
+![](http://oqdyj5870.bkt.clouddn.com/20180802.png)
+项目地址：[http://meishadevs.com/JavaScriptDemo/拖拽效果/](http://meishadevs.com/JavaScriptDemo/%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C/)  
+项目源码：[https://github.com/meishadevs/JavaScriptDemo/tree/master/拖拽效果](https://github.com/meishadevs/JavaScriptDemo/tree/master/%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C)
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[]()】
+转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/GoJS爬坑之旅/](http://meishadevs.com/blog/GoJS%E7%88%AC%E5%9D%91%E4%B9%8B%E6%97%85/)】
