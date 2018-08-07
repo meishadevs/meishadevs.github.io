@@ -65,9 +65,6 @@ tags:
 - **修改代码模板：**单击File --> Settings --> Editor --> File and Code Templates
 
 
-- **idea中导入jar包的方法：**将光标移动到需要导入 jar 包的类上，并按 Alt + Enter
-
-
 - 根据行号查找代码的快捷键：**Ctrl + G**
 
 
