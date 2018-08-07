@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>meishadev&#39;s blog</title>
+  
+  <subtitle>meishadevs的技术博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://meishadevs.com/"/>
+  <updated>2018-08-07T05:48:45.837Z</updated>
+  <id>http://meishadevs.com/</id>
+  
+  <author>
+    <name>meishadevs</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>idea使用技巧</title>
+    <link href="http://meishadevs.com/blog/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>http://meishadevs.com/blog/idea使用技巧/</id>
+    <published>2018-08-07T03:04:05.000Z</published>
+    <updated>2018-08-07T05:48:45.837Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;idea中导入jar包：&lt;/strong&gt; 将光标移动到需要导入 jar 包的类上，并按 Alt + Enter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;快速输入输出函数：&lt;/strong&gt; sout + Tab键 或 sout 
+      
+    
+    </summary>
+    
+      <category term="idea" scheme="http://meishadevs.com/categories/idea/"/>
+    
+    
+      <category term="idea" scheme="http://meishadevs.com/tags/idea/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库中的视图简介</title>
+    <link href="http://meishadevs.com/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E8%A7%86%E5%9B%BE%E7%AE%80%E4%BB%8B/"/>
+    <id>http://meishadevs.com/blog/数据库中的视图简介/</id>
+    <published>2018-07-10T11:42:51.000Z</published>
+    <updated>2018-08-07T05:48:45.897Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;为什么要用视图&quot;&gt;&lt;a href=&quot;#为什么要用视图&quot; class=&quot;headerlink&quot; title=&quot;为什么要用视图&quot;&gt;&lt;/a&gt;为什么要用视图&lt;/h1&gt;&lt;p&gt;我们在从数据库中查询某些数据时通常是使用 &lt;code&gt;select * from TableName
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://meishadevs.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="http://meishadevs.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GoJS爬坑之旅</title>
+    <link href="http://meishadevs.com/blog/GoJS%E7%88%AC%E5%9D%91%E4%B9%8B%E6%97%85/"/>
+    <id>http://meishadevs.com/blog/GoJS爬坑之旅/</id>
+    <published>2018-07-05T13:00:39.000Z</published>
+    <updated>2018-08-07T05:48:45.826Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我进入项目组后参加了第一次项目会议，在会议上项目经理为每个项目成员都分配了任务，我的任务是使用GoJS实现一个拖拽效果，这也是我第一次听说GoJS，在网上查阅相关的资源后发现GoJS的资料比较少，而且绝大多数资源都是英文的，这也为我学习及使用这个框架带来了不小的困难，好在项目经理看出这块做起来比较难后来又加了一个人，现在这块由我和一个同事两个人共同开发。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="GoJS" scheme="http://meishadevs.com/categories/GoJS/"/>
+    
+    
+      <category term="GoJS" scheme="http://meishadevs.com/tags/GoJS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>idea中导入maven项目</title>
+    <link href="http://meishadevs.com/blog/idea%E4%B8%AD%E5%AF%BC%E5%85%A5maven%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://meishadevs.com/blog/idea中导入maven项目/</id>
+    <published>2018-06-26T11:51:37.000Z</published>
+    <updated>2018-08-07T05:48:45.834Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我们项目组所开发的项目没有做前后端分离，所有开发人员都在同一个项目下编写代码，项目的前端使用jQuery+Layui+GoJS+echarts实现，后端使用的是SSH，因为没做前后端分离再加上后端开发用了maven构建代码，所以每个开发人员的开发工具都是idea，刚接触项目时，因为我是做前端开发，对后端不熟，每次搭建开发环境的时候都要叫后端开发的同事帮忙，经过不断摸索，我现在差不多也能自己独立完成开发环境的配置。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Java" scheme="http://meishadevs.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://meishadevs.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git中代码冲突的解决方法</title>
+    <link href="http://meishadevs.com/blog/Git%E4%B8%AD%E6%8F%90%E4%BA%A4%E6%97%B6%E5%8F%91%E7%94%9F%E5%86%B2%E7%AA%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>http://meishadevs.com/blog/Git中提交时发生冲突的解决方法/</id>
+    <published>2018-06-06T13:11:25.000Z</published>
+    <updated>2018-08-07T05:48:45.823Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天是我在项目组中第一次使用Git提交代码，结果一提交就出现了冲突，后来在同事的帮助下终于提交成功了，至于造成冲突的原因是我和同事都在同一个文件中编辑了代码，同事先提交我后提交，同事能正常提交，我提交时就会有冲突，因为Git不明白该保存那个人写的代码，所以就造成了冲突。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="http://meishadevs.com/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://meishadevs.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL Server数据库学习笔记</title>
+    <link href="http://meishadevs.com/blog/SQL-Server%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://meishadevs.com/blog/SQL-Server数据库学习笔记/</id>
+    <published>2018-05-07T12:50:54.000Z</published>
+    <updated>2018-08-07T05:48:45.831Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;年后来深圳花费了一个多月总算勉强找到了一份程序开发的工作，截止到现在已经入职块一个月了，现在还处于试用期，SQL Server数据库是公司给我安排的第二个任务，对于数据库这块我还是有点熟悉，因为我之前做的开源项目&lt;a href=&quot;https://github.com/meishadevs/dswz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;电商网&lt;/a&gt;的服务器端是使用PHP和MySQL实现的，公司要求使用SQL Server数据库，所以我花费了两天时间熟悉了一下SQL Server数据库和SQL语句，怕以后忘记所以做了一些笔记。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://meishadevs.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="SQL" scheme="http://meishadevs.com/tags/SQL/"/>
+    
+      <category term="SQL Server" scheme="http://meishadevs.com/tags/SQL-Server/"/>
+    
+      <category term="数据库" scheme="http://meishadevs.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>平时遇到的前端笔试题和面试题</title>
+    <link href="http://meishadevs.com/blog/%E5%B9%B3%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AF%95%E9%A2%98%E5%92%8C%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>http://meishadevs.com/blog/平时遇到的前端笔试题和面试题/</id>
+    <published>2018-04-10T09:07:48.000Z</published>
+    <updated>2018-08-07T05:48:45.891Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我最近一个多月都在忙着找工作，这些是在面试过程中遇到的一些笔试题和面试题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="http://meishadevs.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="面试" scheme="http://meishadevs.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一次有意义的前端面试总结</title>
+    <link href="http://meishadevs.com/blog/%E4%B8%80%E6%AC%A1%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/"/>
+    <id>http://meishadevs.com/blog/一次有意义的前端面试总结/</id>
+    <published>2018-03-07T07:02:54.000Z</published>
+    <updated>2018-08-07T05:48:45.846Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我今天去参加了位于深圳某公司的前端开发工程师岗位的面试，这是我来深圳后参加的第二次面试，感觉这次面试经历比较有趣，也通过这次面试学到了很多东西，所以决定以博客的形式记录下来。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="http://meishadevs.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="面试" scheme="http://meishadevs.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用的正则表达式</title>
+    <link href="http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>http://meishadevs.com/blog/常用的正则表达式/</id>
+    <published>2017-12-13T07:18:08.000Z</published>
+    <updated>2018-08-07T05:48:45.882Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;整理的一些常用的正则表达式&lt;br&gt;
+    
+    </summary>
+    
+      <category term="正则表达式" scheme="http://meishadevs.com/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+    
+      <category term="正则表达式" scheme="http://meishadevs.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Vue.js时遇到的问题及解决方法</title>
+    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Vue-js%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>http://meishadevs.com/blog/使用Vue-js时遇到的问题及解决方法/</id>
+    <published>2017-12-01T08:14:29.000Z</published>
+    <updated>2018-08-07T05:48:45.864Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;在执行-npm-run-dev-命令的时候出现8080端口被占用&quot;&gt;&lt;a href=&quot;#在执行-npm-run-dev-命令的时候出现8080端口被占用&quot; class=&quot;headerlink&quot; title=&quot;在执行 npm run dev 命令的时候出现8080端口被占用&quot;&gt;&lt;/a&gt;在执行 npm run dev 命令的时候出现8080端口被占用&lt;/h4&gt;&lt;p&gt;在任务管理器中手动结束所有Node.exe进程&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Vue.js" scheme="http://meishadevs.com/categories/Vue-js/"/>
+    
+    
+      <category term="Vue.js" scheme="http://meishadevs.com/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用background-size引发的思考</title>
+    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8background-size%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://meishadevs.com/blog/使用background-size引发的思考/</id>
+    <published>2017-10-24T02:39:05.000Z</published>
+    <updated>2018-08-07T05:48:45.867Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;昨天在一个前端交流群里一个成员提出了一个非常有趣的问题&lt;code&gt;background-size: 50%&lt;/code&gt;是什么意思与&lt;code&gt;background-size: 50% 50%&lt;/code&gt;到底有什么区别呢，这个问题在群里引起了一番激烈的讨论，我也尝试分析一下&lt;br&gt;
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://meishadevs.com/categories/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://meishadevs.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>几种清除浮动的方法</title>
+    <link href="http://meishadevs.com/blog/%E5%87%A0%E7%A7%8D%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://meishadevs.com/blog/几种清除浮动的方法/</id>
+    <published>2017-10-22T02:52:15.000Z</published>
+    <updated>2018-08-07T05:48:45.873Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在网页设计中清除浮动是一种非常常见的需求，这篇博客将介绍几种常见的清除浮动的方法&lt;br&gt;
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://meishadevs.com/categories/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://meishadevs.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在手机上查看移动Web页</title>
+    <link href="http://meishadevs.com/blog/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E6%9F%A5%E7%9C%8B%E7%A7%BB%E5%8A%A8Web%E9%A1%B5/"/>
+    <id>http://meishadevs.com/blog/在手机上查看移动Web页/</id>
+    <published>2017-10-21T09:40:54.000Z</published>
+    <updated>2018-08-07T05:48:45.876Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我最近在学习做移动端页面，当做好一个移动端页面后想使用手机查看一下移动端页面在手机上的效果，找了很久才找到一个比较好的方法，特意写这篇文章记录下在手机上查看移动端页面的方法&lt;br&gt;
+    
+    </summary>
+    
+      <category term="移动Web" scheme="http://meishadevs.com/categories/%E7%A7%BB%E5%8A%A8Web/"/>
+    
+    
+      <category term="移动Web" scheme="http://meishadevs.com/tags/%E7%A7%BB%E5%8A%A8Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>移动Web学习笔记</title>
+    <link href="http://meishadevs.com/blog/%E7%A7%BB%E5%8A%A8Web%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://meishadevs.com/blog/移动Web学习笔记/</id>
+    <published>2017-08-31T02:23:03.000Z</published>
+    <updated>2018-08-07T05:48:45.900Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;1. -webkit-text-size-adjust: 100%&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;解释：&lt;/strong&gt;在 Chrome 浏览器中只能设置大于或等于 12px 的字体大小，当设置了小于 12px 的字体大小时，浏览器按照 12px 的字体大小渲染字体，而设置了 &lt;strong&gt;-webkit-text-size-adjust&lt;/strong&gt; 属性后浏览器可以渲染 12px 以下的字体大小&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="移动Web" scheme="http://meishadevs.com/categories/%E7%A7%BB%E5%8A%A8Web/"/>
+    
+    
+      <category term="移动Web" scheme="http://meishadevs.com/tags/%E7%A7%BB%E5%8A%A8Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《JavaScript高级程序设计》读书笔记</title>
+    <link href="http://meishadevs.com/blog/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/</id>
+    <published>2017-05-04T03:40:36.000Z</published>
+    <updated>2018-08-07T05:48:45.840Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;kbit-s&quot;&gt;&lt;a href=&quot;#kbit-s&quot; class=&quot;headerlink&quot; title=&quot;kbit/s&quot;&gt;&lt;/a&gt;kbit/s&lt;/h5&gt;&lt;p&gt;数据传送率的单位.意思是每秒钟多少千字节.比如20Kbit/s就是每秒钟20000个字节.一般上网、下载的速度用这个单位.adsl宽带上网下载速度大概为30-50Kbit/s.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://meishadevs.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="读书笔记" scheme="http://meishadevs.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="JavaScript" scheme="http://meishadevs.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用的Git命令</title>
+    <link href="http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Git%E5%91%BD%E4%BB%A4/"/>
+    <id>http://meishadevs.com/blog/常用的Git命令/</id>
+    <published>2017-04-29T02:18:01.000Z</published>
+    <updated>2018-08-07T05:48:45.879Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自己平时总结的一些常用的Git命令&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="http://meishadevs.com/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://meishadevs.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Gulp</title>
+    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Gulp/"/>
+    <id>http://meishadevs.com/blog/使用Gulp/</id>
+    <published>2017-04-14T16:00:00.000Z</published>
+    <updated>2018-08-07T05:48:45.852Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;为什么要使用Gulp&quot;&gt;&lt;a href=&quot;#为什么要使用Gulp&quot; class=&quot;headerlink&quot; title=&quot;为什么要使用Gulp&quot;&gt;&lt;/a&gt;为什么要使用Gulp&lt;/h1&gt;&lt;p&gt;在前端开发中通常需要做，预处理语言的编译、js文件的压缩、css文件的压缩、图片的压缩等一系列工作，而使用Gulp可以自动化的完成这些工作，从而提高网站的开发效率，在我的博客&lt;a href=&quot;http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Less/&quot;&gt;使用Less&lt;/a&gt;中介绍了将Less文件编译成CSS文件的方法，仔细观察可以看到如果按照博客中介绍的方法，在编译多个Less文件或者编译不同文件夹下的Less文件时需要执行多次Less文件编译命令，而使用Gulp可以一次性完成这些操作&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Gulp" scheme="http://meishadevs.com/categories/Gulp/"/>
+    
+      <category term="前端自动化" scheme="http://meishadevs.com/categories/Gulp/%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    
+      <category term="Gulp" scheme="http://meishadevs.com/tags/Gulp/"/>
+    
+      <category term="前端自动化" scheme="http://meishadevs.com/tags/%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Less</title>
+    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Less/"/>
+    <id>http://meishadevs.com/blog/使用Less/</id>
+    <published>2017-03-30T16:00:00.000Z</published>
+    <updated>2018-08-07T05:48:45.857Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;为什么要使用预处理CSS&quot;&gt;&lt;a href=&quot;#为什么要使用预处理CSS&quot; class=&quot;headerlink&quot; title=&quot;为什么要使用预处理CSS&quot;&gt;&lt;/a&gt;为什么要使用预处理CSS&lt;/h1&gt;&lt;p&gt;在使用CSS过程中会遇到一个非常头疼的问题，因为CSS中没有像java/C++或者PHP等程序语言一样有有自己的变量、常量、条件语句以及一些编程语法，只是一行行单纯的属性描述，写起来相当的费事，而且代码难以组织和维护，为了解决这个问题，引入了预处理CSS，预处理CSS可以像Java/C++或者PHP一样用变量，函数等语法描述CSS。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="预处理CSS" scheme="http://meishadevs.com/categories/%E9%A2%84%E5%A4%84%E7%90%86CSS/"/>
+    
+      <category term="Less" scheme="http://meishadevs.com/categories/%E9%A2%84%E5%A4%84%E7%90%86CSS/Less/"/>
+    
+    
+      <category term="预处理CSS" scheme="http://meishadevs.com/tags/%E9%A2%84%E5%A4%84%E7%90%86CSS/"/>
+    
+      <category term="Less" scheme="http://meishadevs.com/tags/Less/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用NVM安装Node.js</title>
+    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8NVM%E5%AE%89%E8%A3%85Node.js/"/>
+    <id>http://meishadevs.com/blog/使用NVM安装Node.js/</id>
+    <published>2017-03-10T16:00:00.000Z</published>
+    <updated>2018-08-07T05:48:45.861Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;为什么使用NVM安装Node-js&quot;&gt;&lt;a href=&quot;#为什么使用NVM安装Node-js&quot; class=&quot;headerlink&quot; title=&quot;为什么使用NVM安装Node.js&quot;&gt;&lt;/a&gt;为什么使用NVM安装Node.js&lt;/h2&gt;&lt;p&gt;方便管理Node.js的版本，使用NVM可以很轻松的实现不同Node.js版本之间的切换。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="NVM" scheme="http://meishadevs.com/categories/NVM/"/>
+    
+      <category term="Node.js" scheme="http://meishadevs.com/categories/NVM/Node-js/"/>
+    
+    
+      <category term="NVM" scheme="http://meishadevs.com/tags/NVM/"/>
+    
+      <category term="Node.js" scheme="http://meishadevs.com/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用GitHub部署网站</title>
+    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8GitHub%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/"/>
+    <id>http://meishadevs.com/blog/使用GitHub部署网站/</id>
+    <published>2017-03-07T16:00:00.000Z</published>
+    <updated>2018-08-07T05:48:45.849Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在上一篇博客中介绍了&lt;a href=&quot;http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8%E6%96%B0%E6%B5%AA%E4%BA%91%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/&quot;&gt;使用新浪云部署网站&lt;/a&gt;这篇博客将介绍另一种部署网站的方式，使用GitHub部署网站。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="部署" scheme="http://meishadevs.com/categories/%E9%83%A8%E7%BD%B2/"/>
+    
+    
+      <category term="部署" scheme="http://meishadevs.com/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+</feed>
