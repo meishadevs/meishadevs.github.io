@@ -21,5 +21,8 @@ date: 2018-08-07 11:04:05
 - **查看语句快速输入的方法：** Ctrl + J
 
 
+- 当将 On 'Update' action 属性和 On frame deactivation 属性都设置为 Update classes and resources 后，只用在debug模式下才能实现热部署
+
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[idea使用技巧](http://meishadevs.com/blog/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/)】
