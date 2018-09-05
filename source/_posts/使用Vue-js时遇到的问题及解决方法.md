@@ -122,6 +122,11 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 #### Do not use built-in or reserved HTML elements as component id: select
 使用标签名select作为组件的name属性值(name: "select")时在console中产生的警告，不能将标签名设为组件的name属性
 
+#### 代码简写
+**:clone="cloneData"**表示给draggable标签的clone属性赋值为cloneData，这里是v-bind:clone="cloneData"的简写					 	  
+
+	<draggable :clone="cloneData" :list="form_list" :options="dragOptions1"></draggable>
+
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
 - [关于Vue中的 render: h => h(App) 具体是什么含义？](https://segmentfault.com/q/1010000007130348)
