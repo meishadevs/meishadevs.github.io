@@ -35,6 +35,9 @@ date: 2017-04-29 10:18:01
 #### 查看远程分支
 	git branch -r
 
+#### 查看所有分支(包括本地分支和远程分支)
+	git branch -a
+
 #### 删除本地分支，其中branchName表示本地分支名称
 	git branch -d branchName 
 
@@ -98,10 +101,6 @@ date: 2017-04-29 10:18:01
 	
 	git checkout -b a
 
-#### 把远程分支迁到本地顺便切换到该分支，其中 develop 表示分支名
-
-	git checkout -b develop origin/develop
-
 #### 回退到上一次提交
 
 	git reset --hard HEAD^
@@ -133,6 +132,10 @@ date: 2017-04-29 10:18:01
 #### 查看git操作记录
 
 	git reflog
+
+#### 拉取远非master分支代码到本地，其中localBranch表示本地分支名，remoteBranch表示远程分支名，为了便于管理通常将本地分支名和远程分支名设置为一样
+
+	git checkout -b localBranch origin/remoteBranch
 
 #### 解码 base64 编码
 
