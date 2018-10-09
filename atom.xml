@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://meishadevs.com/"/>
-  <updated>2018-08-21T03:53:32.378Z</updated>
+  <updated>2018-08-15T02:48:58.629Z</updated>
   <id>http://meishadevs.com/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>常见的SQL语句</title>
-    <link href="http://meishadevs.com/blog/%E5%B8%B8%E8%A7%81%E7%9A%84SQL%E8%AF%AD%E5%8F%A5/"/>
-    <id>http://meishadevs.com/blog/常见的SQL语句/</id>
-    <published>2018-08-21T03:52:07.000Z</published>
-    <updated>2018-08-21T03:53:32.378Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;blockquote&gt;
-&lt;p&gt;meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。&lt;br&gt;转载请注明： 【文章转载自meishadevs：&lt;a href=&quot;&quot;&gt;&lt;/a&gt;】&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      
-    
-    </summary>
-    
-      <category term="SQL" scheme="http://meishadevs.com/categories/SQL/"/>
-    
-    
-      <category term="SQL" scheme="http://meishadevs.com/tags/SQL/"/>
-    
-  </entry>
   
   <entry>
     <title>idea使用技巧</title>
@@ -448,6 +421,26 @@
       <category term="NVM" scheme="http://meishadevs.com/tags/NVM/"/>
     
       <category term="Node.js" scheme="http://meishadevs.com/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用GitHub部署网站</title>
+    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8GitHub%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/"/>
+    <id>http://meishadevs.com/blog/使用GitHub部署网站/</id>
+    <published>2017-03-07T16:00:00.000Z</published>
+    <updated>2018-08-07T05:48:45.849Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在上一篇博客中介绍了&lt;a href=&quot;http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8%E6%96%B0%E6%B5%AA%E4%BA%91%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/&quot;&gt;使用新浪云部署网站&lt;/a&gt;这篇博客将介绍另一种部署网站的方式，使用GitHub部署网站。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="部署" scheme="http://meishadevs.com/categories/%E9%83%A8%E7%BD%B2/"/>
+    
+    
+      <category term="部署" scheme="http://meishadevs.com/tags/%E9%83%A8%E7%BD%B2/"/>
     
   </entry>
   
