@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://meishadevs.com/"/>
-  <updated>2018-08-15T02:48:58.629Z</updated>
+  <updated>2018-10-10T03:48:21.986Z</updated>
   <id>http://meishadevs.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小程序开发笔记</title>
+    <link href="http://meishadevs.com/blog/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <id>http://meishadevs.com/blog/小程序开发笔记/</id>
+    <published>2018-10-09T09:32:47.000Z</published>
+    <updated>2018-10-10T03:48:21.986Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近我参与了一个小程序的开发，对于小程序开发我是零基础，所以特此记录一些小程序开发中的技术点。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="小程序" scheme="http://meishadevs.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="小程序" scheme="http://meishadevs.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>idea使用技巧</title>
@@ -421,26 +441,6 @@
       <category term="NVM" scheme="http://meishadevs.com/tags/NVM/"/>
     
       <category term="Node.js" scheme="http://meishadevs.com/tags/Node-js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用GitHub部署网站</title>
-    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8GitHub%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/"/>
-    <id>http://meishadevs.com/blog/使用GitHub部署网站/</id>
-    <published>2017-03-07T16:00:00.000Z</published>
-    <updated>2018-08-07T05:48:45.849Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在上一篇博客中介绍了&lt;a href=&quot;http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8%E6%96%B0%E6%B5%AA%E4%BA%91%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/&quot;&gt;使用新浪云部署网站&lt;/a&gt;这篇博客将介绍另一种部署网站的方式，使用GitHub部署网站。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="部署" scheme="http://meishadevs.com/categories/%E9%83%A8%E7%BD%B2/"/>
-    
-    
-      <category term="部署" scheme="http://meishadevs.com/tags/%E9%83%A8%E7%BD%B2/"/>
     
   </entry>
   

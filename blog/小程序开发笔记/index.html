@@ -7,7 +7,7 @@
 
     
 
-    <title>Fireworks | meishadevs的技术博客</title>
+    <title>小程序开发笔记 | meishadevs的技术博客</title>
     <meta name="author" content="meishadevs">
     
     <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="小程序开发笔记"/>
     <meta property="og:site_name" content="meishadev&#39;s blog"/>
 
     
@@ -393,31 +393,154 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">当前位置（标签）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
         
+            
+    
+    
+    <a class="breadcrumb" href="/categories/小程序/">小程序</a>
+
 
         
-            <a class="breadcrumb" href="/tags/Fireworks/">Fireworks</a>
+
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>小程序开发笔记</h1>
+    
 
 
-    <div class="collection mt-0">
+            </div>
+            <time class="pink-link-context" datetime="2018-10-09T09:32:47.000Z"><a href="/blog/小程序开发笔记/">2018-10-09</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
         
-            <a href="/blog/Fireworks切图/" class="collection-item grey-text text-darken-1">
-                <time datetime="2017-02-28T16:00:00.000Z">2017-03-01</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                Fireworks切图
-            </a>
+            <a href="/tags/小程序/" class="chip pink lighten-1">小程序</a>
         
     </div>
 
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#动态修改变量的值"><span class="section table-of-contents-text">动态修改变量的值</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#动态修改对象的属性值"><span class="section table-of-contents-text">动态修改对象的属性值</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#将数据保存到本地"><span class="section table-of-contents-text">将数据保存到本地</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#读取保存在本地的数据"><span class="section table-of-contents-text">读取保存在本地的数据</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#清除保存在本地的数据"><span class="section table-of-contents-text">清除保存在本地的数据</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#给标签绑定一个点击时的回调函数"><span class="section table-of-contents-text">给标签绑定一个点击时的回调函数</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#页面跳转"><span class="section table-of-contents-text">页面跳转</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#参考链接"><span class="section table-of-contents-text">参考链接</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>最近我参与了一个小程序的开发，对于小程序开发我是零基础，所以特此记录一些小程序开发中的技术点。<br><a id="more"></a></p>
+<h4 id="动态修改变量的值"><a href="#动态修改变量的值" class="headerlink" title="动态修改变量的值"></a>动态修改变量的值</h4><p>在data对象中创建一个变量</p>
+<pre><code>data: {
+  value: 0 
+}
+</code></pre><p>修改变量的值</p>
+<pre><code>this.setData({
+    value: 10 
+});
+</code></pre><h4 id="动态修改对象的属性值"><a href="#动态修改对象的属性值" class="headerlink" title="动态修改对象的属性值"></a>动态修改对象的属性值</h4><p>在data对象中创建一个包含一些属性的对象</p>
+<pre><code>data: {
+  obj: {
+    value: 0
+  }
+}
+</code></pre><p>修改对象的属性值</p>
+<pre><code>this.setData({
+    [&quot;obj.value&quot;]: 10 
+});
+</code></pre><h4 id="将数据保存到本地"><a href="#将数据保存到本地" class="headerlink" title="将数据保存到本地"></a>将数据保存到本地</h4><pre><code>wx.setStorageSync(&quot;value&quot;, 10);
+</code></pre><h4 id="读取保存在本地的数据"><a href="#读取保存在本地的数据" class="headerlink" title="读取保存在本地的数据"></a>读取保存在本地的数据</h4><pre><code>var value = wx.getStorageSync(&quot;value&quot;);
+if (value != &quot;&quot; &amp;&amp; value != undefined &amp;&amp; value != null) {
+  console.log(&quot;读取到了保存在本地的数据，保存在本地的数据为:&quot;, value);
+} else {
+  console.log(&quot;没有读取到保存在本地的数据&quot;);
+}
+</code></pre><h4 id="清除保存在本地的数据"><a href="#清除保存在本地的数据" class="headerlink" title="清除保存在本地的数据"></a>清除保存在本地的数据</h4><pre><code>wx.clearStorageSync();
+</code></pre><h4 id="给标签绑定一个点击时的回调函数"><a href="#给标签绑定一个点击时的回调函数" class="headerlink" title="给标签绑定一个点击时的回调函数"></a>给标签绑定一个点击时的回调函数</h4><p>在wxml中添加一个标签，并给标签绑定一个点击时的回调函数</p>
+<pre><code>&lt;button bindtap=&quot;onNextStep&quot;&gt;下一步&lt;/button&gt;
+</code></pre><p>在js中定义回调函数</p>
+<pre><code>onNextStep: function() {
+    console.log(&quot;你点击了下一步按钮&quot;);
+}
+</code></pre><h4 id="页面跳转"><a href="#页面跳转" class="headerlink" title="页面跳转"></a>页面跳转</h4><p>在小程序中有两种方式实现页面跳转，分别为<strong>wx.navigateTo</strong>和<strong>wx.redirectTo</strong>，其中<strong>wx.navigateTo</strong>实现的页面跳转后会保留上一个页面，当点击左上角的返回按钮后可以返回到上一个页面，<strong>wx.redirectTo</strong>实现的页面跳转当跳转到下一个页面后会销毁上一个页面，当点击左上角的返回按钮后不能返回到上一个页面</p>
+<p>wx.navigateTo的写法如下</p>
+<pre><code>wx.navigateTo({
+    url: &quot;/pages/planunitform/index&quot;
+});
+</code></pre><p>wx.redirectTo的写法如下</p>
+<pre><code>wx.redirectTo({
+    url: &quot;/pages/planunitform/index&quot;
+});
+</code></pre><h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><ul>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/file.html" target="_blank" rel="noopener">微信小程序官方文档</a></li>
+<li><a href="http://www.phpos.net/xiaochengxu/api/575.html" target="_blank" rel="noopener">微信小程序页面跳转导航wx.navigateTo和wx.redirectTo</a></li>
+</ul>
+<blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href=""></a>】</p>
+</blockquote>
+
+                
+
+
+<p class="pink-link-context">
+    <a href="/blog/idea使用技巧/" rel="next" title="idea使用技巧">
+    下一篇：idea使用技巧
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Tue Oct 09 2018 17:32:47 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
 
 </div>
 
