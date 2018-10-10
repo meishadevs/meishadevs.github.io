@@ -10,7 +10,7 @@ date: 2018-07-05 21:00:39
 <!--more-->
 
 # GoJS是什么
-通过查看[GoJS官网](https://gojs.net/latest/index.html)可知**GoJS**是一款基于JavaScrip的图表绘制组件，使用**GoJS**可以绘制流程图、UML图、家族关系图、树形图等。
+通过查看[GoJS官网](https://gojs.net/latest/index.html)可知**GoJS**是一款基于JavaScript的图表绘制组件，使用**GoJS**可以绘制流程图、UML图、家族关系图、树形图等。
 
 # 使用GoJS绘制的一些图形
 
