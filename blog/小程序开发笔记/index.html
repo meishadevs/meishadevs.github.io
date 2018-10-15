@@ -211,16 +211,24 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/读书笔记/">
-                    读书笔记 <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/idea/">
+                    idea <span class="right">1 篇</span></a>
                 </a>
             </li>
 
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/idea/">
-                    idea <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -243,32 +251,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/面试/">
-                    面试 <span class="right">2 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/部署/">
                     部署 <span class="right">2 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Gulp/">
-                    Gulp <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Gulp/前端自动化/">
-                    前端自动化 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -285,6 +269,22 @@
             <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/预处理CSS/Less/">
                     Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Gulp/">
+                    Gulp <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Gulp/前端自动化/">
+                    前端自动化 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -331,16 +331,16 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/正则表达式/">
-                    正则表达式 <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/小程序/">
+                    小程序 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/小程序/">
-                    小程序 <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -587,23 +587,25 @@ if (value != &quot;&quot; &amp;&amp; value != undefined &amp;&amp; value != null
   }
 },
 </code></pre><p>监听单选按钮的选中事件</p>
-<p>  //单选按钮响应函数<br>  onRadioChange: function(e) {</p>
-<pre><code>//如果当前项选中的是否
-if (e.detail.value == 0) {
+<pre><code>//单选按钮响应函数
+onRadioChange: function(e) {
 
-    //显示下一项
-    this.setData({
-        [&apos;shutstepi.currIndex&apos;]: parseInt(e.target.id) + 1
-    });
+  //如果当前项选中的是否
+  if (e.detail.value == 0) {
 
-//如果当前选中的是“是”
-} else {
+      //显示下一项
+      this.setData({
+          [&apos;shutstepi.currIndex&apos;]: parseInt(e.target.id) + 1
+      });
 
-    //显示当前选中的选
-    this.setData({
-        [&apos;shutstepi.currIndex&apos;]: parseInt(e.target.id)
-    });
-}
+  //如果当前选中的是“是”
+  } else {
+
+      //显示当前选中的选
+      this.setData({
+          [&apos;shutstepi.currIndex&apos;]: parseInt(e.target.id)
+      });
+  }
 </code></pre><h2 id="以上选项都不选中"><a href="#以上选项都不选中" class="headerlink" title="以上选项都不选中"></a>以上选项都不选中</h2><p>这次小程序中还有一个需求，在多选中有一个以上选项都不选中按钮，当选中以上选项都不选中时，之前选中的选项由选中状态变为不选中状态，当选中除以上选项都不选中的其他选项时，以上选项都不选中的选项变为不选中状态<br><img src="http://oqdyj5870.bkt.clouddn.com/2018101502.gif" alt=""></p>
 <h3 id="实现方式-1"><a href="#实现方式-1" class="headerlink" title="实现方式"></a>实现方式</h3><p>wxml中的布局代码如下</p>
 <pre><code>&lt;view class=&quot;screenform-item&quot;&gt;
