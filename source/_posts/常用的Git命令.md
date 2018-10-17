@@ -70,6 +70,10 @@ date: 2017-04-29 10:18:01
 	
 	git checkout master 
 
+#### 修改本地分支名称
+
+	git branch -m oldBranchName newBranchName
+
 #### 初始化一个本地Git仓库
 	
 	git init
@@ -191,6 +195,7 @@ date: 2017-04-29 10:18:01
 - [git切换账号及推送人](https://blog.csdn.net/weixin_42315879/article/details/80907340)
 - [Git提交记住用户名和密码](https://blog.csdn.net/youanyyou/article/details/78992990)
 - [git fatal: Authentication failed for又不弹出用户名和密码 解决办法](https://blog.csdn.net/qq_14922059/article/details/80505278)
+- [git-更改本地和远程分支的名称](https://www.cnblogs.com/wangzhichao/p/git.html)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的Git命令](http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Git%E5%91%BD%E4%BB%A4/)】
