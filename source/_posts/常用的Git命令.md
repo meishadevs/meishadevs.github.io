@@ -170,7 +170,9 @@ date: 2017-04-29 10:18:01
 
 	git reflog
 
-#### 拉取非master分支上的代码到本地，其中localBranch表示本地分支名，remoteBranch表示远程分支名，为了便于管理通常将本地分支名和远程分支名设置为一样，当分支名称中有特殊符号时，需要用引号将分支名称扩起来
+#### 拉取非master分支上的代码到本地
+
+**其中localBranch表示本地分支名，remoteBranch表示远程分支名，为了便于管理通常将本地分支名和远程分支名设置为一样，当分支名称中有特殊符号时，需要用引号将分支名称扩起来**
 
 	git checkout -b localBranch origin/remoteBranch
 
