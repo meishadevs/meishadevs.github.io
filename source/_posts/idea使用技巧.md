@@ -20,7 +20,11 @@ date: 2018-08-07 11:04:05
 
 - **查看语句快速输入的方法：** Ctrl + J
 
-- **调试时的进入下一步：** F8
+
+- **单步调试时进入下一步：** F8
+
+
+- **结束单步调试：** F9
 
 
 - 当将 On 'Update' action 属性和 On frame deactivation 属性都设置为 Update classes and resources 后，只用在debug模式下才能实现热部署
