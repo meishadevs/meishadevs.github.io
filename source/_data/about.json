@@ -1,5 +1,5 @@
 {
-    "avatar": "http://oq3pg8pg4.bkt.clouddn.com/touxiang.jpg", 
+    "avatar": "../images/touxiang.jpg", 
     "name": "meishadevs", 
     "tag": "Web前端", 
     "desc": "Love coding love life !", 
@@ -18,7 +18,7 @@
     "projects": [
         {
             "name": "博雅互动首页项目", 
-            "image": "http://oq3pg8pg4.bkt.clouddn.com/boyaa.png", 
+            "image": "../images/boyaa.png", 
             "tags": [
                 "2016年", 
                 "网页"
@@ -29,7 +29,7 @@
         }, 
         {
             "name": "西游黄金矿工", 
-            "image": "http://oq3pg8pg4.bkt.clouddn.com/goldminer.png", 
+            "image": "../images/goldminer.png", 
             "description": "个人使用Cocos2d-js制作的一款html5版的黄金矿工类游戏，游戏实现了场景选择、挖矿等功能", 
             "tags": [
                 "2016", 
@@ -51,7 +51,7 @@
         }
     ], 
     "reward": [
-        "http://oq3pg8pg4.bkt.clouddn.com/weixin.png", 
-        "http://oq3pg8pg4.bkt.clouddn.com/zhifubao.png"
+        "../images/weixin.png", 
+        "../images/zhifubao.png"
     ]
 }

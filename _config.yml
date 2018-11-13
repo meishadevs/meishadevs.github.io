@@ -135,5 +135,6 @@ theme: raytaylorism
 # 部署相关的设置
 deploy:
   type: git
-  repo: https://github.com/meishadevs/meishadevs.github.io.git
-  branch: master
+  repo: 
+    github: git@github.com:meishadevs/meishadevs.github.io.git,master
+    coding: git@git.coding.net:meishadevs/meishadevs.git,master
