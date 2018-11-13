@@ -179,6 +179,14 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Git/">
+                    Git <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/GoJS/">
                     GoJS <span class="right">1 篇</span></a>
                 </a>
@@ -187,8 +195,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Git/">
-                    Git <span class="right">2 篇</span></a>
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -205,14 +213,6 @@
             <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/idea/">
                     idea <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Java/">
-                    Java <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -291,6 +291,14 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/NVM/">
                     NVM <span class="right">1 篇</span></a>
                 </a>
@@ -301,14 +309,6 @@
             <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/NVM/Node-js/">
                     Node-js <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Vue-js/">
-                    Vue-js <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -555,57 +555,210 @@ if (value != &quot;&quot; &amp;&amp; value != undefined &amp;&amp; value != null
 </code></pre><p>代码运行结果<br><img src="http://oqdyj5870.bkt.clouddn.com/2018101502.png" alt=""></p>
 <h2 id="当选项中有一项选否时，显示下一项"><a href="#当选项中有一项选否时，显示下一项" class="headerlink" title="当选项中有一项选否时，显示下一项"></a>当选项中有一项选否时，显示下一项</h2><p>在做小程序过程中遇到一个需求，就是进入某个页面后，页面中有一些选项，在初始状态下只展示第一项，并且该项默认处于选中状态，当选中该项的否时显示下一项，直到显示到选择最后一项，当选中的是除最后一项之外的每项的是时，隐藏后面的选项</p>
 <p>最终实现的效果如下<br><img src="/images/2018111201.gif" class="blog-image"></p>
-<h3 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h3><p>在wxml中第1项的实现代码如下，后面其他项的实现代码与第1项类似，只是索引（shutstepi.currIndex &gt;= 1 ）不同和选项的不同</p>
-<pre><code>&lt;view class=&quot;screenform-list&quot; wx:if=&quot;{{ shutstepi.currIndex >= 1 }}&quot;&gt;
-    &lt;view class=&quot;top-title&quot;&gt;
-        &lt;span class=&quot;top-title-icon&quot;&gt;&lt;/span&gt;
-        &lt;text&gt;停堆始发事件&lt;/text&gt;
+<h3 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h3><p>在wxml文件中添加下面的页面布局代码</p>
+<pre><code>&lt;view class=&quot;screenform-list border-top&quot; wx:if=&quot;{{ currIndex >= 1 }}&quot;&gt;
+  &lt;view class=&quot;top-title&quot;&gt;
+    &lt;span class=&quot;top-title-icon&quot;&gt;&lt;/span&gt;
+    &lt;text&gt;针对程序员的问卷调查&lt;/text&gt;
+  &lt;/view&gt;
+  &lt;view class=&quot;screenform-item&quot; wx:if=&quot;{{  currIndex >= 1 }}&quot;&gt;
+    &lt;view class=&quot;screenform-question&quot;&gt;1.你是程序员吗？&lt;/view&gt;
+    &lt;view class=&quot;screenform-select&quot;&gt;
+      &lt;radio-group class=&quot;radio-group&quot; id=&quot;1&quot; bindchange=&quot;onRadioChange&quot;&gt;
+        &lt;label class=&quot;radio&quot;&gt;
+          &lt;radio checked=&quot;{{ currIndex == 1 ? true : false}}&quot; value=&quot;1&quot; /&gt; 是
+        &lt;/label&gt;
+        &lt;label class=&quot;radio&quot;&gt;
+          &lt;radio checked=&quot;{{ currIndex > 1 ? true : false}}&quot; value=&quot;0&quot; /&gt; 否
+        &lt;/label&gt;
+      &lt;/radio-group&gt;
     &lt;/view&gt;
-    &lt;view class=&quot;screenform-item&quot;&gt;
-        &lt;view class=&quot;screenform-question&quot;&gt;1.发现项所导致的结果是否会增加停堆始发事件的发生可能性？&lt;/view&gt;
-        &lt;view class=&quot;screenform-select&quot;&gt;
-            &lt;radio-group class=&quot;radio-group&quot; id=&quot;1&quot; bindchange=&quot;onRadioChange&quot;&gt;
-                &lt;label class=&quot;radio&quot;&gt;
-                    &lt;radio checked=&quot;{{shutstepi.currIndex == 1 ? true : false}}&quot; value=&quot;1&quot;/&gt;
-                    是
-                &lt;/label&gt;
-                &lt;label class=&quot;radio&quot;&gt;
-                    &lt;radio checked=&quot;{{shutstepi.currIndex > 1 ? true : false}}&quot; value=&quot;0&quot;/&gt;
-                    否
-                &lt;/label&gt;
-            &lt;/radio-group&gt;
-        &lt;/view&gt;
+  &lt;/view&gt;
+  &lt;view class=&quot;screenform-item border-top-line&quot; wx:if=&quot;{{  currIndex >= 2 }}&quot;&gt;
+    &lt;view class=&quot;screenform-question&quot;&gt;2.你是做前端开发的吗？&lt;/view&gt;
+    &lt;view class=&quot;screenform-select&quot;&gt;
+      &lt;radio-group class=&quot;radio-group&quot; id=&quot;2&quot; bindchange=&quot;onRadioChange&quot;&gt;
+        &lt;label class=&quot;radio&quot;&gt;
+          &lt;radio checked=&quot;{{ currIndex == 2 ? true : false}}&quot; value=&quot;1&quot; /&gt; 是
+        &lt;/label&gt;
+        &lt;label class=&quot;radio&quot;&gt;
+          &lt;radio checked=&quot;{{ currIndex > 2 ? true : false}}&quot; value=&quot;0&quot; /&gt; 否
+        &lt;/label&gt;
+      &lt;/radio-group&gt;
     &lt;/view&gt;
+  &lt;/view&gt;
+  &lt;view class=&quot;screenform-item border-top-line&quot; wx:if=&quot;{{  currIndex >= 3 }}&quot;&gt;
+    &lt;view class=&quot;screenform-question&quot;&gt;3.你主要的工作内容是写JavaScript的吗？&lt;/view&gt;
+    &lt;view class=&quot;screenform-select&quot;&gt;
+      &lt;radio-group class=&quot;radio-group&quot; id=&quot;3&quot; bindchange=&quot;onRadioChange&quot;&gt;
+        &lt;label class=&quot;radio&quot;&gt;
+          &lt;radio checked=&quot;{{ currIndex == 3 ? true : false}}&quot; value=&quot;1&quot; /&gt; 是
+        &lt;/label&gt;
+        &lt;label class=&quot;radio&quot;&gt;
+          &lt;radio checked=&quot;{{ currIndex > 3 ? true : false}}&quot; value=&quot;0&quot; /&gt; 否
+        &lt;/label&gt;
+      &lt;/radio-group&gt;
+    &lt;/view&gt;
+  &lt;/view&gt;
+  &lt;view class=&quot;screenform-item border-top-line&quot; wx:if=&quot;{{  currIndex >= 4 }}&quot;&gt;
+    &lt;view class=&quot;screenform-question&quot;&gt;4.你是做微信小程序开发的吗？&lt;/view&gt;
+    &lt;view class=&quot;screenform-select&quot;&gt;
+      &lt;radio-group class=&quot;radio-group&quot; id=&quot;4&quot; bindchange=&quot;onRadioChange&quot;&gt;
+        &lt;label class=&quot;radio&quot;&gt;
+          &lt;radio checked=&quot;{{ currIndex == 4 ? true : false }}&quot; value=&quot;1&quot; /&gt; 是
+        &lt;/label&gt;
+        &lt;label class=&quot;radio&quot;&gt;
+          &lt;radio checked=&quot;{{ currIndex > 4 ? true : false }}&quot; value=&quot;0&quot; /&gt; 否
+        &lt;/label&gt;
+      &lt;/radio-group&gt;
+    &lt;/view&gt;
+  &lt;/view&gt;
 &lt;/view&gt;
-</code></pre><p>在js中的实现代码如下</p>
-<p>在data对象中定义一个用于标记当前选中项的索引的变量，因为这个小程序中有多个地方都需要这个功能，所以我将这个索引定义在一个对象下面以便区分</p>
-<pre><code>data: {
-  shutstepi: {
+</code></pre><p>在wxss文件中添加页面样式代码</p>
+<pre><code>.radio-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-    //当前选中项的索引
-      currIndex: 1
-  }
-},
-</code></pre><p>监听单选按钮的选中事件</p>
-<pre><code>//单选按钮响应函数
-onRadioChange: function(e) {
+.radio-group .radio {
+    padding: 20rpx 110rpx 20rpx 0;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
 
-  //如果当前项选中的是否
-  if (e.detail.value == 0) {
+/* 单选按钮样式调整 */ radio .wx-radio-input {
+    width: 32rpx;
+    height: 32rpx;
+    border-radius: 50%;
+    border-color: #cccccc;
+}
 
-      //显示下一项
-      this.setData({
-          [&apos;shutstepi.currIndex&apos;]: parseInt(e.target.id) + 1
-      });
+radio .wx-radio-input.wx-radio-input-checked {
+    background: white !important;
+    color: #18abff !important;
+    border-color: #18abff !important;
+}
 
-  //如果当前选中的是“是”
-  } else {
+radio .wx-radio-input.wx-radio-input-checked::before {
+    width: 32rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28rpx;
+    background: transparent;
+    color: #18abff;
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+}
 
-      //显示当前选中的选
-      this.setData({
-          [&apos;shutstepi.currIndex&apos;]: parseInt(e.target.id)
-      });
-  }
+.border-top {
+    border-top: solid 10rpx #eeefef;
+}
+
+.border-top-line {
+    border-top: 1rpx solid #d5d5d5;
+}
+
+.top-title {
+    padding: 16rpx 0 16rpx 30rpx;
+    border-bottom: 1rpx solid #d5d5d5;
+    font-size: 26rpx;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+
+}
+
+.top-title-icon {
+    width: 24rpx;
+    height: 24rpx;
+    margin-top: 6rpx;
+    border-radius: 50%;
+    background: url(http://oq3pg8pg4.bkt.clouddn.com/top-title-icon.png) left center no-repeat;
+    display: inline-block;
+}
+
+.top-title text {
+    margin-left: 22rpx;
+    display: block;
+    flex: 1;
+}
+
+.screenform-list {
+    padding-bottom: 20rpx;
+    font-size: 30rpx;
+}
+
+.screenform-item {
+    margin-left: 30rpx;
+}
+
+.screenform-question {
+    line-height: 36rpx;
+    padding: 24rpx 30rpx 0 0;
+}
+</code></pre><p>在js文件中添加js代码</p>
+<pre><code>const app = getApp()
+
+Page({
+
+    /**
+     * 页面的初始数据
+     */
+    data: {
+
+        //当前选中项的索引
+        currIndex: 1,
+
+        survey: {
+            title: &quot;针对程序员的问卷调查&quot;,
+            arr: [
+                {
+                    question: &quot;你是程序员吗？&quot;
+                },
+                {
+                    question: &quot;你是做前端开发的吗？&quot;
+                },
+                {
+                    question: &quot;你主要的工作内容是写JavaScript的吗？&quot;
+                },
+                {
+                    question: &quot;你是做微信小程序开发的吗？&quot;
+                }
+            ]
+        }
+    },
+
+    //单选按钮响应函数
+    onRadioChange: function (e) {
+
+        //如果当前项选中的是否
+        if (e.detail.value == 0) {
+
+            //显示下一项
+            this.setData({
+                currIndex: parseInt(e.target.id) + 1
+            });
+
+            //如果当前选中的是“是”
+        } else {
+
+            //显示当前选中的选
+            this.setData({
+                currIndex: parseInt(e.target.id)
+            });
+        }
+    }
+})
 </code></pre><h2 id="以上选项都不选中"><a href="#以上选项都不选中" class="headerlink" title="以上选项都不选中"></a>以上选项都不选中</h2><p>这次小程序中还有一个需求，在多选中有一个以上选项都不选中按钮，当选中以上选项都不选中时，之前选中的选项由选中状态变为不选中状态，当选中除以上选项都不选中的其他选项时，以上选项都不选中的选项变为不选中状态<br><img src="http://oq3pg8pg4.bkt.clouddn.com/2018101601.gif" alt=""></p>
 <h3 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h3><p>wxml中的布局代码如下</p>
 <pre><code>&lt;wxs src=&quot;./checkedTool.wxs&quot; module=&quot;tools&quot; /&gt;
