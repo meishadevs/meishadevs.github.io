@@ -336,9 +336,9 @@
       
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 读书笔记 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
       
@@ -624,17 +624,17 @@
   
     
     <entry>
-      <title>读书</title>
-      <link href="/reading/index.html"/>
-      <url>/reading/index.html</url>
-      <content type="html"><![CDATA[]]></content>
-    </entry>
-    
-    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<p>大家好，我是meishadevs。欢迎来到我的个人技术博客。</p>]]></content>
+    </entry>
+    
+    <entry>
+      <title>读书</title>
+      <link href="/reading/index.html"/>
+      <url>/reading/index.html</url>
+      <content type="html"><![CDATA[]]></content>
     </entry>
     
   
