@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://meishadevs.com/"/>
-  <updated>2018-11-15T12:51:30.980Z</updated>
+  <updated>2018-11-19T07:44:47.115Z</updated>
   <id>http://meishadevs.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>代码规范类问题修改方法</title>
+    <link href="http://meishadevs.com/blog/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E7%B1%BB%E9%97%AE%E9%A2%98%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/"/>
+    <id>http://meishadevs.com/blog/代码规范类问题修改方法/</id>
+    <published>2018-11-19T07:44:47.000Z</published>
+    <updated>2018-11-19T07:44:47.115Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。&lt;br&gt;转载请注明： 【文章转载自meishadevs：&lt;a href=&quot;&quot;&gt;&lt;/a&gt;】&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>小程序开发笔记</title>
@@ -417,30 +440,6 @@
       <category term="预处理CSS" scheme="http://meishadevs.com/tags/%E9%A2%84%E5%A4%84%E7%90%86CSS/"/>
     
       <category term="Less" scheme="http://meishadevs.com/tags/Less/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用NVM安装Node.js</title>
-    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8NVM%E5%AE%89%E8%A3%85Node.js/"/>
-    <id>http://meishadevs.com/blog/使用NVM安装Node.js/</id>
-    <published>2017-03-10T16:00:00.000Z</published>
-    <updated>2018-08-07T05:48:45.861Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;为什么使用NVM安装Node-js&quot;&gt;&lt;a href=&quot;#为什么使用NVM安装Node-js&quot; class=&quot;headerlink&quot; title=&quot;为什么使用NVM安装Node.js&quot;&gt;&lt;/a&gt;为什么使用NVM安装Node.js&lt;/h2&gt;&lt;p&gt;方便管理Node.js的版本，使用NVM可以很轻松的实现不同Node.js版本之间的切换。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="NVM" scheme="http://meishadevs.com/categories/NVM/"/>
-    
-      <category term="Node.js" scheme="http://meishadevs.com/categories/NVM/Node-js/"/>
-    
-    
-      <category term="NVM" scheme="http://meishadevs.com/tags/NVM/"/>
-    
-      <category term="Node.js" scheme="http://meishadevs.com/tags/Node-js/"/>
     
   </entry>
   
