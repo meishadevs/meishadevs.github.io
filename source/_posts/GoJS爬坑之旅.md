@@ -16,13 +16,13 @@ date: 2018-07-05 21:00:39
 
 ## 使用GoJS绘制流程图
 下图是使用GoJS绘制的一个流程图，这也是官方提供的示例中的一个，也可以访问[https://gojs.net/latest/samples/flowchart.html](https://gojs.net/latest/samples/flowchart.html)查看流程图效果，同时还可以访问[https://gojs.net/latest/samples/index.html](https://gojs.net/latest/samples/index.html)查看GoJS官方提供的所有示例
-![](http://oq3pg8pg4.bkt.clouddn.com/2018070601.jpg)
+{% img blog-image /images/2018070601.jpg %}
 
 ## 使用GoJS绘制一个简单的图表
 
 ### 引入GoJS文件
 根据[GoJS官网](https://gojs.net/latest/doc/download.html)上的介绍可知，引入GoJS的方式有三种，分别是：下载GoJS文件将GoJS文件放在项目中使用并在项目中引用、通过CDN引入GoJS、通过npm包引入GoJS，这里我们使用最简单的方式，使用第一种方式，根据[GoJS下载页](https://gojs.net/latest/doc/download.html)中的提示下载go.js文件，[GoJS下载页](https://gojs.net/latest/doc/download.html)中提示用户可以选中下载go-debug.js文件或下载go.js文件,其中go-debug.js用于开发环境，因为使用go-debug.js时会在控制台中打印一些调试信息便于调试，go.js文件用户生产环境，这里我们直接下载go.js文件，下载好后创建一个HTML文件直接引入就可以了
-![](http://oq3pg8pg4.bkt.clouddn.com/2018070602.png)
+{% img blog-image /images/2018070602.png %}
 
 ### 编写实现代码
 下面是一段简单的GoJS代码
@@ -61,7 +61,7 @@ date: 2018-07-05 21:00:39
 	</html>
 
 执行结果，因为GoJS是收费的，可以免费使用，但是不支付授权费在左上角会有一个水印，并且有些功能不能使用
-![](http://oqdvwkahb.bkt.clouddn.com/2018070603.png)
+{% img blog-image /images/2018070603.png %}
 
 #### 破解GoJS 
 除了支付授权费还可以通过破解的方式去除左上角的水印，破解方式是使用打开go.js文件或者go-debug.js文件并注释掉go.js文件或者go-debug.js中的下面这段代码
@@ -70,7 +70,7 @@ date: 2018-07-05 21:00:39
 	1]),10,15*d+0);if(4!==c.length||"5"!==c[0][0]||"7"!==c[3][0])w.p=function(a,b){var c=new da(a,b,2);Object.freeze(c);a[b]=c;var d=a.fv;d instanceof ma||(d=new ma("string",da),a.fv=d);d.add(b,c);return c};
 
 破解成功后可以看到图表上已经没有水印
-![](http://oqdvwkahb.bkt.clouddn.com/2018070604.png)
+{% img blog-image /images/2018070604.png %}
 
 ## 使用GoJS实现一个拖拽效果
 
