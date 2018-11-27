@@ -18,7 +18,7 @@ date: 2017-10-24 10:39:05
 
 ### 计算设置了background-size: 50% 50%属性后背景图片的宽度和高度
 下图是为背景图片设置了`background-size: 50% 50%`后运行在浏览器上的效果，为了比较直观，我在图片上标记了一些数值，[点击此处查看代码](http://jsbin.com/lejekuj/edit?html,output)
-![](http://oq3pg8pg4.bkt.clouddn.com/pic2.png)
+{% img blog-image /images/pic2.png %}
 通过上图可知  
 父元素的宽度 = 500px  
 父元素的高度 = 400px  
@@ -27,7 +27,7 @@ date: 2017-10-24 10:39:05
 
 ### 计算设置了background-size: 50% 属性后背景图片的宽度和高度
 下图是为背景图片设置了`background-size: 50%`后运行在浏览器上的效果，为了比较直观，我在图片上标记了一些数值，[点击此处查看代码](http://jsbin.com/nifodib/edit?html,output)
-![](http://oq3pg8pg4.bkt.clouddn.com/pic3.png)  
+{% img blog-image /images/pic3.png %}
 通过上图可知  
 父元素的宽度 = 500px  
 父元素的高度 = 400px  

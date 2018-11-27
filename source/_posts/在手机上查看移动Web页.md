@@ -27,28 +27,28 @@ date: 2017-10-21 17:40:54
 	npm install -g browser-sync 
 
 ##### 第二步：进入移动端页面中的index.html所在的文件路径下
-![](http://oq3pg8pg4.bkt.clouddn.com/20171021182843152.png)
+{% img blog-image /images/20171021182843152.png %}
 
 ##### 第三步：运行Browsersync
 	
 	browser-sync start --server
 
 此时会自动使用默认的浏览器打开网页，并且在命令行窗口中会显示四个Url地址，其中上面两个表示当前网页的Url地址下面两个Url地址用于打开Browsersync管理页，在Browsersync管理页中可以控制网页  
-![](http://oq3pg8pg4.bkt.clouddn.com/20171021184022959.png)
+{% img blog-image /images/20171021184022959.png %}
 	
 此时在手机浏览器上运行[http://192.168.0.102:3000](http://192.168.0.102:3000)就可以在手机上看到这个网页，前提必须使手机和电脑连接在同一wifi下  
 
 ##### 第四步：在桌面版Chrome浏览器上查看连接到电脑上的手机
 打开桌面版的Chrome浏览器，在地址框中输入`chrome://inspect`，此时在Chrome浏览器页面上可以查看到与电脑连接的移动设备的信息
-![](http://oq3pg8pg4.bkt.clouddn.com/pic.png)
+{% img blog-image /images/pic.png %}
 
 ##### 第五步：将Url地址发送到手机上
 在输入框中输入Url地址[http://192.168.0.102:3000](http://192.168.0.102:3000)，并且单击Open按钮，此时会将Url地址发送到手机上的Chrom浏览器中，如果此时手机上启动了Chrome浏览器，Chrom浏览器会显示该Url地址的内容，如果没有启动Chrome浏览器，在启动Chrome浏览器时会自动显示该Url地址的内容
-![](http://oq3pg8pg4.bkt.clouddn.com/pic1.PNG)
+{% img blog-image /images/pic1.PNG %}
 
 ##### 第六步：在手机上查看移动端页面
 打开手机上的Chrome浏览器，可以看到这个移动端页面  
-![](http://oq3pg8pg4.bkt.clouddn.com/phone.png)
+{% img blog-image /images/phone.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[在手机上查看移动Web页](http://meishadevs.com/blog/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E6%9F%A5%E7%9C%8B%E7%A7%BB%E5%8A%A8Web%E9%A1%B5/)】

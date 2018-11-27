@@ -50,10 +50,10 @@ Gulp是一个可以自动化完成我们开发过程中大量的重复工作的�
 	npm init
 
 在命令行中运行`npm init`命令的时候会出现下图所示的要求用户输入name、version等值，当不清楚这些值的含义的时候，一直按回车键，会自动使用默认值
-![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170416094616628.png)
+{% img blog-image /images/20170416094616628.png %}
 
 **4.完成这些操作后会在code文件中会生成一个package.json文件**
-![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170416094708660.png)
+{% img blog-image /images/20170416094708660.png %}
 
 **5.打开package.json文件可以看到package.json中记录了一些当前项目的信息**  
 **name:** 项目的名称  
@@ -87,7 +87,7 @@ Gulp主文件用于注册任务
 
 **8.使用gulp**  
 打开命令行，并且在命令行中执行`gulp say`命令，可以看到在控制台中输出了一句"say hello"表示Gulp安装成功
-![](http://oq3pg8pg4.bkt.clouddn.com/20170416101457184.png)
+{% img blog-image /images/20170416101457184.png %}
 
 ### 使用Gulp实现一个文件拷贝任务
 下面的操作都是在项目中安装了Gulp的情况下进行的，没有安装Gulp可以看前面的**Gulp的安装与使用**中的内容
@@ -137,7 +137,7 @@ Gulp主文件用于注册任务
 	gulp copy
 
 文件拷贝命令执行完成后可以看到在code目录下自动创建了一个dist文件夹，并且在dist文件夹下自动创建了一个index.html文件，表示文件拷贝任务运行成功
-![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170416110116584.png)
+{% img blog-image /images/20170416110116584.png %}
 
 **5.自动执行文件拷贝任务**
 在这个文件拷贝任务中，有一个非常大的弊端，就是每次更新index.html中的代码的时候，都要在命令行中执行一次`gulp copy`命令，这样做做了重复性操作，也不符合使用Gulp实现自动化的特点，为了改成自动化执行文件拷贝命令，可以修改gulpfile.js中的代码
@@ -168,7 +168,7 @@ Gulp主文件用于注册任务
 	gulp dist
 
 **6.此时只要修改src文件夹的index.html文件,修改完成后只要一保存，HTML代码就能同时同步到dist文件夹下的index.html中**
-![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170416113431492.png)
+{% img blog-image /images/20170416113431492.png %}
 
 ### 使用Gulp自动将Less编译成CSS
 下面的操作都是在项目中安装了Gulp的情况下进行的，没有安装Gulp可以看前面的**Gulp的安装与使用**中的内容
@@ -230,7 +230,7 @@ Gulp主文件用于注册任务
 
 **5.修改less文件夹下的style.less**
 打开less文件夹下的style.less文件，并且修改style.less文件，当保存后会自动将style.less文件编译成css文件，并且会自动创建一个css目录，在css目录下自动创建一个style.css文件用于存储生成的CSS代码
-![这里写图片描述](http://oq3pg8pg4.bkt.clouddn.com/20170417204103113.png)
+{% img blog-image /images/20170417204103113.png %}
 
 ## 参考链接
 - [gulp.js 中文网](https://www.gulpjs.com.cn/)
