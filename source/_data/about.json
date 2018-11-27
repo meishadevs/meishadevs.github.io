@@ -18,7 +18,7 @@
     "projects": [
         {
             "name": "博雅互动首页项目", 
-            "image": "../images/boyaa.png", 
+            "image": "http://meishadevs.coding.me/images/boyaa.png", 
             "tags": [
                 "2016年", 
                 "网页"
@@ -29,7 +29,7 @@
         }, 
         {
             "name": "西游黄金矿工", 
-            "image": "../images/goldminer.png", 
+            "image": "http://meishadevs.coding.me/images/goldminer.png", 
             "description": "个人使用Cocos2d-js制作的一款html5版的黄金矿工类游戏，游戏实现了场景选择、挖矿等功能", 
             "tags": [
                 "2016", 
@@ -40,7 +40,7 @@
         },
 		{
             "name": "电商网", 
-            "image": "../images/pic4.png", 
+            "image": "http://meishadevs.coding.me/images/pic4.png", 
             "description": "整个网站由网站首页、商品分类页、注册页、登录页、商品信息展示页、商品筛选页、购物车及结算页组成，整个网站包含了将网页添加到收藏夹、关键字搜索、图片轮播、商品分类菜单切换、商品筛选、商品简介、商品咨询、省市区三级联动等功能", 
             "tags": [
                 "2017", 
