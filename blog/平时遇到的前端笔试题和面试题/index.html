@@ -219,6 +219,22 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/JavaScript/">
                     JavaScript <span class="right">1 篇</span></a>
                 </a>
@@ -235,24 +251,24 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/面试/">
-                    面试 <span class="right">2 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/读书笔记/">
-                    读书笔记 <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/部署/">
                     部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -291,16 +307,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/预处理CSS/">
-                    预处理CSS <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/预处理CSS/Less/">
-                    Less <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -315,8 +323,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Vue-js/">
-                    Vue-js <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -333,14 +341,6 @@
             <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/小程序/">
                     小程序 <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/正则表达式/">
-                    正则表达式 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -455,7 +455,7 @@ xhr.send();
 </code></pre><p><strong>3、使用正则表达式提取出url值为 <a href="https://map.baidu.com/x/y/z" target="_blank" rel="noopener">https://map.baidu.com/x/y/z</a> 中的 <a href="map.baidu.com">map.baidu.com</a></strong>  </p>
 <pre><code>/https:\/\/([^\/]+)/.exec(&apos;https://map.baidu.com/x/y/z&apos;)[1]
 &apos;https://map.baidu.com/x/y/z&apos;.match(/https:\/\/([^\/]+)/)[1]
-</code></pre><p>执行结果<br><img src="http://oq3pg8pg4.bkt.clouddn.com/exec.png" alt=""></p>
+</code></pre><p>执行结果<br><img src="/images/exec.png" class="blog-image"></p>
 <p><strong>4、使用ES6的方法实现数组去重</strong>  </p>
 <pre><code>let array = [1, 1, 1, 1, 2, 3, 4, 4, 5, 3];
 let set = new Set(array);
@@ -613,19 +613,19 @@ console.log(func());
 
 var person = new Person(&quot;meishadevs&quot;, 24);
 person.printThis();
-</code></pre><p>执行结果<br><img src="http://oq3pg8pg4.bkt.clouddn.com/this1.PNG" alt=""></p>
+</code></pre><p>执行结果<br><img src="/images/this1.PNG" class="blog-image"></p>
 <p>2、普通函数中的this指向函数的调用者  </p>
 <pre><code>function printThis() {
     console.log(this);
 }
 
 printThis();
-</code></pre><p>执行结果<br><img src="http://oq3pg8pg4.bkt.clouddn.com/this2.PNG" alt=""></p>
+</code></pre><p>执行结果<br><img src="/images/this2.PNG" class="blog-image"></p>
 <p>3、自执行函数中的this指向window对象  </p>
 <pre><code>(function () {
     console.log(this);
 })();
-</code></pre><p>执行结果<br><img src="http://oq3pg8pg4.bkt.clouddn.com/this3.PNG" alt=""></p>
+</code></pre><p>执行结果<br><img src="/images/this3.PNG" class="blog-image"></p>
 <p>4、箭头函数中的this指向函数定义时所在的对象</p>
 <p><strong>26、写出以字母开头，可以包含字母或数字的4—10位的用户密码的正则表达式</strong></p>
 <pre><code>/^[a-zA-Z][a-zA-Z0-9]{3,9}$/.test(password);

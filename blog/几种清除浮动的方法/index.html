@@ -219,6 +219,22 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/JavaScript/">
                     JavaScript <span class="right">1 篇</span></a>
                 </a>
@@ -235,24 +251,24 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/面试/">
-                    面试 <span class="right">2 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/读书笔记/">
-                    读书笔记 <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/部署/">
                     部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -291,16 +307,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/预处理CSS/">
-                    预处理CSS <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/预处理CSS/Less/">
-                    Less <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -315,8 +323,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Vue-js/">
-                    Vue-js <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -333,14 +341,6 @@
             <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/小程序/">
                     小程序 <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/正则表达式/">
-                    正则表达式 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -482,14 +482,14 @@
     &lt;div class=&quot;box3&quot;&gt;我是box3&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p>上述代码在浏览器中的运行效果如下：<br><img src="http://oq3pg8pg4.bkt.clouddn.com/20170111210847230.png" alt=""></p>
+</code></pre><p>上述代码在浏览器中的运行效果如下：<br><img src="/images/20170111210847230.png" class="blog-image"></p>
 <p><strong>分析：</strong>通过上图展示的效果我们可以看出box1和box2虽然都在第一行，但是在没有给box3设置浮动的情况下，box3也跑到了第一行上，因为当给box1和box2设置了浮动后，而浮动的元素是脱离了标准文档流，而浏览器会认为脱离了标准文档流的元素不占位置，而box3依然在标准文档流中，所以box3会跑到浏览器的最左端</p>
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h5 id="方法1：使用clear-both清除浮动"><a href="#方法1：使用clear-both清除浮动" class="headerlink" title="方法1：使用clear : both清除浮动"></a>方法1：使用clear : both清除浮动</h5><p>在box3中添加clear : both清除浮动对box3的影响</p>
 <pre><code>.box3 {
     background-color: blue;
     clear: both;
 }
-</code></pre><p>在浏览器中运行的效果：<br><img src="http://oq3pg8pg4.bkt.clouddn.com/20170111215825961.png" alt=""></p>
+</code></pre><p>在浏览器中运行的效果：<br><img src="/images/20170111215825961.png" class="blog-image"></p>
 <p>当我们需要给box3设置padding属性和设置margin属性时</p>
 <pre><code>.box3 {
     padding: 100px;
@@ -497,7 +497,8 @@
     background-color: blue;
     clear: both;
 }
-</code></pre><p>在浏览器中的效果<br><img src="http://oq3pg8pg4.bkt.clouddn.com/20170111220546278.png" alt=""><br>通过观察可知，当给box3设置一个margin值为100px后发现box3的margin-top和margin-bottom并没有发生变法，这就是使用Clear : both清除浮动的一个弊端，使用Clear : both清除浮动会使得元素的margin-top和margin-bottom属性失效</p>
+</code></pre><p>在浏览器中的效果<br><img src="/images/20170111220546278.png" class="blog-image"></p>
+<p>通过观察可知，当给box3设置一个margin值为100px后发现box3的margin-top和margin-bottom并没有发生变法，这就是使用Clear : both清除浮动的一个弊端，使用Clear : both清除浮动会使得元素的margin-top和margin-bottom属性失效</p>
 <h5 id="方法2：使用ovflow-hidden"><a href="#方法2：使用ovflow-hidden" class="headerlink" title="方法2：使用ovflow: hidden"></a>方法2：使用ovflow: hidden</h5><p>为box1、box2两个元素引入一个父元素，并且给父元素添加一个overflow : hiden属性</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -546,7 +547,7 @@
     &lt;p class=&quot;box3&quot;&gt;我是box3&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p>在浏览器中运行的效果如下：<br><img src="http://oq3pg8pg4.bkt.clouddn.com/20171022114447071.png" alt=""></p>
+</code></pre><p>在浏览器中运行的效果如下：<br><img src="/images/20171022114447071.png" class="blog-image"></p>
 <p>通过观察可知使用overflow: hidden属性清除浮动，不会让box3的margin-top属性和margin-bottom属性失效</p>
 <h5 id="方法3：使用伪类清除浮动"><a href="#方法3：使用伪类清除浮动" class="headerlink" title="方法3：使用伪类清除浮动"></a>方法3：使用伪类清除浮动</h5><p>在实际开发中为了解决清除浮动在不同浏览器下的兼容问题，我们通常会定义一个clearfix类，当那个元素需要清除浮动，就给该元素的父元素设置clearfix类，clearfix类的代码如下</p>
 <pre><code>.clearfix:after {

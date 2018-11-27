@@ -219,6 +219,22 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/JavaScript/">
                     JavaScript <span class="right">1 篇</span></a>
                 </a>
@@ -235,24 +251,24 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/面试/">
-                    面试 <span class="right">2 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/读书笔记/">
-                    读书笔记 <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/部署/">
                     部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -291,16 +307,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/预处理CSS/">
-                    预处理CSS <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/预处理CSS/Less/">
-                    Less <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -315,8 +323,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Vue-js/">
-                    Vue-js <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -333,14 +341,6 @@
             <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/小程序/">
                     小程序 <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/正则表达式/">
-                    正则表达式 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -453,13 +453,13 @@
 </ul>
 <h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h5 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h5><p>需要提前在电脑中安装Chrome浏览器，在手机上安装移动版的Chrome浏览器，并且通过数据线将手机和电脑连接，手机必须和电脑连接在同一wifi下，并且电脑里需要提前安装好Node.js，因为下面的操作中有些步骤需要用到Node.js，Node.js的安装方法可以参考我前面写的博客<a href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8NVM%E5%AE%89%E8%A3%85Node.js/">使用NVM安装Node.js</a></p>
 <h5 id="第一步：全局安装Browsersync"><a href="#第一步：全局安装Browsersync" class="headerlink" title="第一步：全局安装Browsersync"></a>第一步：全局安装Browsersync</h5><pre><code>npm install -g browser-sync 
-</code></pre><h5 id="第二步：进入移动端页面中的index-html所在的文件路径下"><a href="#第二步：进入移动端页面中的index-html所在的文件路径下" class="headerlink" title="第二步：进入移动端页面中的index.html所在的文件路径下"></a>第二步：进入移动端页面中的index.html所在的文件路径下</h5><p><img src="http://oq3pg8pg4.bkt.clouddn.com/20171021182843152.png" alt=""></p>
+</code></pre><h5 id="第二步：进入移动端页面中的index-html所在的文件路径下"><a href="#第二步：进入移动端页面中的index-html所在的文件路径下" class="headerlink" title="第二步：进入移动端页面中的index.html所在的文件路径下"></a>第二步：进入移动端页面中的index.html所在的文件路径下</h5><img src="/images/20171021182843152.png" class="blog-image">
 <h5 id="第三步：运行Browsersync"><a href="#第三步：运行Browsersync" class="headerlink" title="第三步：运行Browsersync"></a>第三步：运行Browsersync</h5><pre><code>browser-sync start --server
-</code></pre><p>此时会自动使用默认的浏览器打开网页，并且在命令行窗口中会显示四个Url地址，其中上面两个表示当前网页的Url地址下面两个Url地址用于打开Browsersync管理页，在Browsersync管理页中可以控制网页<br><img src="http://oq3pg8pg4.bkt.clouddn.com/20171021184022959.png" alt=""></p>
+</code></pre><p>此时会自动使用默认的浏览器打开网页，并且在命令行窗口中会显示四个Url地址，其中上面两个表示当前网页的Url地址下面两个Url地址用于打开Browsersync管理页，在Browsersync管理页中可以控制网页<br><img src="/images/20171021184022959.png" class="blog-image"></p>
 <p>此时在手机浏览器上运行<a href="http://192.168.0.102:3000" target="_blank" rel="noopener">http://192.168.0.102:3000</a>就可以在手机上看到这个网页，前提必须使手机和电脑连接在同一wifi下  </p>
-<h5 id="第四步：在桌面版Chrome浏览器上查看连接到电脑上的手机"><a href="#第四步：在桌面版Chrome浏览器上查看连接到电脑上的手机" class="headerlink" title="第四步：在桌面版Chrome浏览器上查看连接到电脑上的手机"></a>第四步：在桌面版Chrome浏览器上查看连接到电脑上的手机</h5><p>打开桌面版的Chrome浏览器，在地址框中输入<code>chrome://inspect</code>，此时在Chrome浏览器页面上可以查看到与电脑连接的移动设备的信息<br><img src="http://oq3pg8pg4.bkt.clouddn.com/pic.png" alt=""></p>
-<h5 id="第五步：将Url地址发送到手机上"><a href="#第五步：将Url地址发送到手机上" class="headerlink" title="第五步：将Url地址发送到手机上"></a>第五步：将Url地址发送到手机上</h5><p>在输入框中输入Url地址<a href="http://192.168.0.102:3000" target="_blank" rel="noopener">http://192.168.0.102:3000</a>，并且单击Open按钮，此时会将Url地址发送到手机上的Chrom浏览器中，如果此时手机上启动了Chrome浏览器，Chrom浏览器会显示该Url地址的内容，如果没有启动Chrome浏览器，在启动Chrome浏览器时会自动显示该Url地址的内容<br><img src="http://oq3pg8pg4.bkt.clouddn.com/pic1.PNG" alt=""></p>
-<h5 id="第六步：在手机上查看移动端页面"><a href="#第六步：在手机上查看移动端页面" class="headerlink" title="第六步：在手机上查看移动端页面"></a>第六步：在手机上查看移动端页面</h5><p>打开手机上的Chrome浏览器，可以看到这个移动端页面<br><img src="http://oq3pg8pg4.bkt.clouddn.com/phone.png" alt=""></p>
+<h5 id="第四步：在桌面版Chrome浏览器上查看连接到电脑上的手机"><a href="#第四步：在桌面版Chrome浏览器上查看连接到电脑上的手机" class="headerlink" title="第四步：在桌面版Chrome浏览器上查看连接到电脑上的手机"></a>第四步：在桌面版Chrome浏览器上查看连接到电脑上的手机</h5><p>打开桌面版的Chrome浏览器，在地址框中输入<code>chrome://inspect</code>，此时在Chrome浏览器页面上可以查看到与电脑连接的移动设备的信息<br><img src="/images/pic.png" class="blog-image"></p>
+<h5 id="第五步：将Url地址发送到手机上"><a href="#第五步：将Url地址发送到手机上" class="headerlink" title="第五步：将Url地址发送到手机上"></a>第五步：将Url地址发送到手机上</h5><p>在输入框中输入Url地址<a href="http://192.168.0.102:3000" target="_blank" rel="noopener">http://192.168.0.102:3000</a>，并且单击Open按钮，此时会将Url地址发送到手机上的Chrom浏览器中，如果此时手机上启动了Chrome浏览器，Chrom浏览器会显示该Url地址的内容，如果没有启动Chrome浏览器，在启动Chrome浏览器时会自动显示该Url地址的内容<br><img src="/images/pic1.PNG" class="blog-image"></p>
+<h5 id="第六步：在手机上查看移动端页面"><a href="#第六步：在手机上查看移动端页面" class="headerlink" title="第六步：在手机上查看移动端页面"></a>第六步：在手机上查看移动端页面</h5><p>打开手机上的Chrome浏览器，可以看到这个移动端页面<br><img src="/images/phone.png" class="blog-image"></p>
 <blockquote>
 <p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E6%9F%A5%E7%9C%8B%E7%A7%BB%E5%8A%A8Web%E9%A1%B5/">在手机上查看移动Web页</a>】</p>
 </blockquote>

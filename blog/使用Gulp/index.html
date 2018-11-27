@@ -219,6 +219,22 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/JavaScript/">
                     JavaScript <span class="right">1 篇</span></a>
                 </a>
@@ -235,24 +251,24 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/面试/">
-                    面试 <span class="right">2 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/读书笔记/">
-                    读书笔记 <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/部署/">
                     部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -291,16 +307,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/预处理CSS/">
-                    预处理CSS <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/预处理CSS/Less/">
-                    Less <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -315,8 +323,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Vue-js/">
-                    Vue-js <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -333,14 +341,6 @@
             <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/小程序/">
                     小程序 <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/正则表达式/">
-                    正则表达式 <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -470,8 +470,8 @@ mkdir code
 cd code 
 </code></pre><p><strong>3.执行下面的命令创建package.json文件</strong>  </p>
 <pre><code>npm init
-</code></pre><p>在命令行中运行<code>npm init</code>命令的时候会出现下图所示的要求用户输入name、version等值，当不清楚这些值的含义的时候，一直按回车键，会自动使用默认值<br><img src="http://oq3pg8pg4.bkt.clouddn.com/20170416094616628.png" alt="这里写图片描述"></p>
-<p><strong>4.完成这些操作后会在code文件中会生成一个package.json文件</strong><br><img src="http://oq3pg8pg4.bkt.clouddn.com/20170416094708660.png" alt="这里写图片描述"></p>
+</code></pre><p>在命令行中运行<code>npm init</code>命令的时候会出现下图所示的要求用户输入name、version等值，当不清楚这些值的含义的时候，一直按回车键，会自动使用默认值<br><img src="/images/20170416094616628.png" class="blog-image"></p>
+<p><strong>4.完成这些操作后会在code文件中会生成一个package.json文件</strong><br><img src="/images/20170416094708660.png" class="blog-image"></p>
 <p><strong>5.打开package.json文件可以看到package.json中记录了一些当前项目的信息</strong><br><strong>name:</strong> 项目的名称<br><strong>version:</strong> 项目的版本<br><strong>description:</strong> 项目的描述信息<br><strong>main:</strong> 项目的入口函数<br><strong>scripts:</strong> scripts属性是一个对象，里边指定了项目的生命周期个各个环节需要执行的命令<br><strong>author:</strong> 项目的作者<br><strong>license:</strong> 项目的许可证<br><strong>devDependencies:</strong> 项目依赖的插件<br><strong>repository:</strong> 项目资源库</p>
 <p><strong>6.在命令行中执行下面的命令，安装Gulp</strong>  </p>
 <pre><code>npm install --save-dev gulp
@@ -487,7 +487,7 @@ var gulp = require(&apos;gulp&apos;);
 gulp.task(&apos;say&apos;, function() {
     console.log(&quot;hello world !&quot;);
 });
-</code></pre><p><strong>8.使用gulp</strong><br>打开命令行，并且在命令行中执行<code>gulp say</code>命令，可以看到在控制台中输出了一句”say hello”表示Gulp安装成功<br><img src="http://oq3pg8pg4.bkt.clouddn.com/20170416101457184.png" alt=""></p>
+</code></pre><p><strong>8.使用gulp</strong><br>打开命令行，并且在命令行中执行<code>gulp say</code>命令，可以看到在控制台中输出了一句”say hello”表示Gulp安装成功<br><img src="/images/20170416101457184.png" class="blog-image"></p>
 <h3 id="使用Gulp实现一个文件拷贝任务"><a href="#使用Gulp实现一个文件拷贝任务" class="headerlink" title="使用Gulp实现一个文件拷贝任务"></a>使用Gulp实现一个文件拷贝任务</h3><p>下面的操作都是在项目中安装了Gulp的情况下进行的，没有安装Gulp可以看前面的<strong>Gulp的安装与使用</strong>中的内容</p>
 <p><strong>1.创建一个src文件夹，并且在src文件夹下创建一个index.html文件</strong><br>在Git Bash中执行下面的命令创建一个src文件夹，并在src文件夹下创建一个index.htmll文件，没有安装Git的可以手动创建</p>
 <pre><code># 创建src文件夹
@@ -524,7 +524,7 @@ gulp.task(&apos;copy&apos;, function() {
 });
 </code></pre><p><strong>4.在命令行中执行文件拷贝任务，将src目录下的index.html文件拷贝到dist目录下</strong>  </p>
 <pre><code>gulp copy
-</code></pre><p>文件拷贝命令执行完成后可以看到在code目录下自动创建了一个dist文件夹，并且在dist文件夹下自动创建了一个index.html文件，表示文件拷贝任务运行成功<br><img src="http://oq3pg8pg4.bkt.clouddn.com/20170416110116584.png" alt="这里写图片描述"></p>
+</code></pre><p>文件拷贝命令执行完成后可以看到在code目录下自动创建了一个dist文件夹，并且在dist文件夹下自动创建了一个index.html文件，表示文件拷贝任务运行成功<br><img src="/images/20170416110116584.png" class="blog-image"></p>
 <p><strong>5.自动执行文件拷贝任务</strong><br>在这个文件拷贝任务中，有一个非常大的弊端，就是每次更新index.html中的代码的时候，都要在命令行中执行一次<code>gulp copy</code>命令，这样做做了重复性操作，也不符合使用Gulp实现自动化的特点，为了改成自动化执行文件拷贝命令，可以修改gulpfile.js中的代码</p>
 <pre><code>//载入gulp模块
 var gulp = require(&apos;gulp&apos;);
@@ -548,7 +548,7 @@ gulp.task(&apos;dist&apos;, function() {
 });
 </code></pre><p><strong>6.修改好gulpfile.js中的代码后在命令行中执行下面的命令</strong></p>
 <pre><code>gulp dist
-</code></pre><p><strong>6.此时只要修改src文件夹的index.html文件,修改完成后只要一保存，HTML代码就能同时同步到dist文件夹下的index.html中</strong><br><img src="http://oq3pg8pg4.bkt.clouddn.com/20170416113431492.png" alt="这里写图片描述"></p>
+</code></pre><p><strong>6.此时只要修改src文件夹的index.html文件,修改完成后只要一保存，HTML代码就能同时同步到dist文件夹下的index.html中</strong><br><img src="/images/20170416113431492.png" class="blog-image"></p>
 <h3 id="使用Gulp自动将Less编译成CSS"><a href="#使用Gulp自动将Less编译成CSS" class="headerlink" title="使用Gulp自动将Less编译成CSS"></a>使用Gulp自动将Less编译成CSS</h3><p>下面的操作都是在项目中安装了Gulp的情况下进行的，没有安装Gulp可以看前面的<strong>Gulp的安装与使用</strong>中的内容</p>
 <p><strong>1.安装gulp-less插件</strong></p>
 <pre><code>npm install gulp-less --save-dev
@@ -594,7 +594,7 @@ gulp.task(&apos;watchLess&apos;, function() {
 });
 </code></pre><p><strong>5.在命令行中执行下面的命令，启动将Less文件编译成CSS文件的任务</strong></p>
 <pre><code>gulp watchLess
-</code></pre><p><strong>5.修改less文件夹下的style.less</strong><br>打开less文件夹下的style.less文件，并且修改style.less文件，当保存后会自动将style.less文件编译成css文件，并且会自动创建一个css目录，在css目录下自动创建一个style.css文件用于存储生成的CSS代码<br><img src="http://oq3pg8pg4.bkt.clouddn.com/20170417204103113.png" alt="这里写图片描述"></p>
+</code></pre><p><strong>5.修改less文件夹下的style.less</strong><br>打开less文件夹下的style.less文件，并且修改style.less文件，当保存后会自动将style.less文件编译成css文件，并且会自动创建一个css目录，在css目录下自动创建一个style.css文件用于存储生成的CSS代码<br><img src="/images/20170417204103113.png" class="blog-image"></p>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
 <li><a href="https://www.gulpjs.com.cn/" target="_blank" rel="noopener">gulp.js 中文网</a></li>
 <li><a href="http://www.ydcss.com/archives/tag/gulp" target="_blank" rel="noopener">一点 | gulp教程</a></li>
