@@ -65,17 +65,14 @@
     <link href="http://meishadevs.com/blog/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     <id>http://meishadevs.com/blog/idea使用技巧/</id>
     <published>2018-08-07T03:04:05.000Z</published>
-    <updated>2018-11-28T07:55:12.283Z</updated>
+    <updated>2018-11-28T09:48:07.240Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;idea中导入jar包：&lt;/strong&gt; 将光标移动到需要导入 jar 包的类上，并按 Alt + Enter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;快速输入输出函数：&lt;/strong&gt; sout + Tab键 或 sout 
+        &lt;h2 id=&quot;基础用法&quot;&gt;&lt;a href=&quot;#基础用法&quot; class=&quot;headerlink&quot; title=&quot;基础用法&quot;&gt;&lt;/a&gt;基础用法&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;idea中导入jar包：&lt;/strong&gt; 将光标移动到需要导入 jar 包的类上，并按 Alt
       
     
     </summary>
