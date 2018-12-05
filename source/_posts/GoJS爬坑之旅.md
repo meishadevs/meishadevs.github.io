@@ -75,7 +75,10 @@ date: 2018-07-05 21:00:39
 ## 使用GoJS实现一个拖拽效果
 
 下图是我使用GoJS实现的一个简单的拖拽效果，整个拖拽界面由两部分组成，左侧菜单和右侧画布，左侧菜单中包含篮子、苹果、桃子、土豆、肉，用户根据需要将食物添加到对应篮子中，例如：苹果只能拖入放苹果的篮子中，桃子只能拖入放桃子的篮子中等，当将食物拖入与食物不匹配的篮子中时，食物不能添加到篮子中，当将食物添加到对应的篮子中后会给食物编号，例如第一个苹果命名为苹果1，第二苹果命名为苹果2，当删除食物时会对篮子中已有的食物重新编号
-{% img blog-image /images/2018101610.png %}
+**没将物品拖到对应篮子中时的效果**
+{% img blog-image /images/201812501.png %}
+**将物品拖入了对应篮子中的效果**
+{% img blog-image /images/201812502.png %}
 项目地址：[http://meishadevs.com/JavaScriptDemo/拖拽效果/](http://meishadevs.com/JavaScriptDemo/%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C/)  
 项目源码：[https://github.com/meishadevs/JavaScriptDemo/tree/master/拖拽效果](https://github.com/meishadevs/JavaScriptDemo/tree/master/%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C)
 
