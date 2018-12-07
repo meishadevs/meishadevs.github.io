@@ -1,5 +1,5 @@
 ---
-title: 使用Vue.js时遇到的问题及解决方法
+title: Vue.js学习笔记
 categories:
   - Vue.js
 tags:
@@ -126,6 +126,11 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 **:clone="cloneData"**表示给draggable标签的clone属性赋值为cloneData，这里是v-bind:clone="cloneData"的简写					 	  
 
 	<draggable :clone="cloneData" :list="form_list" :options="dragOptions1"></draggable>
+	
+#### 正则匹配
+下面代码表示匹配 **.png、.jpeg、.jpg、.gif、.svg** 类型的图片，其中代码中的 **\\.** 表示点号，因为点也是一个正则匹配符号，所以需要使用 **\\** 转义
+
+	test: /\.(png|jpe?g|gif|svg)(\?.*)?$/
 
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
