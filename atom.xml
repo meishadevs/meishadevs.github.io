@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://meishadevs.com/"/>
-  <updated>2018-12-05T06:23:49.512Z</updated>
+  <updated>2018-12-17T02:09:51.378Z</updated>
   <id>http://meishadevs.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常见的ES6语法</title>
+    <link href="http://meishadevs.com/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/"/>
+    <id>http://meishadevs.com/blog/常见的ES6语法/</id>
+    <published>2018-12-17T01:23:40.000Z</published>
+    <updated>2018-12-17T02:09:51.378Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;使用箭头函数简化代码&quot;&gt;&lt;a href=&quot;#使用箭头函数简化代码&quot; class=&quot;headerlink&quot; title=&quot;使用箭头函数简化代码&quot;&gt;&lt;/a&gt;使用箭头函数简化代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;var obj = {
+
+      
+    
+    </summary>
+    
+      <category term="ES6" scheme="http://meishadevs.com/categories/ES6/"/>
+    
+    
+      <category term="ES6" scheme="http://meishadevs.com/tags/ES6/"/>
+    
+  </entry>
   
   <entry>
     <title>代码规范类问题修改方法</title>
@@ -236,7 +261,7 @@
     <link href="http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     <id>http://meishadevs.com/blog/常用的正则表达式/</id>
     <published>2017-12-13T07:18:08.000Z</published>
-    <updated>2018-08-07T05:48:45.882Z</updated>
+    <updated>2018-12-10T09:47:35.859Z</updated>
     
     <summary type="html">
     
@@ -367,9 +392,9 @@
       <category term="读书笔记" scheme="http://meishadevs.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="JavaScript" scheme="http://meishadevs.com/tags/JavaScript/"/>
-    
       <category term="读书笔记" scheme="http://meishadevs.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="JavaScript" scheme="http://meishadevs.com/tags/JavaScript/"/>
     
   </entry>
   
@@ -414,30 +439,6 @@
       <category term="Gulp" scheme="http://meishadevs.com/tags/Gulp/"/>
     
       <category term="前端自动化" scheme="http://meishadevs.com/tags/%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Less</title>
-    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Less/"/>
-    <id>http://meishadevs.com/blog/使用Less/</id>
-    <published>2017-03-30T16:00:00.000Z</published>
-    <updated>2018-11-28T07:55:12.344Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;为什么要使用预处理CSS&quot;&gt;&lt;a href=&quot;#为什么要使用预处理CSS&quot; class=&quot;headerlink&quot; title=&quot;为什么要使用预处理CSS&quot;&gt;&lt;/a&gt;为什么要使用预处理CSS&lt;/h1&gt;&lt;p&gt;在使用CSS过程中会遇到一个非常头疼的问题，因为CSS中没有像java/C++或者PHP等程序语言一样有有自己的变量、常量、条件语句以及一些编程语法，只是一行行单纯的属性描述，写起来相当的费事，而且代码难以组织和维护，为了解决这个问题，引入了预处理CSS，预处理CSS可以像Java/C++或者PHP一样用变量，函数等语法描述CSS。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="预处理CSS" scheme="http://meishadevs.com/categories/%E9%A2%84%E5%A4%84%E7%90%86CSS/"/>
-    
-      <category term="Less" scheme="http://meishadevs.com/categories/%E9%A2%84%E5%A4%84%E7%90%86CSS/Less/"/>
-    
-    
-      <category term="预处理CSS" scheme="http://meishadevs.com/tags/%E9%A2%84%E5%A4%84%E7%90%86CSS/"/>
-    
-      <category term="Less" scheme="http://meishadevs.com/tags/Less/"/>
     
   </entry>
   

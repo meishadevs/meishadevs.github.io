@@ -7,7 +7,7 @@
 
     
 
-    <title>Vue.js | meishadevs的技术博客</title>
+    <title>常见的ES6语法 | meishadevs的技术博客</title>
     <meta name="author" content="meishadevs">
     
     <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="常见的ES6语法"/>
     <meta property="og:site_name" content="meishadev&#39;s blog"/>
 
     
@@ -409,31 +409,135 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
         <span class="breadcrumb">当前位置（分类目录）</span>
         
+            
+    
+    
+    <a class="breadcrumb" href="/categories/ES6/">ES6</a>
+
 
         
-            <a class="breadcrumb" href="/categories/Vue-js/">Vue.js</a>
+
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>常见的ES6语法</h1>
+    
 
 
-    <div class="collection mt-0">
+            </div>
+            <time class="pink-link-context" datetime="2018-12-17T01:23:40.000Z"><a href="/blog/常见的ES6语法/">2018-12-17</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
         
-            <a href="/blog/Vue-js学习笔记/" class="collection-item grey-text text-darken-1">
-                <time datetime="2017-12-01T08:14:29.000Z">2017-12-01</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                Vue.js学习笔记
-            </a>
+            <a href="/tags/ES6/" class="chip pink lighten-1">ES6</a>
         
     </div>
 
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用箭头函数简化代码"><span class="section table-of-contents-text">使用箭头函数简化代码</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#简化方法的写法"><span class="section table-of-contents-text">简化方法的写法</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <a id="more"></a>
+<h3 id="使用箭头函数简化代码"><a href="#使用箭头函数简化代码" class="headerlink" title="使用箭头函数简化代码"></a>使用箭头函数简化代码</h3><pre><code>var obj = {
+    typ: Object,
+    default: () =&gt; ({})
+}
+</code></pre><p>上面的代码是下面代码的简写形式</p>
+<pre><code>var obj = {
+    type: Object,
+    default: function () {
+        return {};
+    }
+}
+</code></pre><h3 id="简化方法的写法"><a href="#简化方法的写法" class="headerlink" title="简化方法的写法"></a>简化方法的写法</h3><pre><code>var obj = {
+    create() {
+        console.log(&quot;调用创建obj对象的方法&quot;);
+    }
+};
+
+obj.create();
+</code></pre><p>上面的代码是下面代码的简写形式</p>
+<pre><code>var obj = {
+    create: function () {
+        console.log(&quot;调用创建obj对象的方法&quot;);
+    }
+};
+
+obj.create();
+</code></pre><blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href=""></a>】</p>
+</blockquote>
+
+                
+
+
+<p class="pink-link-context">
+    <a href="/blog/代码规范类问题修改方法/" rel="next" title="代码规范类问题修改方法">
+    下一篇：代码规范类问题修改方法
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Mon Dec 17 2018 09:23:40 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
 
 </div>
 
