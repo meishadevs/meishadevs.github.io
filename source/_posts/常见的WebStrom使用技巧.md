@@ -74,6 +74,15 @@ tags:
 - 在当前项目中查找包含特定内容的文件的快捷键：**Ctrl + Shift + F**
 
 
+-  查看语句快速输入的方法：**Ctrl + J**
+
+
+- 全局搜索：**Ctrl + Shift + F**
+
+
+- 全局替换：**Ctrl + Shift + R**
+
+
 ## Chrome浏览器使用技巧
 - 在浏览器中打开调试窗口的快捷键**F12** 或者 **Ctrl + Shift + I** 或者 **Ctrl + Shift + J**
 
