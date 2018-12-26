@@ -45,6 +45,24 @@ date: 2018-12-17 09:23:40
 	};
 
 	obj.create();
+	
+### 对象合并
+
+下面的代码实现了将obj1对象和obj2对象合并到了一起，并且将合并后的值赋值给obj3
+
+	var obj1 = {
+		name: "meishadevs"
+	};
+
+	var obj2 = {
+		job: "Front-end development"
+	};
+
+	var obj3 = Object.assign(obj1, obj2);
+	
+obj3的值如下
+{% img blog-image /images/2018122601.png %}
+
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的ES6语法](http://meishadevs.coding.me/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/)】
