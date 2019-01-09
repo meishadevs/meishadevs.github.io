@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://meishadevs.com/"/>
-  <updated>2018-12-26T08:45:06.120Z</updated>
+  <updated>2019-01-08T12:09:53.527Z</updated>
   <id>http://meishadevs.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018年终总结</title>
+    <link href="http://meishadevs.com/blog/2018%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://meishadevs.com/blog/2018年终总结/</id>
+    <published>2019-01-08T11:56:20.000Z</published>
+    <updated>2019-01-08T12:09:53.527Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今年对我来说注定是不平凡的一年，一来是今年是我的本命年，二来是因为今年是我第一次来深圳工作，下面我将从生活、工作和技术成长三个方面总结我在这一年的经历。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="总结" scheme="http://meishadevs.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="总结" scheme="http://meishadevs.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>常见的ES6语法</title>
@@ -415,30 +435,6 @@
     
     
       <category term="Git" scheme="http://meishadevs.com/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Gulp</title>
-    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Gulp/"/>
-    <id>http://meishadevs.com/blog/使用Gulp/</id>
-    <published>2017-04-14T16:00:00.000Z</published>
-    <updated>2018-11-28T07:55:12.336Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;为什么要使用Gulp&quot;&gt;&lt;a href=&quot;#为什么要使用Gulp&quot; class=&quot;headerlink&quot; title=&quot;为什么要使用Gulp&quot;&gt;&lt;/a&gt;为什么要使用Gulp&lt;/h1&gt;&lt;p&gt;在前端开发中通常需要做，预处理语言的编译、js文件的压缩、css文件的压缩、图片的压缩等一系列工作，而使用Gulp可以自动化的完成这些工作，从而提高网站的开发效率，在我的博客&lt;a href=&quot;http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Less/&quot;&gt;使用Less&lt;/a&gt;中介绍了将Less文件编译成CSS文件的方法，仔细观察可以看到如果按照博客中介绍的方法，在编译多个Less文件或者编译不同文件夹下的Less文件时需要执行多次Less文件编译命令，而使用Gulp可以一次性完成这些操作&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Gulp" scheme="http://meishadevs.com/categories/Gulp/"/>
-    
-      <category term="前端自动化" scheme="http://meishadevs.com/categories/Gulp/%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    
-      <category term="Gulp" scheme="http://meishadevs.com/tags/Gulp/"/>
-    
-      <category term="前端自动化" scheme="http://meishadevs.com/tags/%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
   </entry>
   

@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>2018年终总结</title>
+      <link href="/blog/2018%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+      <url>/blog/2018%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</url>
+      <content type="html"><![CDATA[<p>今年对我来说注定是不平凡的一年，一来是今年是我的本命年，二来是因为今年是我第一次来深圳工作，下面我将从生活、工作和技术成长三个方面总结我在这一年的经历。<br><a id="more"></a></p><h1 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h1><p>对于深圳我是不陌生的，在我很小的时候，我爸妈就来深圳工作了，所以我从初二到高一这三年的暑假都是在深圳度过的，有时候会想如果我也能在深圳工作，那一定是一件非常有趣的事情，多年后的今天我终于实现</p><h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><h1 id="技术成长"><a href="#技术成长" class="headerlink" title="技术成长"></a>技术成长</h1><img src="/images/" class="blog-image"><blockquote><p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href=""></a>】</p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> 总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 总结 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>常见的ES6语法</title>
       <link href="/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/"/>
       <url>/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/</url>
@@ -595,7 +616,7 @@
       <title>常见的WebStrom使用技巧和Chrome使用技巧</title>
       <link href="/blog/%E5%B8%B8%E8%A7%81%E7%9A%84WebStrom%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
       <url>/blog/%E5%B8%B8%E8%A7%81%E7%9A%84WebStrom%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
-      <content type="html"><![CDATA[<p>自己平时总结的一些使用WebStrom的使用技巧和Chrome浏览器使用技巧<br><a id="more"></a></p><h2 id="WebStrom使用技巧"><a href="#WebStrom使用技巧" class="headerlink" title="WebStrom使用技巧"></a>WebStrom使用技巧</h2><ul><li><strong>标签名 + Tab键</strong>可以快速输入一个标签 例如：div + Tab键可以快速输入：<code>&lt;div&gt;&lt;/div&gt;</code></li></ul><ul><li><strong>选中代码</strong>按下 <strong>Ctrl + D</strong> 可以同时实现复制和粘贴</li></ul><ul><li>左手按住<strong>Alt键</strong>，右手按住<strong>鼠标左键往下拉</strong>可以选中下拉线上的内容</li></ul><ul><li>在WebStrom中输入<code>div*10</code>并且按下<strong>Tab键</strong>可以一次性输入10个div</li></ul><ul><li>在WebStrom中输入<code>div{item$}*10</code>并且按下<strong>Tab键</strong>可以一次性输入10个div并且div中的内容依次是item1、item2、item3….item10</li></ul><ul><li>在WebStrom中输入<code>div.box$*3</code>并且按下<strong>Tab键</strong>，可以一次性输入3个div，并且div的类选择器名称依次是box1、box2、box3</li></ul><ul><li>在WebStrom中输入<code>div#box$*3</code>并且按下<strong>Tab键</strong>，可以一次性输入3个div，并且div的id选择器名称依次是box1、box2、box3</li></ul><ul><li>按住<strong>Ctrl键</strong>，并且按住<strong>鼠标左键</strong>，拖动鼠标，选中代码，松开鼠标左键后代码仍能处于被选中的状态，此时可以对代码做一系列的操作</li></ul><ul><li><strong>! + Tab键</strong>快速输入HTML5框架代码</li></ul><ul><li><code>html:5</code> + <strong>Tab键</strong>也可以快速输入HTML5框架代码</li></ul><ul><li><code>html:xt</code> + <strong>Tab键</strong>可以快速输入HTML4框架代码</li></ul><ul><li>查找的快捷键 <strong>Ctrl + F</strong></li></ul><ul><li>替换的快捷键 <strong>Ctrl + R</strong>  </li></ul><ul><li>格式化代码的快捷键 <strong>Ctrl + Alt + L</strong>  </li></ul><ul><li><code>meta:vp</code> + <strong>Tab键</strong>可以快速输入viewport  </li></ul><ul><li>全局搜索的快捷键<strong>Ctrl + Shift + N</strong></li></ul><ul><li><strong>修改代码模板：</strong>单击File –&gt; Settings –&gt; Editor –&gt; File and Code Templates</li></ul><ul><li>根据行号查找代码的快捷键：<strong>Ctrl + G</strong></li></ul><ul><li>查找函数(方法)、变量、类所在的文件的快捷键：<strong>Ctrl + Shift + Alt + N</strong> </li></ul><ul><li>在当前项目中查找包含特定内容的文件的快捷键：<strong>Ctrl + Shift + F</strong></li></ul><ul><li>查看语句快速输入的方法：<strong>Ctrl + J</strong></li></ul><ul><li>全局搜索：<strong>Ctrl + Shift + F</strong></li></ul><ul><li>全局替换：<strong>Ctrl + Shift + R</strong></li></ul><h2 id="Chrome浏览器使用技巧"><a href="#Chrome浏览器使用技巧" class="headerlink" title="Chrome浏览器使用技巧"></a>Chrome浏览器使用技巧</h2><ul><li>在浏览器中打开调试窗口的快捷键<strong>F12</strong> 或者 <strong>Ctrl + Shift + I</strong> 或者 <strong>Ctrl + Shift + J</strong></li></ul><ul><li>在Chrome浏览器下的console窗口中实现代码换行的快捷键 <strong>Shift + Enter</strong></li></ul><blockquote><p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/%E5%B8%B8%E8%A7%81%E7%9A%84WebStrom%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">常见的WebStrom使用技巧</a>】</p></blockquote>]]></content>
+      <content type="html"><![CDATA[<p>自己平时总结的一些使用WebStrom的使用技巧和Chrome浏览器使用技巧<br><a id="more"></a></p><h2 id="WebStrom使用技巧"><a href="#WebStrom使用技巧" class="headerlink" title="WebStrom使用技巧"></a>WebStrom使用技巧</h2><ul><li><strong>标签名 + Tab键</strong>可以快速输入一个标签 例如：div + Tab键可以快速输入：<code>&lt;div&gt;&lt;/div&gt;</code></li></ul><ul><li><strong>选中代码</strong>按下 <strong>Ctrl + D</strong> 可以同时实现复制和粘贴</li></ul><ul><li>左手按住<strong>Alt键</strong>，右手按住<strong>鼠标左键往下拉</strong>可以选中下拉线上的内容</li></ul><ul><li>在WebStrom中输入<code>div*10</code>并且按下<strong>Tab键</strong>可以一次性输入10个div</li></ul><ul><li>在WebStrom中输入<code>div{item$}*10</code>并且按下<strong>Tab键</strong>可以一次性输入10个div并且div中的内容依次是item1、item2、item3….item10</li></ul><ul><li>在WebStrom中输入<code>div.box$*3</code>并且按下<strong>Tab键</strong>，可以一次性输入3个div，并且div的类选择器名称依次是box1、box2、box3</li></ul><ul><li>在WebStrom中输入<code>div#box$*3</code>并且按下<strong>Tab键</strong>，可以一次性输入3个div，并且div的id选择器名称依次是box1、box2、box3</li></ul><ul><li>按住<strong>Ctrl键</strong>，并且按住<strong>鼠标左键</strong>，拖动鼠标，选中代码，松开鼠标左键后代码仍能处于被选中的状态，此时可以对代码做一系列的操作</li></ul><ul><li><strong>! + Tab键</strong>快速输入HTML5框架代码</li></ul><ul><li><code>html:5</code> + <strong>Tab键</strong>也可以快速输入HTML5框架代码</li></ul><ul><li><code>html:xt</code> + <strong>Tab键</strong>可以快速输入HTML4框架代码</li></ul><ul><li>查找的快捷键 <strong>Ctrl + F</strong></li></ul><ul><li>替换的快捷键 <strong>Ctrl + R</strong>  </li></ul><ul><li>格式化代码的快捷键 <strong>Ctrl + Alt + L</strong>  </li></ul><ul><li><code>meta:vp</code> + <strong>Tab键</strong>可以快速输入viewport  </li></ul><ul><li>全局搜索的快捷键<strong>Ctrl + Shift + N</strong></li></ul><ul><li><strong>修改代码模板：</strong>单击File –&gt; Settings –&gt; Editor –&gt; File and Code Templates</li></ul><ul><li>根据行号查找代码的快捷键：<strong>Ctrl + G</strong></li></ul><ul><li>查找函数(方法)、变量、类所在的文件的快捷键：<strong>Ctrl + Shift + Alt + N</strong> </li></ul><ul><li>在当前项目中查找包含特定内容的文件的快捷键：<strong>Ctrl + Shift + F</strong></li></ul><ul><li>查看语句快速输入的方法：<strong>Ctrl + J</strong></li></ul><ul><li>全局搜索：<strong>Ctrl + Shift + F</strong></li></ul><ul><li>全局替换：<strong>Ctrl + Shift + R</strong></li></ul><h2 id="Chrome浏览器使用技巧"><a href="#Chrome浏览器使用技巧" class="headerlink" title="Chrome浏览器使用技巧"></a>Chrome浏览器使用技巧</h2><ul><li>在浏览器中打开调试窗口的快捷键<strong>F12</strong> 或者 <strong>Ctrl + Shift + I</strong> 或者 <strong>Ctrl + Shift + J</strong></li></ul><ul><li>在Chrome浏览器下的console窗口中实现代码换行的快捷键 <strong>Shift + Enter</strong></li></ul><ul><li>点击Chrome浏览器中任何地方都没反应，并且鼠标移动到标签页上时不管是左击还是右击都会删除标签页的解决方法是鼠标移到Chrome浏览器上，点击一下鼠标中键</li></ul><blockquote><p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/%E5%B8%B8%E8%A7%81%E7%9A%84WebStrom%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">常见的WebStrom使用技巧</a>】</p></blockquote>]]></content>
       
       <categories>
           
