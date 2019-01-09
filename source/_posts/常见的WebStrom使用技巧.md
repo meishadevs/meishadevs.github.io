@@ -90,5 +90,7 @@ tags:
 - 在Chrome浏览器下的console窗口中实现代码换行的快捷键 **Shift + Enter**
 
 
+- 点击Chrome浏览器中任何地方都没反应，并且鼠标移动到标签页上时不管是左击还是右击都会删除标签页，解决方法是鼠标移到Chrome浏览器上，点击一下鼠标中键
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的WebStrom使用技巧](http://meishadevs.com/blog/%E5%B8%B8%E8%A7%81%E7%9A%84WebStrom%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/)】
