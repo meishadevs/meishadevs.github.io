@@ -4,6 +4,89 @@
   
     
     <entry>
+      <title>SpringBoot学习笔记</title>
+      <link href="/blog/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/blog/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<a id="more"></a><p>@Transactional(rollbackFor = {Exception.class})：只要有一次更新失败，就会出现回滚</p><img src="/images/" class="blog-image"><blockquote><p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href>SpringBoot学习笔记</a>】</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> SpringBoot </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> SpringBoot </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pom.xml文件注释</title>
+      <link href="/blog/pom-xml%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A/"/>
+      <url>/blog/pom-xml%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A/</url>
+      
+        <content type="html"><![CDATA[<a id="more"></a><h4 id="项目名称"><a href="#项目名称" class="headerlink" title="项目名称"></a>项目名称</h4><pre><code>&lt;name&gt;spring&lt;/name&gt;</code></pre><h4 id="项目描述"><a href="#项目描述" class="headerlink" title="项目描述"></a>项目描述</h4><pre><code>&lt;description&gt;These is a Spring Boot project&lt;/description&gt;</code></pre><h4 id="表示-src-main-java-下的目录结构"><a href="#表示-src-main-java-下的目录结构" class="headerlink" title="表示 src/main/java 下的目录结构"></a>表示 src/main/java 下的目录结构</h4><pre><code>&lt;groupId&gt;com.canyou&lt;/groupId&gt;</code></pre><h4 id="项目根目录的名称"><a href="#项目根目录的名称" class="headerlink" title="项目根目录的名称"></a>项目根目录的名称</h4><pre><code>&lt;artifactId&gt;spring&lt;/artifactId&gt;</code></pre><h4 id="项目的版本"><a href="#项目的版本" class="headerlink" title="项目的版本"></a>项目的版本</h4><pre><code>&lt;version&gt;0.1&lt;/version&gt;</code></pre><h4 id="表示这是一个meaven项目"><a href="#表示这是一个meaven项目" class="headerlink" title="表示这是一个meaven项目"></a>表示这是一个meaven项目</h4><pre><code>&lt;packaging&gt;pom&lt;/packaging&gt;</code></pre><h4 id="springBoot的父级依赖，表示当前项目就是springBoot项目"><a href="#springBoot的父级依赖，表示当前项目就是springBoot项目" class="headerlink" title="springBoot的父级依赖，表示当前项目就是springBoot项目"></a>springBoot的父级依赖，表示当前项目就是springBoot项目</h4><pre><code>&lt;parent&gt;   &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;   &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;   &lt;version&gt;2.1.3.RELEASE&lt;/version&gt;   &lt;relativePath/&gt;&lt;/parent&gt;</code></pre><h4 id="管理依赖的版本"><a href="#管理依赖的版本" class="headerlink" title="管理依赖的版本"></a>管理依赖的版本</h4><pre><code>&lt;properties&gt;   &lt;java.version&gt;1.8&lt;/java.version&gt;&lt;/properties&gt;</code></pre><h4 id="项目中的模块"><a href="#项目中的模块" class="headerlink" title="项目中的模块"></a>项目中的模块</h4><pre><code>&lt;modules&gt;    &lt;module&gt;task1&lt;/module&gt;    &lt;module&gt;task2&lt;/module&gt;&lt;/modules&gt;</code></pre><h4 id="SpringBoot项目中的依赖"><a href="#SpringBoot项目中的依赖" class="headerlink" title="SpringBoot项目中的依赖"></a>SpringBoot项目中的依赖</h4><pre><code>&lt;dependencies&gt;   &lt;!-- 测试模块，包括 JUnit、Hamcrest、Mockito --&gt;   &lt;dependency&gt;      &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;      &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;   &lt;/dependency&gt;   &lt;!-- Web模块 --&gt;   &lt;!-- 引入 spring-boot-starter-web 模块后可以去掉 spring-boot-starter 模块 --&gt;   &lt;!-- 因为 spring-boot-starter-web 模块自动依赖了 spring-boot-starter 模块 --&gt;   &lt;dependency&gt;      &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;      &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;   &lt;/dependency&gt;   &lt;!-- lombok --&gt;   &lt;dependency&gt;      &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;      &lt;artifactId&gt;lombok&lt;/artifactId&gt;      &lt;optional&gt;true&lt;/optional&gt;   &lt;/dependency&gt;&lt;/dependencies&gt;</code></pre><blockquote><p>meishadevs欢迎任何形式</p><p>的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href>pom.xml文件注释</a>】</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> SpringBoot </category>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> SpringBoot </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常用的Linux命令</title>
+      <link href="/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Linux%E5%91%BD%E4%BB%A4/"/>
+      <url>/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Linux%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<p>自己总结的一些常用的 linux 命令<br><a id="more"></a></p><h4 id="查看当前文件夹下的所有文件"><a href="#查看当前文件夹下的所有文件" class="headerlink" title="查看当前文件夹下的所有文件"></a>查看当前文件夹下的所有文件</h4><pre><code>ls</code></pre><h4 id="查看某个文件的内容"><a href="#查看某个文件的内容" class="headerlink" title="查看某个文件的内容"></a>查看某个文件的内容</h4><pre><code># fileName为文件名cat fileName</code></pre><h4 id="清空终端上的内容"><a href="#清空终端上的内容" class="headerlink" title="清空终端上的内容"></a>清空终端上的内容</h4><pre><code>clear</code></pre><h4 id="进入某个文件夹下"><a href="#进入某个文件夹下" class="headerlink" title="进入某个文件夹下"></a>进入某个文件夹下</h4><pre><code># ~/.ssh 表示文件夹的路径cd ~/.ssh</code></pre><h4 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><pre><code># test 表示文件夹的名称mkdir test</code></pre><h4 id="创建文件夹-1"><a href="#创建文件夹-1" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><pre><code># a.md 表示需要创建的文件touch test.md</code></pre><blockquote><p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href>常用的Linux命令</a>】</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在iview中实现列表远程排序</title>
       <link href="/blog/%E5%9C%A8iview%E4%B8%AD%E5%AE%9E%E7%8E%B0%E5%88%97%E8%A1%A8%E8%BF%9C%E7%A8%8B%E6%8E%92%E5%BA%8F/"/>
       <url>/blog/%E5%9C%A8iview%E4%B8%AD%E5%AE%9E%E7%8E%B0%E5%88%97%E8%A1%A8%E8%BF%9C%E7%A8%8B%E6%8E%92%E5%BA%8F/</url>
@@ -503,9 +586,9 @@
       
         <tags>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> JavaScript </tag>
+            
+            <tag> 读书笔记 </tag>
             
         </tags>
       

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://meishadevs.com/"/>
-  <updated>2019-05-31T01:13:53.287Z</updated>
+  <updated>2019-05-31T06:18:46.848Z</updated>
   <id>http://meishadevs.com/</id>
   
   <author>
@@ -15,6 +15,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringBoot学习笔记</title>
+    <link href="http://meishadevs.com/blog/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://meishadevs.com/blog/SpringBoot学习笔记/</id>
+    <published>2019-05-31T06:16:06.000Z</published>
+    <updated>2019-05-31T06:18:46.848Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;@Transactional(rollbackFor = {Exception.class})：只要有一次更新失败，就会出现回滚&lt;/p&gt;
+&lt;img src=&quot;/images/&quot; class=&quot;blog-image&quot;&gt;
+&lt;blockquot
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://meishadevs.com/categories/Java/"/>
+    
+      <category term="SpringBoot" scheme="http://meishadevs.com/categories/Java/SpringBoot/"/>
+    
+    
+      <category term="Java" scheme="http://meishadevs.com/tags/Java/"/>
+    
+      <category term="SpringBoot" scheme="http://meishadevs.com/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pom.xml文件注释</title>
+    <link href="http://meishadevs.com/blog/pom-xml%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A/"/>
+    <id>http://meishadevs.com/blog/pom-xml文件注释/</id>
+    <published>2019-05-31T05:57:23.000Z</published>
+    <updated>2019-05-31T06:14:44.951Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;项目名称&quot;&gt;&lt;a href=&quot;#项目名称&quot; class=&quot;headerlink&quot; title=&quot;项目名称&quot;&gt;&lt;/a&gt;项目名称&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;name&amp;gt;spring&amp;lt;/name&amp;gt;
+&lt;/co
+      
+    
+    </summary>
+    
+      <category term="SpringBoot" scheme="http://meishadevs.com/categories/SpringBoot/"/>
+    
+      <category term="java" scheme="http://meishadevs.com/categories/SpringBoot/java/"/>
+    
+    
+      <category term="Java" scheme="http://meishadevs.com/tags/Java/"/>
+    
+      <category term="SpringBoot" scheme="http://meishadevs.com/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用的Linux命令</title>
+    <link href="http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Linux%E5%91%BD%E4%BB%A4/"/>
+    <id>http://meishadevs.com/blog/常用的Linux命令/</id>
+    <published>2019-05-31T01:43:20.000Z</published>
+    <updated>2019-05-31T02:14:43.460Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自己总结的一些常用的 linux 命令&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://meishadevs.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://meishadevs.com/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>在iview中实现列表远程排序</title>
@@ -377,68 +456,6 @@
     
     
       <category term="CSS" scheme="http://meishadevs.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在手机上查看移动Web页</title>
-    <link href="http://meishadevs.com/blog/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E6%9F%A5%E7%9C%8B%E7%A7%BB%E5%8A%A8Web%E9%A1%B5/"/>
-    <id>http://meishadevs.com/blog/在手机上查看移动Web页/</id>
-    <published>2017-10-21T09:40:54.000Z</published>
-    <updated>2019-05-31T00:53:29.524Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我最近在学习做移动端页面，当做好一个移动端页面后想使用手机查看一下移动端页面在手机上的效果，找了很久才找到一个比较好的方法，特意写这篇文章记录下在手机上查看移动端页面的方法&lt;br&gt;
-    
-    </summary>
-    
-      <category term="移动Web" scheme="http://meishadevs.com/categories/%E7%A7%BB%E5%8A%A8Web/"/>
-    
-    
-      <category term="移动Web" scheme="http://meishadevs.com/tags/%E7%A7%BB%E5%8A%A8Web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>移动Web学习笔记</title>
-    <link href="http://meishadevs.com/blog/%E7%A7%BB%E5%8A%A8Web%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://meishadevs.com/blog/移动Web学习笔记/</id>
-    <published>2017-08-31T02:23:03.000Z</published>
-    <updated>2018-08-07T05:48:45.900Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;1. -webkit-text-size-adjust: 100%&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;解释：&lt;/strong&gt;在 Chrome 浏览器中只能设置大于或等于 12px 的字体大小，当设置了小于 12px 的字体大小时，浏览器按照 12px 的字体大小渲染字体，而设置了 &lt;strong&gt;-webkit-text-size-adjust&lt;/strong&gt; 属性后浏览器可以渲染 12px 以下的字体大小&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="移动Web" scheme="http://meishadevs.com/categories/%E7%A7%BB%E5%8A%A8Web/"/>
-    
-    
-      <category term="移动Web" scheme="http://meishadevs.com/tags/%E7%A7%BB%E5%8A%A8Web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《JavaScript高级程序设计》读书笔记</title>
-    <link href="http://meishadevs.com/blog/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/</id>
-    <published>2017-05-04T03:40:36.000Z</published>
-    <updated>2019-05-31T00:53:29.363Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h5 id=&quot;kbit-s&quot;&gt;&lt;a href=&quot;#kbit-s&quot; class=&quot;headerlink&quot; title=&quot;kbit/s&quot;&gt;&lt;/a&gt;kbit/s&lt;/h5&gt;&lt;p&gt;数据传送率的单位.意思是每秒钟多少千字节.比如20Kbit/s就是每秒钟20000个字节.一般上网、下载的速度用这个单位.adsl宽带上网下载速度大概为30-50Kbit/s.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="读书笔记" scheme="http://meishadevs.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="读书笔记" scheme="http://meishadevs.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="JavaScript" scheme="http://meishadevs.com/tags/JavaScript/"/>
     
   </entry>
   
