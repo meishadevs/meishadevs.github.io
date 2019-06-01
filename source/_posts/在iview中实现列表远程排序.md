@@ -41,7 +41,6 @@ iview中可以通过给列表中每个字段设置sortable: true可以实现字�
 	@TableField(exist = false)
 	private String filed;
 
-
 	/**
 	 * 排序的类型
 	 */
@@ -50,29 +49,20 @@ iview中可以通过给列表中每个字段设置sortable: true可以实现字�
 
 **第六步：** 在mapper中根据传递过来的参数实现相应的排序
 
-	 <if test="filed == 'fullName' and sortType == 'desc'">
-		order by customer.full_name desc
+	<if test="filed == 'fullName' and sortType != 'normal'">
+		order by customer.full_name ${sortType}
 	</if>
-	<if test="filed == 'fullName' and sortType == 'asc'">
-		order by customer.full_name asc
+	<if test="filed == 'idType' and sortType !=  'normal'">
+		order by customer.id_type ${sortType}
 	</if>
-	<if test="filed == 'idType' and sortType == 'desc'">
-		order by customer.id_type desc
+	<if test="filed == 'orderPersonName' and sortType != 'normal'">
+		order by contact.full_name ${sortType}
 	</if>
-	<if test="filed == 'idType' and sortType == 'asc'">
-		order by customer.id_type asc
+	<if test="filed == 'orderDate' and sortType != 'normal'">
+		order by tempOrder.orderDate ${sortType}
 	</if>
-	<if test="filed == 'orderPerson' and sortType == 'desc'">
-		order by wxUser.wechat_name desc
-	</if>
-	<if test="filed == 'orderPerson' and sortType == 'asc'">
-		order by wxUser.wechat_name asc
-	</if>
-	<if test="filed == 'orderDate' and sortType == 'desc'">
+	<if test="sortType == '' or sortType == 'normal'">
 		order by tempOrder.orderDate desc
-	</if>
-	<if test="filed == 'orderDate' and sortType == 'asc'">
-		order by tempOrder.orderDate asc
 	</if>
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
