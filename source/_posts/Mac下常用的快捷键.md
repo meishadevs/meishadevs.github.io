@@ -1,0 +1,33 @@
+---
+title: Mac下常用的快捷键
+categories:
+  - Mac
+tags:
+  - Mac
+date: 2019-06-14 20:53:50查看
+---
+
+#### 常用快捷键
+
+- 复制 **command + C**
+- 粘贴 **command + V**
+- 剪切  **command + X**
+- 撤销 **command + Z**
+- 显示或隐藏程序坞 **command + option + D**
+
+- 查看隐藏的文件和文件夹 **command + option + .**
+
+#### Chrome 浏览器的常用快捷键
+
+- 打开 Chrome 浏览器的开发者工具 **command + option + I**
+
+- 打开 Chrome 浏览器的开发者工具并进入 JavaScript 控制台 **command + option + J**
+
+- 打开 Chrome 浏览器的开发者工具并进入 JavaScript 控制台选项卡 **command + option + J**
+
+- 打开 Chrome 浏览器的开发者工具并进入 检测元素选项卡 **command + option + C**
+
+- 使用 Chrome 浏览器查看源码 **command + option + U**
+
+> meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
+转载请注明： 【文章转载自meishadevs：[Mac下常用的快捷键]()】
