@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://meishadevs.com/"/>
-  <updated>2019-05-31T06:18:46.848Z</updated>
+  <updated>2019-06-14T13:28:35.386Z</updated>
   <id>http://meishadevs.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac下常用的快捷键</title>
+    <link href="http://meishadevs.com/blog/Mac%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://meishadevs.com/blog/Mac下常用的快捷键/</id>
+    <published>2019-06-14T12:53:50.079Z</published>
+    <updated>2019-06-14T13:28:35.386Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;常用快捷键&quot;&gt;&lt;a href=&quot;#常用快捷键&quot; class=&quot;headerlink&quot; title=&quot;常用快捷键&quot;&gt;&lt;/a&gt;常用快捷键&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;复制 &lt;strong&gt;command + C&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;粘贴 &lt;strong&gt;
+      
+    
+    </summary>
+    
+      <category term="Mac" scheme="http://meishadevs.com/categories/Mac/"/>
+    
+    
+      <category term="Mac" scheme="http://meishadevs.com/tags/Mac/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringBoot学习笔记</title>
@@ -429,26 +454,6 @@
     <summary type="html">
     
       &lt;p&gt;昨天在一个前端交流群里一个成员提出了一个非常有趣的问题&lt;code&gt;background-size: 50%&lt;/code&gt;是什么意思与&lt;code&gt;background-size: 50% 50%&lt;/code&gt;到底有什么区别呢，这个问题在群里引起了一番激烈的讨论，我也尝试分析一下&lt;br&gt;
-    
-    </summary>
-    
-      <category term="CSS" scheme="http://meishadevs.com/categories/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://meishadevs.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>几种清除浮动的方法</title>
-    <link href="http://meishadevs.com/blog/%E5%87%A0%E7%A7%8D%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
-    <id>http://meishadevs.com/blog/几种清除浮动的方法/</id>
-    <published>2017-10-22T02:52:15.000Z</published>
-    <updated>2019-05-31T00:53:29.493Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在网页设计中清除浮动是一种非常常见的需求，这篇博客将介绍几种常见的清除浮动的方法&lt;br&gt;
     
     </summary>
     

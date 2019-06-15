@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Mac下常用的快捷键</title>
+      <link href="/blog/Mac%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <url>/blog/Mac%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+      
+        <content type="html"><![CDATA[<h4 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h4><ul><li>复制 <strong>command + C</strong></li><li>粘贴 <strong>command + V</strong></li><li>剪切  <strong>command + X</strong></li><li>撤销 <strong>command + Z</strong></li><li><p>显示或隐藏程序坞 <strong>command + option + D</strong></p></li><li><p>查看隐藏的文件和文件夹 <strong>command + option + .</strong></p></li></ul><h4 id="Chrome-浏览器的常用快捷键"><a href="#Chrome-浏览器的常用快捷键" class="headerlink" title="Chrome 浏览器的常用快捷键"></a>Chrome 浏览器的常用快捷键</h4><ul><li><p>打开 Chrome 浏览器的开发者工具 <strong>command + option + I</strong></p></li><li><p>打开 Chrome 浏览器的开发者工具并进入 JavaScript 控制台 <strong>command + option + J</strong></p></li><li><p>打开 Chrome 浏览器的开发者工具并进入 JavaScript 控制台选项卡 <strong>command + option + J</strong></p></li><li><p>打开 Chrome 浏览器的开发者工具并进入 检测元素选项卡 <strong>command + option + C</strong></p></li><li><p>使用 Chrome 浏览器查看源码 <strong>command + option + U</strong></p></li></ul><blockquote><p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href>Mac下常用的快捷键</a>】</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mac </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mac </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringBoot学习笔记</title>
       <link href="/blog/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>/blog/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
