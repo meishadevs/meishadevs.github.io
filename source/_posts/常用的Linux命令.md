@@ -50,5 +50,9 @@ date: 2019-05-31 09:43:20
 
 	ifconfig en0
 	
+#### 清屏
+
+	clear
+	
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的Linux命令]()】
