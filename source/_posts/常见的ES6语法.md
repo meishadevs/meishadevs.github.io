@@ -63,6 +63,15 @@ date: 2018-12-17 09:23:40
 obj3的值如下
 {% img blog-image /images/2018122601.png %}
 
+### 模板语法
+
+	let str1 = 'hello'
+    let str2 = 'world'
+    let str3 = `${str1} ${str2}`
+	
+str3的值如下
+
+	hello world
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的ES6语法](http://meishadevs.coding.me/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/)】
