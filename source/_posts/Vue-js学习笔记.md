@@ -136,6 +136,10 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 
 	this.$set(this.list, this.index, this.userDetail)
 	
+#### 动态添加对象属性，并触发视图更新
+
+	this.$set(this.columnDetail, 'imageUr', '')
+	
 #### 重置表单
 
 	//给表单注册引用信息

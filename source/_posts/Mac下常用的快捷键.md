@@ -16,6 +16,8 @@ date: 2019-06-14 20:53:50查看
 - 删除 **command + delete**
 - 显示或隐藏程序坞 **command + option + D**
 - 查看隐藏的文件和文件夹 **cmmand + shift + .**
+- 切换应用 **Command + Tab**
+- 打开Spotlight **Command + 空格键**
 
 #### Chrome 浏览器的常用快捷键
 
