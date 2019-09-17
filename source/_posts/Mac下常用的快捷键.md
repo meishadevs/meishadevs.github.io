@@ -18,6 +18,7 @@ date: 2019-06-14 20:53:50查看
 - 查看隐藏的文件和文件夹 **cmmand + shift + .**
 - 切换应用 **Command + Tab**
 - 打开Spotlight **Command + 空格键**
+- 在访达中进行文件夹搜索 **Command + Shift + G**
 
 #### Chrome 浏览器的常用快捷键
 
