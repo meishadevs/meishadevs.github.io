@@ -19,6 +19,8 @@ date: 2019-06-14 20:53:50查看
 - 切换应用 **Command + Tab**
 - 打开Spotlight **Command + 空格键**
 - 在访达中进行文件夹搜索 **Command + Shift + G**
+- 全屏截图**Command + Shift + 3**
+- 截取部分内容**Command + Shift + 4**
 
 #### Chrome 浏览器的常用快捷键
 
