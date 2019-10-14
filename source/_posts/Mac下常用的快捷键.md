@@ -13,6 +13,7 @@ date: 2019-06-14 20:53:50查看
 - 粘贴 **command + V**
 - 剪切 **command + X**
 - 撤销 **command + Z**
+- 恢复 **command + Y**
 - 删除 **command + delete**
 - 显示或隐藏程序坞 **command + option + D**
 - 查看隐藏的文件和文件夹 **cmmand + shift + .**
