@@ -93,6 +93,30 @@ arr的值如下
 	array.forEach(item => {
 	  console.log('item:', item)
 	})
+	
+### 使用对象展开运算符合并对象
+
+两个对象存在同名的字段时，后面对象的字段值会覆盖前面对象的字段值
+
+	let obj1 = {
+	  name: 'meishadevs',
+	  age: 25,
+	  sex: '男'
+	}
+
+	let obj2 = {
+	  name: '小红',
+	  age: 21,
+	  sex: '女',
+	  hobby: '唱歌'
+	}
+
+	let obj3 = { ...obj1, ...obj2 }
+
+执行结果
+{% img blog-image /images/2019102201.png %}
+
+
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的ES6语法](http://meishadevs.coding.me/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/)】
