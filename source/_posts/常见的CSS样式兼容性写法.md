@@ -149,6 +149,15 @@ tags:
 		-webkit-flex: 1;
 	    flex: 1;
 	}
+	
+##### 13. /deep/ 深度选择器，当引入第三方组件后，可以局部修改第三方组件的样式，避免全局样式污染
+
+	<style lang="less" scoped>
+	 /deep/ .ivu-poptip,
+	 /deep/ .ivu-poptip-rel {
+	   width: 100% !important;
+	}
+	</style>
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的CSS样式兼容性写法](http://meishadevs.com/blog/%E5%B8%B8%E8%A7%81%E7%9A%84CSS%E6%A0%B7%E5%BC%8F%E5%85%BC%E5%AE%B9%E6%80%A7%E5%86%99%E6%B3%95/)】
