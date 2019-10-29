@@ -116,6 +116,25 @@ arr的值如下
 执行结果
 {% img blog-image /images/2019102201.png %}
 
+### 对象解构
+
+使用对象解构获得对象下的属性值
+
+	let person = {
+	  name: 'meishadevs',
+	  age: 25,
+	  hobby: 'Codding'
+	}
+
+	var { name, age, hobby } = person
+
+	console.log('name:', name)
+	console.log('age:', age)
+	console.log('hobby:', hobby)
+	
+执行结果
+{% img blog-image /images/2019102401.png %}
+
 
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。

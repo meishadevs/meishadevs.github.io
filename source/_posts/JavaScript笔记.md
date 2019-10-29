@@ -10,11 +10,11 @@ tags:
 记录了一些常用的JavaScript用法
 <!--more-->
 
-**1. 获得事件**
+### 获得事件
 
 	var event = event || window.event;
 
-**2. 阻止事件冒泡**
+### 阻止事件冒泡
 
 	var event = event || window.event;
 	
@@ -26,11 +26,11 @@ tags:
 	}
 
 
-**3. 获得点击的某个对象的id**
+### 获得点击的某个对象的id
 
 	var targetId = event.target ? event.target.id : event.srcElement.id;
 
-**4. 阻止事件的默认行为**
+### 阻止事件的默认行为
 	
 	//除IE浏览器以外的其他浏览器
 	if(event.preventDefault) {
@@ -43,23 +43,23 @@ tags:
 	   event.returnValue = false;
 	}
 
-**5. 获得浏览器的宽度**
+### 获得浏览器的宽度
 
 	document.documentElement.clientWidth || document.body.clientWidth;
 
-**6. 获得浏览器的高度**
+### 获得浏览器的高度
 
 	document.documentElement.clientHeight || document.body.clientHeight；
 
-**7. 获得水平方向上滚动条到浏览器最左端的距离**  
+### 获得水平方向上滚动条到浏览器最左端的距离
 
 	document.documentElement.scrollLeft || document.body.scrollLeft
 
-**8. 获得竖直方向上的滚动条到浏览器顶部的距离**
+### 获得竖直方向上的滚动条到浏览器顶部的距离
 	
 	document.documentElement.scrollTop || document.body.scrollTop;
 
-**9. 禁止单击鼠标左键并移动鼠标时拖拽图片方法**
+### 禁止单击鼠标左键并移动鼠标时拖拽图片方法
 
 	function imgdragstart() {
 	    return false;
@@ -75,7 +75,7 @@ tags:
 	    imgs[i].ondragstart = imgdragstart;
 	}
 
-**10.当浏览器窗口发生变化时，重新加载整个页面**  
+### 当浏览器窗口发生变化时，重新加载整个页面
 
 	 //监听浏览器窗口大小是否发生变化
 	window.onresize = function () {
@@ -84,7 +84,7 @@ tags:
 	    location.reload(true);
 	}
 
-**11.获得浏览器到显示屏的距离**
+### 获得浏览器到显示屏的距离
 
 	//获得浏览器左端到显示屏左端的距离
 	var leftPos = (typeof window.screenLeft == 'number') ?
@@ -94,7 +94,7 @@ tags:
 	var topPos = (typeof window.screenTop == 'number') ?
 	    window.screenTop : window.screenY;
 
-**12.获得浏览器窗口大小**
+### 获得浏览器窗口大小
 
 	//获得浏览器窗口的宽度
 	var pageWidth = window.innerWidth;
@@ -112,7 +112,7 @@ tags:
 	    }
 	}
 
-**13.获得竖直方向上的滚动条到浏览器顶部的距离**
+### 获得竖直方向上的滚动条到浏览器顶部的距离
 
 	getScrollTop: function () {
 	
@@ -134,11 +134,11 @@ tags:
 	    return scrollPos;
 	  }
 
-**14.将字符串转换成数组**
+### 将字符串转换成数组
 
 	var arr = Array.prototype.slice.call('abc');
 
-**15.判断数据类型**
+### 判断数据类型
 
 	var type = function (o) {
 	  var s = Object.prototype.toString.call(o);
@@ -153,7 +153,7 @@ tags:
 	type(/abcd/); // "regex"
 	type(new Date()); // "date"
 
-**16.获得任意范围内数字的随机数**
+### 获得任意范围内数字的随机数
 
 	function getRandomInt(min, max) {
 	  return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -161,7 +161,7 @@ tags:
 	
 	getRandomInt(1, 6) // 5
 
-**17.使用 JavaScript 创建二维数组**  
+### 使用 JavaScript 创建二维数组
 
 	var array = new Array(15);
 	
@@ -172,13 +172,32 @@ tags:
 	    }
 	}
 
-**18.任意值转换成  Base64 编码**
+### 任意值转换成  Base64 编码
 
 	btoa('hello world')
 
-**19. Base64 编码转成原来的值**
+### Base64 编码转成原来的值
 
 	atob('aGVsbG8gd29ybGQ=')
+
+### 使用数组的形式访问对象的属性
+
+	let person = {
+	  name: 'meishadevs',
+	  age: 25,
+	  sex: '男'
+	}
+
+	let name = person['name']
+	let age = person['age']
+	let sex = person['sex']
+
+	console.log('name:', name)
+	console.log('age:', age)
+	console.log('sex:', sex)
+	
+执行结果
+{% img blog-image /images/2019102901.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[JavaScript笔记]([http://meishadevs.com/blog/JavaScript%E7%AC%94%E8%AE%B0/](http://meishadevs.com/blog/JavaScript笔记/))】
