@@ -169,7 +169,7 @@
     <link href="http://meishadevs.com/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/"/>
     <id>http://meishadevs.com/blog/常见的ES6语法/</id>
     <published>2018-12-17T01:23:40.000Z</published>
-    <updated>2019-10-24T01:55:49.812Z</updated>
+    <updated>2019-12-10T03:40:44.605Z</updated>
     
     <summary type="html">
     
@@ -356,11 +356,11 @@
       <category term="数据库" scheme="http://meishadevs.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="数据库" scheme="http://meishadevs.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="SQL" scheme="http://meishadevs.com/tags/SQL/"/>
     
       <category term="SQL Server" scheme="http://meishadevs.com/tags/SQL-Server/"/>
+    
+      <category term="数据库" scheme="http://meishadevs.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
