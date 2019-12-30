@@ -96,7 +96,7 @@ arr的值如下
 	
 ### 使用对象展开运算符合并对象
 
-两个对象存在同名的字段时，后面对象的字段值会覆盖前面对象的字段值
+两个对象存在同名的字段时，后面对象的字段值会覆盖前面对象的字段值，这种操作只会将前一个对象的属性赋值给后面对象的属性
 
 	let obj1 = {
 	  name: 'meishadevs',
@@ -135,7 +135,82 @@ arr的值如下
 执行结果
 {% img blog-image /images/2019102401.png %}
 
+### 格式化对象数组
 
+	let array = [
+		{
+			productName: '土豆',
+			price: 1.5,
+		},
+		{
+			productName: '菠菜',
+			price: 2
+		},
+		{
+			productName: '西红柿',
+			price: 0.5
+		}
+	]
+
+	let list = array.map(item => {
+		item.price += '元/斤'
+		return item
+	})
+
+	console.log('list:', list)
+
+执行结果
+{% img blog-image /images/2019121701.png %}
+
+### 判断数组中是否存在某个元素
+
+	let array = [10, 20, 30, 40, 50]
+	let result1 = array.includes(30)
+	let result2  = array.includes(100)
+	console.log('result1:', result1)
+	console.log('result2:', result2)
+	
+执行结果
+{% img blog-image /images/2019123001.png %}
+
+### 查找数组中的数据
+
+	let cardTypeList = [
+      {
+        name: '身份证',
+        value: 10
+      },
+      {
+        name: '港澳通行证',
+        value: 20
+      },
+      {
+        name: '台胞证',
+        value: 30
+      },
+      {
+        name: '护照',
+        value: 40
+      },
+      {
+        name: '军官证',
+        value: 50
+      },
+      {
+        name: '士官证',
+        value: 60
+      }]
+
+    let value = 30
+
+    let cardType = cardTypeList.find(item => {
+      return item.value === value
+    })
+
+    console.log('name:', cardType.name)
+	
+执行结果
+{% img blog-image /images/2019123002.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的ES6语法](http://meishadevs.coding.me/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/)】
