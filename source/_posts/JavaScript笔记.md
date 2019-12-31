@@ -199,5 +199,13 @@ tags:
 执行结果
 {% img blog-image /images/2019102901.png %}
 
+### IE浏览器下日期格式化
+
+因为IE浏览器下不支持年月日日之间有横线连接的形式，所以在IE浏览器下做日期格式化时，需要用下面的正则表达式先将
+横线转换成斜线，例如将2019-12-31 10:48:30 转成 2019/12/31 10:48:30
+
+	// 将所有的'-'转为'/'即可 兼容IE浏览器
+	date = date.replace(new RegExp(/-/gm), '/')
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[JavaScript笔记]([http://meishadevs.com/blog/JavaScript%E7%AC%94%E8%AE%B0/](http://meishadevs.com/blog/JavaScript笔记/))】
