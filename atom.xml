@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://meishadevs.com/"/>
-  <updated>2019-12-31T02:20:02.853Z</updated>
+  <updated>2020-01-17T06:30:50.080Z</updated>
   <id>http://meishadevs.com/</id>
   
   <author>
@@ -18,14 +18,14 @@
   
   <entry>
     <title>2019年终终结</title>
-    <link href="http://meishadevs.com/blog/2019%E5%B9%B4%E7%BB%88%E7%BB%88%E7%BB%93/"/>
-    <id>http://meishadevs.com/blog/2019年终终结/</id>
+    <link href="http://meishadevs.com/blog/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://meishadevs.com/blog/2019年终总结/</id>
     <published>2019-12-31T01:38:09.000Z</published>
-    <updated>2019-12-31T02:20:02.853Z</updated>
+    <updated>2020-01-17T06:30:50.080Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;不知不觉中已经到了2019年的最后一天，从去年开始我强制要求每年写一篇年终总结，也算是对自己一年的回顾与反思，&lt;br&gt;
+      &lt;h3 id=&quot;进入新项目组&quot;&gt;&lt;a href=&quot;#进入新项目组&quot; class=&quot;headerlink&quot; title=&quot;进入新项目组&quot;&gt;&lt;/a&gt;进入新项目组&lt;/h3&gt;&lt;p&gt;2019年对于我来说是非常有挑战的一年，我在2019年1月份被调到了一个新的项目组，新项目是一个生物医疗类的项目，面对的业务和技术都是全新的，进入项目组后首先就确定了项目采用 spingBoot + Vue.js 进行开发，对于 Vue.js  来说我还是比较熟悉的，因为我之前用Vue.js做了一个&lt;a href=&quot;https://github.com/meishadevs/dswz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简单的电商类网站&lt;/a&gt; ，但是springBoot对于我来说是完全不了解，这也是我第一次听说springBoot，为了让项目组的成员熟悉SpringBoot + Vue 相关的技术，公司组织了一次相关的培训，有两个讲师分别给我们培训了相关的技术，对于SpringBoot 的培训，我感觉一点都听不懂，可能是因为之前没接触过吧，在听Vue相关的培训的时候，还是能听懂的，因为我之前用Vue做过一个项目，我在听Vue的时候，也发现了一些我之前在项目中做的一些不足之处，比如api请求没有统一放在一个文件夹下面，公共配置类放置不合理，eslit 检测没通过的导致代码不能提交时，修改 eslint 代码检测规则，实际上 eslint 代码检测规则是不能随便改变的，可服用的代码应该要封装成公共组件。&lt;/p&gt;
     
     </summary>
     
@@ -83,9 +83,9 @@
       <category term="SpringBoot" scheme="http://meishadevs.com/categories/Java/SpringBoot/"/>
     
     
-      <category term="Java" scheme="http://meishadevs.com/tags/Java/"/>
-    
       <category term="SpringBoot" scheme="http://meishadevs.com/tags/SpringBoot/"/>
+    
+      <category term="Java" scheme="http://meishadevs.com/tags/Java/"/>
     
   </entry>
   
@@ -112,9 +112,9 @@
       <category term="java" scheme="http://meishadevs.com/categories/SpringBoot/java/"/>
     
     
-      <category term="Java" scheme="http://meishadevs.com/tags/Java/"/>
-    
       <category term="SpringBoot" scheme="http://meishadevs.com/tags/SpringBoot/"/>
+    
+      <category term="Java" scheme="http://meishadevs.com/tags/Java/"/>
     
   </entry>
   
