@@ -1,10 +1,10 @@
 ---
-title: Mac下常用的快捷键
+title: Mac 使用技巧
 categories:
   - Mac
 tags:
   - Mac
-date: 2019-06-14 20:53:50查看
+date: 2019-06-14 20:53:50
 ---
 
 #### 常用快捷键
