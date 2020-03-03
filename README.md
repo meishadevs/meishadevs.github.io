@@ -1,5 +1,5 @@
 ### meishadevs的个人博客
-基于[Hexo](https://hexo.io/zh-cn/)的个人博客站点[http://meishadevs.com](http://meishadevs.com)，博客的主题是[raytaylorism](https://github.com/raytaylorlin/hexo-theme-raytaylorism)
+基于[Hexo](https://hexo.io/zh-cn/)的个人博客站点[https://meishadevs.com](https://meishadevs.com)，博客的主题是[raytaylorism](https://github.com/raytaylorlin/hexo-theme-raytaylorism)
 
 ## 关于我
 Web前端开发者，爱技术，爱开源，爱分享

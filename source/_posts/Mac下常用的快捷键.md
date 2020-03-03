@@ -22,6 +22,7 @@ date: 2019-06-14 20:53:50
 - 在访达中进行文件夹搜索 **Command + Shift + G**
 - 全屏截图**Command + Shift + 3**
 - 截取部分内容**Command + Shift + 4**
+- 在终端中终止执行比较耗时的命令 **control + C**
 
 #### Chrome 浏览器的常用快捷键
 
