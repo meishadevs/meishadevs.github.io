@@ -214,7 +214,7 @@ arr的值如下
 
 #### 将对象数组中的属性组成一个数组
 
-let array = [
+	let array = [
 		{
 			productName: '土豆',
 			price: 1.5,
