@@ -211,6 +211,14 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/数据库/">
+                    数据库 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/Java/">
                     Java <span class="right">2 篇</span></a>
                 </a>
@@ -221,14 +229,6 @@
             <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/Java/SpringBoot/">
                     SpringBoot <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/数据库/">
-                    数据库 <span class="right">2 篇</span></a>
                 </a>
             </li>
 
@@ -315,22 +315,6 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/NVM/">
-                    NVM <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/NVM/Node-js/">
-                    Node-js <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/预处理CSS/">
                     预处理CSS <span class="right">1 篇</span></a>
                 </a>
@@ -341,6 +325,22 @@
             <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/预处理CSS/Less/">
                     Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/NVM/">
+                    NVM <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/NVM/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -662,8 +662,22 @@ let cardType = cardTypeList.find(item =&gt; {
 
 console.log(&apos;name:&apos;, cardType.name)
 </code></pre><p>执行结果<br><img src="/images/2019123002.png" class="blog-image"></p>
-<h4 id="将对象数组中的属性组成一个数组"><a href="#将对象数组中的属性组成一个数组" class="headerlink" title="将对象数组中的属性组成一个数组"></a>将对象数组中的属性组成一个数组</h4><p>let array = [<br>        {<br>            productName: ‘土豆’,<br>            price: 1.5,<br>        },<br>        {<br>            productName: ‘菠菜’,<br>            price: 2<br>        },<br>        {<br>            productName: ‘西红柿’,<br>            price: 0.5<br>        }<br>    ]</p>
-<pre><code>let list = array.map(item =&gt; item.productName )
+<h4 id="将对象数组中的属性组成一个数组"><a href="#将对象数组中的属性组成一个数组" class="headerlink" title="将对象数组中的属性组成一个数组"></a>将对象数组中的属性组成一个数组</h4><pre><code>let array = [
+    {
+        productName: &apos;土豆&apos;,
+        price: 1.5,
+    },
+    {
+        productName: &apos;菠菜&apos;,
+        price: 2
+    },
+    {
+        productName: &apos;西红柿&apos;,
+        price: 0.5
+    }
+]
+
+let list = array.map(item =&gt; item.productName )
 
 console.log(&apos;list:&apos;, list)
 </code></pre><p>执行结果<br><img src="/images/2020061201.png" class="blog-image"></p>
