@@ -15,7 +15,7 @@ date: 2018-12-17 09:23:40
 		typ: Object,
 		default: () => ({})
 	}
-	
+
 上面的代码是下面代码的简写形式
 
 	var obj = {
@@ -33,7 +33,7 @@ date: 2018-12-17 09:23:40
 			console.log("调用创建obj对象的方法");
 		}
 	};
-
+	
 	obj.create();
 
 上面的代码是下面代码的简写形式
@@ -43,9 +43,9 @@ date: 2018-12-17 09:23:40
 			console.log("调用创建obj对象的方法");
 		}
 	};
-
-	obj.create();
 	
+	obj.create();
+
 ### 对象合并
 
 下面的代码实现了将obj1对象和obj2对象合并到了一起，并且将合并后的值赋值给obj3
@@ -53,47 +53,47 @@ date: 2018-12-17 09:23:40
 	var obj1 = {
 		name: "meishadevs"
 	};
-
+	
 	var obj2 = {
 		job: "Front-end development"
 	};
-
-	var obj3 = Object.assign(obj1, obj2);
 	
+	var obj3 = Object.assign(obj1, obj2);
+
 obj3的值如下
 {% img blog-image /images/2018122601.png %}
 
 ### 模板语法
 
 	let str1 = 'hello'
-    let str2 = 'world'
-    let str3 = `${str1} ${str2}`
-	
+	let str2 = 'world'
+	let str3 = `${str1} ${str2}`
+
 str3的值如下
 
 	hello world
-	
+
 ### 数据筛选
 
 	let array = [5, 6, 7, 8, 9, 10]
-
+	
 	// 筛选出数组中数值大于 7 的数据
 	let arr = array.filter((value) => {
 		return value > 7
 	})
-	
+
 arr的值如下
 
 	[8, 9, 10]
-	
+
 ### 使用 forEach 遍历数组
 
 	let array = [2, 4, 6, 8, 10]
-
+	
 	array.forEach(item => {
 	  console.log('item:', item)
 	})
-	
+
 ### 使用对象展开运算符合并对象
 
 两个对象存在同名的字段时，后面对象的字段值会覆盖前面对象的字段值，这种操作只会将前一个对象的属性赋值给后面对象的属性
@@ -103,14 +103,14 @@ arr的值如下
 	  age: 25,
 	  sex: '男'
 	}
-
+	
 	let obj2 = {
 	  name: '小红',
 	  age: 21,
 	  sex: '女',
 	  hobby: '唱歌'
 	}
-
+	
 	let obj3 = { ...obj1, ...obj2 }
 
 执行结果
@@ -125,13 +125,13 @@ arr的值如下
 	  age: 25,
 	  hobby: 'Codding'
 	}
-
+	
 	var { name, age, hobby } = person
-
+	
 	console.log('name:', name)
 	console.log('age:', age)
 	console.log('hobby:', hobby)
-	
+
 执行结果
 {% img blog-image /images/2019102401.png %}
 
@@ -151,12 +151,12 @@ arr的值如下
 			price: 0.5
 		}
 	]
-
+	
 	let list = array.map(item => {
 		item.price += '元/斤'
 		return item
 	})
-
+	
 	console.log('list:', list)
 
 执行结果
@@ -169,46 +169,46 @@ arr的值如下
 	let result2  = array.includes(100)
 	console.log('result1:', result1)
 	console.log('result2:', result2)
-	
+
 执行结果
 {% img blog-image /images/2019123001.png %}
 
 ### 查找数组中的数据
 
 	let cardTypeList = [
-      {
-        name: '身份证',
-        value: 10
-      },
-      {
-        name: '港澳通行证',
-        value: 20
-      },
-      {
-        name: '台胞证',
-        value: 30
-      },
-      {
-        name: '护照',
-        value: 40
-      },
-      {
-        name: '军官证',
-        value: 50
-      },
-      {
-        name: '士官证',
-        value: 60
-      }]
-
-    let value = 30
-
-    let cardType = cardTypeList.find(item => {
-      return item.value === value
-    })
-
-    console.log('name:', cardType.name)
+	  {
+	    name: '身份证',
+	    value: 10
+	  },
+	  {
+	    name: '港澳通行证',
+	    value: 20
+	  },
+	  {
+	    name: '台胞证',
+	    value: 30
+	  },
+	  {
+	    name: '护照',
+	    value: 40
+	  },
+	  {
+	    name: '军官证',
+	    value: 50
+	  },
+	  {
+	    name: '士官证',
+	    value: 60
+	  }]
 	
+	let value = 30
+	
+	let cardType = cardTypeList.find(item => {
+	  return item.value === value
+	})
+	
+	console.log('name:', cardType.name)
+
 执行结果
 {% img blog-image /images/2019123002.png %}
 
@@ -228,13 +228,35 @@ arr的值如下
 			price: 0.5
 		}
 	]
-
+	
 	let list = array.map(item => item.productName )
-
+	
 	console.log('list:', list)
 
 执行结果
 {% img blog-image /images/2020061201.png %}
+
+### 异步调用
+
+    // 获得用户基本信息的api接口
+    export function info() {
+      return request({
+        url: '/wechat/current',
+        method: 'get'
+      })
+    }
+    
+    async getUserInfo() {
+      try {
+      	 // 异步调用api接口
+         let result = await info()
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    
+    this.getUserInfo()
+
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的ES6语法](http://meishadevs.coding.me/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/)】
