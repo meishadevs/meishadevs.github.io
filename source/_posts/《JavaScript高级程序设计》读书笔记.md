@@ -25,11 +25,11 @@ date: 2017-05-04 11:40:36
 **方法1：**在函数外部定义一个变量，在函数内部使用变量
 
 	var message;
-
+	
 	function test() {
 		message = "hello world";
 	}
-
+	
 	test();
 	alert(message);
 
@@ -38,7 +38,7 @@ date: 2017-05-04 11:40:36
 	function test() {
 		message = "hello world";
 	}
-
+	
 	test();
 	alert(message);
 
@@ -67,29 +67,29 @@ date: 2017-05-04 11:40:36
 JavaScript中使用**typeof**关键字获得变量的基本数据类型
 	
 	 var s = "Nicholas";
-    var b = true;
-    var i = 22;
-    var u;
-    var n = null;
-    var o = new Object();
-
-    alert(typeof s);  //string
-    alert(typeof i);  //number
-    alert(typeof b);  //boolean
-    alert(typeof u);  //undefined
-    alert(typeof n);  //object
-    alert(typeof o);  //object
+	var b = true;
+	var i = 22;
+	var u;
+	var n = null;
+	var o = new Object();
+	
+	alert(typeof s);  //string
+	alert(typeof i);  //number
+	alert(typeof b);  //boolean
+	alert(typeof u);  //undefined
+	alert(typeof n);  //object
+	alert(typeof o);  //object
 
 ##### 判断变量的引用的数据类型
 JavaScript中使用**instanceof**关键字判断变量的引用数据类型
 	
 	 var person = new Object();
-    var colors = [];
-    var pattern = new RegExp();
-
-    alert(person instanceof Object);   //变量person是Object类型吗
-    alert(colors instanceof Array);    //变量colors是Array类型吗
-    alert(pattern instanceof RegExp);  //变量pattern是RegExp类型吗
+	var colors = [];
+	var pattern = new RegExp();
+	
+	alert(person instanceof Object);   //变量person是Object类型吗
+	alert(colors instanceof Array);    //变量colors是Array类型吗
+	alert(pattern instanceof RegExp);  //变量pattern是RegExp类型吗
 
 ##### JavaScript的基本数据类型
 JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、**Boolean**、**Number**和**String**。
@@ -110,46 +110,46 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 **方式1：**使用new操作符后跟Object构造函数
 	
 	var person = new Object();
-    person.name = "Nicholas";
-    person.age = 29;
+	person.name = "Nicholas";
+	person.age = 29;
 
 **方式2：**使用对象字面量表示法
 	
 	 var person = {
-        name : "Nicholas",
-        age : 29
-    };
+	    name : "Nicholas",
+	    age : 29
+	};
 
 ##### 创建数组的方式
 **方式1：**使用Array的构造函数创建数组
 
 	//创建一个空数组
-    var colors = new Array();
-
-    //创建一个保存20个数据的数组
-    var colors = new Array(20);
-
-    //创建一个保存了3个字符串的数组
-    var colors = new Array("red", "blue", "green");
+	var colors = new Array();
+	
+	//创建一个保存20个数据的数组
+	var colors = new Array(20);
+	
+	//创建一个保存了3个字符串的数组
+	var colors = new Array("red", "blue", "green");
 
 **方式2：**使用Array的构造函数创建数组时也可以省略**new**操作符
 
 	 //创建一个空数组
-    var colors = Array();
-
-    //创建一个保存20个数据的数组
-    var colors = Array(20);
-
-    //创建一个包含3个字符串的数组
-    var colors = Array("red", "blue", "green");
+	var colors = Array();
+	
+	//创建一个保存20个数据的数组
+	var colors = Array(20);
+	
+	//创建一个包含3个字符串的数组
+	var colors = Array("red", "blue", "green");
 
 **方式3：**使用数组的字面量创建数组
 	
 	 //创建一个空数组
-    var colors = [];
-
-    //创建一个包含3个字符串的数组
-    var colors = ["red", "blue", "green"];
+	var colors = [];
+	
+	//创建一个包含3个字符串的数组
+	var colors = ["red", "blue", "green"];
 
 ##### 栈与队列
 **栈的访问规则：**先进后出  
@@ -159,185 +159,185 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 **方式1：**使用Object创建对象
 	
 	var person = new Object();
-    person.name = "Nicholas";
-    person.age = 29;
-    person.job = "Software Engineer";
-
-    person.showName = function () {
-        console.log(this.name);
-    }
-
-    person.showAge = function () {
-        console.log(this.age);
-    }
-
-    person.showJob = function () {
-        console.log(this.job);
-    }
+	person.name = "Nicholas";
+	person.age = 29;
+	person.job = "Software Engineer";
+	
+	person.showName = function () {
+	    console.log(this.name);
+	}
+	
+	person.showAge = function () {
+	    console.log(this.age);
+	}
+	
+	person.showJob = function () {
+	    console.log(this.job);
+	}
 
 **方式2：**用对象字面量语法创建对象
 	
 	var person = {
-        name: "Nicholas",
-        age: 29,
-        job: "Software Engineer",
-
-        showName: function () {
-            console.log(this.name);
-        },
-
-        showAge: function () {
-            console.log(this.age);
-        },
-
-        showJob: function () {
-            console.log(this.job);
-        }
-    };
+	    name: "Nicholas",
+	    age: 29,
+	    job: "Software Engineer",
+	
+	    showName: function () {
+	        console.log(this.name);
+	    },
+	
+	    showAge: function () {
+	        console.log(this.age);
+	    },
+	
+	    showJob: function () {
+	        console.log(this.job);
+	    }
+	};
 
 **方法3：**用函数封装特定接口创建对象
 	
 	function createPerson(name, age, job) {
-        var o = new Object();
-        o.name = name;
-        o.age = age;
-        o.job = job;
-
-        o.showName = function () {
-            console.log(this.name);
-        };
-
-        o.showAge = function () {
-            console.log(this.age);
-        };
-
-        o.showJob = function () {
-            console.log(this.job);
-        };
-
-        return o;
-    }
-
-    var person1 = createPerson("Nicholas", 29, "Software Engineer");
-    person1.showName();
-    person1.showAge();
-    person1.showJob();
-
-    var person2 = createPerson("Greg", 27, "Doctor");
-    person2.showName();
-    person2.showAge();
-    person2.showJob();
+	    var o = new Object();
+	    o.name = name;
+	    o.age = age;
+	    o.job = job;
+	
+	    o.showName = function () {
+	        console.log(this.name);
+	    };
+	
+	    o.showAge = function () {
+	        console.log(this.age);
+	    };
+	
+	    o.showJob = function () {
+	        console.log(this.job);
+	    };
+	
+	    return o;
+	}
+	
+	var person1 = createPerson("Nicholas", 29, "Software Engineer");
+	person1.showName();
+	person1.showAge();
+	person1.showJob();
+	
+	var person2 = createPerson("Greg", 27, "Doctor");
+	person2.showName();
+	person2.showAge();
+	person2.showJob();
 
 **方法4：**使用构造函数创建对象
 	
 	function Person(name, age, job) {
-        this.name = name;
-        this.age = age;
-        this.job = job;
-
-        this.showName = function () {
-            console.log(this.name);
-        };
-
-        this.showAge = function () {
-            console.log(this.age);
-        };
-
-        this.showJob = function () {
-            console.log(this.job);
-        }
-    }
-
-    var person1 = new Person("Nicholas", 29, "Software Engineer");
-    person1.showName();
-    person1.showAge();
-    person1.showJob();
-
-    var person2 = new Person("Greg", 27, "Doctor");
-    person2.showName();
-    person2.showAge();
-    person2.showJob();
+	    this.name = name;
+	    this.age = age;
+	    this.job = job;
+	
+	    this.showName = function () {
+	        console.log(this.name);
+	    };
+	
+	    this.showAge = function () {
+	        console.log(this.age);
+	    };
+	
+	    this.showJob = function () {
+	        console.log(this.job);
+	    }
+	}
+	
+	var person1 = new Person("Nicholas", 29, "Software Engineer");
+	person1.showName();
+	person1.showAge();
+	person1.showJob();
+	
+	var person2 = new Person("Greg", 27, "Doctor");
+	person2.showName();
+	person2.showAge();
+	person2.showJob();
 
 **方法5：**使用构造函数创建对象改进版
 	
 	function Person(name, age, job) {
-        this.name = name;
-        this.age = age;
-        this.job = job;
-
-        this.showName = new Function("console.log(this.name)");
-        this.showAge = new Function("console.log(this.age)");
-        this.showJob = new Function("console.log(this.job)");
-    }
-
-    var person1 = new Person("Nicholas", 29, "Software Engineer");
-    person1.showName();
-    person1.showAge();
-    person1.showJob();
-
-    var person2 = new Person("Greg", 27, "Doctor");
-    person2.showName();
-    person2.showAge();
-    person2.showJob();
+	    this.name = name;
+	    this.age = age;
+	    this.job = job;
+	
+	    this.showName = new Function("console.log(this.name)");
+	    this.showAge = new Function("console.log(this.age)");
+	    this.showJob = new Function("console.log(this.job)");
+	}
+	
+	var person1 = new Person("Nicholas", 29, "Software Engineer");
+	person1.showName();
+	person1.showAge();
+	person1.showJob();
+	
+	var person2 = new Person("Greg", 27, "Doctor");
+	person2.showName();
+	person2.showAge();
+	person2.showJob();
 
 **方法6：**将成员函数放在外面
 	
 	function Person(name, age, job) {
-        this.name = name;
-        this.age = age;
-        this.job = job;
-        this.showName = showName;
-        this.showAge = showAge;
-        this.showJob = showJob;
-    }
-
-    function showName() {
-        console.log(this.name);
-    }
-
-    function showAge() {
-        console.log(this.age);
-    }
-
-    function showJob() {
-        console.log(this.job);
-    }
-
-    var person1 = new Person("Nicholas", 29, "Software Engineer");
-    person1.showName();
-    person1.showAge();
-    person1.showJob();
-
-    var person2 = new Person("Greg", 27, "Doctor");
-    person2.showName();
-    person2.showAge();
-    person2.showJob();
+	    this.name = name;
+	    this.age = age;
+	    this.job = job;
+	    this.showName = showName;
+	    this.showAge = showAge;
+	    this.showJob = showJob;
+	}
+	
+	function showName() {
+	    console.log(this.name);
+	}
+	
+	function showAge() {
+	    console.log(this.age);
+	}
+	
+	function showJob() {
+	    console.log(this.job);
+	}
+	
+	var person1 = new Person("Nicholas", 29, "Software Engineer");
+	person1.showName();
+	person1.showAge();
+	person1.showJob();
+	
+	var person2 = new Person("Greg", 27, "Doctor");
+	person2.showName();
+	person2.showAge();
+	person2.showJob();
 
 **方式7：**使用原型创建对象
 	
 	 function Person() {
-    }
-
-    Person.prototype.name = "Nicholas";
-    Person.prototype.age = 29;
-    Person.prototype.job = "Software Engineer";
-
-    Person.prototype.showName = function () {
-        console.log(this.name);
-    }
-
-    Person.prototype.showAge = function () {
-        console.log(this.age);
-    }
-
-    Person.prototype.showJob = function () {
-        console.log(this.job);
-    }
-
-    var person1 = new Person();
-    person1.showName();
-    person1.showAge();
-    person1.showJob();
+	}
+	
+	Person.prototype.name = "Nicholas";
+	Person.prototype.age = 29;
+	Person.prototype.job = "Software Engineer";
+	
+	Person.prototype.showName = function () {
+	    console.log(this.name);
+	}
+	
+	Person.prototype.showAge = function () {
+	    console.log(this.age);
+	}
+	
+	Person.prototype.showJob = function () {
+	    console.log(this.job);
+	}
+	
+	var person1 = new Person();
+	person1.showName();
+	person1.showAge();
+	person1.showJob();
 
 ##### js中获得父节点下所有子节点的方法  
 **childNodes：** 获得的子节点中包含文本节点  
@@ -363,6 +363,10 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 ##### target 与 currentTarget
 **target：**返回触发事件的那个节点，即事件最初发生的节点  
 **currentTarget：**返回事件当前所在的节点，即正在执行的监听函数所绑定的那个节点
+
+##### 宏任务与微任务
+**宏任务：** 宿主发起的任务称为宏任务
+**微任务：** JavaScript 引擎发起的任务称为微任务
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[《JavaScript高级程序设计》读书笔记](http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/)】
