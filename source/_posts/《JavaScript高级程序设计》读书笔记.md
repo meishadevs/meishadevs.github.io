@@ -339,6 +339,38 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 	person1.showAge();
 	person1.showJob();
 
+**方式8：** 使用 ES6 提供的语法糖
+
+    class Person {
+      constructor (name, age, job) {
+        this.name = name
+        this.age = age
+        this.job = job
+      }
+
+      showName () {
+        console.log(this.name)
+      }
+
+      showAge () {
+        console.log(this.age)
+      }
+
+      showJob () {
+        console.log(this.job)
+      }
+    }
+
+    var person1 = new Person('Nicholas', 29, 'Software Engineer')
+    person1.showName()
+    person1.showAge()
+    person1.showJob()
+
+    var person2 = new Person('Greg', 27, 'Doctor')
+    person2.showName()
+    person2.showAge()
+    person2.showJob()
+
 ##### js中获得父节点下所有子节点的方法  
 **childNodes：** 获得的子节点中包含文本节点  
 **children:** 获得的子节点中不包含文本节点

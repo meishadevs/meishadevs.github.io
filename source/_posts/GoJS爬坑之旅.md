@@ -79,7 +79,7 @@ date: 2018-07-05 21:00:39
 {% img blog-image /images/201812501.png %}
 **将物品拖入了对应篮子中的效果**
 {% img blog-image /images/201812502.png %}
-项目地址：[http://meishadevs.com/JavaScriptDemo/拖拽效果/](http://meishadevs.com/JavaScriptDemo/%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C/)  
+项目地址：[https://meishadevs.github.io/JavaScriptDemo/拖拽效果](https://meishadevs.github.io/JavaScriptDemo/%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C/)  
 项目源码：[https://github.com/meishadevs/JavaScriptDemo/tree/master/拖拽效果](https://github.com/meishadevs/JavaScriptDemo/tree/master/%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
