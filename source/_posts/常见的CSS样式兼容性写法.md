@@ -159,6 +159,15 @@ tags:
 	   width: 100% !important;
 	}
 	</style>
+	
+在 scss 中使用 /deep/ 的方法
+
+	<style lang="scss" scoped>
+	 ::v-deep .ivu-poptip,
+	 ::v-deep .ivu-poptip-rel {
+	   width: 100% !important;
+	}
+	</style>
 
 ##### 14. 响应式布局中屏幕尺寸的表示
 这里是以 iView 框架为例，不同框架的尺寸值可能不一样
