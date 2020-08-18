@@ -257,6 +257,22 @@ arr的值如下
     
     this.getUserInfo()
 
+### 遍历对象
 
+	let object = {
+    	name: "meishadevs",
+    	age: 24,
+    	hobby: "codding",
+    	job: "Front-end engineer"
+    }
+
+    for (let index in object) {
+    	console.log('属性名：:', index)
+	    console.log('属性值：', object[index])
+    }
+    
+执行结果
+{% img blog-image /images/2020081801.png %}
+        
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的ES6语法](http://meishadevs.coding.me/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/)】
