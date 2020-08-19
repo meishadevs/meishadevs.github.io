@@ -260,17 +260,17 @@ arr的值如下
 ### 遍历对象
 
 	let object = {
-    	name: "meishadevs",
-    	age: 24,
-    	hobby: "codding",
-    	job: "Front-end engineer"
-    }
+		name: "meishadevs",
+		age: 24,
+		hobby: "codding",
+		job: "Front-end engineer"
+	}
+	
+	for (let name in object) {
+		console.log('属性名：', name)
+	    console.log('属性值：', object[name])
+	}
 
-    for (let index in object) {
-    	console.log('属性名：:', index)
-	    console.log('属性值：', object[index])
-    }
-    
 执行结果
 {% img blog-image /images/2020081801.png %}
         
