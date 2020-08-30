@@ -106,20 +106,6 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 - 构造函数定义时没有返回值
 - 构造函数只能用于定义对象时初始化对象  
 
-##### 创建Object实例(对象)的两种方式
-**方式1：**使用new操作符后跟Object构造函数
-	
-	var person = new Object();
-	person.name = "Nicholas";
-	person.age = 29;
-
-**方式2：**使用对象字面量表示法
-	
-	 var person = {
-	    name : "Nicholas",
-	    age : 29
-	};
-
 ##### 创建数组的方式
 **方式1：**使用Array的构造函数创建数组
 
@@ -158,6 +144,7 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 ##### JavaScript中创建对象的方式
 **方式1：**使用Object创建对象
 	
+
 	var person = new Object();
 	person.name = "Nicholas";
 	person.age = 29;
@@ -176,7 +163,7 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 	}
 
 **方式2：**用对象字面量语法创建对象
-	
+
 	var person = {
 	    name: "Nicholas",
 	    age: 29,
@@ -347,29 +334,79 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
         this.age = age
         this.job = job
       }
-
+    
       showName () {
         console.log(this.name)
       }
-
+    
       showAge () {
         console.log(this.age)
       }
-
+    
       showJob () {
         console.log(this.job)
       }
     }
-
+    
     var person1 = new Person('Nicholas', 29, 'Software Engineer')
     person1.showName()
     person1.showAge()
     person1.showJob()
-
+    
     var person2 = new Person('Greg', 27, 'Doctor')
     person2.showName()
     person2.showAge()
     person2.showJob()
+
+##### new 操作符实现原理
+
+	function Person(name, age, job) {
+		this.name = name;
+		this.age = age;
+		this.job = job;
+	
+		this.showName = function() {
+	  	console.log("name:", this.name);
+		}
+	
+		this.showAge = function() {
+	  	console.log("age:", this.age)
+		}
+	
+		this.showJob = function() {
+	  	console.log("job:", this.job)
+		}
+	}
+	
+	function newObject(cstrFn, ...args) {
+	
+		// 创建一个对象
+		const obj = {};
+		
+		// 将
+	  cstrFn 的原型链复制到对象的原型链上
+		obj.__proto__ = cstrFn.prototype
+		
+		// 修改 cstrFn 函数的 this 指向并执
+		// 表示 obj 对象调用 cstrFn 方法，并向 cstrFn 方法中传递 args 参数
+		const res = cstrFn.apply(obj, args)
+		
+		// 如果 cstrFn 的返回值是一个对象则返回，如果非对象则返回 obj
+		return typeof res === 'object' ? res : obj;
+	}
+	
+	// 创建 Person 对象
+	let person = newObject(Person,  "Nicholas", 29, "Software Engineer")
+	
+	// 调用Person 对象中的方法
+	person.showName()
+	person.showAge()
+	person.showJob()
+
+执行结果
+
+{% img blog-image /images/2020083001.png %}
+
 
 ##### js中获得父节点下所有子节点的方法  
 **childNodes：** 获得的子节点中包含文本节点  
