@@ -404,7 +404,6 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 	person.showJob()
 
 执行结果
-
 {% img blog-image /images/2020083001.png %}
 
 
