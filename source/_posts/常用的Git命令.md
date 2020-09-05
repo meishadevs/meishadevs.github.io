@@ -206,6 +206,18 @@ date: 2017-04-29 10:18:01
 #### 使用 rsa 算法生成秘钥
 
 	ssh-keygen -t rsa
+	
+#### 在终端中查看生成的公钥
+
+	cat ~/.ssh/id_rsa.pub
+	
+#### 在 vim 中查看生成的公钥
+
+	vim  ~/.ssh/id_rsa.pub
+	
+#### 退出 vim
+
+	:wq
 
 #### 在终端中查看生成的公钥
 
