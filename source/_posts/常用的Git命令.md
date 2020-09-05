@@ -194,7 +194,7 @@ date: 2017-04-29 10:18:01
 #### 回到 master 分支的最新的提交记录的上一个提交记录处
 
 	git checkout master^
-	
+
 #### 在当前分支下回到前4步的提交处
 
 	git checkout HEAD~4
@@ -202,10 +202,22 @@ date: 2017-04-29 10:18:01
 #### 将 master 分支中的内容强制修改成当前所在分支的前3步提交处
 
 	git branch -f master HEAD~3
-	
+
 #### 使用 rsa 算法生成秘钥
 
 	ssh-keygen -t rsa
+
+#### 在终端中查看生成的公钥
+
+	cat ~/.ssh/id_rsa.pub
+
+#### 在 vim 中查看生成的公钥
+
+	vim  ~/.ssh/id_rsa.pub
+
+#### 退出 vim
+
+	:wq
 
 #### 参考链接
 
