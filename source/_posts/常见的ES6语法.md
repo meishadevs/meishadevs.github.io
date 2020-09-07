@@ -285,15 +285,27 @@ arr的值如下
 
     let arr1 = [1, 1, 3, 1, 1, 1]
     let arr2 = [1, 1, 1, 1, 1, 1]
-
+    
     let result1 = isAllEqual(arr1)
     let result2 = isAllEqual(arr2)
-
+    
     console.log("arr1 的检测结果：", result1)
     console.log("arr2 的检测结果：", result2)
-    
+
 执行结果
 {% img blog-image /images/2020082801.png %}
+
+### 数组去重
+
+    let array = [1, 1, 1, 1, 2, 3, 4, 4, 5, 3];
+    let set = new Set(array);
+    let arr = Array.from(set);
+    
+    console.log('去重前的数据：', array);
+    console.log("去重后的数据：", arr);
+
+执行结果
+{% img blog-image /images/2020090701.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的ES6语法](http://meishadevs.coding.me/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/)】
