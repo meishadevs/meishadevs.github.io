@@ -145,7 +145,7 @@
       <link href="/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Linux%E5%91%BD%E4%BB%A4/"/>
       <url>/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Linux%E5%91%BD%E4%BB%A4/</url>
       
-        <content type="html"><![CDATA[<p>自己总结的一些常用的 linux 命令<br><a id="more"></a></p><h4 id="查看当前文件夹下的所有文件"><a href="#查看当前文件夹下的所有文件" class="headerlink" title="查看当前文件夹下的所有文件"></a>查看当前文件夹下的所有文件</h4><pre><code>ls</code></pre><h4 id="查看某个文件的内容"><a href="#查看某个文件的内容" class="headerlink" title="查看某个文件的内容"></a>查看某个文件的内容</h4><pre><code># fileName为文件名cat fileName</code></pre><h4 id="清空终端上的内容"><a href="#清空终端上的内容" class="headerlink" title="清空终端上的内容"></a>清空终端上的内容</h4><pre><code>clear</code></pre><h4 id="进入某个文件夹下"><a href="#进入某个文件夹下" class="headerlink" title="进入某个文件夹下"></a>进入某个文件夹下</h4><pre><code># ~/.ssh 表示文件夹的路径cd ~/.ssh</code></pre><h4 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><pre><code># test 表示文件夹的名称mkdir test</code></pre><h4 id="创建文件夹-1"><a href="#创建文件夹-1" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><pre><code># a.md 表示需要创建的文件touch test.md</code></pre><h4 id="回到上一级目录"><a href="#回到上一级目录" class="headerlink" title="回到上一级目录"></a>回到上一级目录</h4><pre><code>cd ..</code></pre><h4 id="查看本机的ip地址"><a href="#查看本机的ip地址" class="headerlink" title="查看本机的ip地址"></a>查看本机的ip地址</h4><pre><code>ifconfig lo0</code></pre><h4 id="查看局域网ip地址"><a href="#查看局域网ip地址" class="headerlink" title="查看局域网ip地址"></a>查看局域网ip地址</h4><pre><code>ifconfig en0</code></pre><h4 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h4><pre><code>clear</code></pre><h4 id="安装-wget"><a href="#安装-wget" class="headerlink" title="安装 wget"></a>安装 wget</h4><pre><code>yum -y install wget</code></pre><blockquote><p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href>常用的Linux命令</a>】</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<p>自己总结的一些常用的 linux 命令<br><a id="more"></a></p><h4 id="查看当前文件夹下的所有文件"><a href="#查看当前文件夹下的所有文件" class="headerlink" title="查看当前文件夹下的所有文件"></a>查看当前文件夹下的所有文件</h4><pre><code>ls</code></pre><h4 id="查看某个文件的内容"><a href="#查看某个文件的内容" class="headerlink" title="查看某个文件的内容"></a>查看某个文件的内容</h4><pre><code># fileName为文件名cat fileName</code></pre><h4 id="清空终端上的内容"><a href="#清空终端上的内容" class="headerlink" title="清空终端上的内容"></a>清空终端上的内容</h4><pre><code>clear</code></pre><h4 id="进入某个文件夹下"><a href="#进入某个文件夹下" class="headerlink" title="进入某个文件夹下"></a>进入某个文件夹下</h4><pre><code># ~/.ssh 表示文件夹的路径cd ~/.ssh</code></pre><h4 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><pre><code># test 表示文件夹的名称mkdir test</code></pre><h4 id="创建文件夹-1"><a href="#创建文件夹-1" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><pre><code># a.md 表示需要创建的文件touch test.md</code></pre><h4 id="回到上一级目录"><a href="#回到上一级目录" class="headerlink" title="回到上一级目录"></a>回到上一级目录</h4><pre><code>cd ..</code></pre><h4 id="查看本机的ip地址"><a href="#查看本机的ip地址" class="headerlink" title="查看本机的ip地址"></a>查看本机的ip地址</h4><pre><code>ifconfig lo0</code></pre><h4 id="查看局域网ip地址"><a href="#查看局域网ip地址" class="headerlink" title="查看局域网ip地址"></a>查看局域网ip地址</h4><pre><code>ifconfig en0</code></pre><h4 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h4><pre><code>clear</code></pre><h4 id="安装-wget"><a href="#安装-wget" class="headerlink" title="安装 wget"></a>安装 wget</h4><pre><code>yum -y install wget</code></pre><h4 id="查看当前工作目录"><a href="#查看当前工作目录" class="headerlink" title="查看当前工作目录"></a>查看当前工作目录</h4><pre><code>pwd</code></pre><h4 id="显示-file-文件中的内容"><a href="#显示-file-文件中的内容" class="headerlink" title="显示 file 文件中的内容"></a>显示 file 文件中的内容</h4><pre><code>cat file</code></pre><blockquote><p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href>常用的Linux命令</a>】</p></blockquote>]]></content>
       
       
       <categories>
@@ -999,22 +999,22 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>读书</title>
+      <link href="/reading/index.html"/>
+      <url>/reading/index.html</url>
       
-        <content type="html"><![CDATA[<p>大家好，我是meishadevs。欢迎来到我的个人技术博客。</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>读书</title>
-      <link href="/reading/index.html"/>
-      <url>/reading/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>大家好，我是meishadevs。欢迎来到我的个人技术博客。</p>]]></content>
       
     </entry>
     
