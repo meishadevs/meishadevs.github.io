@@ -307,7 +307,7 @@ arr的值如下
 执行结果
 {% img blog-image /images/2020090701.png %}
 
-### 将对象的属性名保存在数组中
+### 将对象的可枚举属性名保存在数组中
 
 	let object = {
 	  name: "meishadevs",
