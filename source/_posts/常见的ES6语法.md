@@ -212,6 +212,45 @@ arr的值如下
 执行结果
 {% img blog-image /images/2019123002.png %}
 
+### 查找数组中元素的下标
+
+	 let cardTypeList = [
+	  {
+		name: '身份证',
+		value: 10
+	  },
+	  {
+		name: '港澳通行证',
+		value: 20
+	  },
+	  {
+		name: '台胞证',
+		value: 30
+	  },
+	  {
+		name: '护照',
+		value: 40
+	  },
+	  {
+		name: '军官证',
+		value: 50
+	  },
+	  {
+		name: '士官证',
+		value: 60
+	  }]
+
+	let value = 30
+
+	let index = cardTypeList.findIndex(item => {
+	  return item.value === value
+	})
+
+	console.log('index:', index)
+	
+执行结果
+{% img blog-image /images/2020102902.png %}
+
 ### 将对象数组中的属性组成一个数组
 
 	let array = [
