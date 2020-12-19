@@ -148,6 +148,12 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 	//重置表单
 	this.$refs['userForm'].resetFields()
 	
+#### 动态设置 img 标签的 src 属性，将`assetsPublicPath`属性的值由
+
+	<img :src="require(`@/assets/images/${greenLight}`)" alt="">
+	
+	greenLight: "none.gif",
+	
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
 - [关于Vue中的 render: h => h(App) 具体是什么含义？](https://segmentfault.com/q/1010000007130348)
