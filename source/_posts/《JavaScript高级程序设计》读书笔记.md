@@ -357,6 +357,93 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
     person2.showName()
     person2.showAge()
     person2.showJob()
+	
+##### 对象继承
+
+**方法1：** 使用 ES5 中提供的方法实现继承
+
+	function Animal(animalName, footNum) {
+	  this.animalName = animalName;
+	  this.footNum = footNum;
+	  
+	  this.getAnimalInfo = function() {
+		console.log("我是" + this.animalName + "，我有" + this.footNum + "条腿。");
+	  }
+	}
+
+	function Dog(animalName, footNum) {
+	  Animal.call(this, animalName, footNum);
+	  
+	  this.say = function() {
+		console.log("我的叫声是汪汪汪！");
+	  }
+	}
+
+	function Chicken(animalName, footNum) {
+	  Animal.call(this, animalName, footNum);
+
+	  this.say = function() {
+		console.log("我的叫声是咯咯咯！");
+	  }
+	}
+
+	var dog = new Dog("狗", 4);
+	dog.getAnimalInfo();
+	dog.say();
+
+	var chicken = new Chicken("鸡", 2);
+	chicken.getAnimalInfo();
+	chicken.say();
+	
+执行结果
+{% img blog-image /images/2021052006.png %}
+
+**方法2：** 使用 ES6 中提供的语法糖实现继承
+
+	// 定义一个动物类
+	class Animal {
+	  constructor(animalName, footNum) {
+		  this.animalName = animalName;
+		  this.footNum = footNum;
+	  }
+
+	  getAnimalInfo() {
+		  console.log("我是" + this.animalName + "，我有" + this.footNum + "条腿。");
+	  }
+	}
+
+	// 定义一个继承动物类的狗类
+	class Dog extends Animal {
+	  constructor(animalName, footNum) {
+		  super(animalName, footNum);
+	  }
+
+	  say() {
+		  console.log("我的叫声是汪汪汪！");
+	  }
+	}
+
+	// 定义一个继承动物类的鸡类
+	class Chicken extends Animal {
+	  constructor(animalName, footNum) {
+		  super(animalName, footNum);
+	  }
+
+	  say() {
+		  console.log("我的叫声是咯咯咯！");
+	  }
+	}
+
+	let dog = new Dog("狗", 4);
+	dog.getAnimalInfo();
+	dog.say();
+
+	let chicken = new Chicken("鸡", 2);
+	chicken.getAnimalInfo();
+	chicken.say();
+	
+执行结果
+{% img blog-image /images/2021052006.png %}
 
 ##### new 操作符实现原理
 
