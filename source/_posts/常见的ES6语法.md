@@ -69,22 +69,64 @@ obj3的值如下
 	let str2 = 'world'
 	let str3 = `${str1} ${str2}`
 
-str3的值如下
+	console.log("str3:", str3);
 
-	hello world
+执行结果
+{% img blog-image /images/2021052001.png %}
 
 ### 数据筛选
 
 	let array = [5, 6, 7, 8, 9, 10]
-	
+		
 	// 筛选出数组中数值大于 7 的数据
 	let arr = array.filter((value) => {
 		return value > 7
-	})
+	});
 
-arr的值如下
+	console.log("arr:", arr);
 
-	[8, 9, 10]
+执行结果
+{% img blog-image /images/2021052002.png %}
+	
+### 判断数组中是否存满足条件的数据
+
+	let array = [5, 6, 7, 8, 9, 10]
+
+	// 判断数组元素中是否存在大于 7 的数字
+	let result1 = array.some((value) => {
+		return value > 7
+	});
+
+	// 判断数组元素中是否存在大于 10 的数字
+	let result2 = array.some((value) => {
+		return value > 10
+	});
+
+	console.log("result1:", result1);
+	console.log("result2:", result2);
+	
+执行结果
+{% img blog-image /images/2021052003.png %}
+	
+### 判断数组中所有数据是否都满足条件
+
+	let array = [5, 6, 7, 8, 9, 10]
+
+	// 判断数组中是否所有数据都大于 7
+	let result1 = array.every((value) => {
+		return value > 7
+	});
+
+	// 判断数组中是否所有数据都大于 5
+	let result2 = array.every((value) => {
+		return value > 4
+	});
+
+	console.log("result1:", result1);
+	console.log("result2:", result2);
+	
+执行结果
+{% img blog-image /images/2021052004.png %}
 
 ### 使用 forEach 遍历数组
 
@@ -93,6 +135,9 @@ arr的值如下
 	array.forEach(item => {
 	  console.log('item:', item)
 	})
+	
+执行结果
+{% img blog-image /images/2021052005.png %}
 
 ### 使用对象展开运算符合并对象
 
