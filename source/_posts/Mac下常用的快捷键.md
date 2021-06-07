@@ -20,8 +20,8 @@ date: 2019-06-14 20:53:50
 - 切换应用 **Command + Tab**
 - 打开Spotlight **Command + 空格键**
 - 在访达中进行文件夹搜索 **Command + Shift + G**
-- 全屏截图**Command + Shift + 3**
-- 截取部分内容**Command + Shift + 4**
+- 全屏截图 **Command + Shift + 3**
+- 截取部分内容 **Command + Shift + 4**
 - 在终端中终止执行比较耗时的命令 **control + C**
 
 #### Chrome 浏览器的常用快捷键
@@ -31,6 +31,9 @@ date: 2019-06-14 20:53:50
 - 打开 Chrome 浏览器的开发者工具并进入 JavaScript 控制台选项卡 **command + option + J**
 - 打开 Chrome 浏览器的开发者工具并进入 检测元素选项卡 **command + option + C**
 - 使用 Chrome 浏览器查看源码 **command + option + U**
+- 普通刷新 Chrome 浏览器 **command + R**
+- 强制刷新 Chrome 浏览器 **command + shift + R**
+- 打开清除缓存页 **command + shift + del**
 
 #### VSCode 中常用快捷键
 
