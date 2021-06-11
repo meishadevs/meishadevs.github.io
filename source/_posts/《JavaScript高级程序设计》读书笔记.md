@@ -326,7 +326,7 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 	person1.showAge();
 	person1.showJob();
 
-**方式8：** 使用 ES6 提供的语法糖
+**方式8：** 使用 ES6 提供的语法糖创建对象
 
     class Person {
       constructor (name, age, job) {
