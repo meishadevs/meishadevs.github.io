@@ -470,8 +470,7 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 		// 创建一个对象
 		const obj = {};
 		
-		// 将
-	  cstrFn 的原型链复制到对象的原型链上
+		// 将 cstrFn 的原型链复制到对象的原型链上
 		obj.__proto__ = cstrFn.prototype
 		
 		// 修改 cstrFn 函数的 this 指向并执
@@ -491,7 +490,7 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 	person.showJob()
 
 执行结果
-{% img blog-image /images/2020083001.png %}
+{% img blog-image /images/2021061101.png %}
 
 
 ##### js中获得父节点下所有子节点的方法  
