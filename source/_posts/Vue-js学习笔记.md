@@ -153,6 +153,21 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 	<img :src="require(`@/assets/images/${greenLight}`)" alt="">
 	
 	greenLight: "none.gif",
+
+#### 使用相对路径的方式设置背景图片的路径
+
+	<style lang="less" scoped>
+	.exit {
+	  background-image: url('~@/assets/images/exit.png');
+	}
+	</style>
+	
+其中 @ 表示配置的路径别名，表示 src 目录
+
+	chainWebpack: config => {
+		config.resolve.alias
+		.set('@', resolve('src'))
+    },
 	
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
