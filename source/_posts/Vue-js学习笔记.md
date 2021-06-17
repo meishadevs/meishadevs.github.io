@@ -167,7 +167,43 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 	chainWebpack: config => {
 		config.resolve.alias
 		.set('@', resolve('src'))
-    },
+    }
+	
+#### 自定义表单项的验证规则
+
+	export default {
+	  data() {
+		const validateFile = (rule, value, callback) => {
+		  if (!this.dataForm.file) {
+			callback(new Error("必填项，不能为空"));
+		  } else {
+			callback();
+		  }
+		};
+
+		return {
+		  dataForm: {
+			file: ""
+		  },
+		  
+		  rules: {
+			file: [
+			  { required: true, validator: validateFile, trigger: "blur" },
+			  { required: true, validator: validateFile, trigger: "change" }
+			]
+		  }
+		};
+	  },
+
+	  created() {
+	  },
+
+	  mounted() {
+	  },
+
+	  methods: {
+	  }
+	};
 	
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
