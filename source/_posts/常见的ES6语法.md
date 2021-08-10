@@ -407,5 +407,16 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2020092101.png %}
 
+### 将数值类型数据转换成布尔类型数据
+
+	let bool1 = !!5
+	let bool2 = !!0
+	
+	console.log('bool1:', bool1)
+	console.log('bool2:', bool2)
+
+执行结果
+{% img blog-image /images/2021081001.png %}
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的ES6语法](http://meishadevs.coding.me/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/)】
