@@ -212,6 +212,10 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
       }
     })
 	
+#### 清除所有表单字段的验证
+
+	this.$refs['dataForm'].resetFields()
+	
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
 - [关于Vue中的 render: h => h(App) 具体是什么含义？](https://segmentfault.com/q/1010000007130348)
