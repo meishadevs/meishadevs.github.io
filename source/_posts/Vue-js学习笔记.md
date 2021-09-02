@@ -214,6 +214,8 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 	
 #### 清除所有表单字段的验证
 
+使用这个方法会清空表单项的值
+
 	this.$refs['dataForm'].resetFields()
 	
 #### 参考链接
