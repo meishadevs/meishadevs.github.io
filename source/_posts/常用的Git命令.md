@@ -202,6 +202,10 @@ date: 2017-04-29 10:18:01
 #### 将 master 分支中的内容强制修改成当前所在分支的前3步提交处
 
 	git branch -f master HEAD~3
+	
+#### 查看向 git 仓库贡献了代码的用户
+
+	git log --pretty=format:"%an" | sort | uniq -c
 
 #### 使用 rsa 算法生成秘钥
 
