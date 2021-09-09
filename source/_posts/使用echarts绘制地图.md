@@ -12,7 +12,7 @@ date: 2021-09-09 10:12:49
 
 #### 获取地理数据
 
-绘制地图时需要用于展示地图的地理数据，地理数据是一个 GeoMap 格式的数据，本质上是一个 json 数据
+绘制地图时需要用于展示地图的地理数据，地理数据是一个 geoJSON 格式的数据，本质上是一个 json 数据
 
 打开 [地图选择器](http://datav.aliyun.com/tools/atlas/index.html)
 {% img blog-image /images/2021090901.png %}
