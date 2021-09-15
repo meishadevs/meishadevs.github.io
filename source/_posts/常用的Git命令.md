@@ -206,6 +206,10 @@ date: 2017-04-29 10:18:01
 #### 查看向 git 仓库贡献了代码的用户
 
 	git log --pretty=format:"%an" | sort | uniq -c
+	
+#### 查看某个用户的提交记录
+
+git log --author="meishadevs"
 
 #### 使用 rsa 算法生成秘钥
 
