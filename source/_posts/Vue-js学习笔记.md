@@ -9,16 +9,15 @@ date: 2017-12-01 16:14:29
 ---
 
 #### 在执行 npm run dev 命令的时候出现8080端口被占用
-在任务管理器中手动结束所有Node.exe进程
+	在任务管理器中手动结束所有Node.exe进程
 <!-- more -->
 
 #### 使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性
-当使用v-for指令遍历组件时，需要在组件上添加一个key属性
-
+	当使用v-for指令遍历组件时，需要在组件上添加一个key属性
 	<router-link to="/select" v-for="content in item.classContent" :key="content.id">{{ content }}</router-link>
 
 #### 使用Head标签命名组件报错
-不能使用标签名作为组件名
+	不能使用标签名作为组件名
 
 #### 执行npm run build命令构建Vue.js项目后，在浏览器中打开生成的HTML文件，网站资源文件的路径错误
 进入项目目录下的`config/index.js`文件中的`build`对象下的`assetsPublicPath`属性，将`assetsPublicPath`属性的值由 `assetsPublicPath: '/'`，改成 `assetsPublicPath: './'`
@@ -120,7 +119,7 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 	});
 
 #### Do not use built-in or reserved HTML elements as component id: select
-使用标签名select作为组件的name属性值(name: "select")时在console中产生的警告，不能将标签名设为组件的name属性
+	使用标签名select作为组件的name属性值(name: "select")时在console中产生的警告，不能将标签名设为组件的name属性
 
 #### 代码简写
 **:clone="cloneData"**表示给draggable标签的clone属性赋值为cloneData，这里是v-bind:clone="cloneData"的简写					 	  
@@ -217,6 +216,10 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 使用这个方法会清空表单项的值
 
 	this.$refs['dataForm'].resetFields()
+	
+#### 项目打包时提示 Error: CSS minification error: Unknown browser kaios
+
+	删除 node_modules 文件夹 --> 删除 package-lock.json 文件 --> 执行 npm install 安装 npm 包
 	
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
