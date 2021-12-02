@@ -221,6 +221,29 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 
 	删除 node_modules 文件夹 --> 删除 package-lock.json 文件 --> 执行 npm install 安装 npm 包
 	
+#### TypeError: token.type.endsWidth is not a function
+
+把 vue 项目跑起来后出现 ** TypeError: token.type.endsWidth is not a function ** 报错
+
+{% img blog-image /images/2021120201.png %}
+
+将下面的代码
+
+
+
+	  <img
+		:src="
+		  require('../../../assets/report/white_report.gif')
+		"
+	  >
+	 
+改成这种形式后可以解决这个报错
+
+	  <img
+		:src="require('../../../assets/report/white_report.gif')"
+		alt=""
+	  >
+	
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
 - [关于Vue中的 render: h => h(App) 具体是什么含义？](https://segmentfault.com/q/1010000007130348)
