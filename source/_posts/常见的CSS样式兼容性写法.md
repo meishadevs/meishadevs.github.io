@@ -160,7 +160,7 @@ tags:
 	}
 	</style>
 	
-在 scss 中使用 /deep/ 的方法
+在 scss 中使用 ::v-deep
 
 	<style lang="scss" scoped>
 	 ::v-deep .ivu-poptip,
