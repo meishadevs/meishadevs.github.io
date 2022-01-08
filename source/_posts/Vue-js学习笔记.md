@@ -243,6 +243,17 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 		:src="require('../../../assets/report/white_report.gif')"
 		alt=""
 	  >
+	  
+#### 常用命令
+
+	安装依赖
+    npm install
+
+	执行项目
+	npm run dev
+	
+	查看 vue 的版本
+	npm list vue
 	
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
