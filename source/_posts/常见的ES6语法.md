@@ -418,5 +418,25 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2021081001.png %}
 
+### 判断对象是否为空对象
+
+	let obj1 = {}
+
+	let obj2 = {
+	  name: 'meishadevs'
+	}
+
+	let length1 = Object.keys(obj1).length
+	let length2 = Object.keys(obj2).length
+
+	let result1 = length1 ? 'obj1不是空对象' : 'obj1是空对象'
+	let result2 = length2 ? 'obj2不是空对象' : 'obj2是空对象'
+
+	console.log(result1)
+	console.log(result2)
+	
+执行结果
+{% img blog-image /images/2022011101.png %}
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的ES6语法](http://meishadevs.coding.me/blog/%E5%B8%B8%E8%A7%81%E7%9A%84ES6%E8%AF%AD%E6%B3%95/)】
