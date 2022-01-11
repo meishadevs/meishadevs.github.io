@@ -168,6 +168,10 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 		.set('@', resolve('src'))
     }
 	
+#### 使用相对路径的方式设置图片路径
+
+	<img src="~@/assets/header_images/logo.png"/>
+	
 #### 自定义表单项的验证规则
 
 	export default {
