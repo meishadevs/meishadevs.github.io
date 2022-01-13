@@ -248,6 +248,11 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 		alt=""
 	  >
 	  
+#### 页面加载完后调用的方法
+
+	this.$nextTick(() => {
+	});
+	  
 #### 常用命令
 
 	安装依赖
