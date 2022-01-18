@@ -248,6 +248,28 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 		alt=""
 	  >
 	  
+#### vue 与 vue-template-compiler 的版本不一致
+
+当运行项目时遇到如下错误表示 vue 与 vue-template-compiler 的版本不一致
+{% img blog-image /images/2022011801.png %}
+
+**解决方法：**
+
+执行 npm list vue 命令查看当前项目中采用的 vue 版本，通过下图可知当前项目采用的 vue 版本是 2.6.14
+{% img blog-image /images/2022011802.png %}
+
+执行 npm list vue-template-compiler 命令查看当前项目中采用的 vue-template-compiler 版本，通过下图可知当前项目中采用的 vue-template-compiler 版本是 2.6.12
+{% img blog-image /images/2022011803.png %}
+
+通过前面两步操作可知当前项目中 vue 版本和 vue-template-compiler 的版本不一致，一般的解决方法是降低 vue 版本或升高 vue-template-compiler 的版本，由于 vue 
+是安装在全局的，降低 vue 版本后担心会影响其它项目的使用，我这里采用的解决方式是升高 vue-template-compiler 的版本
+首先执行 npm uninstall vue-template-compiler 命令卸载项目中已经安装的 vue-template-compiler
+{% img blog-image /images/2022011804.png %}
+
+vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler@2.6.14 命令安装 2.6.14 版本的 vue-template-compiler 使 vue-template-compiler 的
+版本和 vue 的版本保持一致
+{% img blog-image /images/2022011805.png %}
+	  
 #### 页面加载完后调用的方法
 
 	this.$nextTick(() => {
