@@ -281,11 +281,11 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
     npm install
 	
 	安装指定版本号的 npm 包
-	这里以安装版本号为 2.6.14 的 vue-template-compiler 为例
-	npm install vue-template-compiler@2.6.14
+	这里以安装版本号为 5.2.1 的 echarts 为例
+	npm install echarts@5.2.1
 	
 	卸载 npm 包
-	这里以卸载 vue-template-compiler 为例
+	这里以卸载 echarts 为例
 	npm uninstall echarts
 	
 	执行项目
@@ -300,6 +300,13 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	
 	将 npm 镜像源设置为淘宝镜像
 	npm config set registry https://registry.npmmirror.com
+	
+	将 npm 镜像源设置为官方镜像源
+	npm config set registry https://registry.npmjs.org
+
+	
+	删除自定义的 npm 镜像源
+	npm config delete registry
 	
 	安装 cnpm
 	npm install -g cnpm --registry=https://registry.npmmirror.com
