@@ -275,16 +275,35 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	this.$nextTick(() => {
 	});
 	  
-#### 常用命令
+#### 常用 npm 命令
 
 	安装依赖
     npm install
-
+	
+	安装指定版本号的 npm 包
+	这里以安装版本号为 2.6.14 的 vue-template-compiler 为例
+	npm install vue-template-compiler@2.6.14
+	
+	卸载 npm 包
+	这里以卸载 vue-template-compiler 为例
+	npm uninstall echarts
+	
 	执行项目
 	npm run dev
 	
-	查看 vue 的版本
-	npm list vue
+	查看 npm 包的版本
+	这里以查看 vue 的版本为例
+	npm list vue 
+	
+	查看当前使用的 npm 镜像源
+	npm get registry
+	
+	将 npm 镜像源设置为淘宝镜像
+	npm config set registry https://registry.npmmirror.com
+	
+	安装 cnpm
+	npm install -g cnpm --registry=https://registry.npmmirror.com
+	
 	
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
