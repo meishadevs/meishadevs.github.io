@@ -310,8 +310,41 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	
 	安装 cnpm
 	npm install -g cnpm --registry=https://registry.npmmirror.com
-	
-	
+
+#### Vscode 中的配置信息
+
+	{
+	  "git.ignoreMissingGitWarning": true,
+	  "explorer.confirmDelete": false,
+	  "files.autoSave": "afterDelay",
+	  "vetur.validation.template": false,
+	  "editor.tabSize": 2,
+	  "javascript.updateImportsOnFileMove.enabled": "always",
+	  "editor.fontSize": 18,
+	  "window.zoomLevel": 1,
+	  "eslint.alwaysShowStatus": true,
+	  "eslint.quiet": true,
+	  "editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.fixAll.eslint": true
+	  },
+
+	  "editor.rulers": [
+	  ],
+
+	  "workbench.iconTheme": "vscode-icons",
+	  "terminal.integrated.tabs.enabled": true,
+	  "diffEditor.ignoreTrimWhitespace": false,
+	  "workbench.colorTheme": "Atom One Light",
+		"terminal.integrated.profiles.windows": {
+		  "Git-Bash": {
+			"path": "D:\\develop\\Git\\bin\\bash.exe",
+			"args": []
+		  }
+		},
+		"terminal.integrated.defaultProfile.windows": "Git-Bash"
+	}
+
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
 - [关于Vue中的 render: h => h(App) 具体是什么含义？](https://segmentfault.com/q/1010000007130348)
