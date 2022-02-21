@@ -144,10 +144,10 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 	//给表单注册引用信息
 	<Form ref="userForm"></Form>
 	
-	//重置表单
+	//重置表单，（会清空填写的表单值）
 	this.$refs['userForm'].resetFields()
 	
-#### 动态设置 img 标签的 src 属性，将`assetsPublicPath`属性的值由
+#### 动态设置 img 标签的 src 属性
 
 	<img :src="require(`@/assets/images/${greenLight}`)" alt="">
 	
