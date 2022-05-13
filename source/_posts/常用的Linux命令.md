@@ -65,6 +65,22 @@ date: 2019-05-31 09:43:20
 #### 显示 file 文件中的内容
 
 	cat file
+	
+#### 进入根目录下
+
+	cd ~
+	
+#### 将文件传送到 Linux 服务器上
+	
+	# hello.c 需要上传到 Linux 服务器上的文件
+	# root 登录 Linux 服务器的用户名
+	# 192.168.10.23 Linux 服务器的 ip 地址
+	scp hell.c root@192.168.10.23/root
+	
+#### 解压文件
+
+	# node-v12.4.0.tar.xz 要解压的文件
+	tar -xvf node-v12.4.0.tar.xz
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的Linux命令]()】
