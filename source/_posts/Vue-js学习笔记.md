@@ -9,7 +9,11 @@ date: 2017-12-01 16:14:29
 ---
 
 #### 在执行 npm run dev 命令的时候出现8080端口被占用
-	在任务管理器中手动结束所有Node.exe进程
+	根据端口号，查找被占用端口的进程 id
+	netstat -nao|findstr "8080"
+
+	结束进程，xxx 为进程 id
+	taskkill /pid xxx /F 
 <!-- more -->
 
 #### 使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性
@@ -32,9 +36,9 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 	dist
 	├── index.html
 	└── static
-    ├── css
-    ├── img
-    └── js
+	├── css
+	├── img
+	└── js
 
 经常遇见的问题是 css 中 background-image 的相对路径不能正确的引用到 img 文件夹中。但是用 ExtractTextWebpackPlugin 的 publicPath 配置就可以。
 
@@ -125,20 +129,20 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 **:clone="cloneData"**表示给draggable标签的clone属性赋值为cloneData，这里是v-bind:clone="cloneData"的简写					 	  
 
 	<draggable :clone="cloneData" :list="form_list" :options="dragOptions1"></draggable>
-	
+
 #### 正则匹配
 下面代码表示匹配 **.png、.jpeg、.jpg、.gif、.svg** 类型的图片，其中代码中的 **\\.** 表示点号，因为点也是一个正则匹配符号，所以需要使用 **\\** 转义
 
 	test: /\.(png|jpe?g|gif|svg)(\?.*)?$/
-	
+
 #### 数组中的元素改变后，触发视图更新
 
 	this.$set(this.list, this.index, this.userDetail)
-	
+
 #### 动态添加对象属性，并触发视图更新
 
 	this.$set(this.columnDetail, 'imageUr', '')
-	
+
 #### 重置表单
 
 	//给表单注册引用信息
@@ -146,7 +150,7 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 	
 	//重置表单，（会清空填写的表单值）
 	this.$refs['userForm'].resetFields()
-	
+
 #### 动态设置 img 标签的 src 属性
 
 	<img :src="require(`@/assets/images/${greenLight}`)" alt="">
@@ -160,18 +164,18 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 	  background-image: url('~@/assets/images/exit.png');
 	}
 	</style>
-	
+
 其中 @ 表示配置的路径别名，表示 src 目录
 
 	chainWebpack: config => {
 		config.resolve.alias
 		.set('@', resolve('src'))
-    }
-	
+	}
+
 #### 使用相对路径的方式设置图片路径
 
 	<img src="~@/assets/header_images/logo.png"/>
-	
+
 #### 自定义表单项的验证规则
 
 	export default {
@@ -183,7 +187,7 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 			callback();
 		  }
 		};
-
+	
 		return {
 		  dataForm: {
 			file: ""
@@ -197,34 +201,34 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 		  }
 		};
 	  },
-
+	
 	  created() {
 	  },
-
+	
 	  mounted() {
 	  },
-
+	
 	  methods: {
 	  }
 	};
-	
+
 #### 单个表单字段的验证
 
 	this.$refs.userForm.validateField('userName', (valid) => {
-      if (!valid) {
-      }
-    })
-	
+	  if (!valid) {
+	  }
+	})
+
 #### 清除所有表单字段的验证
 
 使用这个方法会清空表单项的值
 
 	this.$refs['dataForm'].resetFields()
-	
+
 #### 项目打包时提示 Error: CSS minification error: Unknown browser kaios
 
 	删除 node_modules 文件夹 --> 删除 package-lock.json 文件 --> 执行 npm install 安装 npm 包
-	
+
 #### TypeError: token.type.endsWidth is not a function
 
 把 vue 项目跑起来后出现 ** TypeError: token.type.endsWidth is not a function ** 报错
@@ -240,14 +244,14 @@ ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为c
 		  require('../../../assets/report/white_report.gif')
 		"
 	  >
-	 
+
 改成这种形式后可以解决这个报错
 
 	  <img
 		:src="require('../../../assets/report/white_report.gif')"
 		alt=""
 	  >
-	  
+
 #### vue 与 vue-template-compiler 的版本不一致
 
 当运行项目时遇到如下错误表示 vue 与 vue-template-compiler 的版本不一致
@@ -274,11 +278,11 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 
 	this.$nextTick(() => {
 	});
-	  
+
 #### 常用 npm 命令
 
 	安装依赖
-    npm install
+	npm install
 	
 	安装指定版本号的 npm 包
 	这里以安装版本号为 5.2.1 的 echarts 为例
@@ -304,7 +308,8 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	将 npm 镜像源设置为官方镜像源
 	npm config set registry https://registry.npmjs.org
 
-	
+
+​	
 	删除自定义的 npm 镜像源
 	npm config delete registry
 	
@@ -328,10 +333,10 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 		"source.fixAll": true,
 		"source.fixAll.eslint": true
 	  },
-
+	
 	  "editor.rulers": [
 	  ],
-
+	
 	  "workbench.iconTheme": "vscode-icons",
 	  "terminal.integrated.tabs.enabled": true,
 	  "diffEditor.ignoreTrimWhitespace": false,
