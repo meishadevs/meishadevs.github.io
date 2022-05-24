@@ -81,6 +81,12 @@ date: 2019-05-31 09:43:20
 
 	# node-v12.4.0.tar.xz 要解压的文件
 	tar -xvf node-v12.4.0.tar.xz
+	
+#### 查看文件所在的目录
+
+	# 查看 redis 所在的目录
+	whereis redis
+	
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的Linux命令]()】
