@@ -106,6 +106,7 @@ date: 2022-05-24 17:02:56
 ### 参考资料
 - [Linux安装JDK1.8教程（2021最新最详细）](https://zhuanlan.zhihu.com/p/343227137)
 - [Linux下安装jdk的两种方法](https://www.cnblogs.com/Dr-wei/p/13339957.html)
+- [Linux 系统下 JDK 安装和 Java 环境变量配置](https://blog.csdn.net/xietansheng/article/details/84189514)
 
 
 
