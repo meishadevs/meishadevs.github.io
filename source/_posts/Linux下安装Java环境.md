@@ -8,6 +8,7 @@ date: 2022-05-24 17:02:56
 ---
 
 这篇文章介绍的是在 Linux 下安装 jdk 1.8 的方法
+<!--more-->
 
 ###  下载 JDK
 访问 jdk 安装包下载的官网 [https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)，进入下载页
