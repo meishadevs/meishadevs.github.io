@@ -1,9 +1,9 @@
 ---
-title: 常见的ES6语法
+title: 常用的JavaScript代码段
 categories:
-  - ES6
+  - JavaScript
 tags:
-  - ES6
+  - JavaScript
 date: 2018-12-17 09:23:40
 ---
 

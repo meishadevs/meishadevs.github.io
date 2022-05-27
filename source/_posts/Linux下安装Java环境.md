@@ -35,16 +35,16 @@ date: 2022-05-24 17:02:56
 此时可以看到在 /usr/local 文件目录下多了一个  java 目录
 {% img blog-image /images/2022052503.png %}
 
-选项 /usr/local 文件目录 下的 java 目录，并单击鼠标右键，选择下拉菜单中的上传
+选择 /usr/local 文件目录 下的 java 目录，并单击鼠标右键，选择下拉菜单中的上传
 {% img blog-image /images/2022052504.png %}
 
-选择前面下载的 JDK ，选择完成后点击窗口中的确定按钮
+选择前面下载的 JDK 压缩包，选择完成后点击窗口中的确定按钮
 {% img blog-image /images/2022052505.png %}
 
 等到上传进度提示窗口显示已完，表示 JDK 上传到了 Linux 服务器下
 {% img blog-image /images/2022052506.png %}
 
-此可以看到 /usr/local/java 目录下多了一个 JDK 安装包
+此可以看到 /usr/local/java 目录下多了一个 JDK 压缩包
 {% img blog-image /images/2022052507.png %}
 
 ### 解压 JDK
