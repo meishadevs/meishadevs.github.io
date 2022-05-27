@@ -48,7 +48,18 @@ date: 2018-08-07 11:04:05
 在弹出如下所示的窗口，表示文件中存在重复代码块，其中提示 2 duplicates, Cost: 12 in XssHttpServletRequestWrapper.java，表示XssHttpServletRequestWrapper.java中有2个重复代码块，点击提示下面的子项可以定位到重复代码块在idea中的位置
 {% img blog-image /images/2018112809.png %}
 
-### 参考资料
+### 查看方法的实现
+
+将鼠标移动需要查看的方法上单击鼠标右键
+{% img blog-image /images/2022052702.png %}
+
+在下拉选项中选择 Go To
+{% img blog-image /images/2022052703.png %}
+
+在二级下拉选项中选择 Implementations(s)
+{% img blog-image /images/2022052704.png %}
+
+## 参考资料
 - [IntelliJ IDEA官方文档](https://www.w3cschool.cn/intellij_idea_doc/)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
