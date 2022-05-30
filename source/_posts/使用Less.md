@@ -25,14 +25,15 @@ Less是一款比较流行的预处理CSS，支持变量、混合、函数、嵌�
 **w3cplus [http://www.w3cplus.com/css/less](http://www.w3cplus.com/css/less)**  
 
 # 搭建Less开发环境
-### **需要用到的软件**  
+
+## **需要用到的软件**  
 **[Node.js](http://nodejs.cn/)**
 
-### 安装Less
+## 安装Less
 
 	npm install -g less
 
-### 使用Less
+## 使用Less
 
 **创建Less文件**  
 在一个文件夹下新建一个style.less文件，例如我在E:\game\HtmlProject\less下创建了一个style.less文件
@@ -182,6 +183,7 @@ footer.less中的代码
 
 ## 为什么要在网页中直接使用Less
 如果按照上面介绍的方法使用Less，需要每次使用Less写完一点样式后就将Less编译成CSS文件，再在html中引入CSS，总是重复这个操作大大降低了开发效率，为了解决这个问题，可以通过一点简单的配置，可以实现在网页中直接运行
+
 ## 配置在网页中直接运行Less的环境
 **下载less.js-2.5.1文件**
 通过[https://pan.baidu.com/s/1pLM3j6r](https://pan.baidu.com/s/1pLM3j6r)下载less.js-2.5.1.zip文件
@@ -237,13 +239,12 @@ footer.less中的代码
 在Elements模块下可以看到为body元素设置了CSS样式，表示Less文件在网页中运行成功
 {% img blog-image /images/20170327111130924.png %}
 
-## 特别说明
-这种方法只能用于开发测试中，开发完成后需要将Less编译成CSS
+**特别说明：** 这种方法只能用于开发测试中，开发完成后需要将Less编译成CSS
 
-## 使用Less做的一个小项目
+# 使用Less做的一个小项目
 使用Less实现博雅互动首页 [https://github.com/meishadevs/boyaa](https://github.com/meishadevs/boyaa)
 
-## 参考链接
+# 参考链接
 - [Less快速入门](http://less.bootcss.com/)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
