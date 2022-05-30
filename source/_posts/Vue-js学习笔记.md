@@ -315,6 +315,9 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	
 	安装 cnpm
 	npm install -g cnpm --registry=https://registry.npmmirror.com
+	
+	查看 npm 的配置信息
+	npm config ls
 
 #### Vscode 中的配置信息
 
