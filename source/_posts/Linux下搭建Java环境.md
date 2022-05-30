@@ -103,6 +103,41 @@ date: 2022-05-24 17:02:56
 当显示了 JDK 版本信息时，表示 JDK 安装成功了
 {% img blog-image /images/2022052515.png %}
 
+### 执行 hello world 程序
+
+创建 Demo.java 文件
+
+	touch Demo.java
+	
+使用 vim 编辑器打开 HelloWorl.java 文件
+
+	vim Demo.java
+	
+输入 i 键进入编辑模式下，并添加下面的 java 代码
+
+	public class Demo {
+		public static void main(String[] args) {
+			System.out.println("Hello World");
+		}
+	}
+
+添加完代码后按一下 Esc 键，退出编辑模式
+{% img blog-image /images/2022053001.png %}
+
+输入 :wq 并按一下回车键，保存 Demo.java 文件并关闭 vim 编辑器
+{% img blog-image /images/2022053002.png %}
+
+编译 java 代码
+
+	javac Demo.java
+	
+运行 class
+
+	java Demo
+	
+此时可以看到控制台中输出了执行结果
+{% img blog-image /images/2022053003.png %}
+
 ### 参考资料
 - [Linux安装JDK1.8教程（2021最新最详细）](https://zhuanlan.zhihu.com/p/343227137)
 - [Linux下安装jdk的两种方法](https://www.cnblogs.com/Dr-wei/p/13339957.html)
