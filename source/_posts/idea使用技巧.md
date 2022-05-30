@@ -7,7 +7,7 @@ tags:
 date: 2018-08-07 11:04:05
 ---
 
-## 基础用法
+### 基础用法
 
 - **idea中导入jar包：** 将光标移动到需要导入 jar 包的类上，并按 Alt + Enter
 
@@ -28,8 +28,6 @@ date: 2018-08-07 11:04:05
 
 
 - 当将 On 'Update' action 属性和 On frame deactivation 属性都设置为 Update classes and resources 后，只用在debug模式下才能实现热部署
-
-## 高级用法
 
 ###  查找文件中是否存在重复代码块
 
@@ -59,7 +57,7 @@ date: 2018-08-07 11:04:05
 在二级下拉选项中选择 Implementations(s)
 {% img blog-image /images/2022052704.png %}
 
-## 参考资料
+### 参考资料
 - [IntelliJ IDEA官方文档](https://www.w3cschool.cn/intellij_idea_doc/)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
