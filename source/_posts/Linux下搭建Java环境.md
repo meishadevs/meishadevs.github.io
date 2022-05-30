@@ -1,5 +1,5 @@
 ---
-title: Linux下安装Java环境
+title: Linux下搭建Java环境
 categories:
   - Linux
 tags:
