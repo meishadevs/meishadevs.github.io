@@ -10,17 +10,17 @@ tags:
 自己平时整理的一些常用的 CSS 样式
 <!--more-->
 
-##### 1. 设置透明度
+##### 设置透明度
 
 	在IE6中使用 filter: alpha(opacity = 40);
 	在其他浏览器中使用 opacity: 0.4;
 
-##### 2. 设置行高
+##### 设置行高
 
 	/*\9表示兼容所有的IE浏览器*/  
 	line-height: 35px\9;
 
-##### 3. 清除浮动
+##### 清除浮动
 
 	 .clearfix:after {
 	    content: '';
@@ -35,7 +35,7 @@ tags:
 	    *zoom: 1;
 	}
 
-##### 4. 禁止用户选择文本
+##### 禁止用户选择文本
 
 	 -moz-user-select: -moz-none;
 	-khtml-user-select: none;
@@ -43,7 +43,7 @@ tags:
 	-ms-user-select: none;
 	user-select: none;
 
-##### 5. 使用绝对定位将子元素元素的宽度设为父元素宽度的100%，将子元素的高度设为父元素高度的100%
+##### 使用绝对定位将子元素元素的宽度设为父元素宽度的100%，将子元素的高度设为父元素高度的100%
 
 	.parent {
 		position: relative
@@ -57,7 +57,7 @@ tags:
 		 bottom: 0;
 	}
 
-##### 6. 使用绝对定位加CSS3中的transform将子元素设置到父元素的正中间
+##### 使用绝对定位加CSS3中的transform将子元素设置到父元素的正中间
 
 	.parent {
 	    position: relative;
@@ -74,7 +74,7 @@ tags:
 	    top: 50%;
 	}
 
-##### 7. 使用flex将子元素设置到父元素的正中间
+##### 使用flex将子元素设置到父元素的正中间
 
 	.parent {
 		display: flex;
@@ -82,13 +82,13 @@ tags:
 	    align-items: center;
 	}
 
-##### 8. 隐藏溢出标签中的文本并且在标签最后增加一个省略号
+##### 隐藏溢出标签中的文本并且在标签最后增加一个省略号
 
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 
-##### 9. 使子元素相对于父元素在水平方向和竖直方向上都居中
+##### 使子元素相对于父元素在水平方向和竖直方向上都居中
 
 	.parent {
 	    position: relative;
@@ -103,7 +103,7 @@ tags:
 	    right: 0;
 	}
 
-##### 10. 在移动设备上设置 1px 大小的边框
+##### 在移动设备上设置 1px 大小的边框
 
  	.border-1px {
         position: relative;
@@ -135,7 +135,7 @@ tags:
         }
     }
 
-##### 11. 使用 flex 布局的兼容性写法
+##### 使用 flex 布局的兼容性写法
 
 	.flex {
 	    display: -webkit-box;
@@ -143,14 +143,14 @@ tags:
 	    display: flex;
 	}
 
-##### 12. 使用 flex 布局实现元素均等分配
+##### 使用 flex 布局实现元素均等分配
 
 	.flex-1 {
 		-webkit-flex: 1;
 	    flex: 1;
 	}
 
-##### 13. /deep/ 深度选择器
+##### /deep/ 深度选择器
 当引入第三方组件后，使用深度选择器可以局部修改第三方组件的样式，避免全局样式污染
 
 	<style lang="less" scoped>
@@ -169,7 +169,7 @@ tags:
 	}
 	</style>
 
-##### 14. 响应式布局中屏幕尺寸的表示
+##### 响应式布局中屏幕尺寸的表示
 这里是以 iView 框架为例，不同框架的尺寸值可能不一样
 
 - **xs** 超小屏幕 手机 (<576px)
