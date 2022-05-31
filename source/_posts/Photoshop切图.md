@@ -81,5 +81,5 @@ C
 在需要切割的图片上创建四条参考线——选择工具栏中的切片工具——点击状态栏中的基于参考线的切片(此时由参考线围成的矩形都转换为了切片)——选择文件选项下的存储为Web所用格式(photoshop cc中文件选项下没有存储为Web所用格式这个选项，该选项在文件选项下的导出选项中)——将图片的格式设置为PNG-24——单击存储——在弹出的将优化结果存储为对话框中最底下的切片选项中选择选中的切片(切片选项默认选择的是所有切片)——单击Save按钮
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[PhotoShop切图](http://meishadevs.com/blog/Photoshop%E5%88%87%E5%9B%BE/)】
+转载请注明： 【文章转载自meishadevs：[PhotoShop切图](http://meishadevs.com/blog/Photoshop切图)】
 

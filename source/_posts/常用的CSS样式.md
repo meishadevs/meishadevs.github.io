@@ -1,5 +1,5 @@
 ---
-title: 常见的CSS样式兼容性写法
+title: 常用的CSS样式
 date: 2017-03-05
 categories:
 	- CSS
@@ -181,4 +181,4 @@ tags:
 
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[常见的CSS样式兼容性写法](http://meishadevs.com/blog/%E5%B8%B8%E8%A7%81%E7%9A%84CSS%E6%A0%B7%E5%BC%8F%E5%85%BC%E5%AE%B9%E6%80%A7%E5%86%99%E6%B3%95/)】
+转载请注明： 【文章转载自meishadevs：[常见的CSS样式兼容性写法](http://meishadevs.com/blog/常用的CSS样式)】

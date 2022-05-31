@@ -88,4 +88,4 @@ date: 2019-05-31 13:57:23
 > meishadevs欢迎任何形式
 >
 > 的转载，但请务必注明出处，尊重他人劳动成果。
-> 转载请注明： 【文章转载自meishadevs：[pom.xml文件注释]()】
+> 转载请注明： 【文章转载自meishadevs：[pom.xml文件注释](http://meishadevs.com/blog/pom-xml文件注释)】

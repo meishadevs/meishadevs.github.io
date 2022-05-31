@@ -36,4 +36,4 @@ date: 2017-10-24 10:39:05
 背景图片的高度 = 背景图片的宽度 / 图片文件的宽度与高度的比值 = 250px / 1.33 =  187.97px
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[使用background-size引发的思考](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8background-size%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/)】
+转载请注明： 【文章转载自meishadevs：[使用background-size引发的思考](http://meishadevs.com/blog/使用background-size引发的思考)】

@@ -83,4 +83,4 @@ date: 2018-07-05 21:00:39
 项目源码：[https://github.com/meishadevs/JavaScriptDemo/tree/master/拖拽效果](https://github.com/meishadevs/JavaScriptDemo/tree/master/%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/GoJS爬坑之旅/](http://meishadevs.com/blog/GoJS%E7%88%AC%E5%9D%91%E4%B9%8B%E6%97%85/)】
+转载请注明： 【文章转载自meishadevs：[http://meishadevs.com/blog/GoJS爬坑之旅/](http://meishadevs.com/blog/GoJS爬坑之旅)】

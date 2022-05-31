@@ -71,4 +71,4 @@ date: 2018-06-06 21:11:25
 {% img blog-image /images/conflict6.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[git中代码冲突的解决方法](http://meishadevs.com/blog/Git%E4%B8%AD%E6%8F%90%E4%BA%A4%E6%97%B6%E5%8F%91%E7%94%9F%E5%86%B2%E7%AA%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/)】
+转载请注明： 【文章转载自meishadevs：[git中代码冲突的解决方法](http://meishadevs.com/blog/使用git提交代码时发生冲突的解决方法)】

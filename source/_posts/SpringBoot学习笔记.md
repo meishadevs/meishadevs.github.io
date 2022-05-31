@@ -23,4 +23,4 @@ date: 2019-05-31 14:16:06
 	private LocalDate birthday;
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[SpringBoot学习笔记]()】
+转载请注明： 【文章转载自meishadevs：[SpringBoot学习笔记](http://meishadevs.com/blog/SpringBoot学习笔记)】

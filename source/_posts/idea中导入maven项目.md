@@ -95,4 +95,4 @@ date: 2018-06-26 19:51:37
 {% img blog-image /images/2018062626.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[idea中导入maven项目](http://meishadevs.com/blog/idea%E4%B8%AD%E5%AF%BC%E5%85%A5maven%E9%A1%B9%E7%9B%AE/)】
+转载请注明： 【文章转载自meishadevs：[idea中导入maven项目](http://meishadevs.com/blog/idea中导入maven项目)】

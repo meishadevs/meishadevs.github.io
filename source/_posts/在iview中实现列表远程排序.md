@@ -66,4 +66,4 @@ iview中可以通过给列表中每个字段设置sortable: true可以实现字�
 	</if>
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[在iview中实现列表远程排序](http://meishadevs.com/blog/在iview中实现列表远程排序/)】
+转载请注明： 【文章转载自meishadevs：[在iview中实现列表远程排序](http://meishadevs.com/blog/在iview中实现列表远程排序)】

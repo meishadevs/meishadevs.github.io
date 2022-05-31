@@ -523,4 +523,4 @@ JavaScript一共有5种基本数据类型，分别是**Undefined**、**Null**、
 **微任务：** JavaScript 引擎发起的任务称为微任务
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[《JavaScript高级程序设计》读书笔记](http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记/)】
+转载请注明： 【文章转载自meishadevs：[《JavaScript高级程序设计》读书笔记](http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记)】

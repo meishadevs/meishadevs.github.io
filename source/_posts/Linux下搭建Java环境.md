@@ -144,6 +144,6 @@ date: 2022-05-24 17:02:56
 - [Linux 系统下 JDK 安装和 Java 环境变量配置](https://blog.csdn.net/xietansheng/article/details/84189514)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[Linux下搭建Java环境](http://meishadevs.com/blog/Linux下搭建Java环境/)】
+转载请注明： 【文章转载自meishadevs：[Linux下搭建Java环境](http://meishadevs.com/blog/Linux下搭建Java环境)】
 
 

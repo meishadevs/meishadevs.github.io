@@ -377,4 +377,4 @@ date: 2021-09-09 10:12:49
 - [地图选择器](http://datav.aliyun.com/tools/atlas/index.html)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[使用echarts绘制地图](https://meishadevs.com/blog/%E4%BD%BF%E7%94%A8echarts%E7%BB%98%E5%88%B6%E5%9C%B0%E5%9B%BE/)】
+转载请注明： 【文章转载自meishadevs：[使用echarts绘制地图](https://meishadevs.com/blog/使用echarts绘制地图)】

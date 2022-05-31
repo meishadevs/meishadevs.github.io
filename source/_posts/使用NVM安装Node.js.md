@@ -83,4 +83,4 @@ tags:
 {% img blog-image /images/20170313231516719.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[使用NVM安装Node.js](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8NVM%E5%AE%89%E8%A3%85Node.js/)】
+转载请注明： 【文章转载自meishadevs：[使用NVM安装Node.js](http://meishadevs.com/blog/使用NVM安装Node.js)】

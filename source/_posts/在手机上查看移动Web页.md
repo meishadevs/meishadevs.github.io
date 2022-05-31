@@ -51,4 +51,4 @@ date: 2017-10-21 17:40:54
 {% img blog-image /images/phone.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[在手机上查看移动Web页](http://meishadevs.com/blog/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E6%9F%A5%E7%9C%8B%E7%A7%BB%E5%8A%A8Web%E9%A1%B5/)】
+转载请注明： 【文章转载自meishadevs：[在手机上查看移动Web页](http://meishadevs.com/blog/在手机上查看移动Web页)】

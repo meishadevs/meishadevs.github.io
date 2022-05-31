@@ -238,4 +238,4 @@ Gulp主文件用于注册任务
 - [Browsersync中文网](http://www.browsersync.cn/)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[使用Gulp](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Gulp/)】
+转载请注明： 【文章转载自meishadevs：[使用Gulp](http://meishadevs.com/blog/使用Gulp)】

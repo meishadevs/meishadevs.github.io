@@ -359,4 +359,4 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 - [ECMAScript 6入门](http://es6.ruanyifeng.com/)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[使用Vue.js时遇到的问题及解决方法](http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Vue-js%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/)】
+转载请注明： 【文章转载自meishadevs：[使用Vue.js时遇到的问题及解决方法](http://meishadevs.com/blog/Vue-js学习笔记)】
