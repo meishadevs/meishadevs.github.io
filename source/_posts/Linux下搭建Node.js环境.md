@@ -57,7 +57,7 @@ npm 的版本信息
 
 	vim HelloWorld.js
 	
-输入 i 键进入编辑模式下，并添加下面的代码
+按下 i 键进入编辑模式下，并添加下面的代码
 
 	var http = require('http');
 
