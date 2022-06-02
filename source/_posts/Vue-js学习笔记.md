@@ -307,9 +307,7 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	
 	将 npm 镜像源设置为官方镜像源
 	npm config set registry https://registry.npmjs.org
-
-
-​	
+	
 	删除自定义的 npm 镜像源
 	npm config delete registry
 	
