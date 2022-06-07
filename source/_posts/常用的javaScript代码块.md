@@ -65,9 +65,9 @@ obj3的值如下
 
 ### 模板语法
 
-	let str1 = 'hello'
-	let str2 = 'world'
-	let str3 = `${str1} ${str2}`
+	let str1 = 'hello';
+	let str2 = 'world';
+	let str3 = `${str1} ${str2}`;
 
 	console.log("str3:", str3);
 
@@ -76,11 +76,11 @@ obj3的值如下
 
 ### 数据筛选
 
-	let array = [5, 6, 7, 8, 9, 10]
+	let array = [5, 6, 7, 8, 9, 10];
 		
 	// 筛选出数组中数值大于 7 的数据
 	let arr = array.filter((value) => {
-		return value > 7
+		return value > 7;
 	});
 
 	console.log("arr:", arr);
@@ -90,16 +90,16 @@ obj3的值如下
 	
 ### 判断数组中是否存满足条件的数据
 
-	let array = [5, 6, 7, 8, 9, 10]
+	let array = [5, 6, 7, 8, 9, 10];
 
 	// 判断数组元素中是否存在大于 7 的数字
 	let result1 = array.some((value) => {
-		return value > 7
+		return value > 7;
 	});
 
 	// 判断数组元素中是否存在大于 10 的数字
 	let result2 = array.some((value) => {
-		return value > 10
+		return value > 10;
 	});
 
 	console.log("result1:", result1);
@@ -110,16 +110,16 @@ obj3的值如下
 	
 ### 判断数组中所有数据是否都满足条件
 
-	let array = [5, 6, 7, 8, 9, 10]
+	let array = [5, 6, 7, 8, 9, 10];
 
 	// 判断数组中是否所有数据都大于 7
 	let result1 = array.every((value) => {
-		return value > 7
+		return value > 7;
 	});
 
 	// 判断数组中是否所有数据都大于 5
 	let result2 = array.every((value) => {
-		return value > 4
+		return value > 4;
 	});
 
 	console.log("result1:", result1);
@@ -130,10 +130,10 @@ obj3的值如下
 
 ### 使用 forEach 遍历数组
 
-	let array = [2, 4, 6, 8, 10]
+	let array = [2, 4, 6, 8, 10];
 	
 	array.forEach(item => {
-	  console.log('item:', item)
+	  console.log('item:', item);
 	})
 	
 执行结果
@@ -147,16 +147,16 @@ obj3的值如下
 	  name: 'meishadevs',
 	  age: 25,
 	  sex: '男'
-	}
+	};
 	
 	let obj2 = {
 	  name: '小红',
 	  age: 21,
 	  sex: '女',
 	  hobby: '唱歌'
-	}
+	};
 	
-	let obj3 = { ...obj1, ...obj2 }
+	let obj3 = { ...obj1, ...obj2 };
 
 执行结果
 {% img blog-image /images/2019102201.png %}
@@ -169,13 +169,13 @@ obj3的值如下
 	  name: 'meishadevs',
 	  age: 25,
 	  hobby: 'Codding'
-	}
+	};
 	
-	var { name, age, hobby } = person
+	var { name, age, hobby } = person;
 	
-	console.log('name:', name)
-	console.log('age:', age)
-	console.log('hobby:', hobby)
+	console.log('name:', name);
+	console.log('age:', age);
+	console.log('hobby:', hobby);
 
 执行结果
 {% img blog-image /images/2019102401.png %}
@@ -195,25 +195,25 @@ obj3的值如下
 			productName: '西红柿',
 			price: 0.5
 		}
-	]
+	];
 	
 	let list = array.map(item => {
-		item.price += '元/斤'
-		return item
-	})
+		item.price += '元/斤';
+		return item;
+	});
 	
-	console.log('list:', list)
+	console.log('list:', list);
 
 执行结果
 {% img blog-image /images/2019121701.png %}
 
 ### 判断数组中是否存在某个元素
 
-	let array = [10, 20, 30, 40, 50]
-	let result1 = array.includes(30)
-	let result2  = array.includes(100)
-	console.log('result1:', result1)
-	console.log('result2:', result2)
+	let array = [10, 20, 30, 40, 50];
+	let result1 = array.includes(30);
+	let result2  = array.includes(100);
+	console.log('result1:', result1);
+	console.log('result2:', result2);
 
 执行结果
 {% img blog-image /images/2019123001.png %}
@@ -244,15 +244,15 @@ obj3的值如下
 	  {
 	    name: '士官证',
 	    value: 60
-	  }]
+	  }];
 	
-	let value = 30
+	let value = 30;
 	
 	let cardType = cardTypeList.find(item => {
-	  return item.value === value
-	})
+	  return item.value === value;
+	});
 	
-	console.log('name:', cardType.name)
+	console.log('name:', cardType.name);
 
 执行结果
 {% img blog-image /images/2019123002.png %}
@@ -283,15 +283,15 @@ obj3的值如下
 	  {
 		name: '士官证',
 		value: 60
-	  }]
+	  }];
 
-	let value = 30
+	let value = 30;
 
 	let index = cardTypeList.findIndex(item => {
-	  return item.value === value
-	})
+	  return item.value === value;
+	});
 
-	console.log('index:', index)
+	console.log('index:', index);
 	
 执行结果
 {% img blog-image /images/2020102902.png %}
@@ -311,11 +311,11 @@ obj3的值如下
 			productName: '西红柿',
 			price: 0.5
 		}
-	]
+	];
 	
-	let list = array.map(item => item.productName )
+	let list = array.map(item => item.productName );
 	
-	console.log('list:', list)
+	console.log('list:', list);
 
 执行结果
 {% img blog-image /images/2020061201.png %}
@@ -335,11 +335,11 @@ obj3的值如下
       	 // 异步调用api接口
          let result = await info()
       } catch (error) {
-        console.log(error);
+        console.log(error.message);
       }
     },
     
-    this.getUserInfo()
+    this.getUserInfo();
 
 ### 遍历对象
 
@@ -348,11 +348,11 @@ obj3的值如下
 		age: 24,
 		hobby: "coding",
 		job: "Front-end engineer"
-	}
+	};
 	
 	for (let name in object) {
-		console.log('属性名：', name)
-	    console.log('属性值：', object[name])
+		console.log('属性名：', name);
+	    console.log('属性值：', object[name]);
 	}
 
 执行结果
