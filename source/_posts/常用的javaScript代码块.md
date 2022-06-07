@@ -346,7 +346,7 @@ obj3的值如下
 	let object = {
 		name: "meishadevs",
 		age: 24,
-		hobby: "codding",
+		hobby: "coding",
 		job: "Front-end engineer"
 	}
 	
@@ -356,7 +356,7 @@ obj3的值如下
 	}
 
 执行结果
-{% img blog-image /images/2020081801.png %}
+{% img blog-image /images/2022060701.png %}
 
 ### 检测数值中的元素是否完全相同
 
