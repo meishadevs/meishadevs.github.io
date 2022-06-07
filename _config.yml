@@ -51,7 +51,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 
 # 跳过指定文件的渲染，您可使用 glob 表达式来匹配路径
-skip_render:
+skip_render: README.md
 
 # 新文章文件名称
 new_post_name: :title.md
