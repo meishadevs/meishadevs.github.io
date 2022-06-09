@@ -316,6 +316,9 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	
 	查看 npm 的配置信息
 	npm config ls
+	
+	查看所有 npm 的配置信息
+	npm config ls -l
 
 #### Vscode 中的配置信息
 
