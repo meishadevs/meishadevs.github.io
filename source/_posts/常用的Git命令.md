@@ -222,6 +222,10 @@ git log --author="meishadevs"
 #### 在 vim 中查看生成的公钥
 
 	vim  ~/.ssh/id_rsa.pub
+	
+#### 检测是否和 github 建立连接
+
+	ssh -T git@github.com
 
 #### 退出 vim
 
