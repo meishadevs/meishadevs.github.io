@@ -460,5 +460,31 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2022052701.png %}
 
+### 将 JavaScript 对象转 JSON 字符串
+
+	var person = {
+	  name: 'meishadevs',
+	  age: 25,
+	  hobby: 'Codding'
+	};
+
+	var json = JSON.stringify(person);
+
+	console.log("json:", json);
+	
+执行结果
+{% img blog-image /images/2022061701.png %}
+
+### 将 JSON 字符串转 JavaScript 对象 
+
+	var person = '{"name":"meishadevs","age":25,"hobby":"Codding"}';
+
+	var json = JSON.parse(person);
+
+	console.log("json:", json);
+	
+执行结果
+{% img blog-image /images/2022061702.png %}
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的JavaScript代码块](http://meishadevs.com/blog/常用的JavaScript代码块)】
