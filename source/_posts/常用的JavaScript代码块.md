@@ -460,7 +460,7 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2022052701.png %}
 
-### 将 JavaScript 对象转 JSON 字符串
+### JavaScript 对象转 JSON 字符串
 
 	var person = {
 	  name: 'meishadevs',
@@ -475,7 +475,7 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2022061701.png %}
 
-### 将 JSON 字符串转 JavaScript 对象 
+### JSON 字符串转 JavaScript 对象 
 
 	var person = '{"name":"meishadevs","age":25,"hobby":"Codding"}';
 
