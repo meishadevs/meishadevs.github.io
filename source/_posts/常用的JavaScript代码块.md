@@ -486,5 +486,27 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2022061702.png %}
 
+### Promise 的基本用法
+
+	const num = 0;
+
+	const promise = new Promise((resolve, reject) => {
+	  if(num >= 50) {
+		resolve("验证成功，num 值大于 50");
+	  } else {
+		reject(new Error("验证失败，num 值小于 50"));
+	  }
+	}).then(data => {
+	  console.log(data);
+	}).catch(error => {
+	  console.error(error.message);
+	});
+	
+当 num 是一个小于 50 的值时
+{% img blog-image /images/2022070801.png %}
+
+当 num 是一个大于 50 的值时
+{% img blog-image /images/2022070802.png %}
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的JavaScript代码块](http://meishadevs.com/blog/常用的JavaScript代码块)】
