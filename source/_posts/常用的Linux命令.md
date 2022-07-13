@@ -95,6 +95,23 @@ date: 2019-05-31 09:43:20
 	# 查看 redis 所在的目录
 	whereis redis
 	
+### 进入 redis 数据库操作界面
+
+	redis-cli
+
+### 登录 redis 数据库
+
+	# 123456 为登录 redis 数据库的密码
+	auth 123456
+	
+### 进入 redis 下的某个数据库
+
+	# 5 表示进入 redis 下的第 5 个数据库
+	select 5
+
+## 删除 redis 数据库中的数据
+
+	flushall
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的Linux命令](http://meishadevs.com/blog/常用的Linux命令)】
