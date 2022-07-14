@@ -95,21 +95,21 @@ date: 2019-05-31 09:43:20
 	# 查看 redis 所在的目录
 	whereis redis
 	
-### 进入 redis 数据库操作界面
+#### 进入 redis 数据库操作界面
 
 	redis-cli
 
-### 登录 redis 数据库
+#### 登录 redis 数据库
 
 	# 123456 为登录 redis 数据库的密码
 	auth 123456
 	
-### 进入 redis 下的某个数据库
+#### 进入 redis 下的某个数据库
 
 	# 5 表示进入 redis 下的第 5 个数据库
 	select 5
 
-## 删除 redis 数据库中的数据
+#### 删除 redis 数据库中的数据
 
 	flushall
 
