@@ -357,7 +357,7 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
 - [关于Vue中的 render: h => h(App) 具体是什么含义？](https://segmentfault.com/q/1010000007130348)
-- [ECMAScript 6入门](https://wangdoc.com/es6/)
+- [ES6 教程](https://wangdoc.com/es6/)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[使用Vue.js时遇到的问题及解决方法](http://meishadevs.com/blog/Vue-js学习笔记)】
