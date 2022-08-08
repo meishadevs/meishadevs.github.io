@@ -168,7 +168,7 @@ obj3的值如下
 	let person = {
 	  name: 'meishadevs',
 	  age: 25,
-	  hobby: 'Codding'
+	  hobby: 'coding'
 	};
 	
 	var { name, age, hobby } = person;
@@ -396,7 +396,7 @@ obj3的值如下
 	let object = {
 	  name: "meishadevs",
 	  age: 24,
-	  hobby: "codding",
+	  hobby: "coding",
 	  job: "Front-end engineer"
 	};
 	
@@ -465,7 +465,7 @@ obj3的值如下
 	var person = {
 	  name: 'meishadevs',
 	  age: 25,
-	  hobby: 'Codding'
+	  hobby: 'coding'
 	};
 
 	var json = JSON.stringify(person);
@@ -477,7 +477,7 @@ obj3的值如下
 
 ### JSON 字符串转 JavaScript 对象 
 
-	var person = '{"name":"meishadevs","age":25,"hobby":"Codding"}';
+	var person = '{"name":"meishadevs","age":25,"hobby":"coding"}';
 
 	var json = JSON.parse(person);
 
