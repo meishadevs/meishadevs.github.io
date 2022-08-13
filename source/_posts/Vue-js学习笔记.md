@@ -9,10 +9,11 @@ date: 2017-12-01 16:14:29
 ---
 
 #### 在执行 npm run dev 命令的时候出现8080端口被占用
-	根据端口号，查找被占用端口的进程 id
+	
+	# 根据端口号，查找被占用端口的进程 id
 	netstat -nao|findstr "8080"
 
-	结束进程，xxx 为进程 id
+	# 结束进程，xxx 为进程 id
 	taskkill /pid xxx /F 
 <!-- more -->
 
@@ -281,43 +282,46 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 
 #### 常用 npm 命令
 
-	安装依赖
+	# 安装依赖
 	npm install
 	
-	安装指定版本号的 npm 包
-	这里以安装版本号为 5.2.1 的 echarts 为例
+	# 安装指定版本号的 npm 包
+	# 这里以安装版本号为 5.2.1 的 echarts 为例
 	npm install echarts@5.2.1
 	
-	卸载 npm 包
-	这里以卸载 echarts 为例
+	# 卸载 npm 包
+	# 这里以卸载 echarts 为例
 	npm uninstall echarts
 	
-	执行项目
+	# 执行项目
 	npm run dev
 	
-	查看 npm 包的版本
-	这里以查看 vue 的版本为例
+	# 查看 npm 包的版本
+	# 这里以查看 vue 的版本为例
 	npm list vue 
 	
-	查看当前使用的 npm 镜像源
+	# 查看全局安装的 npm 包
+	npm list -g
+	
+	# 查看当前使用的 npm 镜像源
 	npm get registry
 	
-	将 npm 镜像源设置为淘宝镜像
+	# 将 npm 镜像源设置为淘宝镜像
 	npm config set registry https://registry.npmmirror.com
 	
-	将 npm 镜像源设置为官方镜像源
+	# 将 npm 镜像源设置为官方镜像源
 	npm config set registry https://registry.npmjs.org
 	
-	删除自定义的 npm 镜像源
+	# 删除自定义的 npm 镜像源
 	npm config delete registry
 	
-	安装 cnpm
+	# 安装 cnpm
 	npm install -g cnpm --registry=https://registry.npmmirror.com
 	
-	查看 npm 的配置信息
+	# 查看 npm 的配置信息
 	npm config ls
 	
-	查看所有 npm 的配置信息
+	# 查看所有 npm 的配置信息
 	npm config ls -l
 
 #### Vscode 中的配置信息
