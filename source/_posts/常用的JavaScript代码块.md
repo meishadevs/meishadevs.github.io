@@ -508,7 +508,7 @@ obj3的值如下
 当 num 是一个大于 50 的值时
 {% img blog-image /images/2022070802.png %}
 
-### 数组中的数据升序排序
+### 数组中的数字升序排序
 
 	let array = [40, 100, 1, 5, 25, 10];
 
@@ -524,7 +524,7 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2022072701.png %}
 
-### 数组中的数据降序排序
+### 数组中的数字降序排序
 
 	let array = [40, 100, 1, 5, 25, 10];
 
@@ -539,6 +539,40 @@ obj3的值如下
 
 执行结果
 {% img blog-image /images/2022072702.png %}
+
+### 数组中的字符升序排序
+
+	let array = ['a', 'g', 'b', 'z', 'y'];
+
+	console.log("排序前:", array);
+
+	// 将数组中的数据按照从小到大的顺序排序
+	array.sort((a, b) => { 
+	  // 先将字母转换成 Unicode 编码形式，再比较
+	  return a.charCodeAt() - b.charCodeAt();
+	});
+
+	console.log("排序后:", array);
+	
+执行结果
+{% img blog-image /images/2022081301.png %}
+
+### 数组中的字符降序排序
+
+	let array = ['a', 'g', 'b', 'z', 'y'];
+
+	console.log("排序前:", array);
+
+	// 将数组中的数据按照从小到大的顺序排序
+	array.sort((a, b) => { 
+	  // 先将字母转换成 Unicode 编码形式，再比较
+	  return b.charCodeAt() - a.charCodeAt();
+	});
+
+	console.log("排序后:", array);
+	
+执行结果
+{% img blog-image /images/2022081302.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的JavaScript代码块](http://meishadevs.com/blog/常用的JavaScript代码块)】
