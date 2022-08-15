@@ -116,6 +116,26 @@ date: 2019-05-31 09:43:20
 #### 删除 redis 数据库中的数据
 
 	flushall
+	
+#### 使用 rsa 算法生成秘钥
+
+	ssh-keygen -t rsa
+
+#### 在终端中查看生成的公钥
+
+	cat ~/.ssh/id_rsa.pub
+
+#### 在 vim 中查看生成的公钥
+
+	vim  ~/.ssh/id_rsa.pub
+	
+#### 检测是否和 github 建立连接
+
+	ssh -T git@github.com
+
+#### 退出 vim
+
+	:wq
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的Linux命令](http://meishadevs.com/blog/常用的Linux命令)】
