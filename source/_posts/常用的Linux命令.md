@@ -136,6 +136,14 @@ date: 2019-05-31 09:43:20
 #### 退出 vim
 
 	:wq
+	
+#### base64 加密
+
+	echo "hello world" | base64
+	
+#### base64 解密
+
+	echo "aGVsbG8gd29ybGQK" | base64 -d
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的Linux命令](http://meishadevs.com/blog/常用的Linux命令)】
