@@ -357,6 +357,11 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 		},
 		"terminal.integrated.defaultProfile.windows": "Git-Bash"
 	}
+	
+#### 在代码中禁用单个 eslint 语法检查规则
+
+	/* eslint-disable no-unused-vars */
+	import db from './mongodb/db.js';
 
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
