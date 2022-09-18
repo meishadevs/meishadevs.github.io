@@ -362,6 +362,10 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 
 	/* eslint-disable no-unused-vars */
 	import db from './mongodb/db.js';
+	
+#### 打印 Proxy 对象中的属性
+
+	console.log(JSON.parse(JSON.stringify(proxyData)));
 
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
