@@ -333,7 +333,8 @@ obj3的值如下
     async getUserInfo() {
       try {
       	 // 异步调用api接口
-         let result = await info()
+         const { data } = await info();
+		 console.log("data:", data);
       } catch (error) {
         console.log(error.message);
       }
