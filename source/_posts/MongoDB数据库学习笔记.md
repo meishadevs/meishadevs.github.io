@@ -1,0 +1,47 @@
+---
+title: MongoDB数据库学习笔记
+categories:
+  - MongoDB
+  - 数据库
+tags:
+  - MongoDB
+  - 数据库
+date: 2022-09-27 13:40:07
+---
+
+#### 查看 MongoDB 数据库的版本
+
+	db.version();
+	
+#### 查看 MongoDB 下的所有数据库
+
+	show dbs
+	
+#### 进入某个数据库下
+
+	use dbname
+	
+#### 查看数据库下的所有集合
+
+	show collections
+	
+#### 创建集合
+	
+	# name 为集合名称
+	db.createCollection(name)
+	
+#### 重命名集合
+
+	# sourceName 原集合名称
+	# newName 新集合名称
+	db.sourceName.renameCollection("newName")
+	
+#### 导入数据
+	
+	# -h MongoDB 数据库的地址
+	# -d 数据库名称，数据文件的路径
+	mongorestore -h localhost:27017 -d elm F:\GitProject\elm
+
+
+> meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
+转载请注明： 【文章转载自meishadevs：[]()】
