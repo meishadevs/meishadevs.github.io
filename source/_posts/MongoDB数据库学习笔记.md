@@ -41,7 +41,9 @@ date: 2022-09-27 13:40:07
 	# -h MongoDB 数据库的地址
 	# -d 数据库名称，数据文件的路径
 	mongorestore -h localhost:27017 -d elm F:\GitProject\elm
-
+	
+#### 参考资料
+- [MongoDB教程](http://c.biancheng.net/mongodb2/)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[]()】
