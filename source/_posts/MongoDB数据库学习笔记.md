@@ -36,11 +36,22 @@ date: 2022-09-27 13:40:07
 	# newName 新集合名称
 	db.sourceName.renameCollection("newName")
 	
-#### 导入数据
+#### 数据备份
+
+	# -h 数据库地址
+	# -d 数据库名称
+	# -o 数据文件的路径
+	mongodump -h 192.168.10.178:27017 -d store -o F:\database
 	
-	# -h MongoDB 数据库的地址
+#### 数据还原
+	
+	# -h 数据库地址
 	# -d 数据库名称，数据文件的路径
-	mongorestore -h localhost:27017 -d elm F:\GitProject\elm
+	mongorestore -h 192.168.10.178:27017 -d store F:\database
+	
+#### 不能通过 ip 访问数据库的解决方法
+修改 bin 目录下 mongod.cfg 文件，将 bindIp 属性值改成 0.0.0.0
+{% img blog-image /images/2022101701.png %}
 	
 #### 参考资料
 - [MongoDB教程](http://c.biancheng.net/mongodb2/)
