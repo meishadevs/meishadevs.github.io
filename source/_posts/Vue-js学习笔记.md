@@ -365,7 +365,18 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	
 #### 打印 Proxy 对象中的属性
 
-	console.log(JSON.parse(JSON.stringify(proxyData)));
+	console.log(JSON.parse("proxyData:", JSON.stringify(proxyData)));
+	
+#### 子组件中更新数据后，父组件中的对应值也同步更新
+
+	// 需要在传递的值后面加一个 sync 修饰符
+	// 每当 currentPage 值变化后，listQuery.pageNumber 会同步变化
+	 <change-page
+	  :currentPage.sync="listQuery.pageNumber"
+	/>
+	
+	// 更新 currentPage 值
+	this.$emit('update:currentPage', this.curPage);
 
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
