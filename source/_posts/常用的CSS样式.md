@@ -179,6 +179,11 @@ tags:
 - **xl** 超大屏幕 (≥1200px)
 - **xxl** 超级大屏幕 (≥1600px)
 
+##### 设置标签的高度为浏览器窗口的高度
+
+	.content {
+	  height: 100vh;
+	}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的CSS样式兼容性写法](http://meishadevs.com/blog/常用的CSS样式)】
