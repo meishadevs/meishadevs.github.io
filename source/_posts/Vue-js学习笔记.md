@@ -341,10 +341,6 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 		"source.fixAll": true,
 		"source.fixAll.eslint": true
 	  },
-	
-	  "editor.rulers": [
-	  ],
-	
 	  "workbench.iconTheme": "vscode-icons",
 	  "terminal.integrated.tabs.enabled": true,
 	  "diffEditor.ignoreTrimWhitespace": false,
@@ -355,7 +351,20 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 			"args": []
 		  }
 		},
-		"terminal.integrated.defaultProfile.windows": "Git-Bash"
+		"terminal.integrated.defaultProfile.windows": "Git-Bash",
+		"[scss]": {
+		  "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+		},
+		"[vue]": {
+		  "editor.defaultFormatter": "octref.vetur"
+		},
+		"[html]": {
+		  "editor.defaultFormatter": "vscode.html-language-features"
+		},
+		"[css]": {
+		  "editor.defaultFormatter": "vscode.css-language-features"
+		},
+		"security.workspace.trust.untrustedFiles": "open"
 	}
 	
 #### 在代码中禁用单个 eslint 语法检查规则
