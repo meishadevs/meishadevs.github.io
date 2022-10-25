@@ -160,11 +160,11 @@ tags:
 	}
 	</style>
 	
-在 scss 中使用 ::v-deep
+在 SCSS 中使用 /deep/
 
 	<style lang="scss" scoped>
-	 ::v-deep .ivu-poptip,
-	 ::v-deep .ivu-poptip-rel {
+	 /deep/ .ivu-poptip,
+	 /deep/ .ivu-poptip-rel {
 	   width: 100% !important;
 	}
 	</style>

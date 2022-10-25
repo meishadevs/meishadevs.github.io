@@ -387,6 +387,18 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	// 更新 currentPage 值
 	this.$emit('update:currentPage', this.curPage);
 
+#### 去掉 element-ui 中 Select 组件多选模式下的删除选项按钮
+
+	<style lang="scss" scoped>
+	/deep/ .el-tag {
+	  &.el-tag--info { 
+		.el-tag__close {
+		  display: none;
+		}
+	  }
+	}
+	</style>
+
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
 - [关于Vue中的 render: h => h(App) 具体是什么含义？](https://segmentfault.com/q/1010000007130348)
