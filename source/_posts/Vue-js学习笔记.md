@@ -399,6 +399,8 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	}
 	</style>
 
+{% img blog-image /images/2022102501.png %}
+
 #### 参考链接
 - [生成的css文件中background url()图片路径问题](https://github.com/vuejs/vue-loader/issues/481#)  
 - [关于Vue中的 render: h => h(App) 具体是什么含义？](https://segmentfault.com/q/1010000007130348)
