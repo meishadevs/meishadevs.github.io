@@ -55,6 +55,7 @@ date: 2022-09-27 13:40:07
 	
 #### 参考资料
 - [MongoDB教程](http://c.biancheng.net/mongodb2/)
+- [Mongoose 实现关联查询和踩坑记录](https://cloud.tencent.com/developer/article/1683003?from=article.detail.1445359)
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[]()】
+转载请注明： 【文章转载自meishadevs：[MongoDB数据库学习笔记](http://meishadevs.com/blog/MongoDB数据库学习笔记)】
