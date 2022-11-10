@@ -36,6 +36,21 @@ date: 2022-09-27 13:40:07
 	# newName 新集合名称
 	db.sourceName.renameCollection("newName")
 	
+#### 更新集合数据
+
+	# user 更新的集合
+	# userName: "admin" 查询条件
+	# $set 更新后的数据
+	db.user.update({
+	  userName: "admin"
+	},
+
+	  { $set: {
+		email: "meishadevs",
+		roles: [NumberInt("1"), NumberInt("2"), NumberInt("3"), NumberInt("4")] 
+	  } }
+	)
+	
 #### 数据备份
 
 	# -h 数据库地址
