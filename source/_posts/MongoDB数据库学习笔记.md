@@ -41,14 +41,17 @@ date: 2022-09-27 13:40:07
 	# user 更新的集合
 	# userName: "admin" 查询条件
 	# $set 更新后的数据
+	# multi: true 更新多条满足条件的数据
 	db.user.update({
 	  userName: "admin"
 	},
-
 	  { $set: {
 		email: "meishadevs",
 		roles: [NumberInt("1"), NumberInt("2"), NumberInt("3"), NumberInt("4")] 
-	  } }
+	  } },
+	  {
+		multi: true
+	  }
 	)
 	
 #### 数据备份
