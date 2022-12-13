@@ -45,4 +45,4 @@ date: 2022-12-12 16:19:49
 {% img blog-image /images/2022121209.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
-转载请注明： 【文章转载自meishadevs：[]()】
+转载请注明： 【文章转载自meishadevs：[token验证](http://meishadevs.com/blog/token验证/)】
