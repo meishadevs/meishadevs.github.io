@@ -392,6 +392,17 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2020090701.png %}
 
+### 数组去重简化写法
+
+	let array = [1, 1, 1, 1, 2, 3, 4, 4, 5, 3];
+	let arr = [...new Set(array)]
+
+	console.log('去重前的数据：', array);
+	console.log("去重后的数据：", arr);
+	
+执行结果
+{% img blog-image /images/2020090701.png %}
+
 ### 将对象的可枚举属性名保存在数组中
 
 	let object = {
@@ -587,6 +598,64 @@ obj3的值如下
 	
 执行结果
 {% img blog-image /images/2022081303.png %}
+
+### 对象数组分类
+
+	// 原数据结构
+	let arr = [
+	  {
+		name: '广告',
+		data: 44
+	  },
+	  {
+		name: '广告',
+		data: 223
+	  },
+	  {
+		name: '广告',
+		data: 512
+	  },
+	  {
+		name: '商用',
+		data: 2
+	  },
+	  {
+		name: '商用',
+		data: 52
+	  },
+	  {
+		name: '商用',
+		data: 35
+	  },
+	];
+
+	// 获得 arr 数组中的 name 属性值
+	const nameList = [...new Set(arr.map(item => item.name))];
+
+	// 记录转换后的结果
+	let result = [];
+
+	// 遍历记录 name 属性值的数组
+	nameList.map(name => {
+	  let obj = {
+		name,
+		data: []
+	  }
+
+	  arr.map(item => {
+		if (item.name === name) {
+		  obj.data.push(item.data);
+		}
+	  });
+
+	  result.push(obj);
+	});
+
+	console.log("分类前的数据:", arr);
+	console.log("分类后的数据:", result);
+	
+执行结果
+{% img blog-image /images/2022121601.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的JavaScript代码块](http://meishadevs.com/blog/常用的JavaScript代码块)】
