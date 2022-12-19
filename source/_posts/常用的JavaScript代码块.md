@@ -657,5 +657,155 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2022121601.png %}
 
+### 数组转树
+
+	const sourceData = [
+	  { id: 0, parentId: null, name: '生物' },
+	  { id: 1, parentId: 0, name: '动物' },
+	  { id: 2, parentId: 0, name: '植物' },
+	  { id: 3, parentId: 0, name: '微生物' },
+	  { id: 4, parentId: 1, name: '哺乳动物' },
+	  { id: 5, parentId: 1, name: '卵生动物' },
+	  { id: 6, parentId: 2, name: '种子植物' },
+	  { id: 7, parentId: 2, name: '蕨类植物' },
+	  { id: 8, parentId: 4, name: '大象' },
+	  { id: 9, parentId: 4, name: '海豚' },
+	  { id: 10, parentId: 4, name: '猩猩' },
+	  { id: 11, parentId: 5, name: '蟒蛇' },
+	  { id: 12, parentId: 5, name: '麻雀' }
+	]
+
+	/**
+	* 将数组转成树
+	* @param array
+	* @return
+	*/
+	function arrayToTree(array) {
+	// 存放结果集
+	const result = [];
+	const map = {};
+
+	// 遍历数组
+	for (const item of array) {
+	  // 当前数组元素的 id
+	  const id = item.id;
+
+	  // 当前数组元素的父 id
+	  const parentId = item.parentId;
+
+	  // 把当前值加入map
+	  if (!map[id]) {
+		map[id] = {
+		  children: []
+		};
+	  }
+
+	  map[id] = {
+		...item,
+		children: map[id]['children']
+	  };
+
+	  const treeItem = map[id];
+
+	  if (parentId === 0) {
+		result.push(treeItem);
+	  } else {
+		if (!map[parentId]) {
+		  map[parentId] = {
+			children: []
+		  };
+		}
+
+		map[parentId].children.push(treeItem);
+	  }
+	}
+
+	return result;
+	}
+
+	// 调用数组转数方法
+	const tree = arrayToTree(sourceData);
+  
+执行结果
+
+	[
+	  {
+		"id": 1,
+		"parentId": 0,
+		"name": "动物",
+		"children": [
+		  {
+			"id": 4,
+			"parentId": 1,
+			"name": "哺乳动物",
+			"children": [
+			  {
+				"id": 8,
+				"parentId": 4,
+				"name": "大象",
+				"children": []
+			  },
+			  {
+				"id": 9,
+				"parentId": 4,
+				"name": "海豚",
+				"children": []
+			  },
+			  {
+				"id": 10,
+				"parentId": 4,
+				"name": "猩猩",
+				"children": []
+			  }
+			]
+		  },
+		  {
+			"id": 5,
+			"parentId": 1,
+			"name": "卵生动物",
+			"children": [
+			  {
+				"id": 11,
+				"parentId": 5,
+				"name": "蟒蛇",
+				"children": []
+			  },
+			  {
+				"id": 12,
+				"parentId": 5,
+				"name": "麻雀",
+				"children": []
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"id": 2,
+		"parentId": 0,
+		"name": "植物",
+		"children": [
+		  {
+			"id": 6,
+			"parentId": 2,
+			"name": "种子植物",
+			"children": []
+		  },
+		  {
+			"id": 7,
+			"parentId": 2,
+			"name": "蕨类植物",
+			"children": []
+		  }
+		]
+	  },
+	  {
+		"id": 3,
+		"parentId": 0,
+		"name": "微生物",
+		"children": []
+	  }
+	]
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的JavaScript代码块](http://meishadevs.com/blog/常用的JavaScript代码块)】
