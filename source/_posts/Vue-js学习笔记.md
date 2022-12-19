@@ -289,6 +289,10 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	# 这里以安装版本号为 5.2.1 的 echarts 为例
 	npm install echarts@5.2.1
 	
+	# 将 npm 包安装到开发依赖上
+	# 这里以安装 eslint 为例
+	npm install --save-dev eslint
+	
 	# 卸载 npm 包
 	# 这里以卸载 echarts 为例
 	npm uninstall echarts
