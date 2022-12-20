@@ -184,6 +184,15 @@ tags:
 	.content {
 	  height: 100vh;
 	}
+	
+#### 图片铺满整个屏幕
+
+	.screen {
+	  width: 100%;
+	  height: 100vh;
+	  background: url('../bg.png') no-repeat center top;
+	  background-size: 100% 100%;
+	}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的CSS样式兼容性写法](http://meishadevs.com/blog/常用的CSS样式)】
