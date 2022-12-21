@@ -194,5 +194,9 @@ tags:
 	  background-size: 100% 100%;
 	}
 
+##### 参考资料
+
+- [查看样式兼容性](https://caniuse.com/)
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常见的CSS样式兼容性写法](http://meishadevs.com/blog/常用的CSS样式)】
