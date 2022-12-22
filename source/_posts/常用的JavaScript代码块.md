@@ -165,13 +165,13 @@ obj3的值如下
 
 使用对象解构获得对象下的属性值
 
-	let person = {
+	const person = {
 	  name: 'meishadevs',
 	  age: 25,
 	  hobby: 'coding'
 	};
 	
-	var { name, age, hobby } = person;
+	const { name, age, hobby } = person;
 	
 	console.log('name:', name);
 	console.log('age:', age);
