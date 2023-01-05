@@ -47,7 +47,18 @@
                 "网站"
             ], 
             "link_text": "Github地址", 
-            "link": "https://github.com/meishadevs/dswz"
+            "link": "https://github.com/meishadevs/store-vue"
+        },
+		{
+            "name": "电商网服务端", 
+            "image": "http://meishadevs.com/images/node.png", 
+            "description": "基于 Node.js、Express、MongoDB 开发的后端服务，为电商网提供后端服务能力", 
+            "tags": [
+                "2023", 
+                "服务端"
+            ], 
+            "link_text": "Github地址", 
+            "link": "https://github.com/meishadevs/store-node"
         }
     ], 
     "reward": [
