@@ -421,11 +421,15 @@ obj3的值如下
 
 ### 将数值类型数据转换成布尔类型数据
 
-	let bool1 = !!5
-	let bool2 = !!0
+	const bool1 = !!5
+	const bool2 = !!0
+	const bool3 = !!null
+	const bool4 = !!undefined
 	
-	console.log('bool1:', bool1)
-	console.log('bool2:', bool2)
+	console.log('bool1:', bool1);
+	console.log('bool2:', bool2);
+	console.log('bool3:', bool3);
+	console.log('bool4:', bool4);
 
 执行结果
 {% img blog-image /images/2021081001.png %}
