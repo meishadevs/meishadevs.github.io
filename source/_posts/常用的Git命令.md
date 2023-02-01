@@ -209,7 +209,21 @@ date: 2017-04-29 10:18:01
 	
 #### 查看某个用户的提交记录
 
+	# meishadevs 为用户名，表示查看 meishadevs 的提交记录
 	git log --author="meishadevs"
+	
+#### 查看总提交次数
+
+	git log --oneline | wc -l
+	
+#### 查看某个用户的提交次数
+
+	# meishadevs 为用户名，表示查看 meishadevs 的提交次数
+	git log --author="meishadevs" --oneline | wc -l
+	
+#### 查看每个用户的提交次数
+
+	git shortlog -s -n
 
 #### 参考链接
 
