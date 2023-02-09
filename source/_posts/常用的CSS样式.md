@@ -43,7 +43,7 @@ tags:
 	-ms-user-select: none;
 	user-select: none;
 
-##### 使用绝对定位将子元素元素的宽度设为父元素宽度的100%，将子元素的高度设为父元素高度的100%
+##### 使用绝对定位将子元素的宽高设置成父元素的一样
 
 	.parent {
 		position: relative
@@ -57,7 +57,7 @@ tags:
 		 bottom: 0;
 	}
 
-##### 使用绝对定位加CSS3中的transform将子元素设置到父元素的正中间
+##### 使用绝对定位加CSS3中的transform将子元素在父元素中居中
 
 	.parent {
 	    position: relative;
@@ -74,7 +74,7 @@ tags:
 	    top: 50%;
 	}
 
-##### 使用flex将子元素设置到父元素的正中间
+##### 使用flex将子元素在父元素中居中
 
 	.parent {
 		display: flex;
@@ -88,7 +88,7 @@ tags:
 	white-space: nowrap;
 	text-overflow: ellipsis;
 
-##### 使子元素相对于父元素在水平方向和竖直方向上都居中
+##### 使用绝对定位使子元素在父元素中居中
 
 	.parent {
 	    position: relative;
