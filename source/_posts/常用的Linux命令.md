@@ -66,11 +66,7 @@ date: 2019-05-31 09:43:20
 	
 #### 查看本机的ip地址
 
-	ifconfig lo0
-	
-#### 查看局域网ip地址
-
-	ifconfig en0
+	ifconfig
 	
 #### 清屏
 
@@ -88,10 +84,6 @@ date: 2019-05-31 09:43:20
 
 	pwd
 	
-#### 显示 file 文件中的内容
-
-	cat file
-	
 #### 查看命令行中操作的历史记录
 
 	history
@@ -107,33 +99,6 @@ date: 2019-05-31 09:43:20
 
 	# node-v12.4.0.tar.xz 要解压的文件
 	tar -xvf node-v12.4.0.tar.xz
-	
-#### 查看文件所在的目录
-
-	# 查看 redis 所在的目录
-	whereis redis
-	
-#### 进入 redis 数据库操作界面
-
-	redis-cli
-
-#### 登录 redis 数据库
-
-	# 123456 为登录 redis 数据库的密码
-	auth 123456
-	
-#### 进入 redis 下的某个数据库
-
-	# 5 表示进入 redis 下的第 5 个数据库
-	select 5
-	
-#### 查看 redis 数据库下的所有数据
-
-	keys *
-
-#### 删除 redis 数据库中的数据
-
-	flushall
 	
 #### 使用 rsa 算法生成秘钥
 
@@ -166,6 +131,33 @@ date: 2019-05-31 09:43:20
 #### base64 解密
 
 	echo "aGVsbG8gd29ybGQK" | base64 -d
+
+#### 查看文件所在的目录
+
+	# 查看 redis 所在的目录
+	whereis redis
+	
+#### 进入 redis 数据库操作界面
+
+	redis-cli
+
+#### 登录 redis 数据库
+
+	# 123456 为登录 redis 数据库的密码
+	auth 123456
+	
+#### 进入 redis 下的某个数据库
+
+	# 5 表示进入 redis 下的第 5 个数据库
+	select 5
+	
+#### 查看 redis 数据库下的所有数据
+
+	keys *
+
+#### 删除 redis 数据库中的数据
+
+	flushall
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的Linux命令](http://meishadevs.com/blog/常用的Linux命令)】
