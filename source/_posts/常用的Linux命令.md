@@ -41,14 +41,19 @@ date: 2019-05-31 09:43:20
 	# ~/.ssh 表示文件夹的路径
 	cd ~/.ssh
 
-#### 创建文件夹
+#### 创建文件目录
 
-	# test 表示文件夹的名称
+	# test 表示文件目录名称
 	mkdir test
 	
-#### 刪除文件夹
+#### 创建多级文件目录
 
-	# test 表示文件夹的名称
+	# test/data/fyt 表示文件目录
+	mkdir -p test/data/fyt
+	
+#### 刪除文件目录
+
+	# test 表示文件目录名称
 	rmdir test
 
 #### 创建文件
