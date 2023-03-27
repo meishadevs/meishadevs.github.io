@@ -880,7 +880,7 @@ obj3的值如下
 	console.log("去重后的对象数组:", afterArry);
 	
 执行结果
-{% img blog-image /images/2023013101.png %}
+{% img blog-image /images/2023032701.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的JavaScript代码块](http://meishadevs.com/blog/常用的JavaScript代码块)】
