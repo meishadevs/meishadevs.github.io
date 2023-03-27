@@ -838,5 +838,49 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2023013101.png %}
 
+### 对象数组去重
+
+	function uniqueArray(arr) {
+	  // 使用累加器遍历原始数组
+	  return arr.reduce((acc, current) => {
+
+		// 判断累加器数组中是否存在当前数据
+		const isDup = acc.some(item => {
+
+		  // 对象数组去重的条件
+		  // 对名字和年龄都相同的对象去重
+		  return item.name === current.name && item.age === current.age;
+		});
+
+		// 如果累加器数组中不存在当前数据
+		if (!isDup) {
+		  // 将当前数据添加到累加器数据中
+		  acc.push(current);
+		}
+
+		// 返回累加器数组
+		return acc;
+		
+		// []：传递给方法的初始值
+	  }, []);
+	}
+
+	const beforeArray = [
+	  { name: 'Mike', age: 18 },
+	  { name: 'Jane', age: 19 },
+	  { name: 'Jane', age: 20 },
+	  { name: 'Bob', age: 20 },
+	  { name: 'Jane', age: 20 },
+	  { name: 'Mike', age: 18 }
+	];
+
+	const afterArry = uniqueArray(beforeArray);
+
+	console.log("去重前的对象数组:", beforeArray);
+	console.log("去重后的对象数组:", afterArry);
+	
+执行结果
+{% img blog-image /images/2023013101.png %}
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的JavaScript代码块](http://meishadevs.com/blog/常用的JavaScript代码块)】
