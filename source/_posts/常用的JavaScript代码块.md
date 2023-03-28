@@ -705,6 +705,33 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2022121601.png %}
 
+### 删除对象数组下对象的属性
+
+	let array = [
+	  {
+		name: 'meishadevs',
+		age: 25,
+		sex: '男',
+		hobby: '爬山'
+	  },
+	  {
+		name: '小红',
+		age: 21,
+		sex: '女',
+		hobby: '唱歌'
+	  }
+	];
+
+	array.forEach((item) => {
+	  delete item.age;
+	  delete item.sex;
+	});
+
+	console.log("array:", array);
+	
+执行结果
+{% img blog-image /images/2023013101.png %}
+
 ### 数组转树
 
 	const sourceData = [
@@ -862,32 +889,121 @@ obj3的值如下
 	  }
 	]
 	
-### 删除对象数组下对象的属性
+### 树转数组
 
-	let array = [
+	const treeData = [
 	  {
-		name: 'meishadevs',
-		age: 25,
-		sex: '男',
-		hobby: '爬山'
-	  },
-	  {
-		name: '小红',
-		age: 21,
-		sex: '女',
-		hobby: '唱歌'
+		"id": 1,
+		"parentId": 0,
+		"name": "生物",
+		"children": [
+		  {
+			"id": 2,
+			"parentId": 1,
+			"name": "动物",
+			"children": [
+			  {
+				"id": 5,
+				"parentId": 2,
+				"name": "哺乳动物",
+				"children": [
+				  {
+					"id": 9,
+					"parentId": 5,
+					"name": "大象",
+					"children": []
+				  },
+				  {
+					"id": 10,
+					"parentId": 5,
+					"name": "海豚",
+					"children": []
+				  },
+				  {
+					"id": 11,
+					"parentId": 5,
+					"name": "猩猩",
+					"children": []
+				  },
+				  {
+					"id": 13,
+					"parentId": 5,
+					"name": "麻雀",
+					"children": []
+				  }
+				]
+			  },
+			  {
+				"id": 6,
+				"parentId": 2,
+				"name": "卵生动物",
+				"children": [
+				  {
+					"id": 12,
+					"parentId": 6,
+					"name": "蟒蛇",
+					"children": []
+				  }
+				]
+			  }
+			]
+		  },
+		  {
+			"id": 3,
+			"parentId": 1,
+			"name": "植物",
+			"children": [
+			  {
+				"id": 7,
+				"parentId": 3,
+				"name": "种子植物",
+				"children": []
+			  },
+			  {
+				"id": 8,
+				"parentId": 3,
+				"name": "蕨类植物",
+				"children": []
+			  }
+			]
+		  },
+		  {
+			"id": 4,
+			"parentId": 1,
+			"name": "微生物",
+			"children": []
+		  }
+		]
 	  }
 	];
 
-	array.forEach((item) => {
-	  delete item.age;
-	  delete item.sex;
-	});
+	function treeToArray(tree) {
+	  let array = [];
 
-	console.log("array:", array);
+	  // 遍历树
+	  let traverTree = (treeData) => {
+		// 遍历数组
+		treeData.map(item => {
+		  // 如果children属性是一个数组
+		  if (item.children && item.children.length) {
+			traverTree(item.children);
+		  }
+
+		  array.push(item);
+		});
+	  };
+
+	  traverTree(tree);
+
+	  return array;
+	}
+
+	const arr = treeToArray(treeData);
+
+	console.log("arr:", arr);
 	
 执行结果
-{% img blog-image /images/2023013101.png %}
+{% img blog-image /images/2023032801.png %}
 
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的JavaScript代码块](http://meishadevs.com/blog/常用的JavaScript代码块)】
