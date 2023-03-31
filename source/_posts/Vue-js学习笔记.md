@@ -14,8 +14,7 @@ date: 2017-12-01 16:14:29
 	netstat -nao|findstr "8080"
 
 	# 结束进程，2228 为进程 id
-	taskkill /pid 2228 /F 
-<!-- more -->
+	taskkill /pid 2228 /F
 
 #### 使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性
 	当使用v-for指令遍历组件时，需要在组件上添加一个key属性
