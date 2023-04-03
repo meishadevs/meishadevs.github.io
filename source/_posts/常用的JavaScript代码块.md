@@ -773,46 +773,59 @@ obj3的值如下
 	* @return
 	*/
 	function arrayToTree(array) {
-	// 存放结果集
-	const result = [];
-	const map = {};
+	  // 存放结果集
+	  const result = [];
+	  
+	  // 用于存储每个节点的引用
+	  const map = {}; 
 
-	// 遍历数组
-	for (const item of array) {
-	  // 当前数组元素的 id
-	  const id = item.id;
+	  // 遍历数组
+	  for (const item of array) {
+		// 当前数组元素的 id
+		const id = item.id;
 
-	  // 当前数组元素的父 id
-	  const parentId = item.parentId;
-
-	  // 把当前值加入map
-	  if (!map[id]) {
-		map[id] = {
-		  children: []
-		};
-	  }
-
-	  map[id] = {
-		...item,
-		children: map[id]['children']
-	  };
-
-	  const treeItem = map[id];
-
-	  if (parentId === 0) {
-		result.push(treeItem);
-	  } else {
-		if (!map[parentId]) {
-		  map[parentId] = {
+		// 当前数组元素的父 id
+		const parentId = item.parentId;
+		
+		// 如果当前节点不在 map 中
+		if (!map[id]) {
+		  // 创建一个新节点
+		  map[id] = {
 			children: []
 		  };
 		}
 
-		map[parentId].children.push(treeItem);
-	  }
-	}
+		// 将当前节点合并到 map[id] 上，并更新 children 属性的引用
+		map[id] = {
+		  ...item,
+		  children: map[id]['children']
+		};
+		
+		// 获取当前节点的引用
+		const treeItem = map[id]; 
+		
+		// 如果当前节点是根节点
+		if (parentId === 0) {
+		   // 将其加入result数组
+		  result.push(treeItem);
+		  
+		// 如果当前节点不是根节点
+		} else {
+		   // 如果当前节点的父节点不在 map 中
+		  if (!map[parentId]) {
+			// 创建一个新节点
+			map[parentId] = {
+			  children: []
+			};
+		  }
 
-	return result;
+		  // 将当前节点加入其父节点的 children 数组中
+		  map[parentId].children.push(treeItem);
+		}
+	  }
+	  
+	  // 返回结果集
+	  return result; 
 	}
 
 	// 调用数组转数方法
