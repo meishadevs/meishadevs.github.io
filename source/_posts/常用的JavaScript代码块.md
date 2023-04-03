@@ -634,7 +634,7 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2022081302.png %}
 
-### 数组中元素累加
+### 数组元素累加
 
 	let array = [40, 100, 1, 5, 25, 10];
 
@@ -646,6 +646,23 @@ obj3的值如下
 	
 执行结果
 {% img blog-image /images/2022081303.png %}
+
+### 数据累加
+
+	// ...args 会将传递过来的参数包裹成一个数组 
+	function sum(...args) {
+	  const result = args.reduce((total, current) => {
+		return total + current;
+	  });
+
+	  console.log("args:", args);
+	  console.log("result:", result);
+	}
+
+	sum(40, 100, 1, 5, 25, 10);
+	
+执行结果
+{% img blog-image /images/2023040301.png %}
 
 ### 对象数组分类
 
