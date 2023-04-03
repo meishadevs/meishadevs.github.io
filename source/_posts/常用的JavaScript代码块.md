@@ -638,8 +638,8 @@ obj3的值如下
 
 	let array = [40, 100, 1, 5, 25, 10];
 
-	let sum = array.reduce((total, num) => {
-	  return total + num;
+	let sum = array.reduce((total, current) => {
+	  return total + current;
 	});
 
 	console.log("sum:", sum);
