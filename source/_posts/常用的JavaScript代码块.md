@@ -180,6 +180,21 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2019102401.png %}
 
+### 数组解构
+
+使用数组解构的方式获得数组下的元素
+
+	const person = ['meishadevs', 25, 'coding'];
+
+	const [name, age, hobby] = person;
+
+	console.log("name:", name);
+	console.log("age:", age);
+	console.log("hobby:", hobby);
+
+执行结果
+{% img blog-image /images/2023052201.png %}
+
 ### 格式化对象数组
 
 	let array = [
