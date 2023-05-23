@@ -664,6 +664,7 @@ obj3的值如下
 
 ### 数据累加
 
+	// ...args 使用剩余参数的形式接收传递过来的参数
 	// ...args 会将传递过来的参数包裹成一个数组 
 	function sum(...args) {
 	  const result = args.reduce((total, current) => {
