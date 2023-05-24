@@ -327,7 +327,7 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 	# 查看所有 npm 的配置信息
 	npm config ls -l
 
-#### Vscode 中的配置信息
+#### Vscode 配置
 
 	{
 	  "git.ignoreMissingGitWarning": true,
@@ -369,6 +369,59 @@ vue-template-compiler 卸载完成之后执行 npm install vue-template-compiler
 		},
 		"security.workspace.trust.untrustedFiles": "open"
 	}
+	
+#### 代码段配置
+
+	{
+		"vue template": {
+			"prefix": "vue",
+			"body": [
+				"<template>",
+				" <div>",
+				" ",
+				" </div>",
+				"</template>",
+				"",
+				"<script>",
+				" export default {",
+				"   name:\"$1\",",
+				"",
+				"   data () {",
+				"     return {",
+				"     }",
+				"   },",
+				"",
+				"   components: {",
+				"   },",
+				"",
+				"   computed:{",
+				"   },",
+				"",
+				"created() {",
+				"},",
+				"",
+				"mounted() {",
+				"},",
+				"",
+				"beforeDestroy() {",
+				"},",
+				"",
+				"destroyed() {",
+				"},",
+				"",
+				"methods:{",
+				"}",
+				" }",
+				"</script>",
+				"",
+				"<style lang=\"less\" scoped>",
+				"</style>",
+				""
+			],
+			"description": "vue template"
+		},
+	}
+
 	
 #### 在代码中禁用单个 eslint 语法检查规则
 
