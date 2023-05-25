@@ -1,0 +1,1387 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>代码规范类问题修改方法 | meishadevs的技术博客</title>
+    <meta name="author" content="meishadevs">
+    
+    <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="代码规范类问题修改方法">
+    <meta property="og:site_name" content="meishadev&#39;s blog">
+
+    
+    <meta property="og:image" content="undefined">
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="meishadev&#39;s blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/tranquil-heart.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+</html>
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">meishadev&#39;s blog</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://meishadevs.com/images/touxiang.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">meishadevs</p>
+                        <p class="desc">Web前端</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/总结/">
+                    总结 <span class="right">4 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Fireworks/">
+                    Fireworks <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/JavaScript/">
+                    JavaScript <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/JavaScript/ES6/">
+                    ES6 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/GoJS/">
+                    GoJS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Mac/">
+                    Mac <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/MongoDB/">
+                    MongoDB <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/MongoDB/数据库/">
+                    数据库 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Photoshop/">
+                    Photoshop <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/数据库/">
+                    数据库 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/idea/">
+                    idea <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/SpringBoot/java/">
+                    java <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/代码规范/">
+                    代码规范 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/部署/">
+                    部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Gulp/">
+                    Gulp <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Gulp/前端自动化/">
+                    前端自动化 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/CSS/">
+                    CSS <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/NVM/">
+                    NVM <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/NVM/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/echarts/">
+                    echarts <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Git/">
+                    Git <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue/">
+                    Vue <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Vue/iview/">
+                    iview <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/移动Web/">
+                    移动Web <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/小程序/">
+                    小程序 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/WebStrom/">
+                    WebStrom <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/WebStrom/Chrome/">
+                    Chrome <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/前端/">
+                    前端 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/代码规范/">代码规范</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>代码规范类问题修改方法</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2018-11-19T07:44:47.000Z"><a href="/blog/代码规范类问题修改方法/">2018-11-19</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/代码规范/" class="chip pink lighten-1">代码规范</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    
+</div>
+
+
+            <div class="entry pink-link-context">
+                <a id="more"></a>
+<p><strong>问题描述：</strong>Define a constant instead of duplicating this literal “total” 3（表示一个字符串重复出现了3次）<br><strong>解决方法：</strong>将多次重复使用的字符串定义成一个字符串常量，使用时直接调用定义的字符串常量</p>
+<pre><code>private static final String TOTAL = &quot;total&quot;;
+</code></pre><p><strong>问题描述：</strong>Either log or rethrow this exception<br><strong>解决方法：</strong>catch语句中不能为空，添加一些代码，当使用logger打印出日志时，需要传递两个参数，且第二个参数值为e<br><strong>修改前的代码</strong></p>
+<pre><code>try {
+    return address.isReachable(100);
+} catch (IOException e) {
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>try {
+    return address.isReachable(100);
+} catch (IOException e) {
+    logger.error(e.getMessage(), e);
+}
+</code></pre><p><strong>问题描述：</strong>Replace this usage of Sun classes by ones from the Java<br><strong>解决方法：</strong>删除无用的jar包<br><img src="/images/2018112801.png" class="blog-image"></p>
+<p><strong>问题描述：</strong>Move constants to a class or enum<br><strong>解决方法：</strong>常量不应定义在一个接口中，常量可以定义在使用该常量的类中<br><strong>修改前的代码：</strong>将常量定义在一个接口中，当需要使用常量时，直接调用接口中定义好的常量</p>
+<pre><code>public interface HomePageConstant {
+    String VALUE=&quot;value&quot;;
+    String WARN_LEVEL=&quot;warnLevel&quot;;
+    String WARN_LEVEL_STR=&quot;warnlevelstr&quot;;
+    String COUNT=&quot;count&quot;;
+    String ERROR=&quot;error&quot;;
+    String FATAL=&quot;fatal&quot;;
+    String DEVICE_TYPE=&quot;devicetype&quot;;
+    String NAME=&quot;name&quot;;
+    String SKIN = &quot;\\skin.json&quot;;
+    String DEFAULTP = &quot;defaultp&quot;;
+    String DEFAULTP_VALUE=&quot;60ab0514021d5549&quot;;
+    int TIME = 1000000000;
+}
+</code></pre><p><strong>修改后的代码：</strong> 当有类需要定义常量时，直接在类中定义常量，而不是在接口中定义常量</p>
+<pre><code>@Controller
+@RequestMapping(value = &quot;homepage&quot;)
+public class HomepageController extends BaseController {
+
+    private static final Logger logger = Logger.getLogger(HomepageController.class);
+    private static final String VALUE = &quot;value&quot;;
+    private static final String WARN_LEVEL = &quot;warnLevel&quot;;
+    private static final String WARN_LEVEL_STR = &quot;warnlevelstr&quot;;
+    private static final String COUNT = &quot;count&quot;;
+    private static final String INFO = &quot;info&quot;;
+    private static final String WARN = &quot;warn&quot;;
+    private static final String ERROR = &quot;error&quot;;
+    private static final String FATAL = &quot;fatal&quot;;
+    private static final String DEVICE_TYPE = &quot;devicetype&quot;;
+    private static final String NAME = &quot;name&quot;;
+    private static final String SKIN = File.separator + &quot;skin.json&quot;;
+    private static final String DEFAULTP = &quot;defaultp&quot;;
+    private static final String DEFAULTP_VALUE = &quot;60ab0514021d5549&quot;;
+    private static final int TIME = 1000000000;
+}
+</code></pre><p><strong>问题描述：</strong>Replace this usage of System.out or System.err by a<br><strong>解决方法：</strong>删掉日志打印语句<br><img src="/images/2018112802.png" class="blog-image"></p>
+<p><strong>问题描述：</strong>Return an empty array instead of null<br><strong>解决方法：</strong>将null改成空数组<br><img src="/images/2018112803.png" class="blog-image"></p>
+<p><strong>问题描述：</strong>Remove this unused method parameter “isAjax“<br><strong>解决方法：</strong>删除无用的函数参数isAjax<br><strong>修改前的代码：</strong>isAjax作为函数的参数，没有在函数内部使用</p>
+<pre><code>private boolean renderError(HttpServletRequest request, HttpServletResponse response, boolean isAjax) throws IOException {
+    csrfTokenRepository.saveToken(null, request, response);
+    PrintWriter p = response.getWriter();
+    p.write(&quot;不能重复提交数据&quot;);
+    p.flush();
+    p.close();
+    return false;
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>private boolean renderError(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    csrfTokenRepository.saveToken(null, request, response);
+    PrintWriter p = response.getWriter();
+    p.write(&quot;不能重复提交数据&quot;);
+    p.flush();
+    p.close();
+    return false;
+}
+</code></pre><p><strong>问题描述：</strong>4 duplicated blocks of code must be removed（表示代码中有4处重复代码块）<br><strong>解决方法：</strong>首先使用idea自带的Locate Duplicates工具检测重复代码块出现的位置，然后优化代码的实现逻辑，解决重复代码块类问题<br><strong>优化前的代码</strong></p>
+<pre><code>@ResponseBody
+@RequestMapping(&quot;/getResourceStatus&quot;)
+public Map&lt;String, Object&gt; getResourceStatus(long userId, long resType) {
+
+    Map&lt;String, Object&gt; info = null;
+    Map&lt;String, Object&gt; warn = null;
+    Map&lt;String, Object&gt; error = null;
+    Map&lt;String, Object&gt; fatal = null;
+    long infoCount ;
+    long warnCount ;
+    long errorCount ;
+    long fatalCount ;
+
+    if (resType == 1) {
+        info = service.getOracleStatus(userId, 1);
+        warn = service.getOracleStatus(userId, 2);
+        error = service.getOracleStatus(userId, 3);
+        fatal = service.getOracleStatus(userId, 4);
+
+    } else if (resType == 2) {
+        info = service.getSgrdbStatus(userId, 1);
+        warn = service.getSgrdbStatus(userId, 2);
+        error = service.getSgrdbStatus(userId, 3);
+        fatal = service.getSgrdbStatus(userId, 4);
+
+    } else if (resType == 3) {
+        info = service.getNbaseStatus(userId, 1);
+        warn = service.getNbaseStatus(userId, 2);
+        error = service.getNbaseStatus(userId, 3);
+        fatal = service.getNbaseStatus(userId, 4);
+    }
+
+    if (info != null) {
+        infoCount = (long)getFirstOrNull(info);
+    } else {
+        infoCount = 0;
+    }
+
+    if (warn != null) {
+        warnCount = (long)getFirstOrNull(warn);
+    } else {
+        warnCount = 0;
+    }
+
+    if (error != null) {
+        errorCount = (long)getFirstOrNull(error);
+    } else {
+        errorCount = 0;
+    }
+
+    if (fatal != null) {
+        fatalCount = (long)getFirstOrNull(fatal);
+    } else {
+        fatalCount = 0;
+    }
+
+    JSONObject infoJson = new JSONObject();
+    infoJson.put(WARN_LEVEL, 1);
+    infoJson.put(WARN_LEVEL_STR, &quot;信息&quot;);
+    infoJson.put(COUNT, infoCount);
+
+    JSONObject warnJson = new JSONObject();
+    warnJson.put(WARN_LEVEL, 2);
+    warnJson.put(WARN_LEVEL_STR, &quot;警告&quot;);
+    warnJson.put(COUNT, warnCount);
+
+    JSONObject errorJson = new JSONObject();
+    errorJson.put(WARN_LEVEL, 3);
+    errorJson.put(WARN_LEVEL_STR, &quot;错误&quot;);
+    errorJson.put(COUNT, errorCount);
+
+    JSONObject fatalJson = new JSONObject();
+    fatalJson.put(WARN_LEVEL, 4);
+    fatalJson.put(WARN_LEVEL_STR, &quot;致命&quot;);
+    fatalJson.put(COUNT, fatalCount);
+
+    Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
+    map.put(INFO, infoJson);
+    map.put(WARN, warnJson);
+    map.put(ERROR, errorJson);
+    map.put(FATAL, fatalJson);
+
+    return map;
+}
+</code></pre><p><strong>优化后的代码</strong></p>
+<pre><code>@ResponseBody
+@RequestMapping(&quot;/getResourceStatus&quot;)
+public Map&lt;String, Object&gt; getResourceStatus(long userId, long resType) {
+
+    Map&lt;String, Object&gt; warnObj = null;
+    Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
+    int[] warnNo = {1, 2, 3, 4};
+    String[] warnText = {&quot;信息&quot;, &quot;警告&quot;, &quot;错误&quot;, &quot;致命&quot;};
+    String[] warnStr = {INFO, WARN, ERROR, FATAL};
+
+    for (int warnLevel = 1; warnLevel &lt;= 4; warnLevel++) {
+
+        if (resType == 1) {
+            warnObj = service.getOracleStatus(userId, warnLevel);
+
+        } else if (resType == 2) {
+            warnObj = service.getSgrdbStatus(userId, warnLevel);
+
+        } else if (resType == 3) {
+            warnObj = service.getNbaseStatus(userId, warnLevel);
+        }
+
+        JSONObject warnJson = new JSONObject();
+        warnJson.put(WARN_LEVEL, warnNo[warnLevel - 1]);
+        warnJson.put(WARN_LEVEL_STR, warnText[warnLevel - 1]);
+        warnJson.put(COUNT, warnObj != null ? (long)getFirstOrNull(warnObj) : 0);
+        map.put(warnStr[warnLevel - 1], warnJson);
+    }
+
+    return map;
+}
+</code></pre><p><strong>问题描述：</strong>Refactor this method to reduce its Cognitive Complexity（重构此方法以降低其认知复杂性）<br><strong>解决方法：</strong>将一个比较复杂的方法拆分成多个方法<br><strong>修改前的代码</strong></p>
+<pre><code>private List&lt;Param&gt; initParams(Map&lt;String, Object&gt; mapConfig) {
+    List&lt;Param&gt; globalParams = Lists.newArrayList();
+    if (mapConfig.get(ResConfigParam.IS_AUTOMATIC_MEMORY) != null) {
+        Param param = new Param();
+        param.setParamId(&quot;90011&quot;);
+        param.setParamValue((String) mapConfig.get(ResConfigParam.IS_AUTOMATIC_MEMORY));
+        globalParams.add(param);
+    } else if (&quot;1&quot;.equals(mapConfig.get(ResConfigParam.IS_AUTOMATIC_MEMORY))) {
+        if (mapConfig.get(ResConfigParam.MEMORY_TARGET) != null) {
+            Param param = new Param();
+            param.setParamId(&quot;90014&quot;);
+            param.setParamValue((String) mapConfig.get(ResConfigParam.MEMORY_TARGET));
+            globalParams.add(param);
+        }
+    } else {
+        if (mapConfig.get(ResConfigParam.SGA_MAX_SIZE) != null) {
+            Param param = new Param();
+            param.setParamId(&quot;90015&quot;);
+            param.setParamValue((String) mapConfig.get(ResConfigParam.SGA_MAX_SIZE));
+            globalParams.add(param);
+        } else if (mapConfig.get(ResConfigParam.PGA_AGGERGATE_LIMIT) != null) {
+            Param param = new Param();
+            param.setParamId(&quot;90016&quot;);
+            param.setParamValue((String) mapConfig.get(ResConfigParam.PGA_AGGERGATE_LIMIT));
+            globalParams.add(param);
+        }
+    }
+    return globalParams;
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>private List&lt;Param&gt; initParams(Map&lt;String, Object&gt; mapConfig) {
+    List&lt;Param&gt; globalParams = Lists.newArrayList();
+    if (mapConfig.get(ResConfigParam.IS_AUTOMATIC_MEMORY) != null) {
+        Param param = new Param();
+        param.setParamId(&quot;90011&quot;);
+        param.setParamValue((String) mapConfig.get(ResConfigParam.IS_AUTOMATIC_MEMORY));
+        globalParams.add(param);
+    } else if (&quot;1&quot;.equals(mapConfig.get(ResConfigParam.IS_AUTOMATIC_MEMORY))) {
+        if (mapConfig.get(ResConfigParam.MEMORY_TARGET) != null) {
+            Param param = new Param();
+            param.setParamId(&quot;90014&quot;);
+            param.setParamValue((String) mapConfig.get(ResConfigParam.MEMORY_TARGET));
+            globalParams.add(param);
+        }
+    } else {
+        globalParams.addAll(createGlobalParams(mapConfig));
+    }
+    return globalParams;
+}
+
+public List&lt;Param&gt; createGlobalParams(Map&lt;String, Object&gt; mapConfig) {
+    List&lt;Param&gt; globalParams = Lists.newArrayList();
+    if (mapConfig.get(ResConfigParam.SGA_MAX_SIZE) != null) {
+        Param param = new Param();
+        param.setParamId(&quot;90015&quot;);
+        param.setParamValue((String) mapConfig.get(ResConfigParam.SGA_MAX_SIZE));
+        globalParams.add(param);
+    } else if (mapConfig.get(ResConfigParam.INMEMORY_SIZE) != null) {
+        Param param = new Param();
+        param.setParamId(&quot;90020&quot;);
+        param.setParamValue((String) mapConfig.get(ResConfigParam.INMEMORY_SIZE));
+        globalParams.add(param);
+    }
+
+    return globalParams;
+}
+</code></pre><p><strong>问题描述：</strong>Reduce the number of conditional operators (7) used in（减少运算符的使用数量）<br><strong>解决方法：</strong>将运算符语句拆分成多个方法</p>
+<p><strong>修改前的代码</strong></p>
+<pre><code>private boolean hasPermission(User user,String url,String perUrl){
+
+    return !user.getPermissions().contains(perUrl)
+            &amp;&amp; !perUrl.equals(&quot;jsp/&quot;)
+            &amp;&amp; url.indexOf(&quot;login&quot;)&lt;0
+            &amp;&amp; !perUrl.equals(&quot;jsp/comm/jsp/&quot;)
+            &amp;&amp; !perUrl.equals(&quot;jsp/plugins/&quot;)
+            &amp;&amp; !perUrl.equals(&quot;jsp/comm/&quot;)
+            &amp;&amp; !perUrl.equals(&quot;jsp/pages/&quot;)
+            &amp;&amp; !url.endsWith(&quot;modifyPass.jsp&quot;);
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>private boolean hasPermission(User user, String url, String perUrl) {
+    return ischeckUrl(user, url, perUrl) &amp;&amp; isCheck(url, perUrl);
+}
+
+public boolean ischeckUrl(User user, String url, String perUrl) {
+    return  !user.getPermissions().contains(perUrl)
+            &amp;&amp; !perUrl.equals(&quot;jsp/&quot;)
+            &amp;&amp; url.indexOf(&quot;login&quot;) &lt; 0
+            &amp;&amp; !perUrl.equals(&quot;jsp/comm/jsp/&quot;);
+}
+
+public boolean isCheck(String url, String perUrl) {
+    return  !perUrl.equals(&quot;jsp/plugins/&quot;)
+            &amp;&amp; !perUrl.equals(&quot;jsp/comm/&quot;)
+            &amp;&amp; !perUrl.equals(&quot;jsp/pages/&quot;)
+            &amp;&amp; !url.endsWith(&quot;modifyPass.jsp&quot;);
+}
+</code></pre><p><strong>问题描述：</strong>Refactor this code to not nest more than 3（代码嵌套层级超过了3层）<br><strong>解决方法：</strong>重构代码，降低代码嵌套层级<br><strong>修改前的代码</strong></p>
+<pre><code>public Map&lt;String, Object&gt; findAllCluster(ClusterPo po, HttpServletRequest request, HttpServletResponse response) {
+    Page&lt;ClusterPo&gt; page = clusterService.findResAllCluster(new Page&lt;ClusterPo&gt;(request, response), po.getResourceId());
+    List&lt;ClusterPo&gt; clusterList = clusterService.findAllClusterId(po.getWorkform_id());
+    if(clusterList!=null &amp;&amp; clusterList.size()&gt;0){
+        for (ClusterPo cluster : page.getList()) {
+            for(ClusterPo selecteds: clusterList){
+                if(selecteds.getClusterId().contains(cluster.getClusterId())){
+                    cluster.LAY_CHECKED=true;
+                }
+            }
+
+        }
+    }
+    return R.ok().setPage(page);
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>public Map&lt;String, Object&gt; findAllCluster(ClusterPo po, HttpServletRequest request, HttpServletResponse response) {
+    Page&lt;ClusterPo&gt; page = clusterService.findResAllCluster(new Page&lt;ClusterPo&gt;(request, response), po.getResourceId());
+    List&lt;ClusterPo&gt; clusterList = clusterService.findAllClusterId(po.getWorkform_id());
+
+    if (clusterList == null || clusterList.size() &lt;= 0) {
+        return R.ok().setPage(page);
+    }
+
+    for (ClusterPo cluster : page.getList()) {
+        for(ClusterPo selecteds: clusterList){
+            if(selecteds.getClusterId().contains(cluster.getClusterId())){
+                cluster.LAY_CHECKED=true;
+            }
+        }
+    }
+
+    return R.ok().setPage(page);
+}
+</code></pre><p><strong>问题描述：</strong>Change this “try” to a try-with-resource<br><strong>解决方法：</strong>使用try-with-resource代替try-catch<br><strong>参考资料：</strong><a href="https://www.jianshu.com/p/3ab87269140c" target="_blank" rel="noopener">java 7 新特性 try-with-resources</a><br><strong>修改前的代码</strong></p>
+<pre><code>BufferedReader in = null;
+InputStreamReader isr=null;
+try{
+    HttpClient client = new DefaultHttpClient();
+    HttpPost request = new HttpPost();
+    request.setURI(new URI(url));
+    List&lt;NameValuePair&gt; nvps = new ArrayList&lt;NameValuePair&gt;();
+    for (Iterator iter = params.keySet().iterator(); iter.hasNext();) {
+        String name = (String) iter.next();
+        String value = String.valueOf(params.get(name));
+        nvps.add(new BasicNameValuePair(name, value));
+    }
+    request.setEntity(new UrlEncodedFormEntity(nvps, HTTP.UTF_8));
+    HttpResponse response = client.execute(request);
+    int code = response.getStatusLine().getStatusCode();
+    if(code == 200){    //请求成功
+        isr=new InputStreamReader(response.getEntity().getContent(),&quot;utf-8&quot;);
+        in = new BufferedReader(isr);
+        StringBuilder sb = new StringBuilder(&quot;&quot;);
+        String line = in.readLine();
+        String NL = System.getProperty(&quot;line.separator&quot;);
+        while (line != null) {
+            sb.append(line + NL);
+        }
+        return sb.toString();
+    }
+    else{
+        return null;
+    }
+}catch(Exception e){
+    logger.error(e.getMessage(),e);
+    return null;
+}finally {
+    if(in!=null){
+        try {
+            in.close();
+        }catch(IOException ioe){
+            logger.error(&quot;BufferedReader close error &quot;+ioe.getMessage(),ioe);
+        }
+    }
+    if(isr!=null){
+        try {
+            isr.close();
+        }catch(IOException ioe){
+            logger.error(&quot;InputStreamReader close error &quot;+ioe.getMessage(),ioe);
+        }
+    }
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>try (
+        InputStreamReader isr = new InputStreamReader(response.getEntity().getContent(), &quot;utf-8&quot;);
+        BufferedReader in = new BufferedReader(isr);
+) {
+    StringBuilder sb = new StringBuilder(&quot;&quot;);
+    String line = in.readLine();
+    String NL = System.getProperty(&quot;line.separator&quot;);
+    while (line != null) {
+        sb.append(line + NL);
+    }
+    return sb.toString();
+} catch (Exception e) {
+    logger.error(e.getMessage(), e);
+    return null;
+}
+</code></pre><p><strong>问题描述：</strong>Remove this unused private “initInstanceNodeTree”<br><strong>解决方法：</strong>将私有方法改成公有方法<br><strong>修改前的代码</strong></p>
+<pre><code>private void initInstanceNodeTree(List&lt;Map&lt;String, Object&gt;&gt; mapList, ClusterPo clusterPo, int i,int deleted) {
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>public void initInstanceNodeTree(List&lt;Map&lt;String, Object&gt;&gt; mapList, ClusterPo clusterPo, int i,int deleted) {
+}
+</code></pre><p><strong>问题描述：</strong>This block of commented-out lines of code should be<br><strong>解决方法：</strong>去掉代码注释<br><strong>参考资料：</strong><a href="https://my.oschina.net/u/238296/blog/677962" target="_blank" rel="noopener">sonar常见错误以及处理方案</a><br><img src="/images/2018112804.png" class="blog-image"></p>
+<p><strong>问题描述：</strong>Add a private constructor to hide the implicit public one<br><strong>解决方法：</strong>给静态类添加一个私有构造函数<br><strong>参考资料：</strong><a href="http://www.cnblogs.com/UniqueColor/p/9298541.html" target="_blank" rel="noopener">add a private constructor to hide the implicit public one</a><br><strong>修改前的代码</strong></p>
+<pre><code>public class Digests {
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>public class Digests {
+
+    private Digests() {
+    }
+}
+</code></pre><p><strong>问题描述：</strong>Rename “orderBy” which hides the field declared at line（重命名“orderBy”，隐藏在行声明的字段，ordyBy即是Page类的成员变量，有时构造函数的局部变量容易引起歧义）<br><strong>解决方法：</strong>重命名构造函数中的局部变量orderBy<br><strong>参考资料：</strong><a href="https://blog.csdn.net/qq_33865313/article/details/80981678" target="_blank" rel="noopener">Sonar</a><br><strong>修改前的代码</strong></p>
+<pre><code>public class Page&lt;T&gt; {
+
+    private String orderBy = &quot;&quot;;
+
+    public Page(HttpServletRequest request){
+
+        String orderBy = request.getParameter(&quot;orderBy&quot;);
+        if (StringUtils.isNotBlank(orderBy)){
+            this.setOrderBy(&quot; &quot; + orderBy + &quot; &quot;);
+        }
+    }
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>public class Page&lt;T&gt; {
+
+    private String orderBy = &quot;&quot;;
+
+    public Page(HttpServletRequest request){
+
+        String orderByParam = request.getParameter(&quot;orderBy&quot;);
+        if (StringUtils.isNotBlank(orderByParam)){
+            this.setOrderBy(&quot; &quot; + orderByParam + &quot; &quot;);
+        }
+    }
+}
+</code></pre><p><strong>问题描述：</strong>Iterate over the “entrySet” instead of the “keySet”（迭代使用“entrySet”而不是“keySet”）<br><strong>解决方法：</strong>使用 entrySet 代替 KeySet<br><strong>修改前的代码</strong></p>
+<pre><code>public Map&lt;String,String[]&gt; getParameterMap() {
+    Map&lt;String,String[]&gt; map = new LinkedHashMap&lt;&gt;();
+    Map&lt;String,String[]&gt; parameters = super.getParameterMap();
+    for (String key : parameters.keySet()) {
+        String[] values = parameters.get(key);
+        for (int i = 0; i &lt; values.length; i++) {
+            values[i] = xssEncode(values[i]);
+        }
+        map.put(key, values);
+    }
+    return map;
+}
+</code></pre><p><strong>修改后的代码</strong></p>
+<pre><code>public Map&lt;String,String[]&gt; getParameterMap() {
+    Map&lt;String,String[]&gt; map = new LinkedHashMap&lt;&gt;();
+    Map&lt;String,String[]&gt; parameters = super.getParameterMap();
+    for (Map.Entry&lt;String, String[]&gt; entry : parameters.entrySet()) {
+        String[] values = entry.getValue();
+        for (int i = 0; i &lt; values.length; i++) {
+            values[i] = xssEncode(values[i]);
+        }
+        map.put(entry.getKey(), values);
+    }
+    return map;
+}
+</code></pre><blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/代码规范类问题修改方法">代码规范类问题修改方法</a>】</p>
+</blockquote>
+
+                
+<p class="pink-link-context">
+    <a href="/blog/常用的JavaScript代码块/" rel="next" title="常用的JavaScript代码块">
+    上一篇：常用的JavaScript代码块
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/blog/小程序开发笔记/" rel="next" title="小程序开发笔记">
+    下一篇：小程序开发笔记
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Mon Nov 19 2018 15:44:47 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/3170066893?is_all=1" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/meishadevs" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                <div class="site-visitors-container white-text">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="http://zhangwenli.com/" target="_blank">羡辙的个人主页</a>
+                
+                    <a class="social-link" href="http://www.zhangxinxu.com/" target="_blank">张鑫旭的个人主页</a>
+                
+                    <a class="social-link" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a>
+                
+                    <a class="social-link" href="https://me.ursb.me/" target="_blank">Airing 的小屋</a>
+                
+                    <a class="social-link" href="http://www.runoob.com/" target="_blank">菜鸟教程</a>
+                
+                    <a class="social-link" href="https://jysperm.me/" target="_blank">王子亭的博客</a>
+                
+                    <a class="social-link" href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a>
+                
+                    <a class="social-link" href="https://wangdoc.com/" target="_blank">网道</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2018 meishadevs All rights reserved 赣ICP备18015008号
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=61543111" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>

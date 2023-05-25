@@ -1,0 +1,981 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>使用GitHub部署网站 | meishadevs的技术博客</title>
+    <meta name="author" content="meishadevs">
+    
+    <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="使用GitHub部署网站">
+    <meta property="og:site_name" content="meishadev&#39;s blog">
+
+    
+    <meta property="og:image" content="undefined">
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="meishadev&#39;s blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/tranquil-heart.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+</html>
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">meishadev&#39;s blog</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://meishadevs.com/images/touxiang.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">meishadevs</p>
+                        <p class="desc">Web前端</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/总结/">
+                    总结 <span class="right">4 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Fireworks/">
+                    Fireworks <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/JavaScript/">
+                    JavaScript <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/JavaScript/ES6/">
+                    ES6 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/GoJS/">
+                    GoJS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Mac/">
+                    Mac <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/MongoDB/">
+                    MongoDB <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/MongoDB/数据库/">
+                    数据库 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Photoshop/">
+                    Photoshop <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/数据库/">
+                    数据库 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/idea/">
+                    idea <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/SpringBoot/java/">
+                    java <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/代码规范/">
+                    代码规范 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/部署/">
+                    部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Gulp/">
+                    Gulp <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Gulp/前端自动化/">
+                    前端自动化 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/CSS/">
+                    CSS <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/NVM/">
+                    NVM <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/NVM/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/echarts/">
+                    echarts <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Git/">
+                    Git <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue/">
+                    Vue <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Vue/iview/">
+                    iview <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/移动Web/">
+                    移动Web <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/小程序/">
+                    小程序 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/WebStrom/">
+                    WebStrom <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/WebStrom/Chrome/">
+                    Chrome <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/前端/">
+                    前端 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/部署/">部署</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>使用GitHub部署网站</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2017-03-07T16:00:00.000Z"><a href="/blog/使用GitHub部署网站/">2017-03-08</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/部署/" class="chip pink lighten-1">部署</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#两种部署网站的方式比较"><span class="section table-of-contents-text">两种部署网站的方式比较</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#下面进入正题，使用GitHub部署网站"><span class="section table-of-contents-text">下面进入正题，使用GitHub部署网站</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#GitHub部署网站简化版"><span class="section table-of-contents-text">GitHub部署网站简化版</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>在上一篇博客中介绍了<a href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8%E6%96%B0%E6%B5%AA%E4%BA%91%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/">使用新浪云部署网站</a>这篇博客将介绍另一种部署网站的方式，使用GitHub部署网站。<br><a id="more"></a></p>
+<h2 id="两种部署网站的方式比较"><a href="#两种部署网站的方式比较" class="headerlink" title="两种部署网站的方式比较"></a>两种部署网站的方式比较</h2><img src="/images/20161227094654160.png" class="blog-image">
+<p>部署网站之前，先要有一个GitHub账号，熟悉一些Git命令，注册GitHub账号和使用git命令可以参考下面的文档，这个文档中介绍的非常详细，我也不做过多的介绍<br><strong>从0开始学习GitHub：</strong><a href="http://pan.baidu.com/s/1hsn57YO" target="_blank" rel="noopener">http://pan.baidu.com/s/1hsn57YO</a></p>
+<p>注册好GitHub账号并且完善用户信息后可以得到一个下图所示的界面，下图是我的GitHub界面，其中界面中的信息介绍可以参考<a href="http://stormzhang.com/github/2016/05/26/learn-github-from-zero2/" target="_blank" rel="noopener">从0开始学习 GITHUB 系列之「加入 GITHUB」</a>，这篇博客对GitHub界面的信息介绍的非常详细<br><img src="/images/20161226214844895.png" class="blog-image"></p>
+<h2 id="下面进入正题，使用GitHub部署网站"><a href="#下面进入正题，使用GitHub部署网站" class="headerlink" title="下面进入正题，使用GitHub部署网站"></a>下面进入正题，使用GitHub部署网站</h2><p><strong>第一步：</strong>单击Repositories，其中Repositories在GitHub上表示的是仓库，在GitHub上每个项目都存放在仓库里，一个仓库保存一个项目<br><img src="/images/20161226215559693.png" class="blog-image"></p>
+<p><strong>第二步：</strong>单击New按钮<br><img src="/images/20161226220437338.png" class="blog-image"></p>
+<p><strong>第三步：</strong>单击根据图中的提示填写信息，信息填写完成后单击Create respository按钮创建仓库<br><img src="/images/20161226221833076.png" class="blog-image"></p>
+<p><strong>第四步：</strong>单击创建好仓库后会自动跳转到下图所示的界面，在界面中单击Settings<br><img src="/images/20161226222230082.png" class="blog-image"></p>
+<p><strong>第五步：</strong>进入设置界面后一直往下，找到GitHub Page,并且单击GitHub Page模块中的Choose them按钮创建一个网站的主题<br><img src="/images/20161226222855256.png" class="blog-image"></p>
+<p><strong>第六步：</strong>选择Cayman主题，然后单击select theme按钮<br><img src="/images/20161226223107905.png" class="blog-image"></p>
+<p><strong>第七步：</strong>单击Commit changes按钮<br><img src="/images/20161226223508227.png" class="blog-image"></p>
+<p><strong>第八步：</strong>单击Commit changes按钮后会自动跳转到我们创建的仓库界面，里面包含了仓库的各种信息，其中master表示这个仓库位于master分之上，进入界面后单击Settings按钮<br><img src="/images/20161226224351486.png" class="blog-image"></p>
+<p><strong>第九步：</strong> 在Settings界面中往下滑，滑到GitHub Page模块，可以看到GitHub Page模块中多了一个网址<br><img src="/images/20161226224724966.png" class="blog-image"></p>
+<p><strong>第十步：</strong>在浏览器中打开网址后可以看到网页上呈现出的内容就是我们刚刚创建的主题为Cayman的网页<br><img src="/images/20161226225252484.png" class="blog-image"></p>
+<p><strong>第十一步：</strong>回到GitHub上并且打开我们刚刚创建的那个仓库，仓库里的文件就是刚刚在浏览器中显示的内容，接下来要做的事情就是修改仓库里的文件，单击Clone or download按钮<br><img src="/images/20161226225859038.png" class="blog-image"></p>
+<p><strong>第十二步：</strong>单击复制到剪切板按钮，复制仓库的url<br><img src="/images/20161226230341481.png" class="blog-image"></p>
+<p><strong>第十三步：</strong>在下面的操作中需要电脑中安装了git，并且熟悉几个简单的git命令，关于git的安装以及git命令的使用可以参考<a href="http://stormzhang.com/github/2016/05/30/learn-github-from-zero3/" target="_blank" rel="noopener">从0开始学习 GITHUB 系列之「GIT 速成」</a>这篇博客将git介绍的非常通俗易懂，安装好git后，先在电脑中创建一个文件夹用于保存从Github中克隆下来的仓库，我建的文件夹叫做GitProject，在E:\game路径下，打开命令行进入GitProject文件夹下<br><img src="/images/20161226231237026.png" class="blog-image"></p>
+<p><strong>第十四步：</strong>执行<code>git clone https://github.com/meishaxiaozi/boyaa.git</code>命令，其中<code>git clone</code>表示要克隆一个项目，后面的<code>https://github.com/meishaxiaozi/boyaa.git</code>表示项目地址，该地址是由<strong>第十二步</strong>操作获得的，当在最后一行出现了100%表示，远程仓库已经成功的克隆到了本地<br><img src="/images/20161226231723810.png" class="blog-image"></p>
+<p><strong>第十五步：</strong>打开GitProject文件夹，可以看到在文件夹中多了一个boyaa文件，该文件正是刚刚在GitHub中创建的仓库<br><img src="/images/20161226232212468.png" class="blog-image"></p>
+<p><strong>第十六步：</strong>打开文件，并且将需要上传到GitHub上的网站添加到该文件中<br><img src="/images/20161226232503219.png" class="blog-image"></p>
+<p><strong>第十七步：</strong>打开命令行，并且进入boyaa文件夹下，并且执行 <code>git add .</code> 命令，此命令表示将需要提交到git中的文件先添加到缓存<br><img src="/images/20161226232914298.png" class="blog-image"></p>
+<p><strong>第十八步：</strong>执行 <code>git commit -m “first commit .”</code>命令，此命令表示将文件提交到git中，下面显示的都是提交到git中的文件<br><img src="/images/20161226233236959.png" class="blog-image"></p>
+<p><strong>第十九步：</strong>执行 <code>git push origin master</code> 命令，将文件push到GitHub上的master分支上，当出现下图所示的提示信息时，表示网站已经成功的提交到了GitHub上<br><img src="/images/20161226233708442.png" class="blog-image"></p>
+<p><strong>第二十步：</strong>回到Github上的boyaa仓库，可以看到文件已经全部提交上来了<br><img src="/images/20161226233941249.png" class="blog-image"></p>
+<p><strong>第二十一步：</strong>再次打开位于Settings下，GitHub Page模块中的网址，可以看到网页变成了我们修改后的页面<br><strong>网站的网址：</strong><a href="https://meishadevs.github.io/boyaa/" target="_blank" rel="noopener">https://meishadevs.github.io/boyaa/</a><br><strong>网址的格式：</strong>https:// + GitHub的用户名 + .github.io/ + 仓库的名称<br><img src="/images/20161226235606553.png" class="blog-image"></p>
+<h2 id="GitHub部署网站简化版"><a href="#GitHub部署网站简化版" class="headerlink" title="GitHub部署网站简化版"></a>GitHub部署网站简化版</h2><p>上面介绍的步骤比较复杂，熟悉Git命令的话可以使用几条简单的Git命令实现部署</p>
+<p><strong>第一步：</strong>在Git Bash中执行下面的命令，创建一个boyaa文件夹</p>
+<pre><code>mkdir boyaa
+</code></pre><p><strong>第二步：</strong>将需要部署到GitHub上的文件添加到boyaa文件夹中<br><img src="/images/20170429110653556.png" class="blog-image"></p>
+<p><strong>第三步：</strong>进入boyaa文件夹中</p>
+<pre><code>cd boyaa 
+</code></pre><p><strong>第四步：</strong>初始化一个本地Git仓库</p>
+<pre><code>git init
+</code></pre><p><strong>第五步：</strong>将需要提交的文件添加到缓存区</p>
+<pre><code>git add .
+</code></pre><p><strong>第六步：</strong>将文件提交到本地仓库</p>
+<pre><code>git commit -m &quot;update some data&quot;
+</code></pre><p><strong>第七步：</strong>创建一个gh-pages分支</p>
+<pre><code>git branch gh-pages
+</code></pre><p><strong>第八步：</strong>切换到gh-pages分支，gh-pages分支是一个比较特殊的分支，网页文件提交到gh-pages分支上，可以通过HTTP协议访问gh-pages分支上的网页文件</p>
+<pre><code>git checkout gh-pages
+</code></pre><p><strong>第九步：</strong>为本地仓库关联一个远程仓库，其中远程仓库为上一种方法中的第三步创建的boyaa仓库</p>
+<pre><code>git remote add origin https://github.com/meishadevs/boyaa.git
+</code></pre><p><strong>第十步：</strong>将网页文件提交到远程仓库中的gh-pages分支上</p>
+<pre><code>git push origin gh-pages
+</code></pre><p><strong>第十一步：</strong>访问网页<br>此时可以通过<a href="https://meishadevs.github.io/boyaa" target="_blank" rel="noopener">https://meishadevs.github.io/boyaa</a>访问部署好的网页</p>
+<p><strong>说明：</strong>部署到gh-pages分支上的网页的URL格式为  </p>
+<pre><code>https:// + username.github.io/ + GitHub上的仓库名
+</code></pre><blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/使用GitHub部署网站">使用GitHub部署网站</a>】</p>
+</blockquote>
+
+                
+<p class="pink-link-context">
+    <a href="/blog/使用NVM安装Node.js/" rel="next" title="使用NVM安装Node.js">
+    上一篇：使用NVM安装Node.js
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/blog/使用新浪云部署网站/" rel="next" title="使用新浪云部署网站">
+    下一篇：使用新浪云部署网站
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Wed Mar 08 2017 00:00:00 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/3170066893?is_all=1" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/meishadevs" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                <div class="site-visitors-container white-text">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="http://zhangwenli.com/" target="_blank">羡辙的个人主页</a>
+                
+                    <a class="social-link" href="http://www.zhangxinxu.com/" target="_blank">张鑫旭的个人主页</a>
+                
+                    <a class="social-link" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a>
+                
+                    <a class="social-link" href="https://me.ursb.me/" target="_blank">Airing 的小屋</a>
+                
+                    <a class="social-link" href="http://www.runoob.com/" target="_blank">菜鸟教程</a>
+                
+                    <a class="social-link" href="https://jysperm.me/" target="_blank">王子亭的博客</a>
+                
+                    <a class="social-link" href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a>
+                
+                    <a class="social-link" href="https://wangdoc.com/" target="_blank">网道</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2018 meishadevs All rights reserved 赣ICP备18015008号
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=61543111" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>

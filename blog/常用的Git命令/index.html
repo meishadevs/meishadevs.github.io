@@ -1,0 +1,1006 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>常用的Git命令 | meishadevs的技术博客</title>
+    <meta name="author" content="meishadevs">
+    
+    <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="常用的Git命令">
+    <meta property="og:site_name" content="meishadev&#39;s blog">
+
+    
+    <meta property="og:image" content="undefined">
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="meishadev&#39;s blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/tranquil-heart.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+</html>
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">meishadev&#39;s blog</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://meishadevs.com/images/touxiang.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">meishadevs</p>
+                        <p class="desc">Web前端</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/总结/">
+                    总结 <span class="right">4 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Fireworks/">
+                    Fireworks <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/JavaScript/">
+                    JavaScript <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/JavaScript/ES6/">
+                    ES6 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/GoJS/">
+                    GoJS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Mac/">
+                    Mac <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/MongoDB/">
+                    MongoDB <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/MongoDB/数据库/">
+                    数据库 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Photoshop/">
+                    Photoshop <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/数据库/">
+                    数据库 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/idea/">
+                    idea <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/SpringBoot/java/">
+                    java <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/代码规范/">
+                    代码规范 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/部署/">
+                    部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Gulp/">
+                    Gulp <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Gulp/前端自动化/">
+                    前端自动化 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/CSS/">
+                    CSS <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/NVM/">
+                    NVM <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/NVM/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/echarts/">
+                    echarts <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Git/">
+                    Git <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue/">
+                    Vue <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Vue/iview/">
+                    iview <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/移动Web/">
+                    移动Web <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/小程序/">
+                    小程序 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/WebStrom/">
+                    WebStrom <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/WebStrom/Chrome/">
+                    Chrome <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/前端/">
+                    前端 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/Git/">Git</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>常用的Git命令</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2017-04-29T02:18:01.000Z"><a href="/blog/常用的Git命令/">2017-04-29</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/Git/" class="chip pink lighten-1">Git</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#获得提交代码的用户名"><span class="section table-of-contents-text">获得提交代码的用户名</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#获得提交代码的邮箱"><span class="section table-of-contents-text">获得提交代码的邮箱</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#将提交代码的用户名设置为username"><span class="section table-of-contents-text">将提交代码的用户名设置为username</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#将提交代码的邮箱设置为email"><span class="section table-of-contents-text">将提交代码的邮箱设置为email</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#下载一个项目和它的整个代码历史到本地"><span class="section table-of-contents-text">下载一个项目和它的整个代码历史到本地</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看本地分支的方法1"><span class="section table-of-contents-text">查看本地分支的方法1</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看本地分支的方法2"><span class="section table-of-contents-text">查看本地分支的方法2</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看远程分支"><span class="section table-of-contents-text">查看远程分支</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看所有分支-包括本地分支和远程分支"><span class="section table-of-contents-text">查看所有分支(包括本地分支和远程分支)</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#删除本地分支，其中branchName表示本地分支名称"><span class="section table-of-contents-text">删除本地分支，其中branchName表示本地分支名称</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#强制删除本地分支，其中branchName表示本地分支名称"><span class="section table-of-contents-text">强制删除本地分支，其中branchName表示本地分支名称</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#删除远程分支方法1，其中branchName表示远程分支名称"><span class="section table-of-contents-text">删除远程分支方法1，其中branchName表示远程分支名称</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#删除远程分支方法2，其中branchName表示远程分支名称"><span class="section table-of-contents-text">删除远程分支方法2，其中branchName表示远程分支名称</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#切换到master分支"><span class="section table-of-contents-text">切换到master分支</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#修改本地分支名称"><span class="section table-of-contents-text">修改本地分支名称</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#初始化一个本地Git仓库"><span class="section table-of-contents-text">初始化一个本地Git仓库</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看本地仓库的状态"><span class="section table-of-contents-text">查看本地仓库的状态</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#将当前目录下的所有文件添加到暂存区"><span class="section table-of-contents-text">将当前目录下的所有文件添加到暂存区</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#将暂存区的文件提交到本地仓库"><span class="section table-of-contents-text">将暂存区的文件提交到本地仓库</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#为本地仓库添加一个远程仓库"><span class="section table-of-contents-text">为本地仓库添加一个远程仓库</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看所有远程仓库"><span class="section table-of-contents-text">查看所有远程仓库</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#将本地仓库中master分支上的数据推送到远程仓库的master分支上，如果远程仓库中没有master分支，会在远程仓库上自动创建一个master分支"><span class="section table-of-contents-text">将本地仓库中master分支上的数据推送到远程仓库的master分支上，如果远程仓库中没有master分支，会在远程仓库上自动创建一个master分支</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#拉取远程仓库中的master分支上的数据到本地仓库"><span class="section table-of-contents-text">拉取远程仓库中的master分支上的数据到本地仓库</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#修改远程仓库的url地址，其中url表示远程创库的地址"><span class="section table-of-contents-text">修改远程仓库的url地址，其中url表示远程创库的地址</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#移除远程仓库地址"><span class="section table-of-contents-text">移除远程仓库地址</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#回退到某次提交，其中bbc272表示提交的哈希值的前六位"><span class="section table-of-contents-text">回退到某次提交，其中bbc272表示提交的哈希值的前六位</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看提交记录"><span class="section table-of-contents-text">查看提交记录</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#合并分支，例如将a分支上的代码合并到master分支上，首先切换到master分支，然后执行下面的命令"><span class="section table-of-contents-text">合并分支，例如将a分支上的代码合并到master分支上，首先切换到master分支，然后执行下面的命令</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看代码改动，例如执行下面的Git命令可以查看a-md中代码做了哪些改动"><span class="section table-of-contents-text">查看代码改动，例如执行下面的Git命令可以查看a.md中代码做了哪些改动</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#强行推送当前分支到远程仓库，其中branchName表示分支名称"><span class="section table-of-contents-text">强行推送当前分支到远程仓库，其中branchName表示分支名称</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#创建一个-a-分支，并且自动切换到-a-分支下"><span class="section table-of-contents-text">创建一个 a 分支，并且自动切换到 a 分支下</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#回退到上一次提交"><span class="section table-of-contents-text">回退到上一次提交</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#撤销没被-git-add-到暂存区的文件的修改"><span class="section table-of-contents-text">撤销没被 git add 到暂存区的文件的修改</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#撤销被-git-add-到暂存区并且没使用-git-commit-提交的文件的修改"><span class="section table-of-contents-text">撤销被 git add 到暂存区并且没使用 git commit 提交的文件的修改</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#撤销已提交的的文件更改"><span class="section table-of-contents-text">撤销已提交的的文件更改</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#撤销所有没使用-git-add-添加到暂存区的更改"><span class="section table-of-contents-text">撤销所有没使用 git add 添加到暂存区的更改</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看git操作记录"><span class="section table-of-contents-text">查看git操作记录</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#拉取非master分支上的代码到本地，其中localBranch表示本地分支名，remoteBranch表示远程分支名，为了便于管理通常将本地分支名和远程分支名设置为一样，当分支名称中有特殊符号时，需要用引号将分支名称扩起来"><span class="section table-of-contents-text">拉取非master分支上的代码到本地，其中localBranch表示本地分支名，remoteBranch表示远程分支名，为了便于管理通常将本地分支名和远程分支名设置为一样，当分支名称中有特殊符号时，需要用引号将分支名称扩起来</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看git的配置信息"><span class="section table-of-contents-text">查看git的配置信息</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#永久记住密码"><span class="section table-of-contents-text">永久记住密码</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#清除用户名和密码"><span class="section table-of-contents-text">清除用户名和密码</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#回到某个提交记录下"><span class="section table-of-contents-text">回到某个提交记录下</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#回到-master-分支的最新的提交记录的上一个提交记录处"><span class="section table-of-contents-text">回到 master 分支的最新的提交记录的上一个提交记录处</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#在当前分支下回到前4步的提交处"><span class="section table-of-contents-text">在当前分支下回到前4步的提交处</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#将-master-分支中的内容强制修改成当前所在分支的前3步提交处"><span class="section table-of-contents-text">将 master 分支中的内容强制修改成当前所在分支的前3步提交处</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看向-git-仓库贡献了代码的用户"><span class="section table-of-contents-text">查看向 git 仓库贡献了代码的用户</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看某个用户的提交记录"><span class="section table-of-contents-text">查看某个用户的提交记录</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看总提交次数"><span class="section table-of-contents-text">查看总提交次数</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看某个用户的提交次数"><span class="section table-of-contents-text">查看某个用户的提交次数</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#查看每个用户的提交次数"><span class="section table-of-contents-text">查看每个用户的提交次数</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#参考链接"><span class="section table-of-contents-text">参考链接</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>自己平时总结的一些常用的Git命令<br><a id="more"></a></p>
+<h4 id="获得提交代码的用户名"><a href="#获得提交代码的用户名" class="headerlink" title="获得提交代码的用户名"></a>获得提交代码的用户名</h4><pre><code># --global为可选参数，当在命令中使用--glabal表示所有项目提交代码时都用该用户名，诺不加--global表示只用提交当前项目的代码用该用户名
+git config --global user.name
+</code></pre><h4 id="获得提交代码的邮箱"><a href="#获得提交代码的邮箱" class="headerlink" title="获得提交代码的邮箱"></a>获得提交代码的邮箱</h4><pre><code># --global为可选参数，当在命令中使用--glabal表示所有项目提交代码时都用该邮箱，诺不加--global表示只用提交当前项目的代码用该邮箱
+git config --global user.email
+</code></pre><h4 id="将提交代码的用户名设置为username"><a href="#将提交代码的用户名设置为username" class="headerlink" title="将提交代码的用户名设置为username"></a>将提交代码的用户名设置为username</h4><pre><code># --global为可选参数，当在命令中使用--glabal表示所有项目提交代码时都用该用户名，诺不加--global表示只用提交当前项目的代码用该用户名
+git config --global user.name username
+</code></pre><h4 id="将提交代码的邮箱设置为email"><a href="#将提交代码的邮箱设置为email" class="headerlink" title="将提交代码的邮箱设置为email"></a>将提交代码的邮箱设置为email</h4><pre><code># --global为可选参数，当在命令中使用--glabal表示所有项目提交代码时都用该邮箱，诺不加--global表示只用提交当前项目的代码用该邮箱
+git config --global user.email email
+</code></pre><h4 id="下载一个项目和它的整个代码历史到本地"><a href="#下载一个项目和它的整个代码历史到本地" class="headerlink" title="下载一个项目和它的整个代码历史到本地"></a>下载一个项目和它的整个代码历史到本地</h4><pre><code>git clone url
+</code></pre><h4 id="查看本地分支的方法1"><a href="#查看本地分支的方法1" class="headerlink" title="查看本地分支的方法1"></a>查看本地分支的方法1</h4><pre><code>git branch
+</code></pre><h4 id="查看本地分支的方法2"><a href="#查看本地分支的方法2" class="headerlink" title="查看本地分支的方法2"></a>查看本地分支的方法2</h4><pre><code>git branch --list
+</code></pre><h4 id="查看远程分支"><a href="#查看远程分支" class="headerlink" title="查看远程分支"></a>查看远程分支</h4><pre><code>git branch -r
+</code></pre><h4 id="查看所有分支-包括本地分支和远程分支"><a href="#查看所有分支-包括本地分支和远程分支" class="headerlink" title="查看所有分支(包括本地分支和远程分支)"></a>查看所有分支(包括本地分支和远程分支)</h4><pre><code>git branch -a
+</code></pre><h4 id="删除本地分支，其中branchName表示本地分支名称"><a href="#删除本地分支，其中branchName表示本地分支名称" class="headerlink" title="删除本地分支，其中branchName表示本地分支名称"></a>删除本地分支，其中branchName表示本地分支名称</h4><pre><code>git branch -d branchName 
+</code></pre><h4 id="强制删除本地分支，其中branchName表示本地分支名称"><a href="#强制删除本地分支，其中branchName表示本地分支名称" class="headerlink" title="强制删除本地分支，其中branchName表示本地分支名称"></a>强制删除本地分支，其中branchName表示本地分支名称</h4><pre><code>git branch -D branchName
+</code></pre><h4 id="删除远程分支方法1，其中branchName表示远程分支名称"><a href="#删除远程分支方法1，其中branchName表示远程分支名称" class="headerlink" title="删除远程分支方法1，其中branchName表示远程分支名称"></a>删除远程分支方法1，其中branchName表示远程分支名称</h4><pre><code>git push origin :branchName
+</code></pre><h4 id="删除远程分支方法2，其中branchName表示远程分支名称"><a href="#删除远程分支方法2，其中branchName表示远程分支名称" class="headerlink" title="删除远程分支方法2，其中branchName表示远程分支名称"></a>删除远程分支方法2，其中branchName表示远程分支名称</h4><pre><code>git push origin --delete branchName
+</code></pre><h4 id="切换到master分支"><a href="#切换到master分支" class="headerlink" title="切换到master分支"></a>切换到master分支</h4><pre><code>git checkout master 
+</code></pre><h4 id="修改本地分支名称"><a href="#修改本地分支名称" class="headerlink" title="修改本地分支名称"></a>修改本地分支名称</h4><pre><code>git branch -m oldBranchName newBranchName
+</code></pre><h4 id="初始化一个本地Git仓库"><a href="#初始化一个本地Git仓库" class="headerlink" title="初始化一个本地Git仓库"></a>初始化一个本地Git仓库</h4><pre><code>git init
+</code></pre><h4 id="查看本地仓库的状态"><a href="#查看本地仓库的状态" class="headerlink" title="查看本地仓库的状态"></a>查看本地仓库的状态</h4><pre><code>git status
+</code></pre><h4 id="将当前目录下的所有文件添加到暂存区"><a href="#将当前目录下的所有文件添加到暂存区" class="headerlink" title="将当前目录下的所有文件添加到暂存区"></a>将当前目录下的所有文件添加到暂存区</h4><pre><code>git add .
+</code></pre><h4 id="将暂存区的文件提交到本地仓库"><a href="#将暂存区的文件提交到本地仓库" class="headerlink" title="将暂存区的文件提交到本地仓库"></a>将暂存区的文件提交到本地仓库</h4><pre><code>git commit -m &quot;update some data&quot;
+</code></pre><h4 id="为本地仓库添加一个远程仓库"><a href="#为本地仓库添加一个远程仓库" class="headerlink" title="为本地仓库添加一个远程仓库"></a>为本地仓库添加一个远程仓库</h4><pre><code>git remote add origin https://github.com/username/reponame.git
+</code></pre><h4 id="查看所有远程仓库"><a href="#查看所有远程仓库" class="headerlink" title="查看所有远程仓库"></a>查看所有远程仓库</h4><pre><code>git remote -v
+</code></pre><h4 id="将本地仓库中master分支上的数据推送到远程仓库的master分支上，如果远程仓库中没有master分支，会在远程仓库上自动创建一个master分支"><a href="#将本地仓库中master分支上的数据推送到远程仓库的master分支上，如果远程仓库中没有master分支，会在远程仓库上自动创建一个master分支" class="headerlink" title="将本地仓库中master分支上的数据推送到远程仓库的master分支上，如果远程仓库中没有master分支，会在远程仓库上自动创建一个master分支"></a>将本地仓库中master分支上的数据推送到远程仓库的master分支上，如果远程仓库中没有master分支，会在远程仓库上自动创建一个master分支</h4><pre><code>git push origin master
+</code></pre><h4 id="拉取远程仓库中的master分支上的数据到本地仓库"><a href="#拉取远程仓库中的master分支上的数据到本地仓库" class="headerlink" title="拉取远程仓库中的master分支上的数据到本地仓库"></a>拉取远程仓库中的master分支上的数据到本地仓库</h4><pre><code>git pull origin master
+</code></pre><h4 id="修改远程仓库的url地址，其中url表示远程创库的地址"><a href="#修改远程仓库的url地址，其中url表示远程创库的地址" class="headerlink" title="修改远程仓库的url地址，其中url表示远程创库的地址"></a>修改远程仓库的url地址，其中url表示远程创库的地址</h4><pre><code>git remote set-url origin url
+</code></pre><h4 id="移除远程仓库地址"><a href="#移除远程仓库地址" class="headerlink" title="移除远程仓库地址"></a>移除远程仓库地址</h4><pre><code>git remote rm origin
+</code></pre><h4 id="回退到某次提交，其中bbc272表示提交的哈希值的前六位"><a href="#回退到某次提交，其中bbc272表示提交的哈希值的前六位" class="headerlink" title="回退到某次提交，其中bbc272表示提交的哈希值的前六位"></a>回退到某次提交，其中<code>bbc272</code>表示提交的哈希值的前六位</h4><pre><code>git reset --hard bbc272
+</code></pre><h4 id="查看提交记录"><a href="#查看提交记录" class="headerlink" title="查看提交记录"></a>查看提交记录</h4><pre><code>git log
+</code></pre><h4 id="合并分支，例如将a分支上的代码合并到master分支上，首先切换到master分支，然后执行下面的命令"><a href="#合并分支，例如将a分支上的代码合并到master分支上，首先切换到master分支，然后执行下面的命令" class="headerlink" title="合并分支，例如将a分支上的代码合并到master分支上，首先切换到master分支，然后执行下面的命令"></a>合并分支，例如将a分支上的代码合并到master分支上，首先切换到master分支，然后执行下面的命令</h4><pre><code>git merge a
+</code></pre><h4 id="查看代码改动，例如执行下面的Git命令可以查看a-md中代码做了哪些改动"><a href="#查看代码改动，例如执行下面的Git命令可以查看a-md中代码做了哪些改动" class="headerlink" title="查看代码改动，例如执行下面的Git命令可以查看a.md中代码做了哪些改动"></a>查看代码改动，例如执行下面的Git命令可以查看a.md中代码做了哪些改动</h4><pre><code>git diff a.md
+</code></pre><h4 id="强行推送当前分支到远程仓库，其中branchName表示分支名称"><a href="#强行推送当前分支到远程仓库，其中branchName表示分支名称" class="headerlink" title="强行推送当前分支到远程仓库，其中branchName表示分支名称"></a>强行推送当前分支到远程仓库，其中branchName表示分支名称</h4><pre><code>git push origin branchName --force
+</code></pre><h4 id="创建一个-a-分支，并且自动切换到-a-分支下"><a href="#创建一个-a-分支，并且自动切换到-a-分支下" class="headerlink" title="创建一个 a 分支，并且自动切换到 a 分支下"></a>创建一个 a 分支，并且自动切换到 a 分支下</h4><pre><code>git checkout -b a
+</code></pre><h4 id="回退到上一次提交"><a href="#回退到上一次提交" class="headerlink" title="回退到上一次提交"></a>回退到上一次提交</h4><pre><code>git reset --hard HEAD^
+</code></pre><h4 id="撤销没被-git-add-到暂存区的文件的修改"><a href="#撤销没被-git-add-到暂存区的文件的修改" class="headerlink" title="撤销没被 git add 到暂存区的文件的修改"></a>撤销没被 git add 到暂存区的文件的修改</h4><pre><code>git checkout fileName
+</code></pre><h4 id="撤销被-git-add-到暂存区并且没使用-git-commit-提交的文件的修改"><a href="#撤销被-git-add-到暂存区并且没使用-git-commit-提交的文件的修改" class="headerlink" title="撤销被 git add 到暂存区并且没使用 git commit 提交的文件的修改"></a>撤销被 git add 到暂存区并且没使用 git commit 提交的文件的修改</h4><pre><code># 先将文件从暂存区移除(但是文件会保留在工作区)
+git reset HEAD fileName
+
+# 撤销工作区中文件的修改
+git checkout fileName 
+</code></pre><h4 id="撤销已提交的的文件更改"><a href="#撤销已提交的的文件更改" class="headerlink" title="撤销已提交的的文件更改"></a>撤销已提交的的文件更改</h4><pre><code># 先回退到工作区
+git reset HEAD^
+
+# 再撤销工作区中对文件的修改
+git checkout fileName
+</code></pre><h4 id="撤销所有没使用-git-add-添加到暂存区的更改"><a href="#撤销所有没使用-git-add-添加到暂存区的更改" class="headerlink" title="撤销所有没使用 git add 添加到暂存区的更改"></a>撤销所有没使用 git add 添加到暂存区的更改</h4><pre><code>git checkout .
+</code></pre><h4 id="查看git操作记录"><a href="#查看git操作记录" class="headerlink" title="查看git操作记录"></a>查看git操作记录</h4><pre><code>git reflog
+</code></pre><h4 id="拉取非master分支上的代码到本地，其中localBranch表示本地分支名，remoteBranch表示远程分支名，为了便于管理通常将本地分支名和远程分支名设置为一样，当分支名称中有特殊符号时，需要用引号将分支名称扩起来"><a href="#拉取非master分支上的代码到本地，其中localBranch表示本地分支名，remoteBranch表示远程分支名，为了便于管理通常将本地分支名和远程分支名设置为一样，当分支名称中有特殊符号时，需要用引号将分支名称扩起来" class="headerlink" title="拉取非master分支上的代码到本地，其中localBranch表示本地分支名，remoteBranch表示远程分支名，为了便于管理通常将本地分支名和远程分支名设置为一样，当分支名称中有特殊符号时，需要用引号将分支名称扩起来"></a>拉取非master分支上的代码到本地，其中localBranch表示本地分支名，remoteBranch表示远程分支名，为了便于管理通常将本地分支名和远程分支名设置为一样，当分支名称中有特殊符号时，需要用引号将分支名称扩起来</h4><pre><code>git checkout -b localBranch origin/remoteBranch
+</code></pre><h4 id="查看git的配置信息"><a href="#查看git的配置信息" class="headerlink" title="查看git的配置信息"></a>查看git的配置信息</h4><pre><code>git config --list
+</code></pre><h4 id="永久记住密码"><a href="#永久记住密码" class="headerlink" title="永久记住密码"></a>永久记住密码</h4><pre><code>git config --global credential.helper store
+</code></pre><h4 id="清除用户名和密码"><a href="#清除用户名和密码" class="headerlink" title="清除用户名和密码"></a>清除用户名和密码</h4><pre><code>git config --system --unset credential.helper
+</code></pre><h4 id="回到某个提交记录下"><a href="#回到某个提交记录下" class="headerlink" title="回到某个提交记录下"></a>回到某个提交记录下</h4><pre><code># hash 表示提交记录的 hash 值
+git checkout hash 
+</code></pre><h4 id="回到-master-分支的最新的提交记录的上一个提交记录处"><a href="#回到-master-分支的最新的提交记录的上一个提交记录处" class="headerlink" title="回到 master 分支的最新的提交记录的上一个提交记录处"></a>回到 master 分支的最新的提交记录的上一个提交记录处</h4><pre><code>git checkout master^
+</code></pre><h4 id="在当前分支下回到前4步的提交处"><a href="#在当前分支下回到前4步的提交处" class="headerlink" title="在当前分支下回到前4步的提交处"></a>在当前分支下回到前4步的提交处</h4><pre><code>git checkout HEAD~4
+</code></pre><h4 id="将-master-分支中的内容强制修改成当前所在分支的前3步提交处"><a href="#将-master-分支中的内容强制修改成当前所在分支的前3步提交处" class="headerlink" title="将 master 分支中的内容强制修改成当前所在分支的前3步提交处"></a>将 master 分支中的内容强制修改成当前所在分支的前3步提交处</h4><pre><code>git branch -f master HEAD~3
+</code></pre><h4 id="查看向-git-仓库贡献了代码的用户"><a href="#查看向-git-仓库贡献了代码的用户" class="headerlink" title="查看向 git 仓库贡献了代码的用户"></a>查看向 git 仓库贡献了代码的用户</h4><pre><code>git log --pretty=format:&quot;%an&quot; | sort | uniq -c
+</code></pre><h4 id="查看某个用户的提交记录"><a href="#查看某个用户的提交记录" class="headerlink" title="查看某个用户的提交记录"></a>查看某个用户的提交记录</h4><pre><code># meishadevs 为用户名，表示查看 meishadevs 的提交记录
+git log --author=&quot;meishadevs&quot;
+</code></pre><h4 id="查看总提交次数"><a href="#查看总提交次数" class="headerlink" title="查看总提交次数"></a>查看总提交次数</h4><pre><code>git log --oneline | wc -l
+</code></pre><h4 id="查看某个用户的提交次数"><a href="#查看某个用户的提交次数" class="headerlink" title="查看某个用户的提交次数"></a>查看某个用户的提交次数</h4><pre><code># meishadevs 为用户名，表示查看 meishadevs 的提交次数
+git log --author=&quot;meishadevs&quot; --oneline | wc -l
+</code></pre><h4 id="查看每个用户的提交次数"><a href="#查看每个用户的提交次数" class="headerlink" title="查看每个用户的提交次数"></a>查看每个用户的提交次数</h4><pre><code>git shortlog -s -n
+</code></pre><h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><ul>
+<li><a href="https://blog.csdn.net/weixin_42315879/article/details/80907340" target="_blank" rel="noopener">git切换账号及推送人</a></li>
+<li><a href="https://blog.csdn.net/youanyyou/article/details/78992990" target="_blank" rel="noopener">Git提交记住用户名和密码</a></li>
+<li><a href="https://blog.csdn.net/qq_14922059/article/details/80505278" target="_blank" rel="noopener">git fatal: Authentication failed for又不弹出用户名和密码 解决办法</a></li>
+<li><a href="https://www.cnblogs.com/wangzhichao/p/git.html" target="_blank" rel="noopener">git-更改本地和远程分支的名称</a></li>
+<li><a href="https://blog.csdn.net/cs23405/article/details/88242328" target="_blank" rel="noopener">sourcetree提示ssh密钥认证失败</a></li>
+</ul>
+<blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/常用的Git命令">常用的Git命令</a>】</p>
+</blockquote>
+
+                
+<p class="pink-link-context">
+    <a href="/blog/《JavaScript高级程序设计》读书笔记/" rel="next" title="《JavaScript高级程序设计》读书笔记">
+    上一篇：《JavaScript高级程序设计》读书笔记
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/blog/使用Gulp/" rel="next" title="使用Gulp">
+    下一篇：使用Gulp
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Sat Apr 29 2017 10:18:01 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/3170066893?is_all=1" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/meishadevs" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                <div class="site-visitors-container white-text">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="http://zhangwenli.com/" target="_blank">羡辙的个人主页</a>
+                
+                    <a class="social-link" href="http://www.zhangxinxu.com/" target="_blank">张鑫旭的个人主页</a>
+                
+                    <a class="social-link" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a>
+                
+                    <a class="social-link" href="https://me.ursb.me/" target="_blank">Airing 的小屋</a>
+                
+                    <a class="social-link" href="http://www.runoob.com/" target="_blank">菜鸟教程</a>
+                
+                    <a class="social-link" href="https://jysperm.me/" target="_blank">王子亭的博客</a>
+                
+                    <a class="social-link" href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a>
+                
+                    <a class="social-link" href="https://wangdoc.com/" target="_blank">网道</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2018 meishadevs All rights reserved 赣ICP备18015008号
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=61543111" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>

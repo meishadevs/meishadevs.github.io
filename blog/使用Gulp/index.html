@@ -1,0 +1,1090 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>使用Gulp | meishadevs的技术博客</title>
+    <meta name="author" content="meishadevs">
+    
+    <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="使用Gulp">
+    <meta property="og:site_name" content="meishadev&#39;s blog">
+
+    
+    <meta property="og:image" content="undefined">
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="meishadev&#39;s blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/tranquil-heart.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+</html>
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">meishadev&#39;s blog</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://meishadevs.com/images/touxiang.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">meishadevs</p>
+                        <p class="desc">Web前端</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/总结/">
+                    总结 <span class="right">4 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Fireworks/">
+                    Fireworks <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/JavaScript/">
+                    JavaScript <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/JavaScript/ES6/">
+                    ES6 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/GoJS/">
+                    GoJS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Mac/">
+                    Mac <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/MongoDB/">
+                    MongoDB <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/MongoDB/数据库/">
+                    数据库 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Photoshop/">
+                    Photoshop <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/数据库/">
+                    数据库 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/idea/">
+                    idea <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/SpringBoot/java/">
+                    java <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/代码规范/">
+                    代码规范 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/部署/">
+                    部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Gulp/">
+                    Gulp <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Gulp/前端自动化/">
+                    前端自动化 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/CSS/">
+                    CSS <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/NVM/">
+                    NVM <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/NVM/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/echarts/">
+                    echarts <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Git/">
+                    Git <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue/">
+                    Vue <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Vue/iview/">
+                    iview <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/移动Web/">
+                    移动Web <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/小程序/">
+                    小程序 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/WebStrom/">
+                    WebStrom <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/WebStrom/Chrome/">
+                    Chrome <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/前端/">
+                    前端 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/Gulp/">Gulp</a><a class="breadcrumb" href="/categories/Gulp/前端自动化/">前端自动化</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>使用Gulp</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2017-04-14T16:00:00.000Z"><a href="/blog/使用Gulp/">2017-04-15</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/Gulp/" class="chip pink lighten-1">Gulp</a>
+        
+            <a href="/tags/前端自动化/" class="chip pink lighten-1">前端自动化</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#为什么要使用Gulp"><span class="section table-of-contents-text">为什么要使用Gulp</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Gulp是什么"><span class="section table-of-contents-text">Gulp是什么</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Gulp的特性"><span class="section table-of-contents-text">Gulp的特性</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Gulp的常用网站"><span class="section table-of-contents-text">Gulp的常用网站</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Gulp的安装与使用"><span class="section table-of-contents-text">Gulp的安装与使用</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Gulp的简单应用"><span class="section table-of-contents-text">Gulp的简单应用</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用Gulp实现一个文件拷贝任务"><span class="section table-of-contents-text">使用Gulp实现一个文件拷贝任务</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用Gulp自动将Less编译成CSS"><span class="section table-of-contents-text">使用Gulp自动将Less编译成CSS</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#参考链接"><span class="section table-of-contents-text">参考链接</span></a></li></ol></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <h1 id="为什么要使用Gulp"><a href="#为什么要使用Gulp" class="headerlink" title="为什么要使用Gulp"></a>为什么要使用Gulp</h1><p>在前端开发中通常需要做，预处理语言的编译、js文件的压缩、css文件的压缩、图片的压缩等一系列工作，而使用Gulp可以自动化的完成这些工作，从而提高网站的开发效率，在我的博客<a href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8Less/">使用Less</a>中介绍了将Less文件编译成CSS文件的方法，仔细观察可以看到如果按照博客中介绍的方法，在编译多个Less文件或者编译不同文件夹下的Less文件时需要执行多次Less文件编译命令，而使用Gulp可以一次性完成这些操作<br><a id="more"></a></p>
+<h1 id="Gulp是什么"><a href="#Gulp是什么" class="headerlink" title="Gulp是什么"></a>Gulp是什么</h1><p>Gulp是一个可以自动化完成我们开发过程中大量的重复工作的工具，使用Gulp可以自动化的完成如，预处理语言的编译、js文件的压缩、css文件的压缩、html文件的压缩、图片体积优化等工作</p>
+<h1 id="Gulp的特性"><a href="#Gulp的特性" class="headerlink" title="Gulp的特性"></a>Gulp的特性</h1><ul>
+<li><strong>易于使用</strong> 通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理</li>
+<li><strong>构建快速</strong> 利用 Node.js 流的威力，你可以快速构建项目并减少频繁的 IO 操作</li>
+<li><strong>插件高质</strong> Gulp 严格的插件指南确保插件如你期望的那样简洁高质得工作</li>
+<li><strong>易于学习</strong> 通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道</li>
+</ul>
+<h1 id="Gulp的常用网站"><a href="#Gulp的常用网站" class="headerlink" title="Gulp的常用网站"></a>Gulp的常用网站</h1><ul>
+<li><strong>Gulp官方网站：</strong><a href="http://gulpjs.com/" target="_blank" rel="noopener">http://gulpjs.com/</a>  </li>
+<li><strong>Gulp中文网：</strong><a href="http://www.gulpjs.com.cn/" target="_blank" rel="noopener">http://www.gulpjs.com.cn/</a></li>
+<li><strong>Gulp插件地址：</strong><a href="http://gulpjs.com/plugins/" target="_blank" rel="noopener">http://gulpjs.com/plugins/</a></li>
+<li><strong>Gulp官方API：</strong><a href="https://github.com/gulpjs/gulp/blob/master/docs/API.md" target="_blank" rel="noopener">https://github.com/gulpjs/gulp/blob/master/docs/API.md</a></li>
+<li><strong>Gulp中文API：</strong><a href="http://www.gulpjs.com.cn/docs/api/" target="_blank" rel="noopener">http://www.gulpjs.com.cn/docs/api/</a></li>
+</ul>
+<h1 id="Gulp的安装与使用"><a href="#Gulp的安装与使用" class="headerlink" title="Gulp的安装与使用"></a>Gulp的安装与使用</h1><h3 id="Gulp的简单应用"><a href="#Gulp的简单应用" class="headerlink" title="Gulp的简单应用"></a>Gulp的简单应用</h3><p><strong>1. 全局安装Gulp</strong>  </p>
+<pre><code>npm install --global gulp
+</code></pre><p><strong>2. 创建一个code文件夹，并进入到code文件夹下</strong><br>下面的命令是在Git bash中运行的，运行这几条命令，需要安装Git，没有安装Git的可以在电脑上自己手动创建一个code文件夹，并且进入code文件夹下  </p>
+<pre><code># 创建code文件夹
+mkdir code
+
+# 进入code文件下
+cd code 
+</code></pre><p><strong>3.执行下面的命令创建package.json文件</strong>  </p>
+<pre><code>npm init
+</code></pre><p>在命令行中运行<code>npm init</code>命令的时候会出现下图所示的要求用户输入name、version等值，当不清楚这些值的含义的时候，一直按回车键，会自动使用默认值<br><img src="/images/20170416094616628.png" class="blog-image"></p>
+<p><strong>4.完成这些操作后会在code文件中会生成一个package.json文件</strong><br><img src="/images/20170416094708660.png" class="blog-image"></p>
+<p><strong>5.打开package.json文件可以看到package.json中记录了一些当前项目的信息</strong><br><strong>name:</strong> 项目的名称<br><strong>version:</strong> 项目的版本<br><strong>description:</strong> 项目的描述信息<br><strong>main:</strong> 项目的入口函数<br><strong>scripts:</strong> scripts属性是一个对象，里边指定了项目的生命周期个各个环节需要执行的命令<br><strong>author:</strong> 项目的作者<br><strong>license:</strong> 项目的许可证<br><strong>devDependencies:</strong> 项目依赖的插件<br><strong>repository:</strong> 项目资源库</p>
+<p><strong>6.在命令行中执行下面的命令，安装Gulp</strong>  </p>
+<pre><code>npm install --save-dev gulp
+</code></pre><p><strong>7.创建一个Gulp的主文件gulpfile.js，并且在gulpfile.js中添加下面的代码</strong><br>Gulp主文件用于注册任务 </p>
+<pre><code>//载入gulp模块
+var gulp = require(&apos;gulp&apos;);
+
+/**
+ * 注册一个任务
+ * @param 任务名称
+ * @param 自动执行的函数
+ */
+gulp.task(&apos;say&apos;, function() {
+    console.log(&quot;hello world !&quot;);
+});
+</code></pre><p><strong>8.使用gulp</strong><br>打开命令行，并且在命令行中执行<code>gulp say</code>命令，可以看到在控制台中输出了一句”say hello”表示Gulp安装成功<br><img src="/images/20170416101457184.png" class="blog-image"></p>
+<h3 id="使用Gulp实现一个文件拷贝任务"><a href="#使用Gulp实现一个文件拷贝任务" class="headerlink" title="使用Gulp实现一个文件拷贝任务"></a>使用Gulp实现一个文件拷贝任务</h3><p>下面的操作都是在项目中安装了Gulp的情况下进行的，没有安装Gulp可以看前面的<strong>Gulp的安装与使用</strong>中的内容</p>
+<p><strong>1.创建一个src文件夹，并且在src文件夹下创建一个index.html文件</strong><br>在Git Bash中执行下面的命令创建一个src文件夹，并在src文件夹下创建一个index.htmll文件，没有安装Git的可以手动创建</p>
+<pre><code># 创建src文件夹
+mkdir src 
+
+# 进入到src文件夹下
+cd src
+
+# 创建index.html文件
+touch index.html
+</code></pre><p><strong>2.向index.html中添加HTML代码</strong></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;h1&gt;这是一个简单的web页面&lt;/h1&gt;        
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><strong>3.创建一个Gulp的主文件gulpfile.js，并且在gulpfile.js中添加下面的代码</strong></p>
+<pre><code>//载入gulp模块
+var gulp = require(&apos;gulp&apos;);
+
+//文件拷贝任务
+gulp.task(&apos;copy&apos;, function() {
+
+    //获取src目录下的index.html文件
+    gulp.src(&apos;src/index.html&apos;)
+
+    //将index.html拷贝到dist目录中
+    .pipe(gulp.dest(&apos;dist/&apos;));
+});
+</code></pre><p><strong>4.在命令行中执行文件拷贝任务，将src目录下的index.html文件拷贝到dist目录下</strong>  </p>
+<pre><code>gulp copy
+</code></pre><p>文件拷贝命令执行完成后可以看到在code目录下自动创建了一个dist文件夹，并且在dist文件夹下自动创建了一个index.html文件，表示文件拷贝任务运行成功<br><img src="/images/20170416110116584.png" class="blog-image"></p>
+<p><strong>5.自动执行文件拷贝任务</strong><br>在这个文件拷贝任务中，有一个非常大的弊端，就是每次更新index.html中的代码的时候，都要在命令行中执行一次<code>gulp copy</code>命令，这样做做了重复性操作，也不符合使用Gulp实现自动化的特点，为了改成自动化执行文件拷贝命令，可以修改gulpfile.js中的代码</p>
+<pre><code>//载入gulp模块
+var gulp = require(&apos;gulp&apos;);
+
+//文件拷贝任务
+gulp.task(&apos;copy&apos;, function() {
+
+    //获取src目录下的index.html文件
+    gulp.src(&apos;src/index.html&apos;)
+
+    //将index.html拷贝到dist目录中
+    .pipe(gulp.dest(&apos;dist/&apos;));
+});
+
+//监视copy任务
+gulp.task(&apos;dist&apos;, function() {
+
+    //当src目录下的index.html文件发生变化的时候
+    //执行copy任务
+    gulp.watch(&apos;src/index.html&apos;, [&apos;copy&apos;]);
+});
+</code></pre><p><strong>6.修改好gulpfile.js中的代码后在命令行中执行下面的命令</strong></p>
+<pre><code>gulp dist
+</code></pre><p><strong>6.此时只要修改src文件夹的index.html文件,修改完成后只要一保存，HTML代码就能同时同步到dist文件夹下的index.html中</strong><br><img src="/images/20170416113431492.png" class="blog-image"></p>
+<h3 id="使用Gulp自动将Less编译成CSS"><a href="#使用Gulp自动将Less编译成CSS" class="headerlink" title="使用Gulp自动将Less编译成CSS"></a>使用Gulp自动将Less编译成CSS</h3><p>下面的操作都是在项目中安装了Gulp的情况下进行的，没有安装Gulp可以看前面的<strong>Gulp的安装与使用</strong>中的内容</p>
+<p><strong>1.安装gulp-less插件</strong></p>
+<pre><code>npm install gulp-less --save-dev
+</code></pre><p><strong>2.创建Less文件</strong><br>在Git Bash中执行下面的命令创建一个less文件夹，并且在less文件夹下创建一个style.less文件，在没有安装Git Bash的情况下可以手动创建</p>
+<pre><code># 创建less文件夹
+mkdir less 
+
+# 进入less文件夹中
+cd less
+
+# 创建style.less文件
+touch style.less
+</code></pre><p><strong>3.向style.less中添加一段简单的Less代码</strong></p>
+<pre><code>@primary-color: #fff;
+
+body {
+    background-color: @primary-color;
+
+    .container {
+        width: 1028px;
+
+        .row {
+            padding: 0 15px;
+        }
+    }
+}
+</code></pre><p><strong>4.创建一个Gulp的主文件gulpfile.js，并且在gulpfile.js中添加下面的代码</strong></p>
+<pre><code>//载入gulp模块
+var gulp = require(&apos;gulp&apos;);
+var less = require(&apos;gulp-less&apos;);
+
+//创建一个将Less编译成CSS的任务
+gulp.task(&apos;less&apos;, function() {
+    gulp.src(&apos;less/*.less&apos;)
+    .pipe(less())
+    .pipe(gulp.dest(&apos;css/&apos;));
+});
+
+//监视less任务
+//当less文件发生变化的时候，会自动将Less转换成CSS
+gulp.task(&apos;watchLess&apos;, function() {
+    gulp.watch(&apos;./less/*.less&apos;, [&apos;less&apos;]);
+});
+</code></pre><p><strong>5.在命令行中执行下面的命令，启动将Less文件编译成CSS文件的任务</strong></p>
+<pre><code>gulp watchLess
+</code></pre><p><strong>5.修改less文件夹下的style.less</strong><br>打开less文件夹下的style.less文件，并且修改style.less文件，当保存后会自动将style.less文件编译成css文件，并且会自动创建一个css目录，在css目录下自动创建一个style.css文件用于存储生成的CSS代码<br><img src="/images/20170417204103113.png" class="blog-image"></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="https://www.gulpjs.com.cn/" target="_blank" rel="noopener">gulp.js 中文网</a></li>
+<li><a href="http://www.ydcss.com/archives/tag/gulp" target="_blank" rel="noopener">一点 | gulp教程</a></li>
+<li><a href="http://www.browsersync.cn/" target="_blank" rel="noopener">Browsersync中文网</a></li>
+</ul>
+<blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/使用Gulp">使用Gulp</a>】</p>
+</blockquote>
+
+                
+<p class="pink-link-context">
+    <a href="/blog/常用的Git命令/" rel="next" title="常用的Git命令">
+    上一篇：常用的Git命令
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/blog/使用Less/" rel="next" title="使用Less">
+    下一篇：使用Less
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Sat Apr 15 2017 00:00:00 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/3170066893?is_all=1" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/meishadevs" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                <div class="site-visitors-container white-text">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="http://zhangwenli.com/" target="_blank">羡辙的个人主页</a>
+                
+                    <a class="social-link" href="http://www.zhangxinxu.com/" target="_blank">张鑫旭的个人主页</a>
+                
+                    <a class="social-link" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a>
+                
+                    <a class="social-link" href="https://me.ursb.me/" target="_blank">Airing 的小屋</a>
+                
+                    <a class="social-link" href="http://www.runoob.com/" target="_blank">菜鸟教程</a>
+                
+                    <a class="social-link" href="https://jysperm.me/" target="_blank">王子亭的博客</a>
+                
+                    <a class="social-link" href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a>
+                
+                    <a class="social-link" href="https://wangdoc.com/" target="_blank">网道</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2018 meishadevs All rights reserved 赣ICP备18015008号
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=61543111" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>

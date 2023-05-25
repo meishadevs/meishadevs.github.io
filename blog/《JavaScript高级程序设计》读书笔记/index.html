@@ -1,0 +1,1342 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>《JavaScript高级程序设计》读书笔记 | meishadevs的技术博客</title>
+    <meta name="author" content="meishadevs">
+    
+    <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="《JavaScript高级程序设计》读书笔记">
+    <meta property="og:site_name" content="meishadev&#39;s blog">
+
+    
+    <meta property="og:image" content="undefined">
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="meishadev&#39;s blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/tranquil-heart.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+</html>
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">meishadev&#39;s blog</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://meishadevs.com/images/touxiang.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">meishadevs</p>
+                        <p class="desc">Web前端</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/总结/">
+                    总结 <span class="right">4 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Fireworks/">
+                    Fireworks <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/JavaScript/">
+                    JavaScript <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/JavaScript/ES6/">
+                    ES6 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/GoJS/">
+                    GoJS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Mac/">
+                    Mac <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/MongoDB/">
+                    MongoDB <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/MongoDB/数据库/">
+                    数据库 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Photoshop/">
+                    Photoshop <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/数据库/">
+                    数据库 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/idea/">
+                    idea <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/SpringBoot/java/">
+                    java <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/代码规范/">
+                    代码规范 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/部署/">
+                    部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Gulp/">
+                    Gulp <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Gulp/前端自动化/">
+                    前端自动化 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/CSS/">
+                    CSS <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/NVM/">
+                    NVM <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/NVM/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/echarts/">
+                    echarts <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Git/">
+                    Git <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue/">
+                    Vue <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Vue/iview/">
+                    iview <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/移动Web/">
+                    移动Web <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/小程序/">
+                    小程序 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/WebStrom/">
+                    WebStrom <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/WebStrom/Chrome/">
+                    Chrome <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/前端/">
+                    前端 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/读书笔记/">读书笔记</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>《JavaScript高级程序设计》读书笔记</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2017-05-04T03:40:36.000Z"><a href="/blog/《JavaScript高级程序设计》读书笔记/">2017-05-04</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/JavaScript/" class="chip pink lighten-1">JavaScript</a>
+        
+            <a href="/tags/读书笔记/" class="chip pink lighten-1">读书笔记</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#kbit-s"><span class="section table-of-contents-text">kbit/s</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#JavaScript的组成"><span class="section table-of-contents-text">JavaScript的组成</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#开启严格模式的方法"><span class="section table-of-contents-text">开启严格模式的方法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#创建全局变量的方法"><span class="section table-of-contents-text">创建全局变量的方法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#将十进制转换成二进制的方法"><span class="section table-of-contents-text">将十进制转换成二进制的方法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#将十进制的负数转换成二进制"><span class="section table-of-contents-text">将十进制的负数转换成二进制</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#计算按位非操作的简便方法"><span class="section table-of-contents-text">计算按位非操作的简便方法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#获得变量的基本数据类型"><span class="section table-of-contents-text">获得变量的基本数据类型</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#判断变量的引用的数据类型"><span class="section table-of-contents-text">判断变量的引用的数据类型</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#JavaScript的基本数据类型"><span class="section table-of-contents-text">JavaScript的基本数据类型</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#JavaScript中的引用类型"><span class="section table-of-contents-text">JavaScript中的引用类型</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#构造函数"><span class="section table-of-contents-text">构造函数</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#创建数组的方式"><span class="section table-of-contents-text">创建数组的方式</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#栈与队列"><span class="section table-of-contents-text">栈与队列</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#JavaScript中创建对象的方式"><span class="section table-of-contents-text">JavaScript中创建对象的方式</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#对象继承"><span class="section table-of-contents-text">对象继承</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#new-操作符实现原理"><span class="section table-of-contents-text">new 操作符实现原理</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#js中获得父节点下所有子节点的方法"><span class="section table-of-contents-text">js中获得父节点下所有子节点的方法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#let、var、const-三者的区别"><span class="section table-of-contents-text">let、var、const 三者的区别</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#属性的描述符"><span class="section table-of-contents-text">属性的描述符</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#访问器属性的特性"><span class="section table-of-contents-text">访问器属性的特性</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#target-与-currentTarget"><span class="section table-of-contents-text">target 与 currentTarget</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#宏任务与微任务"><span class="section table-of-contents-text">宏任务与微任务</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <h5 id="kbit-s"><a href="#kbit-s" class="headerlink" title="kbit/s"></a>kbit/s</h5><p>数据传送率的单位.意思是每秒钟多少千字节.比如20Kbit/s就是每秒钟20000个字节.一般上网、下载的速度用这个单位.adsl宽带上网下载速度大概为30-50Kbit/s.</p>
+<a id="more"></a>
+<h5 id="JavaScript的组成"><a href="#JavaScript的组成" class="headerlink" title="JavaScript的组成"></a>JavaScript的组成</h5><p><strong>JavaScript</strong>由<strong>ECMAScript(JavaScript的版本)</strong>、<strong>DOM(文档对象模型)</strong>、<strong>BOM(浏览器对象模型)</strong>三部分组成</p>
+<h5 id="开启严格模式的方法"><a href="#开启严格模式的方法" class="headerlink" title="开启严格模式的方法"></a>开启严格模式的方法</h5><p>在js脚本的最顶部添加下面一段代码</p>
+<pre><code>&quot;use strict&quot;
+</code></pre><h5 id="创建全局变量的方法"><a href="#创建全局变量的方法" class="headerlink" title="创建全局变量的方法"></a>创建全局变量的方法</h5><p><strong>方法1：</strong>在函数外部定义一个变量，在函数内部使用变量</p>
+<pre><code>var message;
+
+function test() {
+    message = &quot;hello world&quot;;
+}
+
+test();
+alert(message);
+</code></pre><p><strong>方法2：</strong>在函数内部定义变量，并且不写<strong>var</strong>操作符</p>
+<pre><code>function test() {
+    message = &quot;hello world&quot;;
+}
+
+test();
+alert(message);
+</code></pre><h5 id="将十进制转换成二进制的方法"><a href="#将十进制转换成二进制的方法" class="headerlink" title="将十进制转换成二进制的方法"></a>将十进制转换成二进制的方法</h5><p>除二取余，倒序排列。例如将十进制的18转换成二进制<br><strong>第一步：</strong>计算除二取余<br><img src="/images/20170503113832828.png" class="blog-image"></p>
+<p><strong>第二步：</strong>将余数倒序排列就可以得到18的二进制是10010</p>
+<h5 id="将十进制的负数转换成二进制"><a href="#将十进制的负数转换成二进制" class="headerlink" title="将十进制的负数转换成二进制"></a>将十进制的负数转换成二进制</h5><p>负数的二进制是用负数的绝对值的补码表示，以计算-18的二进制为例介绍负数的二进制计算方法<br><strong>第一步：</strong>计算-18的绝对值 |-18| = 18<br><strong>第二步：</strong>计算18的二进制 0000 0000 0000 0000 0000 0000 0001 0010<br><strong>第三步：</strong>计算二进制的反码 1111 1111 1111 1111 1111 1111 1110 1101<br><strong>第四步：</strong>将反码加1 1111 1111 1111 1111 1111 1111 1110 1110<br><strong>所以-18的二进制值</strong> 1111 1111 1111 1111 1111 1111 1110 1110，其中第31位表示的是符号位不参与计算，1表示是负数，0表示是正数，位的顺序是从右往左排列的从0开始，也就是所最右边的哪位是第0位，然后往左依次是1、2、3、……位以此类推，最后一位是第31位</p>
+<h5 id="计算按位非操作的简便方法"><a href="#计算按位非操作的简便方法" class="headerlink" title="计算按位非操作的简便方法"></a>计算按位非操作的简便方法</h5><p>操作数的负值减1，例如计算25的按位非操作的方法如下</p>
+<pre><code>var num1 = 25;
+var num2 = -num1 - 1;
+</code></pre><h5 id="获得变量的基本数据类型"><a href="#获得变量的基本数据类型" class="headerlink" title="获得变量的基本数据类型"></a>获得变量的基本数据类型</h5><p>JavaScript中使用<strong>typeof</strong>关键字获得变量的基本数据类型</p>
+<pre><code> var s = &quot;Nicholas&quot;;
+var b = true;
+var i = 22;
+var u;
+var n = null;
+var o = new Object();
+
+alert(typeof s);  //string
+alert(typeof i);  //number
+alert(typeof b);  //boolean
+alert(typeof u);  //undefined
+alert(typeof n);  //object
+alert(typeof o);  //object
+</code></pre><h5 id="判断变量的引用的数据类型"><a href="#判断变量的引用的数据类型" class="headerlink" title="判断变量的引用的数据类型"></a>判断变量的引用的数据类型</h5><p>JavaScript中使用<strong>instanceof</strong>关键字判断变量的引用数据类型</p>
+<pre><code> var person = new Object();
+var colors = [];
+var pattern = new RegExp();
+
+alert(person instanceof Object);   //变量person是Object类型吗
+alert(colors instanceof Array);    //变量colors是Array类型吗
+alert(pattern instanceof RegExp);  //变量pattern是RegExp类型吗
+</code></pre><h5 id="JavaScript的基本数据类型"><a href="#JavaScript的基本数据类型" class="headerlink" title="JavaScript的基本数据类型"></a>JavaScript的基本数据类型</h5><p>JavaScript一共有5种基本数据类型，分别是<strong>Undefined</strong>、<strong>Null</strong>、<strong>Boolean</strong>、<strong>Number</strong>和<strong>String</strong>。</p>
+<h5 id="JavaScript中的引用类型"><a href="#JavaScript中的引用类型" class="headerlink" title="JavaScript中的引用类型"></a>JavaScript中的引用类型</h5><p>常见的引用类型：<strong>Object</strong>、<strong>Array</strong>、<strong>Function</strong>、<strong>RegExp</strong></p>
+<h5 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h5><p><strong>构造函数的定义：</strong>构造函数是一种特殊的方法，主要用在创建对象时初始化对象，即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中</p>
+<p><strong>构造函数的特点：</strong>  </p>
+<ul>
+<li>构造函数的函数名和类名相同</li>
+<li>构造函数定义时没有返回值</li>
+<li>构造函数只能用于定义对象时初始化对象  </li>
+</ul>
+<h5 id="创建数组的方式"><a href="#创建数组的方式" class="headerlink" title="创建数组的方式"></a>创建数组的方式</h5><p><strong>方式1：</strong>使用Array的构造函数创建数组</p>
+<pre><code>//创建一个空数组
+var colors = new Array();
+
+//创建一个保存20个数据的数组
+var colors = new Array(20);
+
+//创建一个保存了3个字符串的数组
+var colors = new Array(&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;);
+</code></pre><p><strong>方式2：</strong>使用Array的构造函数创建数组时也可以省略<strong>new</strong>操作符</p>
+<pre><code> //创建一个空数组
+var colors = Array();
+
+//创建一个保存20个数据的数组
+var colors = Array(20);
+
+//创建一个包含3个字符串的数组
+var colors = Array(&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;);
+</code></pre><p><strong>方式3：</strong>使用数组的字面量创建数组</p>
+<pre><code> //创建一个空数组
+var colors = [];
+
+//创建一个包含3个字符串的数组
+var colors = [&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;];
+</code></pre><h5 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h5><p><strong>栈的访问规则：</strong>先进后出<br><strong>队列的访问规则：</strong>先进先出</p>
+<h5 id="JavaScript中创建对象的方式"><a href="#JavaScript中创建对象的方式" class="headerlink" title="JavaScript中创建对象的方式"></a>JavaScript中创建对象的方式</h5><p><strong>方式1：</strong>使用Object创建对象</p>
+<pre><code>var person = new Object();
+person.name = &quot;Nicholas&quot;;
+person.age = 29;
+person.job = &quot;Software Engineer&quot;;
+
+person.showName = function () {
+    console.log(this.name);
+}
+
+person.showAge = function () {
+    console.log(this.age);
+}
+
+person.showJob = function () {
+    console.log(this.job);
+}
+</code></pre><p><strong>方式2：</strong>用对象字面量语法创建对象</p>
+<pre><code>var person = {
+    name: &quot;Nicholas&quot;,
+    age: 29,
+    job: &quot;Software Engineer&quot;,
+
+    showName: function () {
+        console.log(this.name);
+    },
+
+    showAge: function () {
+        console.log(this.age);
+    },
+
+    showJob: function () {
+        console.log(this.job);
+    }
+};
+</code></pre><p><strong>方法3：</strong>用函数封装特定接口创建对象</p>
+<pre><code>function createPerson(name, age, job) {
+    var o = new Object();
+    o.name = name;
+    o.age = age;
+    o.job = job;
+
+    o.showName = function () {
+        console.log(this.name);
+    };
+
+    o.showAge = function () {
+        console.log(this.age);
+    };
+
+    o.showJob = function () {
+        console.log(this.job);
+    };
+
+    return o;
+}
+
+var person1 = createPerson(&quot;Nicholas&quot;, 29, &quot;Software Engineer&quot;);
+person1.showName();
+person1.showAge();
+person1.showJob();
+
+var person2 = createPerson(&quot;Greg&quot;, 27, &quot;Doctor&quot;);
+person2.showName();
+person2.showAge();
+person2.showJob();
+</code></pre><p><strong>方法4：</strong>使用构造函数创建对象</p>
+<pre><code>function Person(name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+
+    this.showName = function () {
+        console.log(this.name);
+    };
+
+    this.showAge = function () {
+        console.log(this.age);
+    };
+
+    this.showJob = function () {
+        console.log(this.job);
+    }
+}
+
+var person1 = new Person(&quot;Nicholas&quot;, 29, &quot;Software Engineer&quot;);
+person1.showName();
+person1.showAge();
+person1.showJob();
+
+var person2 = new Person(&quot;Greg&quot;, 27, &quot;Doctor&quot;);
+person2.showName();
+person2.showAge();
+person2.showJob();
+</code></pre><p><strong>方法5：</strong>使用构造函数创建对象改进版</p>
+<pre><code>function Person(name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+
+    this.showName = new Function(&quot;console.log(this.name)&quot;);
+    this.showAge = new Function(&quot;console.log(this.age)&quot;);
+    this.showJob = new Function(&quot;console.log(this.job)&quot;);
+}
+
+var person1 = new Person(&quot;Nicholas&quot;, 29, &quot;Software Engineer&quot;);
+person1.showName();
+person1.showAge();
+person1.showJob();
+
+var person2 = new Person(&quot;Greg&quot;, 27, &quot;Doctor&quot;);
+person2.showName();
+person2.showAge();
+person2.showJob();
+</code></pre><p><strong>方法6：</strong>将成员函数放在外面</p>
+<pre><code>function Person(name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.showName = showName;
+    this.showAge = showAge;
+    this.showJob = showJob;
+}
+
+function showName() {
+    console.log(this.name);
+}
+
+function showAge() {
+    console.log(this.age);
+}
+
+function showJob() {
+    console.log(this.job);
+}
+
+var person1 = new Person(&quot;Nicholas&quot;, 29, &quot;Software Engineer&quot;);
+person1.showName();
+person1.showAge();
+person1.showJob();
+
+var person2 = new Person(&quot;Greg&quot;, 27, &quot;Doctor&quot;);
+person2.showName();
+person2.showAge();
+person2.showJob();
+</code></pre><p><strong>方式7：</strong>使用原型创建对象</p>
+<pre><code> function Person() {
+}
+
+Person.prototype.name = &quot;Nicholas&quot;;
+Person.prototype.age = 29;
+Person.prototype.job = &quot;Software Engineer&quot;;
+
+Person.prototype.showName = function () {
+    console.log(this.name);
+}
+
+Person.prototype.showAge = function () {
+    console.log(this.age);
+}
+
+Person.prototype.showJob = function () {
+    console.log(this.job);
+}
+
+var person1 = new Person();
+person1.showName();
+person1.showAge();
+person1.showJob();
+</code></pre><p><strong>方式8：</strong> 使用 ES6 提供的语法糖创建对象</p>
+<pre><code>class Person {
+  constructor (name, age, job) {
+    this.name = name
+    this.age = age
+    this.job = job
+  }
+
+  showName () {
+    console.log(this.name)
+  }
+
+  showAge () {
+    console.log(this.age)
+  }
+
+  showJob () {
+    console.log(this.job)
+  }
+}
+
+var person1 = new Person(&apos;Nicholas&apos;, 29, &apos;Software Engineer&apos;)
+person1.showName()
+person1.showAge()
+person1.showJob()
+
+var person2 = new Person(&apos;Greg&apos;, 27, &apos;Doctor&apos;)
+person2.showName()
+person2.showAge()
+person2.showJob()
+</code></pre><h5 id="对象继承"><a href="#对象继承" class="headerlink" title="对象继承"></a>对象继承</h5><p><strong>方法1：</strong> 使用 ES5 中提供的方法实现继承</p>
+<pre><code>function Animal(animalName, footNum) {
+  this.animalName = animalName;
+  this.footNum = footNum;
+
+  this.getAnimalInfo = function() {
+    console.log(&quot;我是&quot; + this.animalName + &quot;，我有&quot; + this.footNum + &quot;条腿。&quot;);
+  }
+}
+
+function Dog(animalName, footNum) {
+  Animal.call(this, animalName, footNum);
+
+  this.say = function() {
+    console.log(&quot;我的叫声是汪汪汪！&quot;);
+  }
+}
+
+function Chicken(animalName, footNum) {
+  Animal.call(this, animalName, footNum);
+
+  this.say = function() {
+    console.log(&quot;我的叫声是咯咯咯！&quot;);
+  }
+}
+
+var dog = new Dog(&quot;狗&quot;, 4);
+dog.getAnimalInfo();
+dog.say();
+
+var chicken = new Chicken(&quot;鸡&quot;, 2);
+chicken.getAnimalInfo();
+chicken.say();
+</code></pre><p>执行结果<br><img src="/images/2021052006.png" class="blog-image"></p>
+<p><strong>方法2：</strong> 使用 ES6 中提供的语法糖实现继承</p>
+<pre><code>// 定义一个动物类
+class Animal {
+  constructor(animalName, footNum) {
+      this.animalName = animalName;
+      this.footNum = footNum;
+  }
+
+  getAnimalInfo() {
+      console.log(&quot;我是&quot; + this.animalName + &quot;，我有&quot; + this.footNum + &quot;条腿。&quot;);
+  }
+}
+
+// 定义一个继承动物类的狗类
+class Dog extends Animal {
+  constructor(animalName, footNum) {
+      super(animalName, footNum);
+  }
+
+  say() {
+      console.log(&quot;我的叫声是汪汪汪！&quot;);
+  }
+}
+
+// 定义一个继承动物类的鸡类
+class Chicken extends Animal {
+  constructor(animalName, footNum) {
+      super(animalName, footNum);
+  }
+
+  say() {
+      console.log(&quot;我的叫声是咯咯咯！&quot;);
+  }
+}
+
+let dog = new Dog(&quot;狗&quot;, 4);
+dog.getAnimalInfo();
+dog.say();
+
+let chicken = new Chicken(&quot;鸡&quot;, 2);
+chicken.getAnimalInfo();
+chicken.say();
+</code></pre><p>执行结果<br><img src="/images/2021052006.png" class="blog-image"></p>
+<h5 id="new-操作符实现原理"><a href="#new-操作符实现原理" class="headerlink" title="new 操作符实现原理"></a>new 操作符实现原理</h5><pre><code>function Person(name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+
+    this.showName = function() {
+      console.log(&quot;name:&quot;, this.name);
+    }
+
+    this.showAge = function() {
+      console.log(&quot;age:&quot;, this.age)
+    }
+
+    this.showJob = function() {
+      console.log(&quot;job:&quot;, this.job)
+    }
+}
+
+function newObject(cstrFn, ...args) {
+
+    // 创建一个对象
+    const obj = {};
+
+    // 将 cstrFn 的原型链复制到对象的原型链上
+    obj.__proto__ = cstrFn.prototype
+
+    // 修改 cstrFn 函数的 this 指向并执
+    // 表示 obj 对象调用 cstrFn 方法，并向 cstrFn 方法中传递 args 参数
+    const res = cstrFn.apply(obj, args)
+
+    // 如果 cstrFn 的返回值是一个对象则返回，如果非对象则返回 obj
+    return typeof res === &apos;object&apos; ? res : obj;
+}
+
+// 创建 Person 对象
+let person = newObject(Person,  &quot;Nicholas&quot;, 29, &quot;Software Engineer&quot;)
+
+// 调用Person 对象中的方法
+person.showName()
+person.showAge()
+person.showJob()
+</code></pre><p>执行结果<br><img src="/images/2021061101.png" class="blog-image"></p>
+<h5 id="js中获得父节点下所有子节点的方法"><a href="#js中获得父节点下所有子节点的方法" class="headerlink" title="js中获得父节点下所有子节点的方法"></a>js中获得父节点下所有子节点的方法</h5><p><strong>childNodes：</strong> 获得的子节点中包含文本节点<br><strong>children:</strong> 获得的子节点中不包含文本节点</p>
+<h5 id="let、var、const-三者的区别"><a href="#let、var、const-三者的区别" class="headerlink" title="let、var、const 三者的区别"></a>let、var、const 三者的区别</h5><p><strong>var：</strong> 使用var声明的变量，其作用域为该语句所在的函数内，且存在变量提升现象<br><strong>let：</strong> 使用let声明的变量，其作用域为该语句所在的代码块内，不存在变量提升<br><strong>const：</strong> 使用const声明的是常量，在后面出现的代码中不能再修改该常量的值</p>
+<h5 id="属性的描述符"><a href="#属性的描述符" class="headerlink" title="属性的描述符"></a>属性的描述符</h5><p><strong>Configurable：</strong>表示能否通过delete删除属性，从而重新定义属性，能否修改属性的特性，或者能否把属性修改为访问器属性，它的默认值是true<br><strong>Enumerable：</strong>表示能否通过 for-in 循环返回属性，它的默认值是true<br><strong>Writable：</strong>表示能否修改属性的值，它的默认值是true<br><strong>Value：</strong>属性的值</p>
+<h5 id="访问器属性的特性"><a href="#访问器属性的特性" class="headerlink" title="访问器属性的特性"></a>访问器属性的特性</h5><p><strong>Configurable：</strong>表示能否通过delete删除属性，从而重新定义属性，能否修改属性的特性，或者能否把属性修改为访问器属性，它的默认值是true<br><strong>Enumerable：</strong>表示能否通过 for-in 循环返回属性，它的默认值是true<br><strong>Get：</strong>在读取属性时调用的函数，默认值为undefined<br><strong>Set：</strong>在写入属性时调用的函数，默认值为undefined</p>
+<h5 id="target-与-currentTarget"><a href="#target-与-currentTarget" class="headerlink" title="target 与 currentTarget"></a>target 与 currentTarget</h5><p><strong>target：</strong>返回触发事件的那个节点，即事件最初发生的节点<br><strong>currentTarget：</strong>返回事件当前所在的节点，即正在执行的监听函数所绑定的那个节点</p>
+<h5 id="宏任务与微任务"><a href="#宏任务与微任务" class="headerlink" title="宏任务与微任务"></a>宏任务与微任务</h5><p><strong>宏任务：</strong> 宿主发起的任务称为宏任务<br><strong>微任务：</strong> JavaScript 引擎发起的任务称为微任务</p>
+<blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/《JavaScript高级程序设计》读书笔记">《JavaScript高级程序设计》读书笔记</a>】</p>
+</blockquote>
+
+                
+<p class="pink-link-context">
+    <a href="/blog/移动Web学习笔记/" rel="next" title="移动Web学习笔记">
+    上一篇：移动Web学习笔记
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/blog/常用的Git命令/" rel="next" title="常用的Git命令">
+    下一篇：常用的Git命令
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Thu May 04 2017 11:40:36 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/3170066893?is_all=1" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/meishadevs" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                <div class="site-visitors-container white-text">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="http://zhangwenli.com/" target="_blank">羡辙的个人主页</a>
+                
+                    <a class="social-link" href="http://www.zhangxinxu.com/" target="_blank">张鑫旭的个人主页</a>
+                
+                    <a class="social-link" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a>
+                
+                    <a class="social-link" href="https://me.ursb.me/" target="_blank">Airing 的小屋</a>
+                
+                    <a class="social-link" href="http://www.runoob.com/" target="_blank">菜鸟教程</a>
+                
+                    <a class="social-link" href="https://jysperm.me/" target="_blank">王子亭的博客</a>
+                
+                    <a class="social-link" href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a>
+                
+                    <a class="social-link" href="https://wangdoc.com/" target="_blank">网道</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2018 meishadevs All rights reserved 赣ICP备18015008号
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=61543111" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>meishadev&#39;s blog</title>
+  
+  <subtitle>meishadevs的技术博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://meishadevs.com/"/>
+  <updated>2022-12-13T01:05:54.074Z</updated>
+  <id>http://meishadevs.com/</id>
+  
+  <author>
+    <name>meishadevs</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在Postman中配置Token</title>
+    <link href="http://meishadevs.com/blog/%E5%9C%A8Postman%E4%B8%AD%E9%85%8D%E7%BD%AEToken/"/>
+    <id>http://meishadevs.com/blog/在Postman中配置Token/</id>
+    <published>2022-12-12T08:19:49.000Z</published>
+    <updated>2022-12-13T01:05:54.074Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本篇文章是基于 &lt;a href=&quot;https://github.com/meishadevs/store-node&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;store-node&lt;/a&gt; 项目介绍在 Postman 中配置 Token 的方法，store-node 是基于 node.js、express、mongodb、mongoose 开发的的&lt;a href=&quot;https://github.com/meishadevs/store-vue&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;电商网项目&lt;/a&gt;服务端&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Node.js" scheme="http://meishadevs.com/categories/Node-js/"/>
+    
+    
+      <category term="Node.js" scheme="http://meishadevs.com/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB数据库学习笔记</title>
+    <link href="http://meishadevs.com/blog/MongoDB%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://meishadevs.com/blog/MongoDB数据库学习笔记/</id>
+    <published>2022-09-27T05:40:07.000Z</published>
+    <updated>2022-11-19T05:43:30.831Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;查看-MongoDB-数据库的版本&quot;&gt;&lt;a href=&quot;#查看-MongoDB-数据库的版本&quot; class=&quot;headerlink&quot; title=&quot;查看 MongoDB 数据库的版本&quot;&gt;&lt;/a&gt;查看 MongoDB 数据库的版本&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;db
+      
+    
+    </summary>
+    
+      <category term="MongoDB" scheme="http://meishadevs.com/categories/MongoDB/"/>
+    
+      <category term="数据库" scheme="http://meishadevs.com/categories/MongoDB/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="MongoDB" scheme="http://meishadevs.com/tags/MongoDB/"/>
+    
+      <category term="数据库" scheme="http://meishadevs.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下搭建Node.js环境</title>
+    <link href="http://meishadevs.com/blog/Linux%E4%B8%8B%E6%90%AD%E5%BB%BANode.js%E7%8E%AF%E5%A2%83/"/>
+    <id>http://meishadevs.com/blog/Linux下搭建Node.js环境/</id>
+    <published>2022-05-30T06:52:49.000Z</published>
+    <updated>2022-06-07T08:41:59.990Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;搭建环境&quot;&gt;&lt;a href=&quot;#搭建环境&quot; class=&quot;headerlink&quot; title=&quot;搭建环境&quot;&gt;&lt;/a&gt;搭建环境&lt;/h2&gt;&lt;h3 id=&quot;下载-Node-js-安装包&quot;&gt;&lt;a href=&quot;#下载-Node-js-安装包&quot; class=&quot;headerli
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://meishadevs.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://meishadevs.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下搭建Java环境</title>
+    <link href="http://meishadevs.com/blog/Linux%E4%B8%8B%E6%90%AD%E5%BB%BAJava%E7%8E%AF%E5%A2%83/"/>
+    <id>http://meishadevs.com/blog/Linux下搭建Java环境/</id>
+    <published>2022-05-24T09:02:56.000Z</published>
+    <updated>2022-06-07T08:41:59.974Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇文章介绍的是在 Linux 下安装 jdk 1.8 的方法&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://meishadevs.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://meishadevs.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021年终总结</title>
+    <link href="http://meishadevs.com/blog/2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://meishadevs.com/blog/2021年终总结/</id>
+    <published>2021-12-31T06:29:27.000Z</published>
+    <updated>2023-03-22T03:22:37.597Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;去年忽如其来的疫情在今年仍在持续，好在国内的疫情形势基本都控制住了，我们佩戴口罩已基本成了出门必做的事情，今年在工作上和生活上都有了些许变化，公司从龙岗搬到了福田，现在公司是和其它几个分公司在一起办公，办公场地也比之前的也好了很多也大了很多，住的宿舍搬到了南山，每天有班车接送上下班。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="总结" scheme="http://meishadevs.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="总结" scheme="http://meishadevs.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用echarts绘制地图</title>
+    <link href="http://meishadevs.com/blog/%E4%BD%BF%E7%94%A8echarts%E7%BB%98%E5%88%B6%E5%9C%B0%E5%9B%BE/"/>
+    <id>http://meishadevs.com/blog/使用echarts绘制地图/</id>
+    <published>2021-09-09T02:12:49.000Z</published>
+    <updated>2022-06-07T08:42:00.115Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近我参与了几个数据大屏可视化项目，项目中要求在大屏上以地图的形式直观的展示某一地区的某个业务数据，在绘制地图时踩的坑还是挺多的，特此用一篇博客记录一下绘制地图的过程，下面会以展示江西省下面各城市手机品牌数为例介绍地图的绘制方法。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="echarts" scheme="http://meishadevs.com/categories/echarts/"/>
+    
+    
+      <category term="echarts" scheme="http://meishadevs.com/tags/echarts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020年终总结</title>
+    <link href="http://meishadevs.com/blog/2020%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://meishadevs.com/blog/2020年终总结/</id>
+    <published>2020-12-31T06:39:21.000Z</published>
+    <updated>2023-03-22T03:23:06.639Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;远程工作&quot;&gt;&lt;a href=&quot;#远程工作&quot; class=&quot;headerlink&quot; title=&quot;远程工作&quot;&gt;&lt;/a&gt;远程工作&lt;/h3&gt;&lt;p&gt;2020年忽如其来的疫情，刚开始所有人都被打得措手不及，我们小区里也有两列确诊病例，小区很快进入了全封闭管理模式，每天只能呆在家里，这应该算是我工作以来在家呆的最久的时候吧，到公司开工的时候，疫情形式也没有明显好转，我们公司便实行了远程工作的上班方式，每天在钉钉中如实上报个人健康情况，在钉钉中打卡，平时和项目组的同事聊天主要用钉钉，开会用腾讯会议，远程工作期间即有优势也有劣势，优势是工作比较自由，劣势就是和项目成员沟通有点不太方便，一般我首先采用用钉钉发送信息沟通，如果用钉钉沟通不明白，便会直接打电话和项目成员沟通，最后感觉远程工作的方式对项目的影响不是很大，能够按时完成项目安排，在家远程工作大概一个月后，疫情形式有所好转，公司便恢复了现场办公，回到深圳后隔离了一周后便进入公司现场办公了，为了疫情防控在现场办公时进入公司需要测量体温，下午还需要测量一次体温，上班时需要全程佩戴口罩。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="总结" scheme="http://meishadevs.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="总结" scheme="http://meishadevs.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深拷贝与浅拷贝</title>
+    <link href="http://meishadevs.com/blog/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/"/>
+    <id>http://meishadevs.com/blog/深拷贝与浅拷贝/</id>
+    <published>2020-08-31T12:07:21.000Z</published>
+    <updated>2022-06-07T08:42:00.274Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在平时的开发中使用深拷贝与浅拷贝的场景还是挺多的，比如从 api 接口中获取到请求的结果后，我们通常将请求结果通过浅拷贝的形式赋值给一个对象或数组。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://meishadevs.com/categories/JavaScript/"/>
+    
+      <category term="ES6" scheme="http://meishadevs.com/categories/JavaScript/ES6/"/>
+    
+    
+      <category term="JavaScript" scheme="http://meishadevs.com/tags/JavaScript/"/>
+    
+      <category term="ES6" scheme="http://meishadevs.com/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2019年终总结</title>
+    <link href="http://meishadevs.com/blog/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://meishadevs.com/blog/2019年终总结/</id>
+    <published>2019-12-31T01:38:09.000Z</published>
+    <updated>2022-06-07T08:41:59.924Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;进入新项目组&quot;&gt;&lt;a href=&quot;#进入新项目组&quot; class=&quot;headerlink&quot; title=&quot;进入新项目组&quot;&gt;&lt;/a&gt;进入新项目组&lt;/h3&gt;&lt;p&gt;2019年对于我来说是非常有挑战的一年，我在2019年1月份被调到了一个新的项目组，新项目是一个生物医疗类的项目，面对的业务和技术都是全新的，进入项目组后首先就确定了项目采用 spingBoot + Vue.js 进行开发，对于 Vue.js  来说我还是比较熟悉的，因为我之前用Vue.js做了一个&lt;a href=&quot;https://github.com/meishadevs/dswz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简单的电商类网站&lt;/a&gt; ，但是springBoot对于我来说是完全不了解，这也是我第一次听说springBoot，为了让项目组的成员熟悉SpringBoot + Vue 相关的技术，公司组织了一次相关的培训，有两个讲师分别给我们培训了相关的技术，对于SpringBoot 的培训，我感觉一点都听不懂，可能是因为之前没接触过吧，在听Vue相关的培训的时候，还是能听懂的，因为我之前用Vue做过一个项目，我在听Vue的时候，也发现了一些我之前在项目中做的一些不足之处，比如api请求没有统一放在一个文件夹下面，公共配置类放置不合理，eslit 检测没通过的导致代码不能提交时，修改 eslint 代码检测规则，实际上 eslint 代码检测规则是不能随便改变的，可复用的代码应该要封装成公共组件。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="总结" scheme="http://meishadevs.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="总结" scheme="http://meishadevs.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 使用技巧</title>
+    <link href="http://meishadevs.com/blog/Mac%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://meishadevs.com/blog/Mac下常用的快捷键/</id>
+    <published>2019-06-14T12:53:50.000Z</published>
+    <updated>2022-06-07T08:42:00.005Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;常用快捷键&quot;&gt;&lt;a href=&quot;#常用快捷键&quot; class=&quot;headerlink&quot; title=&quot;常用快捷键&quot;&gt;&lt;/a&gt;常用快捷键&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;复制 &lt;strong&gt;command + C&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;粘贴 &lt;strong&gt;
+      
+    
+    </summary>
+    
+      <category term="Mac" scheme="http://meishadevs.com/categories/Mac/"/>
+    
+    
+      <category term="Mac" scheme="http://meishadevs.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot学习笔记</title>
+    <link href="http://meishadevs.com/blog/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://meishadevs.com/blog/SpringBoot学习笔记/</id>
+    <published>2019-05-31T06:16:06.000Z</published>
+    <updated>2022-06-07T08:42:00.021Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h5 id=&quot;只要有一次更新失败，就会出现回滚&quot;&gt;&lt;a href=&quot;#只要有一次更新失败，就会出现回滚&quot; class=&quot;headerlink&quot; title=&quot;只要有一次更新失败，就会出现回滚&quot;&gt;&lt;/a&gt;只要有一次更新失败，就会出现回滚&lt;/h5
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://meishadevs.com/categories/Java/"/>
+    
+      <category term="SpringBoot" scheme="http://meishadevs.com/categories/Java/SpringBoot/"/>
+    
+    
+      <category term="Java" scheme="http://meishadevs.com/tags/Java/"/>
+    
+      <category term="SpringBoot" scheme="http://meishadevs.com/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pom.xml文件注释</title>
+    <link href="http://meishadevs.com/blog/pom-xml%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A/"/>
+    <id>http://meishadevs.com/blog/pom-xml文件注释/</id>
+    <published>2019-05-31T05:57:23.000Z</published>
+    <updated>2022-06-07T08:42:00.036Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;项目名称&quot;&gt;&lt;a href=&quot;#项目名称&quot; class=&quot;headerlink&quot; title=&quot;项目名称&quot;&gt;&lt;/a&gt;项目名称&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;name&amp;gt;spring&amp;lt;/name&amp;gt;
+&lt;/co
+      
+    
+    </summary>
+    
+      <category term="SpringBoot" scheme="http://meishadevs.com/categories/SpringBoot/"/>
+    
+      <category term="java" scheme="http://meishadevs.com/categories/SpringBoot/java/"/>
+    
+    
+      <category term="Java" scheme="http://meishadevs.com/tags/Java/"/>
+    
+      <category term="SpringBoot" scheme="http://meishadevs.com/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用的Linux命令</title>
+    <link href="http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84Linux%E5%91%BD%E4%BB%A4/"/>
+    <id>http://meishadevs.com/blog/常用的Linux命令/</id>
+    <published>2019-05-31T01:43:20.000Z</published>
+    <updated>2023-03-20T07:24:23.254Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;整理的一些常用的 linux 命令&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://meishadevs.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://meishadevs.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在iview中实现列表远程排序</title>
+    <link href="http://meishadevs.com/blog/%E5%9C%A8iview%E4%B8%AD%E5%AE%9E%E7%8E%B0%E5%88%97%E8%A1%A8%E8%BF%9C%E7%A8%8B%E6%8E%92%E5%BA%8F/"/>
+    <id>http://meishadevs.com/blog/在iview中实现列表远程排序/</id>
+    <published>2019-04-23T12:56:06.000Z</published>
+    <updated>2022-06-07T08:42:00.161Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;iview中可以通过给列表中每个字段设置sortable: true可以实现字段排序，但是当列表中的数据量比较多时，列表中会有分页，此时只能对当前页进行排序，针对这个问题,iview中有一个远程排序功能，可以通过远程排序实现多页数据的排序&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://meishadevs.com/categories/Vue/"/>
+    
+      <category term="iview" scheme="http://meishadevs.com/categories/Vue/iview/"/>
+    
+    
+      <category term="Vue" scheme="http://meishadevs.com/tags/Vue/"/>
+    
+      <category term="iview" scheme="http://meishadevs.com/tags/iview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年终总结</title>
+    <link href="http://meishadevs.com/blog/2018%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://meishadevs.com/blog/2018年终总结/</id>
+    <published>2018-12-31T11:56:20.000Z</published>
+    <updated>2023-03-22T03:21:41.085Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2018年对于我来说应该是收获最大的一年吧，在这一年刚好是我的本命年，还有我觉的这一年我做了一个非常重要的决定，去深圳找工作，幸运的是找了几个月后终于找到了。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="总结" scheme="http://meishadevs.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="总结" scheme="http://meishadevs.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用的JavaScript代码块</title>
+    <link href="http://meishadevs.com/blog/%E5%B8%B8%E7%94%A8%E7%9A%84JavaScript%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
+    <id>http://meishadevs.com/blog/常用的JavaScript代码块/</id>
+    <published>2018-12-17T01:23:40.000Z</published>
+    <updated>2023-05-23T01:34:09.831Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;使用箭头函数简化代码&quot;&gt;&lt;a href=&quot;#使用箭头函数简化代码&quot; class=&quot;headerlink&quot; title=&quot;使用箭头函数简化代码&quot;&gt;&lt;/a&gt;使用箭头函数简化代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;var obj = {
+
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://meishadevs.com/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://meishadevs.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码规范类问题修改方法</title>
+    <link href="http://meishadevs.com/blog/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E7%B1%BB%E9%97%AE%E9%A2%98%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/"/>
+    <id>http://meishadevs.com/blog/代码规范类问题修改方法/</id>
+    <published>2018-11-19T07:44:47.000Z</published>
+    <updated>2022-06-07T08:42:00.068Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt;Define a constant instead of duplicating this literal “total” 3（表示一个字符串重复出现了3次）&lt;br&gt;&lt;strong&gt;解决方法：&lt;
+      
+    
+    </summary>
+    
+      <category term="代码规范" scheme="http://meishadevs.com/categories/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+    
+      <category term="代码规范" scheme="http://meishadevs.com/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小程序开发笔记</title>
+    <link href="http://meishadevs.com/blog/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <id>http://meishadevs.com/blog/小程序开发笔记/</id>
+    <published>2018-10-09T09:32:47.000Z</published>
+    <updated>2022-06-07T08:42:00.177Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近我参与了一个小程序的开发，对于小程序开发我是零基础，所以特此记录一些小程序开发中的技术点。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="小程序" scheme="http://meishadevs.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="小程序" scheme="http://meishadevs.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>idea使用技巧</title>
+    <link href="http://meishadevs.com/blog/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>http://meishadevs.com/blog/idea使用技巧/</id>
+    <published>2018-08-07T03:04:05.000Z</published>
+    <updated>2022-06-07T08:42:00.036Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;基础用法&quot;&gt;&lt;a href=&quot;#基础用法&quot; class=&quot;headerlink&quot; title=&quot;基础用法&quot;&gt;&lt;/a&gt;基础用法&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;idea中导入jar包：&lt;/strong&gt; 将光标移动到需要导入 jar 包的类上，并按 Alt
+      
+    
+    </summary>
+    
+      <category term="idea" scheme="http://meishadevs.com/categories/idea/"/>
+    
+    
+      <category term="idea" scheme="http://meishadevs.com/tags/idea/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库中的视图简介</title>
+    <link href="http://meishadevs.com/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E8%A7%86%E5%9B%BE%E7%AE%80%E4%BB%8B/"/>
+    <id>http://meishadevs.com/blog/数据库中的视图简介/</id>
+    <published>2018-07-10T11:42:51.000Z</published>
+    <updated>2022-06-07T08:42:00.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;为什么要用视图&quot;&gt;&lt;a href=&quot;#为什么要用视图&quot; class=&quot;headerlink&quot; title=&quot;为什么要用视图&quot;&gt;&lt;/a&gt;为什么要用视图&lt;/h1&gt;&lt;p&gt;我们在从数据库中查询某些数据时通常是使用 &lt;code&gt;select * from TableName
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://meishadevs.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="http://meishadevs.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+</feed>

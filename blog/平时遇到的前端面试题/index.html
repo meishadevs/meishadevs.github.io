@@ -1,0 +1,1312 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>平时遇到的前端面试题 | meishadevs的技术博客</title>
+    <meta name="author" content="meishadevs">
+    
+    <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="平时遇到的前端面试题">
+    <meta property="og:site_name" content="meishadev&#39;s blog">
+
+    
+    <meta property="og:image" content="undefined">
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="meishadev&#39;s blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/tranquil-heart.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+</html>
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">meishadev&#39;s blog</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://meishadevs.com/images/touxiang.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">meishadevs</p>
+                        <p class="desc">Web前端</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/总结/">
+                    总结 <span class="right">4 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Fireworks/">
+                    Fireworks <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/JavaScript/">
+                    JavaScript <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/JavaScript/ES6/">
+                    ES6 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/GoJS/">
+                    GoJS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Mac/">
+                    Mac <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/MongoDB/">
+                    MongoDB <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/MongoDB/数据库/">
+                    数据库 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Photoshop/">
+                    Photoshop <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/数据库/">
+                    数据库 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/idea/">
+                    idea <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/SpringBoot/java/">
+                    java <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/代码规范/">
+                    代码规范 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/部署/">
+                    部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Gulp/">
+                    Gulp <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Gulp/前端自动化/">
+                    前端自动化 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/CSS/">
+                    CSS <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/NVM/">
+                    NVM <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/NVM/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/echarts/">
+                    echarts <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Git/">
+                    Git <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue/">
+                    Vue <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Vue/iview/">
+                    iview <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/移动Web/">
+                    移动Web <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/小程序/">
+                    小程序 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/WebStrom/">
+                    WebStrom <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/WebStrom/Chrome/">
+                    Chrome <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/前端/">
+                    前端 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/面试/">面试</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>平时遇到的前端面试题</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2018-04-10T09:07:48.000Z"><a href="/blog/平时遇到的前端面试题/">2018-04-10</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/面试/" class="chip pink lighten-1">面试</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#10-‘20’-再加-‘20’-呢？"><span class="section table-of-contents-text">10 + ‘20’ = ? 再加 ‘20’ 呢？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#请写出-Ajax-请求中用到的函数"><span class="section table-of-contents-text">请写出 Ajax 请求中用到的函数</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用正则表达式提取出url值为-https-map-baidu-com-x-y-z-中的-map-baidu-com"><span class="section table-of-contents-text">使用正则表达式提取出url值为 https://map.baidu.com/x/y/z 中的 map.baidu.com</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用-ES6-的方法实现数组去重"><span class="section table-of-contents-text">使用 ES6 的方法实现数组去重</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#设计一个函数实现-add-3-4"><span class="section table-of-contents-text">设计一个函数实现 add(3)(4)</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用Ajax实现一个表单提交功能，并跳转到提交的地址，（可以使用-jQuery-或-Zepto）"><span class="section table-of-contents-text">使用Ajax实现一个表单提交功能，并跳转到提交的地址，（可以使用 jQuery 或 Zepto）</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#在完成上一题后使用-Promise-再实现一遍"><span class="section table-of-contents-text">在完成上一题后使用 Promise 再实现一遍</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#JavaScript中的基本数据类型"><span class="section table-of-contents-text">JavaScript中的基本数据类型</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#一道响应式布局的题目"><span class="section table-of-contents-text">一道响应式布局的题目</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#call、apply的作用与区别"><span class="section table-of-contents-text">call、apply的作用与区别</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#标准盒模型和怪异盒模型的区别"><span class="section table-of-contents-text">标准盒模型和怪异盒模型的区别</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#em-与-rem-的区别"><span class="section table-of-contents-text">em 与 rem 的区别</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#localStorage-与-sessionStorage-的区别"><span class="section table-of-contents-text">localStorage 与 sessionStorage 的区别</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#元素层叠"><span class="section table-of-contents-text">元素层叠</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用原型现继承"><span class="section table-of-contents-text">使用原型现继承</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#JavaScript-中事件绑定的方式"><span class="section table-of-contents-text">JavaScript 中事件绑定的方式</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#设计一个函数实现判断一个数据的数据类型是不是数组"><span class="section table-of-contents-text">设计一个函数实现判断一个数据的数据类型是不是数组</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#什么是浏览器的同源策略？"><span class="section table-of-contents-text">什么是浏览器的同源策略？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#什么是浏览器的标准模式和怪异模式？"><span class="section table-of-contents-text">什么是浏览器的标准模式和怪异模式？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#预处理CSS有什么优点和缺点？"><span class="section table-of-contents-text">预处理CSS有什么优点和缺点？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Web性能优化的手段有哪些？"><span class="section table-of-contents-text">Web性能优化的手段有哪些？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#常见的-HTTP-状态码有哪些？"><span class="section table-of-contents-text">常见的 HTTP 状态码有哪些？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#下面代码的执行结果"><span class="section table-of-contents-text">下面代码的执行结果</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#下面代码的输出结果"><span class="section table-of-contents-text">下面代码的输出结果</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#如何理解this"><span class="section table-of-contents-text">如何理解this</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#写出以字母开头，可以包含字母或数字的4—10位的用户密码的正则表达式"><span class="section table-of-contents-text">写出以字母开头，可以包含字母或数字的4—10位的用户密码的正则表达式</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#实现-child-元素在-parent-元素中水平垂直居中"><span class="section table-of-contents-text">实现 child 元素在 parent 元素中水平垂直居中</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#DOM事件流包括那三个阶段"><span class="section table-of-contents-text">DOM事件流包括那三个阶段</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#写出js代码合并下列两个数组，并去重"><span class="section table-of-contents-text">写出js代码合并下列两个数组，并去重</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#下面这段代码的输出结果是，如何使它输出1、2、3、4"><span class="section table-of-contents-text">下面这段代码的输出结果是，如何使它输出1、2、3、4</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#4，4，10，10，加减乘除，怎么出24点？四个数字分别只能用一次"><span class="section table-of-contents-text">4，4，10，10，加减乘除，怎么出24点？四个数字分别只能用一次</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#如果你有无穷多的水，一个容积为3L的和5L的提桶，你如何准确称出4L的水"><span class="section table-of-contents-text">如果你有无穷多的水，一个容积为3L的和5L的提桶，你如何准确称出4L的水</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#如何实现快速排序"><span class="section table-of-contents-text">如何实现快速排序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#http-请求中的三次握手"><span class="section table-of-contents-text">http 请求中的三次握手</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#参考链接"><span class="section table-of-contents-text">参考链接</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>我最近一个多月都在忙着找工作，这些是在面试过程中遇到的一些面试题。<br><a id="more"></a></p>
+<h3 id="10-‘20’-再加-‘20’-呢？"><a href="#10-‘20’-再加-‘20’-呢？" class="headerlink" title="10 + ‘20’ = ? 再加 ‘20’ 呢？"></a>10 + ‘20’ = ? 再加 ‘20’ 呢？</h3><pre><code>10 + &apos;20&apos; = &apos;1020&apos; 
+&apos;1020&apos; + &apos;20&apos; = &apos;102020&apos;
+</code></pre><h3 id="请写出-Ajax-请求中用到的函数"><a href="#请写出-Ajax-请求中用到的函数" class="headerlink" title="请写出 Ajax 请求中用到的函数"></a>请写出 Ajax 请求中用到的函数</h3><pre><code>var xhr = new XMLHttpRequest();
+xhr.open(&apos;GET/POST&apos;, &apos;http://localhost:8080?username=meishadevs&apos;, true);
+xhr.onreadystatechange = function() {};
+xhr.send();
+</code></pre><h3 id="使用正则表达式提取出url值为-https-map-baidu-com-x-y-z-中的-map-baidu-com"><a href="#使用正则表达式提取出url值为-https-map-baidu-com-x-y-z-中的-map-baidu-com" class="headerlink" title="使用正则表达式提取出url值为 https://map.baidu.com/x/y/z 中的 map.baidu.com"></a>使用正则表达式提取出url值为 <a href="https://map.baidu.com/x/y/z" target="_blank" rel="noopener">https://map.baidu.com/x/y/z</a> 中的 <a href="map.baidu.com">map.baidu.com</a></h3><pre><code>// 会匹配两次,第一次使用整个正则表达式去匹配，第二次使用子正则表达式去匹配，匹配结果以一个数组的形式返回
+/https:\/\/([^\/]+)/.exec(&quot;https://map.baidu.com/x/y/z&quot;)[1];
+
+// 会匹配两次，第一次使用整个正则表达式去匹配，第二次使用子正则表达式去匹配，匹配结果以一个数组的形式返回
+&quot;https://map.baidu.com/x/y/z&quot;.match(/https:\/\/([^\/]+)/)[1];
+
+// 会采用子正则表达式去匹配，并返回与第一个子表达式匹配的结果
+&quot;https://map.baidu.com/x/y/z&quot;.replace(/^https:\/\/([^\/]+)(\/[a-z])+$/, &quot;$1&quot;);
+</code></pre><p>执行结果<br><img src="/images/2021051301.png" class="blog-image"></p>
+<h3 id="使用-ES6-的方法实现数组去重"><a href="#使用-ES6-的方法实现数组去重" class="headerlink" title="使用 ES6 的方法实现数组去重"></a>使用 ES6 的方法实现数组去重</h3><pre><code>let array = [1, 1, 1, 1, 2, 3, 4, 4, 5, 3];
+let set = new Set(array);
+let arr = Array.from(set);
+</code></pre><h3 id="设计一个函数实现-add-3-4"><a href="#设计一个函数实现-add-3-4" class="headerlink" title="设计一个函数实现 add(3)(4)"></a>设计一个函数实现 add(3)(4)</h3><pre><code>function add(a) {
+    return function(b) {
+        return a + b;
+    }
+}
+
+add(3)(4)
+</code></pre><p>ES6的写法</p>
+<pre><code>add = a =&gt; b =&gt; a + b
+add(3)(4)
+</code></pre><p>对ES6写法做一个变形</p>
+<pre><code>add = a =&gt; (b =&gt; a + b)
+</code></pre><p>再变</p>
+<pre><code>add = function (a) {
+    return (b =&gt; a + b)
+}
+</code></pre><p>再变</p>
+<pre><code>add = function (a) {
+    return function (b) {
+        return a + b;
+    }
+}
+</code></pre><h3 id="使用Ajax实现一个表单提交功能，并跳转到提交的地址，（可以使用-jQuery-或-Zepto）"><a href="#使用Ajax实现一个表单提交功能，并跳转到提交的地址，（可以使用-jQuery-或-Zepto）" class="headerlink" title="使用Ajax实现一个表单提交功能，并跳转到提交的地址，（可以使用 jQuery 或 Zepto）"></a>使用Ajax实现一个表单提交功能，并跳转到提交的地址，（可以使用 jQuery 或 Zepto）</h3><pre><code>$.ajax({
+    url: &quot;http://page/login&quot;,
+    type: &quot;post&quot;,
+    contentType: &quot;application/json; charset=utf-8&quot;,
+    data:  JSON.stringify({
+        username: &quot;meishadevs&quot;,
+        password: &quot;000000&quot;
+    }),
+
+    success:function (res) {
+        // 跳转到首页
+        window.location = &quot;http://page/home&quot;
+    },
+
+    error:function (error) {
+        console.log(&quot;error:&quot;, error);
+    }
+}); 
+</code></pre><h3 id="在完成上一题后使用-Promise-再实现一遍"><a href="#在完成上一题后使用-Promise-再实现一遍" class="headerlink" title="在完成上一题后使用 Promise 再实现一遍"></a>在完成上一题后使用 Promise 再实现一遍</h3><pre><code>function sendJSON(url) {
+  // 创建一个 promise 对象
+  let promise = new Promise(function(resolve, reject) {
+    let xhr = new XMLHttpRequest();
+
+    // 新建一个 http 请求
+    xhr.open(&quot;POST&quot;, url, true);
+
+    // 设置状态的监听函数
+    xhr.onreadystatechange = function() {
+      if (this.readyState !== 4) {
+        return;
+      }
+
+      // 当请求成功或失败时，改变 promise 的状态
+      if (this.status === 200) {
+        resolve(this.response);
+      } else {
+        reject(new Error(this.statusText));
+      }
+    };
+
+    // 设置错误监听函数
+    xhr.onerror = function() {
+      reject(new Error(this.statusText));
+    };
+
+    // 设置响应的数据类型
+    xhr.responseType = &quot;json&quot;;
+
+    // 设置请求头信息
+    xhr.setRequestHeader(&quot;Accept&quot;, &quot;application/json&quot;);
+
+    // 发送 http 请求
+    xhr.send(null);
+  });
+
+  return promise;
+}
+</code></pre><h3 id="JavaScript中的基本数据类型"><a href="#JavaScript中的基本数据类型" class="headerlink" title="JavaScript中的基本数据类型"></a>JavaScript中的基本数据类型</h3><pre><code>Number、String、Boolean、Null、Undefined
+</code></pre><h3 id="一道响应式布局的题目"><a href="#一道响应式布局的题目" class="headerlink" title="一道响应式布局的题目"></a>一道响应式布局的题目</h3><h3 id="call、apply的作用与区别"><a href="#call、apply的作用与区别" class="headerlink" title="call、apply的作用与区别"></a>call、apply的作用与区别</h3><p>call 和 apply 都是为了改变函数体内部 this 的指向，它们的第一个参数都是调用函数的对象，call方法接收由若干个参数组成的参数列表，apply方法接收的是一个包含多个参数的数组</p>
+<p>例如使用<strong>call</strong>获取一组数字中的最大值</p>
+<pre><code>Math.max.call(null, 1, 3, 5, 8, 2)
+</code></pre><p>例如使用<strong>apply</strong>获取一组数字中的最大值</p>
+<pre><code>Math.max.apply(null, [1, 3, 5, 8, 2])
+</code></pre><h3 id="标准盒模型和怪异盒模型的区别"><a href="#标准盒模型和怪异盒模型的区别" class="headerlink" title="标准盒模型和怪异盒模型的区别"></a>标准盒模型和怪异盒模型的区别</h3><p>标准盒模型的 box-sizing 属性的值为 content-box<br>怪异盒模型的 box-sizing 属性的值为 border-box<br>标准盒模型中 width = 内容的宽度<br>怪异盒模型中 width = 内容的宽度 + padding + border  </p>
+<h3 id="em-与-rem-的区别"><a href="#em-与-rem-的区别" class="headerlink" title="em 与 rem 的区别"></a>em 与 rem 的区别</h3><p>rem 表示根节点(html标签)的字体大小的倍数<br>当 em 作为 font-size 的单位时，表示相对于父元素的 font-size 值的倍数<br>当 em作为其他属性单位时，代表自身字体大小的倍数</p>
+<h3 id="localStorage-与-sessionStorage-的区别"><a href="#localStorage-与-sessionStorage-的区别" class="headerlink" title="localStorage 与 sessionStorage 的区别"></a>localStorage 与 sessionStorage 的区别</h3><p>使用 localStorage 保存的数据，除非手动清除，否则会永久保存<br>使用 sessionStorage 保存的数据仅在当前会话下有效，关闭页面或浏览器后会被清除  </p>
+<h3 id="元素层叠"><a href="#元素层叠" class="headerlink" title="元素层叠"></a>元素层叠</h3><p>参考张鑫旭大神的文章：<a href="http://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/" target="_blank" rel="noopener">深入理解CSS中的层叠上下文和层叠顺序</a></p>
+<h3 id="使用原型现继承"><a href="#使用原型现继承" class="headerlink" title="使用原型现继承"></a>使用原型现继承</h3><p>使用 __proto__ 实现继承（不推荐使用这种方式）</p>
+<pre><code>//创建animal对象
+var animal = {
+    name: &quot;animal&quot;,
+
+    eat: function () {
+        console.log(this.name + &quot; is eating&quot;);
+    }
+};
+
+//创建dog对象
+var dog = {
+    name: &quot;dog&quot;,
+
+    //指向animal对象（dog继承自animal）
+    __proto__: animal
+};
+
+//创建cat对象
+var cat = {
+    name: &quot;cat&quot;,
+
+    //指向animal对象(cat继承自animal)
+    __proto__: animal
+};
+
+dog.eat();
+cat.eat();
+</code></pre><p>使用 prototype 实现继承</p>
+<pre><code>//创建animal对象
+var animal = {
+    name: &quot;animal&quot;,
+
+    eat: function () {
+        console.log(this.name + &quot; is eating&quot;);
+    }
+};
+
+//创建构造函数Dog
+function Dog() {
+    this.name = &quot;dog&quot;;
+}
+
+//创建构造函数Cat
+function Cat() {
+    this.name = &quot;cat&quot;;
+}
+
+//设置Dog的原型为animal(Dog继承自animal)
+Dog.prototype = animal;
+
+//设置Cat的原型为animal(Cat继承自animal)
+Cat.prototype = animal;
+
+//创建dog对象
+var dog = new Dog();
+
+//创建cat对象
+var cat = new Cat();
+
+dog.eat();
+cat.eat();
+</code></pre><h3 id="JavaScript-中事件绑定的方式"><a href="#JavaScript-中事件绑定的方式" class="headerlink" title="JavaScript 中事件绑定的方式"></a>JavaScript 中事件绑定的方式</h3><pre><code>button.onclick = function() {}
+
+button.addEventListener(&quot;click&quot;, function () {});
+</code></pre><h3 id="设计一个函数实现判断一个数据的数据类型是不是数组"><a href="#设计一个函数实现判断一个数据的数据类型是不是数组" class="headerlink" title="设计一个函数实现判断一个数据的数据类型是不是数组"></a>设计一个函数实现判断一个数据的数据类型是不是数组</h3><pre><code>function isArray(num) {
+    return num instanceof Array;
+}
+</code></pre><h3 id="什么是浏览器的同源策略？"><a href="#什么是浏览器的同源策略？" class="headerlink" title="什么是浏览器的同源策略？"></a>什么是浏览器的同源策略？</h3><p>协议相同、域名相同、端口号相同</p>
+<h3 id="什么是浏览器的标准模式和怪异模式？"><a href="#什么是浏览器的标准模式和怪异模式？" class="headerlink" title="什么是浏览器的标准模式和怪异模式？"></a>什么是浏览器的标准模式和怪异模式？</h3><p>参考MDN上的一篇文章：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Quirks_Mode_and_Standards_Mode" target="_blank" rel="noopener">怪异模式和标准模式</a></p>
+<h3 id="预处理CSS有什么优点和缺点？"><a href="#预处理CSS有什么优点和缺点？" class="headerlink" title="预处理CSS有什么优点和缺点？"></a>预处理CSS有什么优点和缺点？</h3><p>优点：可以实现重用、自动加前缀等<br>缺点：浏览器不能直接识别，需要转换成 CSS</p>
+<h3 id="Web性能优化的手段有哪些？"><a href="#Web性能优化的手段有哪些？" class="headerlink" title="Web性能优化的手段有哪些？"></a>Web性能优化的手段有哪些？</h3><p>1、减少HTTP请求数<br>2、使用CDN<br>3、给HTTP头部添加过期时间<br>4、使用Gzip压缩<br>5、样式表置于页面最前面<br>6、把JavaScript脚本放在最后面<br>7、使用外部的JavaScript和CSS<br>8、压缩JavaScript和CSS<br>9、如果使用小图标，可以将小图标制成一张雪碧图  </p>
+<h3 id="常见的-HTTP-状态码有哪些？"><a href="#常见的-HTTP-状态码有哪些？" class="headerlink" title="常见的 HTTP 状态码有哪些？"></a>常见的 HTTP 状态码有哪些？</h3><p>参考我网上找到的一篇文章：<a href="http://www.cnblogs.com/starof/p/5035119.html" target="_blank" rel="noopener">HTTP常见状态码 200 301 302 404 500 - starof - 博客园</a></p>
+<h3 id="下面代码的执行结果"><a href="#下面代码的执行结果" class="headerlink" title="下面代码的执行结果"></a>下面代码的执行结果</h3><pre><code> var a = 1;
+(function () {
+    console.log(a);
+    var a = 2;
+    console.log(a);
+})()
+</code></pre><p>输出的结果是 undefined, 2<br>因为这里存在变量提升，所以上面的代码可以写成下面的形式</p>
+<pre><code> var a = 1;
+(function () {
+    var a;
+    console.log(a);
+    a = 2;
+    console.log(a);
+})()
+</code></pre><h3 id="下面代码的输出结果"><a href="#下面代码的输出结果" class="headerlink" title="下面代码的输出结果"></a>下面代码的输出结果</h3><pre><code> var User = {
+    count: 1,
+    getCount: function () {
+        return this.count;
+    }
+};
+
+var func = User.getCount;
+console.log(User.getCount());
+console.log(func());
+</code></pre><p>输出的结果是 1, undefined，因为第一个console输出中this指向的是User对象，count是User对象的属性，第二个console输出中this指向的是window对象，window对象中没有count属性，所以输出 undefined</p>
+<h3 id="如何理解this"><a href="#如何理解this" class="headerlink" title="如何理解this"></a>如何理解this</h3><p>1、构造函数中的this指向新创建的实例对象  </p>
+<pre><code> function Person(name, age) {
+    this.name = name;
+    this.age = age;
+
+    this.printThis = function () {
+        console.log(this);
+    }
+}
+
+var person = new Person(&quot;meishadevs&quot;, 24);
+person.printThis();
+</code></pre><p>执行结果<br><img src="/images/this1.PNG" class="blog-image"></p>
+<p>2、普通函数中的this指向函数的调用者  </p>
+<pre><code>function printThis() {
+    console.log(this);
+}
+
+printThis();
+</code></pre><p>执行结果<br><img src="/images/this2.PNG" class="blog-image"></p>
+<p>3、自执行函数中的this指向window对象  </p>
+<pre><code>(function () {
+    console.log(this);
+})();
+</code></pre><p>执行结果<br><img src="/images/this3.PNG" class="blog-image"></p>
+<p>4、箭头函数中的this指向函数定义时所在的对象</p>
+<pre><code>// 定义箭头函数，打印箭头函数中的 this
+let printThis = () =&gt; {
+  console.log(this);
+}
+
+let o = {
+  print: function() {
+    printThis()
+  }
+};
+
+// 在全局调用箭头函数
+printThis();
+
+// 在对象的方法中调用箭头函数
+o.print()
+</code></pre><p>执行结果<br>通过执行结果可知我们定义的箭头函数，不管是在哪里使用 this 指向都没有发生变化都是指向函数定义时所在的对象<br><img src="/images/2021061701.png" class="blog-image"></p>
+<h3 id="写出以字母开头，可以包含字母或数字的4—10位的用户密码的正则表达式"><a href="#写出以字母开头，可以包含字母或数字的4—10位的用户密码的正则表达式" class="headerlink" title="写出以字母开头，可以包含字母或数字的4—10位的用户密码的正则表达式"></a>写出以字母开头，可以包含字母或数字的4—10位的用户密码的正则表达式</h3><pre><code>/^[a-zA-Z][a-zA-Z0-9]{3,9}$/.test(password);
+</code></pre><h3 id="实现-child-元素在-parent-元素中水平垂直居中"><a href="#实现-child-元素在-parent-元素中水平垂直居中" class="headerlink" title="实现 child 元素在 parent 元素中水平垂直居中"></a>实现 child 元素在 parent 元素中水平垂直居中</h3><p>方法一：position + transform</p>
+<pre><code>.parent {
+    position: relative;
+}
+
+.child {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+</code></pre><p>方法二：使用flex布局</p>
+<pre><code>.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</code></pre><h3 id="DOM事件流包括那三个阶段"><a href="#DOM事件流包括那三个阶段" class="headerlink" title="DOM事件流包括那三个阶段"></a>DOM事件流包括那三个阶段</h3><p>第一阶段：从window对象传导到目标节点，称为“捕获阶段”（capture phase）<br>第二阶段：在目标节点上触发，称为“目标阶段”（target phase）<br>第三阶段：从目标节点传导回window对象，称为“冒泡阶段”（bubbling phase）  </p>
+<h3 id="写出js代码合并下列两个数组，并去重"><a href="#写出js代码合并下列两个数组，并去重" class="headerlink" title="写出js代码合并下列两个数组，并去重"></a>写出js代码合并下列两个数组，并去重</h3><pre><code>let arr1 = [2, 6, 1, 3, 8];
+let arr2 = [5, 2, 7, 6, 4];
+</code></pre><p>实现代码</p>
+<pre><code>let arr1 = [2, 6, 1, 3, 8];
+let arr2 = [5, 2, 7, 6, 4];
+let arr3 = arr1.concat(arr2);
+let set = new Set(arr3);
+let arr4 = Array.from(set);
+console.log(arr4);
+</code></pre><h3 id="下面这段代码的输出结果是，如何使它输出1、2、3、4"><a href="#下面这段代码的输出结果是，如何使它输出1、2、3、4" class="headerlink" title="下面这段代码的输出结果是，如何使它输出1、2、3、4"></a>下面这段代码的输出结果是，如何使它输出1、2、3、4</h3><pre><code>for (var i = 1; i &lt; 5; i++) {
+    setTimeout(function () {
+        console.log(i);
+    });
+}
+</code></pre><p>输出4个5，使用两种方法可以输出1、2、3、4</p>
+<p>方法1：使用自执行函数</p>
+<pre><code>for (var i = 1; i &lt; 5; i++) {
+    (function (num) {
+        setTimeout(function () {
+            console.log(num);
+        });
+    })(i);
+}
+</code></pre><p>方法2：将var改成let，因为使用var声明的变量没有局部作用域，为了解决这个问题才在ES6中引入了let</p>
+<pre><code>for (let i = 1; i &lt; 5; i++) {
+    setTimeout(function () {
+        console.log(i);
+    });
+}
+</code></pre><h3 id="4，4，10，10，加减乘除，怎么出24点？四个数字分别只能用一次"><a href="#4，4，10，10，加减乘除，怎么出24点？四个数字分别只能用一次" class="headerlink" title="4，4，10，10，加减乘除，怎么出24点？四个数字分别只能用一次"></a>4，4，10，10，加减乘除，怎么出24点？四个数字分别只能用一次</h3><pre><code>(10 * 10 - 4) / 4
+</code></pre><h3 id="如果你有无穷多的水，一个容积为3L的和5L的提桶，你如何准确称出4L的水"><a href="#如果你有无穷多的水，一个容积为3L的和5L的提桶，你如何准确称出4L的水" class="headerlink" title="如果你有无穷多的水，一个容积为3L的和5L的提桶，你如何准确称出4L的水"></a>如果你有无穷多的水，一个容积为3L的和5L的提桶，你如何准确称出4L的水</h3><pre><code>第一步：将装5L水的水桶装满                                               
+装5L水的水桶中装了5L水 
+装3L水的水桶没有装水
+
+   第二步：将装5L水的水桶中的水倒入只能装3L水的水桶中，并倒满只能转3L水的水桶   
+装5L水的水桶中装了2L水
+装3L水的水桶中装了3L水
+
+第三步：将装3L水的水桶中的水倒掉                                       
+装5L水的水桶中装了2L水 
+装3L水的水桶为空
+
+第四步：将装5L水的水桶中的2L水倒入装3L水的水桶中                           
+装5L水的水桶为空       
+装3L水的水桶中装了2L水
+
+第五步：将装5L水的水桶装满                                                
+装5L水的水桶中装了5L水
+装3L水的水桶中装了2L水
+
+第六步：将装满5L水的水桶中的水倒入装3L水的水桶中，并倒满只能装3L水的水桶    
+装5L水的水桶中装了4L水 
+装3L水的水桶中装了3L水
+</code></pre><h3 id="如何实现快速排序"><a href="#如何实现快速排序" class="headerlink" title="如何实现快速排序"></a>如何实现快速排序</h3><pre><code>var quickSort = function (arr) {
+
+    //如果数组中只有一个元素
+    if (arr.length &lt;= 1) {
+
+        //直接返回改数组
+        return arr;
+    }
+
+    //获得数组中中间值的索引(基准的索引)
+    var pivotIndex = Math.floor(arr.length / 2);
+
+    //获得数组中的中间值(数组中的基准)
+    //并将该值从原数组中删除
+    var pivot = arr.splice(pivotIndex, 1)[0];
+
+    //创建数组，用于保存原数组中小于基准的值
+    var left = [];
+
+    //创建数组，用于保存原数组中大于基准的值
+    var right = [];
+
+    //遍历原数组
+    for (var i = 0; i &lt; arr.length; i++) {
+
+        //如果原数组的值小于基准
+        if (arr[i] &lt; pivot) {
+
+            //将数组的值保存到left数组中
+            left.push(arr[i]);
+
+        //如果原数组的值大于或等于基准
+        } else {
+            //将数组的值保存到right数组中
+            right.push(arr[i]);
+        }
+    }
+
+    //使用递归不断重复这个过程
+    return quickSort(left).concat([pivot], quickSort(right));
+};
+
+var array = [85, 24, 63, 45, 17, 31, 96, 50];
+console.log(&apos;排序前:&apos;, array);
+
+var arr = quickSort(array);
+console.log(&apos;排序后:&apos;, arr);
+</code></pre><h3 id="http-请求中的三次握手"><a href="#http-请求中的三次握手" class="headerlink" title="http 请求中的三次握手"></a>http 请求中的三次握手</h3><img src="/images/2022060201.png" class="blog-image">
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ul>
+<li><a href="http://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/" target="_blank" rel="noopener">深入理解CSS中的层叠上下文和层叠顺序</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAxOTc0NzExNg==&amp;mid=2665513059&amp;idx=1&amp;sn=a2eaf97d9e3000d15a33681d1b720463&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">Javascript：一个屌丝的逆袭</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAxOTc0NzExNg==&amp;mid=2665513786&amp;idx=1&amp;sn=6f51ad314e3ef3e1575e032568477f3a&amp;scene=0#wechat_redirect&amp;rd2werd=1#wechat_redirect" target="_blank" rel="noopener">javascript王国的一次旅行，一个没有类的世界怎么玩转面向对象？</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAxOTc0NzExNg==&amp;mid=2665513789&amp;idx=1&amp;sn=e2e39002a915291fa06050c8116c2f96&amp;chksm=80d67b7eb7a1f2681267fa53c624add554c47ed1c39dc8d44b98b0a414c80a646e52ad399173&amp;scene=4&amp;rd2werd=1#wechat_redirect" target="_blank" rel="noopener">javascript王国之函数教主</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Quirks_Mode_and_Standards_Mode" target="_blank" rel="noopener">怪异模式和标准模式</a></li>
+<li><a href="http://www.cnblogs.com/starof/p/5035119.html" target="_blank" rel="noopener">HTTP常见状态码 200 301 302 404 500 - starof - 博客园</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html" target="_blank" rel="noopener">快速排序（Quicksort）的Javascript实现</a></li>
+<li><a href="https://juejin.cn/post/6844904200917221389" target="_blank" rel="noopener">由浅入深，66条JavaScript面试知识点</a></li>
+</ul>
+<blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/平时遇到的前端面试题">平时遇到的前端面试题</a>】</p>
+</blockquote>
+
+                
+<p class="pink-link-context">
+    <a href="/blog/SQL-Server数据库学习笔记/" rel="next" title="SQL Server数据库学习笔记">
+    上一篇：SQL Server数据库学习笔记
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/blog/一次有意义的前端面试总结/" rel="next" title="一次有意义的前端面试总结">
+    下一篇：一次有意义的前端面试总结
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Tue Apr 10 2018 17:07:48 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/3170066893?is_all=1" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/meishadevs" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                <div class="site-visitors-container white-text">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="http://zhangwenli.com/" target="_blank">羡辙的个人主页</a>
+                
+                    <a class="social-link" href="http://www.zhangxinxu.com/" target="_blank">张鑫旭的个人主页</a>
+                
+                    <a class="social-link" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a>
+                
+                    <a class="social-link" href="https://me.ursb.me/" target="_blank">Airing 的小屋</a>
+                
+                    <a class="social-link" href="http://www.runoob.com/" target="_blank">菜鸟教程</a>
+                
+                    <a class="social-link" href="https://jysperm.me/" target="_blank">王子亭的博客</a>
+                
+                    <a class="social-link" href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a>
+                
+                    <a class="social-link" href="https://wangdoc.com/" target="_blank">网道</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2018 meishadevs All rights reserved 赣ICP备18015008号
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=61543111" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>

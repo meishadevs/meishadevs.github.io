@@ -1,0 +1,1256 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>Vue.js学习笔记 | meishadevs的技术博客</title>
+    <meta name="author" content="meishadevs">
+    
+    <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="Vue.js学习笔记">
+    <meta property="og:site_name" content="meishadev&#39;s blog">
+
+    
+    <meta property="og:image" content="undefined">
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="meishadev&#39;s blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/tranquil-heart.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+</html>
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">meishadev&#39;s blog</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://meishadevs.com/images/touxiang.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">meishadevs</p>
+                        <p class="desc">Web前端</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/总结/">
+                    总结 <span class="right">4 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Fireworks/">
+                    Fireworks <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/JavaScript/">
+                    JavaScript <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/JavaScript/ES6/">
+                    ES6 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/GoJS/">
+                    GoJS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Mac/">
+                    Mac <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/MongoDB/">
+                    MongoDB <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/MongoDB/数据库/">
+                    数据库 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Photoshop/">
+                    Photoshop <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/数据库/">
+                    数据库 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/idea/">
+                    idea <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/SpringBoot/java/">
+                    java <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/代码规范/">
+                    代码规范 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/部署/">
+                    部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Gulp/">
+                    Gulp <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Gulp/前端自动化/">
+                    前端自动化 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/CSS/">
+                    CSS <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/NVM/">
+                    NVM <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/NVM/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/echarts/">
+                    echarts <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Git/">
+                    Git <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue/">
+                    Vue <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Vue/iview/">
+                    iview <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/移动Web/">
+                    移动Web <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/小程序/">
+                    小程序 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/WebStrom/">
+                    WebStrom <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/WebStrom/Chrome/">
+                    Chrome <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/前端/">
+                    前端 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/Vue-js/">Vue.js</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>Vue.js学习笔记</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2017-12-01T08:14:29.000Z"><a href="/blog/Vue-js学习笔记/">2017-12-01</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/Vue-js/" class="chip pink lighten-1">Vue.js</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#在执行-npm-run-dev-命令的时候出现8080端口被占用"><span class="section table-of-contents-text">在执行 npm run dev 命令的时候出现8080端口被占用</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性"><span class="section table-of-contents-text">使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#使用Head标签命名组件报错"><span class="section table-of-contents-text">使用Head标签命名组件报错</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#执行npm-run-build命令构建Vue-js项目后，在浏览器中打开生成的HTML文件，网站资源文件的路径错误"><span class="section table-of-contents-text">执行npm run build命令构建Vue.js项目后，在浏览器中打开生成的HTML文件，网站资源文件的路径错误</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#执行npm-run-build命令构建Vue项目后，生成的CSS文件中background-url-图片路径错误"><span class="section table-of-contents-text">执行npm run build命令构建Vue项目后，生成的CSS文件中background url()图片路径错误</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#修改props属性中的值报错"><span class="section table-of-contents-text">修改props属性中的值报错</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#关于Vue中的-render-h-gt-h-App-具体是什么含义？"><span class="section table-of-contents-text">关于Vue中的 render: h =&gt; h(App) 具体是什么含义？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#使用ES6中的属性简写"><span class="section table-of-contents-text">使用ES6中的属性简写</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#Do-not-use-built-in-or-reserved-HTML-elements-as-component-id-select"><span class="section table-of-contents-text">Do not use built-in or reserved HTML elements as component id: select</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#代码简写"><span class="section table-of-contents-text">代码简写</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#正则匹配"><span class="section table-of-contents-text">正则匹配</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#数组中的元素改变后，触发视图更新"><span class="section table-of-contents-text">数组中的元素改变后，触发视图更新</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#动态添加对象属性，并触发视图更新"><span class="section table-of-contents-text">动态添加对象属性，并触发视图更新</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#重置表单"><span class="section table-of-contents-text">重置表单</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#动态设置-img-标签的-src-属性"><span class="section table-of-contents-text">动态设置 img 标签的 src 属性</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#使用相对路径的方式设置背景图片的路径"><span class="section table-of-contents-text">使用相对路径的方式设置背景图片的路径</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#使用相对路径的方式设置图片路径"><span class="section table-of-contents-text">使用相对路径的方式设置图片路径</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#自定义表单项的验证规则"><span class="section table-of-contents-text">自定义表单项的验证规则</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#单个表单字段的验证"><span class="section table-of-contents-text">单个表单字段的验证</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#清除所有表单字段的验证"><span class="section table-of-contents-text">清除所有表单字段的验证</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#项目打包时提示-Error-CSS-minification-error-Unknown-browser-kaios"><span class="section table-of-contents-text">项目打包时提示 Error: CSS minification error: Unknown browser kaios</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#TypeError-token-type-endsWidth-is-not-a-function"><span class="section table-of-contents-text">TypeError: token.type.endsWidth is not a function</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#vue-与-vue-template-compiler-的版本不一致"><span class="section table-of-contents-text">vue 与 vue-template-compiler 的版本不一致</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#页面加载完后调用的方法"><span class="section table-of-contents-text">页面加载完后调用的方法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#常用-npm-命令"><span class="section table-of-contents-text">常用 npm 命令</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#Vscode-配置"><span class="section table-of-contents-text">Vscode 配置</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#代码段配置"><span class="section table-of-contents-text">代码段配置</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#在代码中禁用单个-eslint-语法检查规则"><span class="section table-of-contents-text">在代码中禁用单个 eslint 语法检查规则</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#打印-Proxy-对象中的属性"><span class="section table-of-contents-text">打印 Proxy 对象中的属性</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#子组件中更新数据后，父组件中的对应值也同步更新"><span class="section table-of-contents-text">子组件中更新数据后，父组件中的对应值也同步更新</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#去掉-element-ui-中-Select-组件多选模式下的删除选项按钮"><span class="section table-of-contents-text">去掉 element-ui 中 Select 组件多选模式下的删除选项按钮</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#参考链接"><span class="section table-of-contents-text">参考链接</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <h4 id="在执行-npm-run-dev-命令的时候出现8080端口被占用"><a href="#在执行-npm-run-dev-命令的时候出现8080端口被占用" class="headerlink" title="在执行 npm run dev 命令的时候出现8080端口被占用"></a>在执行 npm run dev 命令的时候出现8080端口被占用</h4><pre><code># 根据端口号，查找被占用端口的进程 id
+netstat -nao|findstr &quot;8080&quot;
+
+# 结束进程，2228 为进程 id
+taskkill /pid 2228 /F
+</code></pre><h4 id="使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性"><a href="#使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性" class="headerlink" title="使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性"></a>使用v-for指令遍历组件时产生警告，提示需要在组件上增加一个key属性</h4><pre><code>当使用v-for指令遍历组件时，需要在组件上添加一个key属性
+&lt;router-link to=&quot;/select&quot; v-for=&quot;content in item.classContent&quot; :key=&quot;content.id&quot;&gt;{{ content }}&lt;/router-link&gt;
+</code></pre><h4 id="使用Head标签命名组件报错"><a href="#使用Head标签命名组件报错" class="headerlink" title="使用Head标签命名组件报错"></a>使用Head标签命名组件报错</h4><pre><code>不能使用标签名作为组件名
+</code></pre><h4 id="执行npm-run-build命令构建Vue-js项目后，在浏览器中打开生成的HTML文件，网站资源文件的路径错误"><a href="#执行npm-run-build命令构建Vue-js项目后，在浏览器中打开生成的HTML文件，网站资源文件的路径错误" class="headerlink" title="执行npm run build命令构建Vue.js项目后，在浏览器中打开生成的HTML文件，网站资源文件的路径错误"></a>执行npm run build命令构建Vue.js项目后，在浏览器中打开生成的HTML文件，网站资源文件的路径错误</h4><p>进入项目目录下的<code>config/index.js</code>文件中的<code>build</code>对象下的<code>assetsPublicPath</code>属性，将<code>assetsPublicPath</code>属性的值由 <code>assetsPublicPath: &#39;/&#39;</code>，改成 <code>assetsPublicPath: &#39;./&#39;</code></p>
+<h4 id="执行npm-run-build命令构建Vue项目后，生成的CSS文件中background-url-图片路径错误"><a href="#执行npm-run-build命令构建Vue项目后，生成的CSS文件中background-url-图片路径错误" class="headerlink" title="执行npm run build命令构建Vue项目后，生成的CSS文件中background url()图片路径错误"></a>执行npm run build命令构建Vue项目后，生成的CSS文件中background url()图片路径错误</h4><p>需要单独为 css 配置 publicPath<br>ExtractTextWebpackPlugin 提供了一个 options.publicPath 的 api，可以为css单独配置 publicPath </p>
+<p>对于用 vue-cli 生成的项目，dist 目录结构如下：</p>
+<pre><code>dist
+├── index.html
+└── static
+├── css
+├── img
+└── js
+</code></pre><p>经常遇见的问题是 css 中 background-image 的相对路径不能正确的引用到 img 文件夹中。但是用 ExtractTextWebpackPlugin 的 publicPath 配置就可以。</p>
+<p>更改 <code>build/utils.js</code> 文件中 ExtractTextPlugin 插件的options 配置：</p>
+<pre><code>if (options.extract) {
+  return ExtractTextPlugin.extract({
+    use: loaders,
+    publicPath: &apos;../../&apos;, //注意配置这一部分,根据目录结构自由调整
+    fallback: &apos;vue-style-loader&apos;
+  })
+} else {
+  return [&apos;vue-style-loader&apos;].concat(loaders)
+}
+</code></pre><p>最后附上 <a href="https://github.com/webpack-contrib/extract-text-webpack-plugin/blob/master/README.md" target="_blank" rel="noopener">extract-text-webpack-plugin</a> 的文档。</p>
+<h4 id="修改props属性中的值报错"><a href="#修改props属性中的值报错" class="headerlink" title="修改props属性中的值报错"></a>修改props属性中的值报错</h4><p>不能在组件中直接修改props属性中的值，可以通过引入一个中间变量修改prps中的值</p>
+<pre><code>export default {
+
+   //获取从父组件中传递过来的数据
+   props: [&quot;curPage&quot;],
+
+   data() {
+     return {
+
+       //引入一个中间变量
+       temp: 0
+     };
+   },
+
+   //初始化
+   mounted() {
+     this.$nextTick(() =&gt; {
+
+       //将从父组件中传递过来的数据赋值给中间变量
+       this.temp = this.curPage;
+
+       //修改中间变量的值
+       this.temp = 123;
+     });
+   }
+ };
+</code></pre><h4 id="关于Vue中的-render-h-gt-h-App-具体是什么含义？"><a href="#关于Vue中的-render-h-gt-h-App-具体是什么含义？" class="headerlink" title="关于Vue中的 render: h =&gt; h(App) 具体是什么含义？"></a>关于Vue中的 render: h =&gt; h(App) 具体是什么含义？</h4><p>大概的翻译下：<br><code>render: h =&gt; h(App)</code> 是下面内容的缩写：</p>
+<pre><code>render: function (createElement) {
+    return createElement(App);
+}
+</code></pre><p>进一步缩写为(ES6 语法)：</p>
+<pre><code>render (createElement) {
+    return createElement(App);
+}
+</code></pre><p>再进一步缩写为：</p>
+<pre><code>render (h){
+    return h(App);
+}
+</code></pre><p>按照 ES6 箭头函数的写法，就得到了：</p>
+<pre><code>render: h =&gt; h(App);
+</code></pre><h4 id="使用ES6中的属性简写"><a href="#使用ES6中的属性简写" class="headerlink" title="使用ES6中的属性简写"></a>使用ES6中的属性简写</h4><pre><code>new Vue({
+  router
+});
+</code></pre><p>是下面代码的简写形式</p>
+<pre><code>new Vue({
+  router: router
+});
+</code></pre><h4 id="Do-not-use-built-in-or-reserved-HTML-elements-as-component-id-select"><a href="#Do-not-use-built-in-or-reserved-HTML-elements-as-component-id-select" class="headerlink" title="Do not use built-in or reserved HTML elements as component id: select"></a>Do not use built-in or reserved HTML elements as component id: select</h4><pre><code>使用标签名select作为组件的name属性值(name: &quot;select&quot;)时在console中产生的警告，不能将标签名设为组件的name属性
+</code></pre><h4 id="代码简写"><a href="#代码简写" class="headerlink" title="代码简写"></a>代码简写</h4><p><strong>:clone=”cloneData”</strong>表示给draggable标签的clone属性赋值为cloneData，这里是v-bind:clone=”cloneData”的简写                           </p>
+<pre><code>&lt;draggable :clone=&quot;cloneData&quot; :list=&quot;form_list&quot; :options=&quot;dragOptions1&quot;&gt;&lt;/draggable&gt;
+</code></pre><h4 id="正则匹配"><a href="#正则匹配" class="headerlink" title="正则匹配"></a>正则匹配</h4><p>下面代码表示匹配 <strong>.png、.jpeg、.jpg、.gif、.svg</strong> 类型的图片，其中代码中的 <strong>\.</strong> 表示点号，因为点也是一个正则匹配符号，所以需要使用 <strong>\</strong> 转义</p>
+<pre><code>test: /\.(png|jpe?g|gif|svg)(\?.*)?$/
+</code></pre><h4 id="数组中的元素改变后，触发视图更新"><a href="#数组中的元素改变后，触发视图更新" class="headerlink" title="数组中的元素改变后，触发视图更新"></a>数组中的元素改变后，触发视图更新</h4><pre><code>this.$set(this.list, this.index, this.userDetail)
+</code></pre><h4 id="动态添加对象属性，并触发视图更新"><a href="#动态添加对象属性，并触发视图更新" class="headerlink" title="动态添加对象属性，并触发视图更新"></a>动态添加对象属性，并触发视图更新</h4><pre><code>this.$set(this.columnDetail, &apos;imageUr&apos;, &apos;&apos;)
+</code></pre><h4 id="重置表单"><a href="#重置表单" class="headerlink" title="重置表单"></a>重置表单</h4><pre><code>//给表单注册引用信息
+&lt;Form ref=&quot;userForm&quot;&gt;&lt;/Form&gt;
+
+//重置表单，（会清空填写的表单值）
+this.$refs[&apos;userForm&apos;].resetFields()
+</code></pre><h4 id="动态设置-img-标签的-src-属性"><a href="#动态设置-img-标签的-src-属性" class="headerlink" title="动态设置 img 标签的 src 属性"></a>动态设置 img 标签的 src 属性</h4><pre><code>&lt;img :src=&quot;require(`@/assets/images/${greenLight}`)&quot; alt=&quot;&quot;&gt;
+
+greenLight: &quot;none.gif&quot;,
+</code></pre><h4 id="使用相对路径的方式设置背景图片的路径"><a href="#使用相对路径的方式设置背景图片的路径" class="headerlink" title="使用相对路径的方式设置背景图片的路径"></a>使用相对路径的方式设置背景图片的路径</h4><pre><code>&lt;style lang=&quot;less&quot; scoped&gt;
+.exit {
+  background-image: url(&apos;~@/assets/images/exit.png&apos;);
+}
+&lt;/style&gt;
+</code></pre><p>其中 @ 表示配置的路径别名，表示 src 目录</p>
+<pre><code>chainWebpack: config =&gt; {
+    config.resolve.alias
+    .set(&apos;@&apos;, resolve(&apos;src&apos;))
+}
+</code></pre><h4 id="使用相对路径的方式设置图片路径"><a href="#使用相对路径的方式设置图片路径" class="headerlink" title="使用相对路径的方式设置图片路径"></a>使用相对路径的方式设置图片路径</h4><pre><code>&lt;img src=&quot;~@/assets/header_images/logo.png&quot;/&gt;
+</code></pre><h4 id="自定义表单项的验证规则"><a href="#自定义表单项的验证规则" class="headerlink" title="自定义表单项的验证规则"></a>自定义表单项的验证规则</h4><pre><code>export default {
+  data() {
+    const validateFile = (rule, value, callback) =&gt; {
+      if (!this.dataForm.file) {
+        callback(new Error(&quot;必填项，不能为空&quot;));
+      } else {
+        callback();
+      }
+    };
+
+    return {
+      dataForm: {
+        file: &quot;&quot;
+      },
+
+      rules: {
+        file: [
+          { required: true, validator: validateFile, trigger: &quot;blur&quot; },
+          { required: true, validator: validateFile, trigger: &quot;change&quot; }
+        ]
+      }
+    };
+  },
+
+  created() {
+  },
+
+  mounted() {
+  },
+
+  methods: {
+  }
+};
+</code></pre><h4 id="单个表单字段的验证"><a href="#单个表单字段的验证" class="headerlink" title="单个表单字段的验证"></a>单个表单字段的验证</h4><pre><code>this.$refs.userForm.validateField(&apos;userName&apos;, (valid) =&gt; {
+  if (!valid) {
+  }
+})
+</code></pre><h4 id="清除所有表单字段的验证"><a href="#清除所有表单字段的验证" class="headerlink" title="清除所有表单字段的验证"></a>清除所有表单字段的验证</h4><p>使用这个方法会清空表单项的值</p>
+<pre><code>this.$refs[&apos;dataForm&apos;].resetFields()
+</code></pre><h4 id="项目打包时提示-Error-CSS-minification-error-Unknown-browser-kaios"><a href="#项目打包时提示-Error-CSS-minification-error-Unknown-browser-kaios" class="headerlink" title="项目打包时提示 Error: CSS minification error: Unknown browser kaios"></a>项目打包时提示 Error: CSS minification error: Unknown browser kaios</h4><pre><code>删除 node_modules 文件夹 --&gt; 删除 package-lock.json 文件 --&gt; 执行 npm install 安装 npm 包
+</code></pre><h4 id="TypeError-token-type-endsWidth-is-not-a-function"><a href="#TypeError-token-type-endsWidth-is-not-a-function" class="headerlink" title="TypeError: token.type.endsWidth is not a function"></a>TypeError: token.type.endsWidth is not a function</h4><p>把 vue 项目跑起来后出现 <strong> TypeError: token.type.endsWidth is not a function </strong> 报错</p>
+<img src="/images/2021120201.png" class="blog-image">
+<p>将下面的代码</p>
+<pre><code>&lt;img
+  :src=&quot;
+    require(&apos;../../../assets/report/white_report.gif&apos;)
+  &quot;
+&gt;
+</code></pre><p>改成这种形式后可以解决这个报错</p>
+<pre><code>&lt;img
+  :src=&quot;require(&apos;../../../assets/report/white_report.gif&apos;)&quot;
+  alt=&quot;&quot;
+&gt;
+</code></pre><h4 id="vue-与-vue-template-compiler-的版本不一致"><a href="#vue-与-vue-template-compiler-的版本不一致" class="headerlink" title="vue 与 vue-template-compiler 的版本不一致"></a>vue 与 vue-template-compiler 的版本不一致</h4><p>当运行项目时遇到如下错误表示 vue 与 vue-template-compiler 的版本不一致<br><img src="/images/2022011801.png" class="blog-image"></p>
+<p><strong>解决方法：</strong></p>
+<p>执行 npm list vue 命令查看当前项目中采用的 vue 版本，通过下图可知当前项目采用的 vue 版本是 2.6.14<br><img src="/images/2022011802.png" class="blog-image"></p>
+<p>执行 npm list vue-template-compiler 命令查看当前项目中采用的 vue-template-compiler 版本，通过下图可知当前项目中采用的 vue-template-compiler 版本是 2.6.12<br><img src="/images/2022011803.png" class="blog-image"></p>
+<p>通过前面两步操作可知当前项目中 vue 版本和 vue-template-compiler 的版本不一致，一般的解决方法是降低 vue 版本或升高 vue-template-compiler 的版本，由于 vue<br>是安装在全局的，降低 vue 版本后担心会影响其它项目的使用，我这里采用的解决方式是升高 vue-template-compiler 的版本<br>首先执行 npm uninstall vue-template-compiler 命令卸载项目中已经安装的 vue-template-compiler<br><img src="/images/2022011804.png" class="blog-image"></p>
+<p>vue-template-compiler 卸载完成之后执行 npm install <a href="mailto:vue-template-compiler@2.6.14" target="_blank" rel="noopener">vue-template-compiler@2.6.14</a> 命令安装 2.6.14 版本的 vue-template-compiler 使 vue-template-compiler 的<br>版本和 vue 的版本保持一致<br><img src="/images/2022011805.png" class="blog-image"></p>
+<h4 id="页面加载完后调用的方法"><a href="#页面加载完后调用的方法" class="headerlink" title="页面加载完后调用的方法"></a>页面加载完后调用的方法</h4><pre><code>this.$nextTick(() =&gt; {
+});
+</code></pre><h4 id="常用-npm-命令"><a href="#常用-npm-命令" class="headerlink" title="常用 npm 命令"></a>常用 npm 命令</h4><pre><code># 安装依赖
+npm install
+
+# 安装指定版本号的 npm 包
+# 这里以安装版本号为 5.2.1 的 echarts 为例
+npm install echarts@5.2.1
+
+# 将 npm 包安装到开发依赖上
+# 这里以安装 eslint 为例
+npm install --save-dev eslint
+
+# 卸载 npm 包
+# 这里以卸载 echarts 为例
+npm uninstall echarts
+
+# 执行项目
+npm run dev
+
+# 查看 npm 包的版本
+# 这里以查看 vue 的版本为例
+npm list vue 
+
+# 查看全局安装的 npm 包
+npm list -g
+
+# 查看当前使用的 npm 镜像源
+npm get registry
+
+# 将 npm 镜像源设置为淘宝镜像
+npm config set registry https://registry.npmmirror.com
+
+# 将 npm 镜像源设置为官方镜像源
+npm config set registry https://registry.npmjs.org
+
+# 删除自定义的 npm 镜像源
+npm config delete registry
+
+# 安装 cnpm
+npm install -g cnpm --registry=https://registry.npmmirror.com
+
+# 查看 npm 的配置信息
+npm config ls
+
+# 查看所有 npm 的配置信息
+npm config ls -l
+</code></pre><h4 id="Vscode-配置"><a href="#Vscode-配置" class="headerlink" title="Vscode 配置"></a>Vscode 配置</h4><pre><code>{
+  &quot;git.ignoreMissingGitWarning&quot;: true,
+  &quot;explorer.confirmDelete&quot;: false,
+  &quot;files.autoSave&quot;: &quot;afterDelay&quot;,
+  &quot;vetur.validation.template&quot;: false,
+  &quot;editor.tabSize&quot;: 2,
+  &quot;javascript.updateImportsOnFileMove.enabled&quot;: &quot;always&quot;,
+  &quot;editor.fontSize&quot;: 18,
+  &quot;window.zoomLevel&quot;: 1,
+  &quot;eslint.alwaysShowStatus&quot;: true,
+  &quot;eslint.quiet&quot;: true,
+  &quot;editor.codeActionsOnSave&quot;: {
+    &quot;source.fixAll&quot;: true,
+    &quot;source.fixAll.eslint&quot;: true
+  },
+  &quot;workbench.iconTheme&quot;: &quot;vscode-icons&quot;,
+  &quot;terminal.integrated.tabs.enabled&quot;: true,
+  &quot;diffEditor.ignoreTrimWhitespace&quot;: false,
+  &quot;workbench.colorTheme&quot;: &quot;Atom One Light&quot;,
+    &quot;terminal.integrated.profiles.windows&quot;: {
+      &quot;Git-Bash&quot;: {
+        &quot;path&quot;: &quot;D:\\develop\\Git\\bin\\bash.exe&quot;,
+        &quot;args&quot;: []
+      }
+    },
+    &quot;terminal.integrated.defaultProfile.windows&quot;: &quot;Git-Bash&quot;,
+    &quot;[scss]&quot;: {
+      &quot;editor.defaultFormatter&quot;: &quot;sibiraj-s.vscode-scss-formatter&quot;
+    },
+    &quot;[vue]&quot;: {
+      &quot;editor.defaultFormatter&quot;: &quot;octref.vetur&quot;
+    },
+    &quot;[html]&quot;: {
+      &quot;editor.defaultFormatter&quot;: &quot;vscode.html-language-features&quot;
+    },
+    &quot;[css]&quot;: {
+      &quot;editor.defaultFormatter&quot;: &quot;vscode.css-language-features&quot;
+    },
+    &quot;security.workspace.trust.untrustedFiles&quot;: &quot;open&quot;
+}
+</code></pre><h4 id="代码段配置"><a href="#代码段配置" class="headerlink" title="代码段配置"></a>代码段配置</h4><pre><code>{
+    &quot;vue template&quot;: {
+        &quot;prefix&quot;: &quot;vue&quot;,
+        &quot;body&quot;: [
+            &quot;&lt;template&gt;&quot;,
+            &quot; &lt;div&gt;&quot;,
+            &quot; &quot;,
+            &quot; &lt;/div&gt;&quot;,
+            &quot;&lt;/template&gt;&quot;,
+            &quot;&quot;,
+            &quot;&lt;script&gt;&quot;,
+            &quot; export default {&quot;,
+            &quot;   name:\&quot;$1\&quot;,&quot;,
+            &quot;&quot;,
+            &quot;   data () {&quot;,
+            &quot;     return {&quot;,
+            &quot;     }&quot;,
+            &quot;   },&quot;,
+            &quot;&quot;,
+            &quot;   components: {&quot;,
+            &quot;   },&quot;,
+            &quot;&quot;,
+            &quot;   computed:{&quot;,
+            &quot;   },&quot;,
+            &quot;&quot;,
+            &quot;created() {&quot;,
+            &quot;},&quot;,
+            &quot;&quot;,
+            &quot;mounted() {&quot;,
+            &quot;},&quot;,
+            &quot;&quot;,
+            &quot;beforeDestroy() {&quot;,
+            &quot;},&quot;,
+            &quot;&quot;,
+            &quot;destroyed() {&quot;,
+            &quot;},&quot;,
+            &quot;&quot;,
+            &quot;methods:{&quot;,
+            &quot;}&quot;,
+            &quot; }&quot;,
+            &quot;&lt;/script&gt;&quot;,
+            &quot;&quot;,
+            &quot;&lt;style lang=\&quot;less\&quot; scoped&gt;&quot;,
+            &quot;&lt;/style&gt;&quot;,
+            &quot;&quot;
+        ],
+        &quot;description&quot;: &quot;vue template&quot;
+    },
+}
+</code></pre><h4 id="在代码中禁用单个-eslint-语法检查规则"><a href="#在代码中禁用单个-eslint-语法检查规则" class="headerlink" title="在代码中禁用单个 eslint 语法检查规则"></a>在代码中禁用单个 eslint 语法检查规则</h4><pre><code>/* eslint-disable no-unused-vars */
+import db from &apos;./mongodb/db.js&apos;;
+</code></pre><h4 id="打印-Proxy-对象中的属性"><a href="#打印-Proxy-对象中的属性" class="headerlink" title="打印 Proxy 对象中的属性"></a>打印 Proxy 对象中的属性</h4><pre><code>console.log(JSON.parse(&quot;proxyData:&quot;, JSON.stringify(proxyData)));
+</code></pre><h4 id="子组件中更新数据后，父组件中的对应值也同步更新"><a href="#子组件中更新数据后，父组件中的对应值也同步更新" class="headerlink" title="子组件中更新数据后，父组件中的对应值也同步更新"></a>子组件中更新数据后，父组件中的对应值也同步更新</h4><pre><code>// 需要在传递的值后面加一个 sync 修饰符
+// 每当 currentPage 值变化后，listQuery.pageNumber 会同步变化
+ &lt;change-page
+  :currentPage.sync=&quot;listQuery.pageNumber&quot;
+/&gt;
+
+// 更新 currentPage 值
+this.$emit(&apos;update:currentPage&apos;, this.curPage);
+</code></pre><h4 id="去掉-element-ui-中-Select-组件多选模式下的删除选项按钮"><a href="#去掉-element-ui-中-Select-组件多选模式下的删除选项按钮" class="headerlink" title="去掉 element-ui 中 Select 组件多选模式下的删除选项按钮"></a>去掉 element-ui 中 Select 组件多选模式下的删除选项按钮</h4><pre><code>&lt;style lang=&quot;scss&quot; scoped&gt;
+/deep/ .el-tag {
+  &amp;.el-tag--info { 
+    .el-tag__close {
+      display: none;
+    }
+  }
+}
+&lt;/style&gt;
+</code></pre><img src="/images/2022102501.png" class="blog-image">
+<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><ul>
+<li><a href="https://github.com/vuejs/vue-loader/issues/481#" target="_blank" rel="noopener">生成的css文件中background url()图片路径问题</a>  </li>
+<li><a href="https://segmentfault.com/q/1010000007130348" target="_blank" rel="noopener">关于Vue中的 render: h =&gt; h(App) 具体是什么含义？</a></li>
+<li><a href="https://wangdoc.com/es6/" target="_blank" rel="noopener">ES6 教程</a></li>
+</ul>
+<blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/Vue-js学习笔记">使用Vue.js时遇到的问题及解决方法</a>】</p>
+</blockquote>
+
+                
+<p class="pink-link-context">
+    <a href="/blog/常用的正则表达式/" rel="next" title="常用的正则表达式">
+    上一篇：常用的正则表达式
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/blog/使用background-size引发的思考/" rel="next" title="使用background-size引发的思考">
+    下一篇：使用background-size引发的思考
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Fri Dec 01 2017 16:14:29 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/3170066893?is_all=1" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/meishadevs" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                <div class="site-visitors-container white-text">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="http://zhangwenli.com/" target="_blank">羡辙的个人主页</a>
+                
+                    <a class="social-link" href="http://www.zhangxinxu.com/" target="_blank">张鑫旭的个人主页</a>
+                
+                    <a class="social-link" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a>
+                
+                    <a class="social-link" href="https://me.ursb.me/" target="_blank">Airing 的小屋</a>
+                
+                    <a class="social-link" href="http://www.runoob.com/" target="_blank">菜鸟教程</a>
+                
+                    <a class="social-link" href="https://jysperm.me/" target="_blank">王子亭的博客</a>
+                
+                    <a class="social-link" href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a>
+                
+                    <a class="social-link" href="https://wangdoc.com/" target="_blank">网道</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2018 meishadevs All rights reserved 赣ICP备18015008号
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=61543111" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>

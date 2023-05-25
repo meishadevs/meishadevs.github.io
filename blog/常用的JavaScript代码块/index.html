@@ -1,0 +1,1771 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>常用的JavaScript代码块 | meishadevs的技术博客</title>
+    <meta name="author" content="meishadevs">
+    
+    <meta name="description" content="这个博客主要用来分享博主在Web前端开发领域中使用的技术和心得">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="常用的JavaScript代码块">
+    <meta property="og:site_name" content="meishadev&#39;s blog">
+
+    
+    <meta property="og:image" content="undefined">
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="meishadev&#39;s blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/tranquil-heart.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+</html>
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">meishadev&#39;s blog</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://meishadevs.com/images/touxiang.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">meishadevs</p>
+                        <p class="desc">Web前端</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/总结/">
+                    总结 <span class="right">4 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Fireworks/">
+                    Fireworks <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/JavaScript/">
+                    JavaScript <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/JavaScript/ES6/">
+                    ES6 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/GoJS/">
+                    GoJS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Mac/">
+                    Mac <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/MongoDB/">
+                    MongoDB <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/MongoDB/数据库/">
+                    数据库 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Photoshop/">
+                    Photoshop <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/数据库/">
+                    数据库 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue-js/">
+                    Vue-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/idea/">
+                    idea <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/SpringBoot/">
+                    SpringBoot <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/SpringBoot/java/">
+                    java <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/读书笔记/">
+                    读书笔记 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/面试/">
+                    面试 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/代码规范/">
+                    代码规范 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/部署/">
+                    部署 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Gulp/">
+                    Gulp <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Gulp/前端自动化/">
+                    前端自动化 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/预处理CSS/">
+                    预处理CSS <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/预处理CSS/Less/">
+                    Less <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/CSS/">
+                    CSS <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/NVM/">
+                    NVM <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/NVM/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/echarts/">
+                    echarts <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Git/">
+                    Git <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Node-js/">
+                    Node-js <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Vue/">
+                    Vue <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Vue/iview/">
+                    iview <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/移动Web/">
+                    移动Web <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/小程序/">
+                    小程序 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/正则表达式/">
+                    正则表达式 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/WebStrom/">
+                    WebStrom <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/WebStrom/Chrome/">
+                    Chrome <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/前端/">
+                    前端 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/JavaScript/">JavaScript</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>常用的JavaScript代码块</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2018-12-17T01:23:40.000Z"><a href="/blog/常用的JavaScript代码块/">2018-12-17</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/JavaScript/" class="chip pink lighten-1">JavaScript</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用箭头函数简化代码"><span class="section table-of-contents-text">使用箭头函数简化代码</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#简化方法的写法"><span class="section table-of-contents-text">简化方法的写法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#对象合并"><span class="section table-of-contents-text">对象合并</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#模板语法"><span class="section table-of-contents-text">模板语法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数据筛选"><span class="section table-of-contents-text">数据筛选</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#判断数组中是否存满足条件的数据"><span class="section table-of-contents-text">判断数组中是否存满足条件的数据</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#判断数组中所有数据是否都满足条件"><span class="section table-of-contents-text">判断数组中所有数据是否都满足条件</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用-forEach-遍历数组"><span class="section table-of-contents-text">使用 forEach 遍历数组</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用对象展开运算符合并对象"><span class="section table-of-contents-text">使用对象展开运算符合并对象</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#对象解构"><span class="section table-of-contents-text">对象解构</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数组解构"><span class="section table-of-contents-text">数组解构</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#格式化对象数组"><span class="section table-of-contents-text">格式化对象数组</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#判断数组中是否存在某个元素"><span class="section table-of-contents-text">判断数组中是否存在某个元素</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#查找数组中的数据"><span class="section table-of-contents-text">查找数组中的数据</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#查找数组中元素的下标"><span class="section table-of-contents-text">查找数组中元素的下标</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#将对象数组中的属性组成一个数组"><span class="section table-of-contents-text">将对象数组中的属性组成一个数组</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#异步调用"><span class="section table-of-contents-text">异步调用</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#遍历对象"><span class="section table-of-contents-text">遍历对象</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#检测数值中的元素是否完全相同"><span class="section table-of-contents-text">检测数值中的元素是否完全相同</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数组去重"><span class="section table-of-contents-text">数组去重</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数组去重简化写法"><span class="section table-of-contents-text">数组去重简化写法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#对象数组去重"><span class="section table-of-contents-text">对象数组去重</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#将对象的可枚举属性名保存在数组中"><span class="section table-of-contents-text">将对象的可枚举属性名保存在数组中</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#将数值类型数据转换成布尔类型数据"><span class="section table-of-contents-text">将数值类型数据转换成布尔类型数据</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#判断对象是否为空对象"><span class="section table-of-contents-text">判断对象是否为空对象</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#获得-Error-对象中的信息"><span class="section table-of-contents-text">获得 Error 对象中的信息</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用-try-catch-捕获错误信息"><span class="section table-of-contents-text">使用 try-catch 捕获错误信息</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#JavaScript-对象转-JSON-字符串"><span class="section table-of-contents-text">JavaScript 对象转 JSON 字符串</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#JSON-字符串转-JavaScript-对象"><span class="section table-of-contents-text">JSON 字符串转 JavaScript 对象</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Promise-的基本用法"><span class="section table-of-contents-text">Promise 的基本用法</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数组中的数字升序排序"><span class="section table-of-contents-text">数组中的数字升序排序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数组中的数字降序排序"><span class="section table-of-contents-text">数组中的数字降序排序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数组中的字符升序排序"><span class="section table-of-contents-text">数组中的字符升序排序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数组中的字符降序排序"><span class="section table-of-contents-text">数组中的字符降序排序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数组元素累加"><span class="section table-of-contents-text">数组元素累加</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数据累加"><span class="section table-of-contents-text">数据累加</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#对象数组分类"><span class="section table-of-contents-text">对象数组分类</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#删除对象数组下对象的属性"><span class="section table-of-contents-text">删除对象数组下对象的属性</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#数组转树"><span class="section table-of-contents-text">数组转树</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#树转数组"><span class="section table-of-contents-text">树转数组</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <a id="more"></a>
+<h3 id="使用箭头函数简化代码"><a href="#使用箭头函数简化代码" class="headerlink" title="使用箭头函数简化代码"></a>使用箭头函数简化代码</h3><pre><code>var obj = {
+    typ: Object,
+    default: () =&gt; ({})
+}
+</code></pre><p>上面的代码是下面代码的简写形式</p>
+<pre><code>var obj = {
+    type: Object,
+    default: function () {
+        return {};
+    }
+}
+</code></pre><h3 id="简化方法的写法"><a href="#简化方法的写法" class="headerlink" title="简化方法的写法"></a>简化方法的写法</h3><pre><code>var obj = {
+    create() {
+        console.log(&quot;调用创建obj对象的方法&quot;);
+    }
+};
+
+obj.create();
+</code></pre><p>上面的代码是下面代码的简写形式</p>
+<pre><code>var obj = {
+    create: function () {
+        console.log(&quot;调用创建obj对象的方法&quot;);
+    }
+};
+
+obj.create();
+</code></pre><h3 id="对象合并"><a href="#对象合并" class="headerlink" title="对象合并"></a>对象合并</h3><p>下面的代码实现了将obj1对象和obj2对象合并到了一起，并且将合并后的值赋值给obj3</p>
+<pre><code>var obj1 = {
+    name: &quot;meishadevs&quot;
+};
+
+var obj2 = {
+    job: &quot;Front-end development&quot;
+};
+
+var obj3 = Object.assign(obj1, obj2);
+</code></pre><p>obj3的值如下<br><img src="/images/2018122601.png" class="blog-image"></p>
+<h3 id="模板语法"><a href="#模板语法" class="headerlink" title="模板语法"></a>模板语法</h3><pre><code>let str1 = &apos;hello&apos;;
+let str2 = &apos;world&apos;;
+let str3 = `${str1} ${str2}`;
+
+console.log(&quot;str3:&quot;, str3);
+</code></pre><p>执行结果<br><img src="/images/2021052001.png" class="blog-image"></p>
+<h3 id="数据筛选"><a href="#数据筛选" class="headerlink" title="数据筛选"></a>数据筛选</h3><pre><code>let array = [5, 6, 7, 8, 9, 10];
+
+// 筛选出数组中数值大于 7 的数据
+let arr = array.filter((value) =&gt; {
+    return value &gt; 7;
+});
+
+console.log(&quot;arr:&quot;, arr);
+</code></pre><p>执行结果<br><img src="/images/2021052002.png" class="blog-image"></p>
+<h3 id="判断数组中是否存满足条件的数据"><a href="#判断数组中是否存满足条件的数据" class="headerlink" title="判断数组中是否存满足条件的数据"></a>判断数组中是否存满足条件的数据</h3><pre><code>let array = [5, 6, 7, 8, 9, 10];
+
+// 判断数组元素中是否存在大于 7 的数字
+let result1 = array.some((value) =&gt; {
+    return value &gt; 7;
+});
+
+// 判断数组元素中是否存在大于 10 的数字
+let result2 = array.some((value) =&gt; {
+    return value &gt; 10;
+});
+
+console.log(&quot;result1:&quot;, result1);
+console.log(&quot;result2:&quot;, result2);
+</code></pre><p>执行结果<br><img src="/images/2021052003.png" class="blog-image"></p>
+<h3 id="判断数组中所有数据是否都满足条件"><a href="#判断数组中所有数据是否都满足条件" class="headerlink" title="判断数组中所有数据是否都满足条件"></a>判断数组中所有数据是否都满足条件</h3><pre><code>let array = [5, 6, 7, 8, 9, 10];
+
+// 判断数组中是否所有数据都大于 7
+let result1 = array.every((value) =&gt; {
+    return value &gt; 7;
+});
+
+// 判断数组中是否所有数据都大于 5
+let result2 = array.every((value) =&gt; {
+    return value &gt; 4;
+});
+
+console.log(&quot;result1:&quot;, result1);
+console.log(&quot;result2:&quot;, result2);
+</code></pre><p>执行结果<br><img src="/images/2021052004.png" class="blog-image"></p>
+<h3 id="使用-forEach-遍历数组"><a href="#使用-forEach-遍历数组" class="headerlink" title="使用 forEach 遍历数组"></a>使用 forEach 遍历数组</h3><pre><code>let array = [2, 4, 6, 8, 10];
+
+array.forEach(item =&gt; {
+  console.log(&apos;item:&apos;, item);
+})
+</code></pre><p>执行结果<br><img src="/images/2021052005.png" class="blog-image"></p>
+<h3 id="使用对象展开运算符合并对象"><a href="#使用对象展开运算符合并对象" class="headerlink" title="使用对象展开运算符合并对象"></a>使用对象展开运算符合并对象</h3><p>两个对象存在同名的字段时，后面对象的字段值会覆盖前面对象的字段值，这种操作只会将前一个对象的属性赋值给后面对象的属性</p>
+<pre><code>let obj1 = {
+  name: &apos;meishadevs&apos;,
+  age: 25,
+  sex: &apos;男&apos;
+};
+
+let obj2 = {
+  name: &apos;小红&apos;,
+  age: 21,
+  sex: &apos;女&apos;,
+  hobby: &apos;唱歌&apos;
+};
+
+let obj3 = { ...obj1, ...obj2 };
+</code></pre><p>执行结果<br><img src="/images/2019102201.png" class="blog-image"></p>
+<h3 id="对象解构"><a href="#对象解构" class="headerlink" title="对象解构"></a>对象解构</h3><p>使用对象解构获得对象下的属性值</p>
+<pre><code>const person = {
+  name: &apos;meishadevs&apos;,
+  age: 25,
+  hobby: &apos;coding&apos;
+};
+
+const { name, age, hobby } = person;
+
+console.log(&apos;name:&apos;, name);
+console.log(&apos;age:&apos;, age);
+console.log(&apos;hobby:&apos;, hobby);
+</code></pre><p>执行结果<br><img src="/images/2019102401.png" class="blog-image"></p>
+<h3 id="数组解构"><a href="#数组解构" class="headerlink" title="数组解构"></a>数组解构</h3><p>使用数组解构的方式获得数组下的元素</p>
+<pre><code>const person = [&apos;meishadevs&apos;, 25, &apos;coding&apos;];
+
+const [name, age, hobby] = person;
+
+console.log(&quot;name:&quot;, name);
+console.log(&quot;age:&quot;, age);
+console.log(&quot;hobby:&quot;, hobby);
+</code></pre><p>执行结果<br><img src="/images/2023052201.png" class="blog-image"></p>
+<h3 id="格式化对象数组"><a href="#格式化对象数组" class="headerlink" title="格式化对象数组"></a>格式化对象数组</h3><pre><code>let array = [
+  {
+    productName: &apos;土豆&apos;,
+    price: 1.5,
+  },
+  {
+    productName: &apos;菠菜&apos;,
+    price: 2
+  },
+  {
+    productName: &apos;西红柿&apos;,
+    price: 0.5
+  }
+];
+
+let list = array.map(item =&gt; {
+  item.price += &apos;元/斤&apos;;
+  return item;
+});
+
+console.log(&apos;list:&apos;, list);
+</code></pre><p>执行结果<br><img src="/images/2019121701.png" class="blog-image"></p>
+<h3 id="判断数组中是否存在某个元素"><a href="#判断数组中是否存在某个元素" class="headerlink" title="判断数组中是否存在某个元素"></a>判断数组中是否存在某个元素</h3><pre><code>let array = [10, 20, 30, 40, 50];
+let result1 = array.includes(30);
+let result2  = array.includes(100);
+console.log(&apos;result1:&apos;, result1);
+console.log(&apos;result2:&apos;, result2);
+</code></pre><p>执行结果<br><img src="/images/2019123001.png" class="blog-image"></p>
+<h3 id="查找数组中的数据"><a href="#查找数组中的数据" class="headerlink" title="查找数组中的数据"></a>查找数组中的数据</h3><pre><code>let cardTypeList = [
+  {
+    name: &apos;身份证&apos;,
+    value: 10
+  },
+  {
+    name: &apos;港澳通行证&apos;,
+    value: 20
+  },
+  {
+    name: &apos;台胞证&apos;,
+    value: 30
+  },
+  {
+    name: &apos;护照&apos;,
+    value: 40
+  },
+  {
+    name: &apos;军官证&apos;,
+    value: 50
+  },
+  {
+    name: &apos;士官证&apos;,
+    value: 60
+  }];
+
+let value = 30;
+
+let cardType = cardTypeList.find(item =&gt; {
+  return item.value === value;
+});
+
+console.log(&apos;name:&apos;, cardType.name);
+</code></pre><p>执行结果<br><img src="/images/2019123002.png" class="blog-image"></p>
+<h3 id="查找数组中元素的下标"><a href="#查找数组中元素的下标" class="headerlink" title="查找数组中元素的下标"></a>查找数组中元素的下标</h3><pre><code> let cardTypeList = [
+  {
+    name: &apos;身份证&apos;,
+    value: 10
+  },
+  {
+    name: &apos;港澳通行证&apos;,
+    value: 20
+  },
+  {
+    name: &apos;台胞证&apos;,
+    value: 30
+  },
+  {
+    name: &apos;护照&apos;,
+    value: 40
+  },
+  {
+    name: &apos;军官证&apos;,
+    value: 50
+  },
+  {
+    name: &apos;士官证&apos;,
+    value: 60
+  }];
+
+let value = 30;
+
+let index = cardTypeList.findIndex(item =&gt; {
+  return item.value === value;
+});
+
+console.log(&apos;index:&apos;, index);
+</code></pre><p>执行结果<br><img src="/images/2020102902.png" class="blog-image"></p>
+<h3 id="将对象数组中的属性组成一个数组"><a href="#将对象数组中的属性组成一个数组" class="headerlink" title="将对象数组中的属性组成一个数组"></a>将对象数组中的属性组成一个数组</h3><pre><code>let array = [
+    {
+        productName: &apos;土豆&apos;,
+        price: 1.5,
+    },
+    {
+        productName: &apos;菠菜&apos;,
+        price: 2
+    },
+    {
+        productName: &apos;西红柿&apos;,
+        price: 0.5
+    }
+];
+
+let list = array.map(item =&gt; item.productName );
+
+console.log(&apos;list:&apos;, list);
+</code></pre><p>执行结果<br><img src="/images/2020061201.png" class="blog-image"></p>
+<h3 id="异步调用"><a href="#异步调用" class="headerlink" title="异步调用"></a>异步调用</h3><pre><code>// 获得用户基本信息的api接口
+export function info() {
+  return request({
+    url: &apos;/wechat/current&apos;,
+    method: &apos;get&apos;
+  })
+}
+
+async getUserInfo() {
+  try {
+       // 异步调用api接口
+     const { data } = await info();
+     console.log(&quot;data:&quot;, data);
+  } catch (error) {
+    console.log(error.message);
+  }
+},
+
+this.getUserInfo();
+</code></pre><h3 id="遍历对象"><a href="#遍历对象" class="headerlink" title="遍历对象"></a>遍历对象</h3><pre><code>let object = {
+    name: &quot;meishadevs&quot;,
+    age: 24,
+    hobby: &quot;coding&quot;,
+    job: &quot;Front-end engineer&quot;
+};
+
+for (let name in object) {
+    console.log(&apos;属性名：&apos;, name);
+    console.log(&apos;属性值：&apos;, object[name]);
+}
+</code></pre><p>执行结果<br><img src="/images/2022060701.png" class="blog-image"></p>
+<h3 id="检测数值中的元素是否完全相同"><a href="#检测数值中的元素是否完全相同" class="headerlink" title="检测数值中的元素是否完全相同"></a>检测数值中的元素是否完全相同</h3><pre><code> // 判断当前所选的机组是否是相同的机组
+function isAllEqual(array) {
+  return !array.some(function(value, index) {
+    return value !== array[0]
+  })
+}
+
+let arr1 = [1, 1, 3, 1, 1, 1]
+let arr2 = [1, 1, 1, 1, 1, 1]
+
+let result1 = isAllEqual(arr1)
+let result2 = isAllEqual(arr2)
+
+console.log(&quot;arr1 的检测结果：&quot;, result1)
+console.log(&quot;arr2 的检测结果：&quot;, result2)
+</code></pre><p>执行结果<br><img src="/images/2020082801.png" class="blog-image"></p>
+<h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><pre><code>let array = [1, 1, 1, 1, 2, 3, 4, 4, 5, 3];
+let set = new Set(array);
+let arr = Array.from(set);
+
+console.log(&apos;去重前的数据：&apos;, array);
+console.log(&quot;去重后的数据：&quot;, arr);
+</code></pre><p>执行结果<br><img src="/images/2020090701.png" class="blog-image"></p>
+<h3 id="数组去重简化写法"><a href="#数组去重简化写法" class="headerlink" title="数组去重简化写法"></a>数组去重简化写法</h3><pre><code>let array = [1, 1, 1, 1, 2, 3, 4, 4, 5, 3];
+let arr = [...new Set(array)]
+
+console.log(&apos;去重前的数据：&apos;, array);
+console.log(&quot;去重后的数据：&quot;, arr);
+</code></pre><p>执行结果<br><img src="/images/2020090701.png" class="blog-image"></p>
+<h3 id="对象数组去重"><a href="#对象数组去重" class="headerlink" title="对象数组去重"></a>对象数组去重</h3><pre><code>function uniqueArray(arr) {
+  // 使用累加器遍历原始数组
+  return arr.reduce((acc, current) =&gt; {
+
+    // 判断累加器数组中是否存在当前数据
+    const isDup = acc.some(item =&gt; {
+
+      // 对象数组去重的条件
+      // 对名字和年龄都相同的对象去重
+      return item.name === current.name &amp;&amp; item.age === current.age;
+    });
+
+    // 如果累加器数组中不存在当前数据
+    if (!isDup) {
+      // 将当前数据添加到累加器数据中
+      acc.push(current);
+    }
+
+    // 返回累加器数组
+    return acc;
+
+    // []：传递给方法的初始值
+  }, []);
+}
+
+const beforeArray = [
+  { name: &apos;Mike&apos;, age: 18 },
+  { name: &apos;Jane&apos;, age: 19 },
+  { name: &apos;Jane&apos;, age: 20 },
+  { name: &apos;Bob&apos;, age: 20 },
+  { name: &apos;Jane&apos;, age: 20 },
+  { name: &apos;Mike&apos;, age: 18 }
+];
+
+const afterArry = uniqueArray(beforeArray);
+
+console.log(&quot;去重前的对象数组:&quot;, beforeArray);
+console.log(&quot;去重后的对象数组:&quot;, afterArry);
+</code></pre><p>执行结果<br><img src="/images/2023032701.png" class="blog-image"></p>
+<h3 id="将对象的可枚举属性名保存在数组中"><a href="#将对象的可枚举属性名保存在数组中" class="headerlink" title="将对象的可枚举属性名保存在数组中"></a>将对象的可枚举属性名保存在数组中</h3><pre><code>let object = {
+  name: &quot;meishadevs&quot;,
+  age: 24,
+  hobby: &quot;coding&quot;,
+  job: &quot;Front-end engineer&quot;
+};
+
+let result = Object.keys(object);
+
+console.log(&quot;result:&quot;, result);
+</code></pre><p>执行结果<br><img src="/images/2020092101.png" class="blog-image"></p>
+<h3 id="将数值类型数据转换成布尔类型数据"><a href="#将数值类型数据转换成布尔类型数据" class="headerlink" title="将数值类型数据转换成布尔类型数据"></a>将数值类型数据转换成布尔类型数据</h3><pre><code>const bool1 = !!5
+const bool2 = !!0
+const bool3 = !!null
+const bool4 = !!undefined
+
+console.log(&apos;bool1:&apos;, bool1);
+console.log(&apos;bool2:&apos;, bool2);
+console.log(&apos;bool3:&apos;, bool3);
+console.log(&apos;bool4:&apos;, bool4);
+</code></pre><p>执行结果<br><img src="/images/2021081001.png" class="blog-image"></p>
+<h3 id="判断对象是否为空对象"><a href="#判断对象是否为空对象" class="headerlink" title="判断对象是否为空对象"></a>判断对象是否为空对象</h3><pre><code>let obj1 = {}
+
+let obj2 = {
+  name: &apos;meishadevs&apos;
+}
+
+let length1 = Object.keys(obj1).length
+let length2 = Object.keys(obj2).length
+
+let result1 = length1 ? &apos;obj1不是空对象&apos; : &apos;obj1是空对象&apos;
+let result2 = length2 ? &apos;obj2不是空对象&apos; : &apos;obj2是空对象&apos;
+
+console.log(result1)
+console.log(result2)
+</code></pre><p>执行结果<br><img src="/images/2022011101.png" class="blog-image"></p>
+<h3 id="获得-Error-对象中的信息"><a href="#获得-Error-对象中的信息" class="headerlink" title="获得 Error 对象中的信息"></a>获得 Error 对象中的信息</h3><pre><code>let error = new Error(&quot;Error 对象中的错误信息&quot;);
+
+console.log(&quot;error:&quot;, error);
+console.log(&quot;message:&quot;, error.message);
+</code></pre><p>执行结果<br><img src="/images/2022052701.png" class="blog-image"></p>
+<h3 id="使用-try-catch-捕获错误信息"><a href="#使用-try-catch-捕获错误信息" class="headerlink" title="使用 try-catch 捕获错误信息"></a>使用 try-catch 捕获错误信息</h3><pre><code>try {
+  throw new Error(&quot;Error 对象中的错误信息&quot;);
+} catch (error) {
+  console.log(&quot;error:&quot;, error);
+  console.log(&quot;message:&quot;, error.message);
+}
+</code></pre><p>执行结果<br><img src="/images/2022052701.png" class="blog-image"></p>
+<h3 id="JavaScript-对象转-JSON-字符串"><a href="#JavaScript-对象转-JSON-字符串" class="headerlink" title="JavaScript 对象转 JSON 字符串"></a>JavaScript 对象转 JSON 字符串</h3><pre><code>var person = {
+  name: &apos;meishadevs&apos;,
+  age: 25,
+  hobby: &apos;coding&apos;
+};
+
+var json = JSON.stringify(person);
+
+console.log(&quot;json:&quot;, json);
+</code></pre><p>执行结果<br><img src="/images/2022061701.png" class="blog-image"></p>
+<h3 id="JSON-字符串转-JavaScript-对象"><a href="#JSON-字符串转-JavaScript-对象" class="headerlink" title="JSON 字符串转 JavaScript 对象"></a>JSON 字符串转 JavaScript 对象</h3><pre><code>var person = &apos;{&quot;name&quot;:&quot;meishadevs&quot;,&quot;age&quot;:25,&quot;hobby&quot;:&quot;coding&quot;}&apos;;
+
+var json = JSON.parse(person);
+
+console.log(&quot;json:&quot;, json);
+</code></pre><p>执行结果<br><img src="/images/2022061702.png" class="blog-image"></p>
+<h3 id="Promise-的基本用法"><a href="#Promise-的基本用法" class="headerlink" title="Promise 的基本用法"></a>Promise 的基本用法</h3><pre><code>const num = 0;
+
+const promise = new Promise((resolve, reject) =&gt; {
+  if(num &gt;= 50) {
+    resolve(&quot;验证成功，num 值大于 50&quot;);
+  } else {
+    reject(new Error(&quot;验证失败，num 值小于 50&quot;));
+  }
+}).then(data =&gt; {
+  console.log(data);
+}).catch(error =&gt; {
+  console.error(error.message);
+});
+</code></pre><p>当 num 是一个小于 50 的值时<br><img src="/images/2022070801.png" class="blog-image"></p>
+<p>当 num 是一个大于 50 的值时<br><img src="/images/2022070802.png" class="blog-image"></p>
+<h3 id="数组中的数字升序排序"><a href="#数组中的数字升序排序" class="headerlink" title="数组中的数字升序排序"></a>数组中的数字升序排序</h3><pre><code>let array = [40, 100, 1, 5, 25, 10];
+
+console.log(&quot;排序前:&quot;, array);
+
+// 将数组中的数据按照从小到大的顺序排序
+array.sort((a, b) =&gt; { 
+  return a - b;
+});
+
+console.log(&quot;排序后:&quot;, array);
+</code></pre><p>执行结果<br><img src="/images/2022072701.png" class="blog-image"></p>
+<h3 id="数组中的数字降序排序"><a href="#数组中的数字降序排序" class="headerlink" title="数组中的数字降序排序"></a>数组中的数字降序排序</h3><pre><code>let array = [40, 100, 1, 5, 25, 10];
+
+console.log(&quot;排序前:&quot;, array);
+
+// 将数组中的数据按照从大到小的顺序排序
+array.sort((a, b) =&gt; { 
+  return b - a;
+});
+
+console.log(&quot;排序后:&quot;, array);
+</code></pre><p>执行结果<br><img src="/images/2022072702.png" class="blog-image"></p>
+<h3 id="数组中的字符升序排序"><a href="#数组中的字符升序排序" class="headerlink" title="数组中的字符升序排序"></a>数组中的字符升序排序</h3><pre><code>let array = [&apos;a&apos;, &apos;g&apos;, &apos;b&apos;, &apos;z&apos;, &apos;y&apos;];
+
+console.log(&quot;排序前:&quot;, array);
+
+// 将数组中的数据按照从小到大的顺序排序
+array.sort((a, b) =&gt; { 
+  // 先将字母转换成 Unicode 编码形式，再比较
+  return a.charCodeAt() - b.charCodeAt();
+});
+
+console.log(&quot;排序后:&quot;, array);
+</code></pre><p>执行结果<br><img src="/images/2022081301.png" class="blog-image"></p>
+<h3 id="数组中的字符降序排序"><a href="#数组中的字符降序排序" class="headerlink" title="数组中的字符降序排序"></a>数组中的字符降序排序</h3><pre><code>let array = [&apos;a&apos;, &apos;g&apos;, &apos;b&apos;, &apos;z&apos;, &apos;y&apos;];
+
+console.log(&quot;排序前:&quot;, array);
+
+// 将数组中的数据按照从小到大的顺序排序
+array.sort((a, b) =&gt; { 
+  // 先将字母转换成 Unicode 编码形式，再比较
+  return b.charCodeAt() - a.charCodeAt();
+});
+
+console.log(&quot;排序后:&quot;, array);
+</code></pre><p>执行结果<br><img src="/images/2022081302.png" class="blog-image"></p>
+<h3 id="数组元素累加"><a href="#数组元素累加" class="headerlink" title="数组元素累加"></a>数组元素累加</h3><pre><code>let array = [40, 100, 1, 5, 25, 10];
+
+let sum = array.reduce((total, current) =&gt; {
+  return total + current;
+});
+
+console.log(&quot;sum:&quot;, sum);
+</code></pre><p>执行结果<br><img src="/images/2022081303.png" class="blog-image"></p>
+<h3 id="数据累加"><a href="#数据累加" class="headerlink" title="数据累加"></a>数据累加</h3><pre><code>// ...args 使用剩余参数的形式接收传递过来的参数
+// ...args 会将传递过来的参数包裹成一个数组 
+function sum(...args) {
+  const result = args.reduce((total, current) =&gt; {
+    return total + current;
+  });
+
+  console.log(&quot;args:&quot;, args);
+  console.log(&quot;result:&quot;, result);
+}
+
+sum(40, 100, 1, 5, 25, 10);
+</code></pre><p>执行结果<br><img src="/images/2023040301.png" class="blog-image"></p>
+<h3 id="对象数组分类"><a href="#对象数组分类" class="headerlink" title="对象数组分类"></a>对象数组分类</h3><pre><code>// 原数据结构
+let arr = [
+  {
+    name: &apos;广告&apos;,
+    data: 44
+  },
+  {
+    name: &apos;广告&apos;,
+    data: 223
+  },
+  {
+    name: &apos;广告&apos;,
+    data: 512
+  },
+  {
+    name: &apos;商用&apos;,
+    data: 2
+  },
+  {
+    name: &apos;商用&apos;,
+    data: 52
+  },
+  {
+    name: &apos;商用&apos;,
+    data: 35
+  },
+];
+
+// 获得 arr 数组中的 name 属性值
+const nameList = [...new Set(arr.map(item =&gt; item.name))];
+
+// 记录转换后的结果
+let result = [];
+
+// 遍历记录 name 属性值的数组
+nameList.map(name =&gt; {
+  let obj = {
+    name,
+    data: []
+  }
+
+  arr.map(item =&gt; {
+    if (item.name === name) {
+      obj.data.push(item.data);
+    }
+  });
+
+  result.push(obj);
+});
+
+console.log(&quot;分类前的数据:&quot;, arr);
+console.log(&quot;分类后的数据:&quot;, result);
+</code></pre><p>执行结果<br><img src="/images/2022121601.png" class="blog-image"></p>
+<h3 id="删除对象数组下对象的属性"><a href="#删除对象数组下对象的属性" class="headerlink" title="删除对象数组下对象的属性"></a>删除对象数组下对象的属性</h3><pre><code>let array = [
+  {
+    name: &apos;meishadevs&apos;,
+    age: 25,
+    sex: &apos;男&apos;,
+    hobby: &apos;爬山&apos;
+  },
+  {
+    name: &apos;小红&apos;,
+    age: 21,
+    sex: &apos;女&apos;,
+    hobby: &apos;唱歌&apos;
+  }
+];
+
+array.forEach((item) =&gt; {
+  delete item.age;
+  delete item.sex;
+});
+
+console.log(&quot;array:&quot;, array);
+</code></pre><p>执行结果<br><img src="/images/2023013101.png" class="blog-image"></p>
+<h3 id="数组转树"><a href="#数组转树" class="headerlink" title="数组转树"></a>数组转树</h3><pre><code>const sourceData = [
+  { id: 1, parentId: 0, name: &apos;生物&apos; },
+  { id: 2, parentId: 1, name: &apos;动物&apos; },
+  { id: 3, parentId: 1, name: &apos;植物&apos; },
+  { id: 4, parentId: 1, name: &apos;微生物&apos; },
+  { id: 5, parentId: 2, name: &apos;哺乳动物&apos; },
+  { id: 6, parentId: 2, name: &apos;卵生动物&apos; },
+  { id: 7, parentId: 3, name: &apos;种子植物&apos; },
+  { id: 8, parentId: 3, name: &apos;蕨类植物&apos; },
+  { id: 9, parentId: 5, name: &apos;大象&apos; },
+  { id: 10, parentId: 5, name: &apos;海豚&apos; },
+  { id: 11, parentId: 5, name: &apos;猩猩&apos; },
+  { id: 12, parentId: 6, name: &apos;蟒蛇&apos; },
+  { id: 13, parentId: 5, name: &apos;麻雀&apos; }
+]
+
+/**
+* 将数组转成树
+* @param array
+* @return
+*/
+function arrayToTree(array) {
+  // 存放结果集
+  const result = [];
+
+  // 用于存储每个节点的引用
+  const map = {}; 
+
+  // 遍历数组
+  for (const item of array) {
+    // 当前数组元素的 id
+    const id = item.id;
+
+    // 当前数组元素的父 id
+    const parentId = item.parentId;
+
+    // 如果当前节点不在 map 中
+    if (!map[id]) {
+      // 创建一个新节点
+      map[id] = {
+        children: []
+      };
+    }
+
+    // 将当前节点合并到 map[id] 上，并更新 children 属性的引用
+    map[id] = {
+      ...item,
+      children: map[id][&apos;children&apos;]
+    };
+
+    // 获取当前节点的引用
+    const treeItem = map[id]; 
+
+    // 如果当前节点是根节点
+    if (parentId === 0) {
+       // 将其加入result数组
+      result.push(treeItem);
+
+    // 如果当前节点不是根节点
+    } else {
+       // 如果当前节点的父节点不在 map 中
+      if (!map[parentId]) {
+        // 创建一个新节点
+        map[parentId] = {
+          children: []
+        };
+      }
+
+      // 将当前节点加入其父节点的 children 数组中
+      map[parentId].children.push(treeItem);
+    }
+  }
+
+  // 返回结果集
+  return result; 
+}
+
+// 调用数组转数方法
+const tree = arrayToTree(sourceData);
+</code></pre><p>执行结果</p>
+<pre><code>[
+  {
+    &quot;id&quot;: 1,
+    &quot;parentId&quot;: 0,
+    &quot;name&quot;: &quot;生物&quot;,
+    &quot;children&quot;: [
+      {
+        &quot;id&quot;: 2,
+        &quot;parentId&quot;: 1,
+        &quot;name&quot;: &quot;动物&quot;,
+        &quot;children&quot;: [
+          {
+            &quot;id&quot;: 5,
+            &quot;parentId&quot;: 2,
+            &quot;name&quot;: &quot;哺乳动物&quot;,
+            &quot;children&quot;: [
+              {
+                &quot;id&quot;: 9,
+                &quot;parentId&quot;: 5,
+                &quot;name&quot;: &quot;大象&quot;,
+                &quot;children&quot;: []
+              },
+              {
+                &quot;id&quot;: 10,
+                &quot;parentId&quot;: 5,
+                &quot;name&quot;: &quot;海豚&quot;,
+                &quot;children&quot;: []
+              },
+              {
+                &quot;id&quot;: 11,
+                &quot;parentId&quot;: 5,
+                &quot;name&quot;: &quot;猩猩&quot;,
+                &quot;children&quot;: []
+              },
+              {
+                &quot;id&quot;: 13,
+                &quot;parentId&quot;: 5,
+                &quot;name&quot;: &quot;麻雀&quot;,
+                &quot;children&quot;: []
+              }
+            ]
+          },
+          {
+            &quot;id&quot;: 6,
+            &quot;parentId&quot;: 2,
+            &quot;name&quot;: &quot;卵生动物&quot;,
+            &quot;children&quot;: [
+              {
+                &quot;id&quot;: 12,
+                &quot;parentId&quot;: 6,
+                &quot;name&quot;: &quot;蟒蛇&quot;,
+                &quot;children&quot;: []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: 3,
+        &quot;parentId&quot;: 1,
+        &quot;name&quot;: &quot;植物&quot;,
+        &quot;children&quot;: [
+          {
+            &quot;id&quot;: 7,
+            &quot;parentId&quot;: 3,
+            &quot;name&quot;: &quot;种子植物&quot;,
+            &quot;children&quot;: []
+          },
+          {
+            &quot;id&quot;: 8,
+            &quot;parentId&quot;: 3,
+            &quot;name&quot;: &quot;蕨类植物&quot;,
+            &quot;children&quot;: []
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: 4,
+        &quot;parentId&quot;: 1,
+        &quot;name&quot;: &quot;微生物&quot;,
+        &quot;children&quot;: []
+      }
+    ]
+  }
+]
+</code></pre><h3 id="树转数组"><a href="#树转数组" class="headerlink" title="树转数组"></a>树转数组</h3><pre><code>const treeData = [
+  {
+    &quot;id&quot;: 1,
+    &quot;parentId&quot;: 0,
+    &quot;name&quot;: &quot;生物&quot;,
+    &quot;children&quot;: [
+      {
+        &quot;id&quot;: 2,
+        &quot;parentId&quot;: 1,
+        &quot;name&quot;: &quot;动物&quot;,
+        &quot;children&quot;: [
+          {
+            &quot;id&quot;: 5,
+            &quot;parentId&quot;: 2,
+            &quot;name&quot;: &quot;哺乳动物&quot;,
+            &quot;children&quot;: [
+              {
+                &quot;id&quot;: 9,
+                &quot;parentId&quot;: 5,
+                &quot;name&quot;: &quot;大象&quot;,
+                &quot;children&quot;: []
+              },
+              {
+                &quot;id&quot;: 10,
+                &quot;parentId&quot;: 5,
+                &quot;name&quot;: &quot;海豚&quot;,
+                &quot;children&quot;: []
+              },
+              {
+                &quot;id&quot;: 11,
+                &quot;parentId&quot;: 5,
+                &quot;name&quot;: &quot;猩猩&quot;,
+                &quot;children&quot;: []
+              },
+              {
+                &quot;id&quot;: 13,
+                &quot;parentId&quot;: 5,
+                &quot;name&quot;: &quot;麻雀&quot;,
+                &quot;children&quot;: []
+              }
+            ]
+          },
+          {
+            &quot;id&quot;: 6,
+            &quot;parentId&quot;: 2,
+            &quot;name&quot;: &quot;卵生动物&quot;,
+            &quot;children&quot;: [
+              {
+                &quot;id&quot;: 12,
+                &quot;parentId&quot;: 6,
+                &quot;name&quot;: &quot;蟒蛇&quot;,
+                &quot;children&quot;: []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: 3,
+        &quot;parentId&quot;: 1,
+        &quot;name&quot;: &quot;植物&quot;,
+        &quot;children&quot;: [
+          {
+            &quot;id&quot;: 7,
+            &quot;parentId&quot;: 3,
+            &quot;name&quot;: &quot;种子植物&quot;,
+            &quot;children&quot;: []
+          },
+          {
+            &quot;id&quot;: 8,
+            &quot;parentId&quot;: 3,
+            &quot;name&quot;: &quot;蕨类植物&quot;,
+            &quot;children&quot;: []
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: 4,
+        &quot;parentId&quot;: 1,
+        &quot;name&quot;: &quot;微生物&quot;,
+        &quot;children&quot;: []
+      }
+    ]
+  }
+];
+
+function treeToArray(tree) {
+  let array = [];
+
+  // 遍历树
+  let traverTree = (treeData) =&gt; {
+    // 遍历数组
+    treeData.map(item =&gt; {
+      // 如果children属性是一个数组
+      if (item.children &amp;&amp; item.children.length) {
+        traverTree(item.children);
+      }
+
+      array.push(item);
+    });
+  };
+
+  traverTree(tree);
+
+  return array;
+}
+
+const arr = treeToArray(treeData);
+
+console.log(&quot;arr:&quot;, arr);
+</code></pre><p>执行结果<br><img src="/images/2023032801.png" class="blog-image"></p>
+<blockquote>
+<p>meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。<br>转载请注明： 【文章转载自meishadevs：<a href="http://meishadevs.com/blog/常用的JavaScript代码块">常用的JavaScript代码块</a>】</p>
+</blockquote>
+
+                
+<p class="pink-link-context">
+    <a href="/blog/2018年终总结/" rel="next" title="2018年终总结">
+    上一篇：2018年终总结
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/blog/代码规范类问题修改方法/" rel="next" title="代码规范类问题修改方法">
+    下一篇：代码规范类问题修改方法
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+<section id="comments">
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	 <style type="text/css">
+        .gitment-editor-tabs {
+            height: 42px;
+            line-height: 42px;
+			background-color: #fff;
+			box-shadow: none;
+			border-bottom: solid 1px #CFD8DC;
+        }
+		
+		.gitment-editor-body {
+			background-color: #fff;
+		}
+    </style>
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+	  id: 'Mon Dec 17 2018 09:23:40 GMT+0800', // 可选。默认为 location.href
+	  owner: 'meishadevs',
+	  repo: 'meishadevs.github.io',//存储评论的 repo
+	  oauth: {
+		client_id: 'c41063c993965472837d',
+		client_secret: '4bb0498ec017c6d1c0b3c25f89302ebd3a3f329d',
+	  },
+	})
+	gitment.render('container')
+	</script>
+</section>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/3170066893?is_all=1" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/meishadevs" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                <div class="site-visitors-container white-text">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="http://zhangwenli.com/" target="_blank">羡辙的个人主页</a>
+                
+                    <a class="social-link" href="http://www.zhangxinxu.com/" target="_blank">张鑫旭的个人主页</a>
+                
+                    <a class="social-link" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a>
+                
+                    <a class="social-link" href="https://me.ursb.me/" target="_blank">Airing 的小屋</a>
+                
+                    <a class="social-link" href="http://www.runoob.com/" target="_blank">菜鸟教程</a>
+                
+                    <a class="social-link" href="https://jysperm.me/" target="_blank">王子亭的博客</a>
+                
+                    <a class="social-link" href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a>
+                
+                    <a class="social-link" href="https://wangdoc.com/" target="_blank">网道</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2018 meishadevs All rights reserved 赣ICP备18015008号
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=61543111" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>
