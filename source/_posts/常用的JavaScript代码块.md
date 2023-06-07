@@ -195,6 +195,19 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2023052201.png %}
 
+### 字符串解构
+
+	const [a, b, c, d, e] = 'hello';
+
+	console.log('a:', a);
+	console.log('b:', b);
+	console.log('c:', c);
+	console.log('d:', d);
+	console.log('e:', e);
+	
+执行结果
+{% img blog-image /images/2023060701.png %}
+
 ### 格式化对象数组
 
 	let array = [
