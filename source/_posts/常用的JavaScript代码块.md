@@ -46,22 +46,52 @@ date: 2018-12-17 09:23:40
 	
 	obj.create();
 
-### 对象合并
+### 使用Object.assign合并对象
 
 下面的代码实现了将obj1对象和obj2对象合并到了一起，并且将合并后的值赋值给obj3
 
-	var obj1 = {
-		name: "meishadevs"
-	};
+	let obj1 = {
+		  name: 'meishadevs',
+		  age: 25,
+		  sex: '男'
+		};
 	
-	var obj2 = {
-		job: "Front-end development"
+	let obj2 = {
+	  name: '小红',
+	  age: 21,
+	  sex: '女',
+	  hobby: '唱歌'
 	};
 	
 	var obj3 = Object.assign(obj1, obj2);
 
 obj3的值如下
-{% img blog-image /images/2018122601.png %}
+{% img blog-image /images/2019102201.png %}
+
+### 使用对象展开运算符合并对象
+
+两个对象存在同名的字段时，后面对象的字段值会覆盖前面对象的字段值，这种操作只会将前一个对象的属性赋值给后面对象的属性
+
+	let obj1 = {
+	  name: 'meishadevs',
+	  age: 25,
+	  sex: '男'
+	};
+	
+	let obj2 = {
+	  name: '小红',
+	  age: 21,
+	  sex: '女',
+	  hobby: '唱歌'
+	};
+	
+	let obj3 = { 
+		...obj1, 
+		...obj2 
+	};
+
+执行结果
+{% img blog-image /images/2019102201.png %}
 
 ### 模板语法
 
@@ -138,28 +168,6 @@ obj3的值如下
 	
 执行结果
 {% img blog-image /images/2021052005.png %}
-
-### 使用对象展开运算符合并对象
-
-两个对象存在同名的字段时，后面对象的字段值会覆盖前面对象的字段值，这种操作只会将前一个对象的属性赋值给后面对象的属性
-
-	let obj1 = {
-	  name: 'meishadevs',
-	  age: 25,
-	  sex: '男'
-	};
-	
-	let obj2 = {
-	  name: '小红',
-	  age: 21,
-	  sex: '女',
-	  hobby: '唱歌'
-	};
-	
-	let obj3 = { ...obj1, ...obj2 };
-
-执行结果
-{% img blog-image /images/2019102201.png %}
 
 ### 对象解构
 
