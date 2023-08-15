@@ -84,5 +84,16 @@ npm 的版本信息
 此时在浏览器中访问 [http://139.224.224.231:8080](http://139.224.224.231:8080)，可以看到浏览器上显示了 Hello World，其中 39.224.224.231 为服务器 ip
 {% img blog-image /images/2022053007.png %}
 
+## 常用的node命令
+
+    # 查看 Node.js 版本
+    node -v
+  
+    # 查看 npm 版本
+    npm -v
+  
+    # 使用 Node.js 在本地开启一个服务
+    npx serve
+  
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[Linux下搭建Node.js环境](http://meishadevs.com/blog/Linux下搭建Node.js环境)】
