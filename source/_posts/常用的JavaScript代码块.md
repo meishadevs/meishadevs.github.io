@@ -1072,5 +1072,24 @@ obj3的值如下
 执行结果
 {% img blog-image /images/2023032801.png %}
 
+### 打印代码的执行时间
+
+	// 判断当前所选的机组是否是相同的机组
+	function isAllEqual(array) {
+	  return !array.some((value) => {
+		return value !== array[0]
+	  });
+	};
+
+	const arr = [1, 1, 1, 3, 1, 1];
+
+	console.time("isAllEqual");
+	const result = isAllEqual(arr);
+	console.log("result:", result);
+	console.timeEnd("isAllEqual");
+
+执行结果
+{% img blog-image /images/2024060601.png %}
+
 > meishadevs欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。
 转载请注明： 【文章转载自meishadevs：[常用的JavaScript代码块](http://meishadevs.com/blog/常用的JavaScript代码块)】
