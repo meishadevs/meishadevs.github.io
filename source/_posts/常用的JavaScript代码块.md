@@ -397,7 +397,6 @@ obj3的值如下
 
 ### 检测数值中的元素是否完全相同
 
- 	// 判断当前所选的机组是否是相同的机组
     function isAllEqual(array) {
       return !array.some(function(value, index) {
         return value !== array[0]
@@ -1074,7 +1073,6 @@ obj3的值如下
 
 ### 打印代码的执行时间
 
-	// 判断当前所选的机组是否是相同的机组
 	function isAllEqual(array) {
 	  return !array.some((value) => {
 		return value !== array[0]
